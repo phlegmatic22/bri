@@ -1,0 +1,2132 @@
+<eDNAproReports_Report>
+  <Report Name="Kuukausiraportti" ID="Kuukausiraportti" Version="3.0.0.0">
+    <Info Title="" Owner="TREC58109VM1\Administrator" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T10:56:37" CreatedDate="2005-10-04T15:22:00" CreatedBy="VMVAT\kotilpe" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Kuukausiraportti.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_1" ProviderInfo="Query.IA.BasicQueries.Extended" Method="Combination" Description="NOx kok" FriendlyName="Combination" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_NOx_KOK" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_KOK" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_1.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_1.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_1.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_1.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_1.args5" Usage="" />
+        <DataTable Name="Values" Description="" OrderBy="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" DataType="System.Single" Caption="0-10HNE01MMKOK862:C_1H Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status1" DataType="System.String" Caption="0-10HNE01MMKOK862:C_1H Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" DataType="System.Single" Caption="0-10HNE01MMPT862:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status2" DataType="System.String" Caption="0-10HNE01MMPT862:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" DataType="System.Single" Caption="0-10HNE01MMKOR862:C_1H Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status3" DataType="System.String" Caption="0-10HNE01MMKOR862:C_1H Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value4" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status4" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" DataType="System.Single" Caption="0-10HNE01MMKOK828:C_30M Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status5" DataType="System.String" Caption="0-10HNE01MMKOK828:C_30M Sum status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" DataType="System.Single" Caption="0-10HNE01MMPT828:C_30M Sum value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status6" DataType="System.String" Caption="0-10HNE01MMPT828:C_30M Sum status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" DataType="System.Single" Caption="0-10HNE01MMKOR828:C_30M Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_1.Values.status7" DataType="System.String" Caption="0-10HNE01MMKOR828:C_30M Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_6" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="SO2 kok" FriendlyName="Combination1" Order="11" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_SO2_KOK" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_KOK" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_6.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_6.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_6.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_6.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_6.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" DataType="System.Single" Caption="0-10HNE01MMKOK866:C_1H Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status1" DataType="System.String" Caption="0-10HNE01MMKOK866:C_1H Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" DataType="System.Single" Caption="0-10HNE01MMPT866:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status2" DataType="System.String" Caption="0-10HNE01MMPT866:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" DataType="System.Single" Caption="0-10HNE01MMKOR866:C_1H Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status3" DataType="System.String" Caption="0-10HNE01MMKOR866:C_1H Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value4" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status4" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" DataType="System.Single" Caption="0-10HNE01MMKOK832:C_30M Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status5" DataType="System.String" Caption="0-10HNE01MMKOK832:C_30M Sum status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" DataType="System.Single" Caption="0-10HNE01MMPT832:C_30M Sum value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status6" DataType="System.String" Caption="0-10HNE01MMPT832:C_30M Sum status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" DataType="System.Single" Caption="0-10HNE01MMKOR832:C_30M Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_6.Values.status7" DataType="System.String" Caption="0-10HNE01MMKOR832:C_30M Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_7" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="hiuk kok" FriendlyName="Combination2" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_hiuk_KOK" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_KOK" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_7.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_7.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_7.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_7.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_7.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value1" DataType="System.Single" Caption="0-10HNE01MMKOK870:C_1H Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status1" DataType="System.String" Caption="0-10HNE01MMKOK870:C_1H Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value2" DataType="System.Single" Caption="0-10HNE01MMPT870:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status2" DataType="System.String" Caption="0-10HNE01MMPT870:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value3" DataType="System.Single" Caption="0-10HNE01MMKOR870:C_1H Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status3" DataType="System.String" Caption="0-10HNE01MMKOR870:C_1H Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value4" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status4" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value5" DataType="System.Single" Caption="0-10HNE01MMKOK836:C_30M Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status5" DataType="System.String" Caption="0-10HNE01MMKOK836:C_30M Sum status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value6" DataType="System.Single" Caption="0-10HNE01MMPT836:C_30M Sum value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status6" DataType="System.String" Caption="0-10HNE01MMPT836:C_30M Sum status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.value7" DataType="System.Single" Caption="0-10HNE01MMKOR836:C_30M Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_7.Values.status7" DataType="System.String" Caption="0-10HNE01MMKOR836:C_30M Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_8" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="CO" FriendlyName="Combination3" Order="2" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_CO" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_CO" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_8.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_8.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_8.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_8.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_8.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value0" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status0" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" DataType="System.Single" Caption="0-10HNE01XBRAYL842:C_1D Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status1" DataType="System.String" Caption="0-10HNE01XBRAYL842:C_1D Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value2" DataType="System.Single" Caption="0-10HNE01MMKOK840:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status2" DataType="System.String" Caption="0-10HNE01MMKOK840:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value3" DataType="System.Single" Caption="0-10HNE01MMPT840:C_30M Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status3" DataType="System.String" Caption="0-10HNE01MMPT840:C_30M Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value4" DataType="System.Single" Caption="0-10HNE01MMKOR840:C_30M Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status4" DataType="System.String" Caption="0-10HNE01MMKOR840:C_30M Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.value5" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_8.Values.status5" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_12" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="REF" FriendlyName="Combination4" Order="3" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD_HAIRIOT" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_HAIRIOT" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_HAIRIOT" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_12.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_12.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_12.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_12.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_12.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value0" DataType="System.Single" Caption="0-10CJA00XT826A:C_1H Sum value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status0" DataType="System.String" Caption="0-10CJA00XT826A:C_1H Sum status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value1" DataType="System.Single" Caption="0-10CJA00XT826B:C_1H Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status1" DataType="System.String" Caption="0-10CJA00XT826B:C_1H Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value2" DataType="System.Single" Caption="0-10CJA00XTPIT856:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status2" DataType="System.String" Caption="0-10CJA00XTPIT856:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value3" DataType="System.Single" Caption="0-10CJE10XTH823:C_1H Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status3" DataType="System.String" Caption="0-10CJE10XTH823:C_1H Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value4" DataType="System.Single" Caption="0-10CFB01XTH824A:C_1H Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status4" DataType="System.String" Caption="0-10CFB01XTH824A:C_1H Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value5" DataType="System.Single" Caption="0-10CFB01XTH824B:C_1H Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status5" DataType="System.String" Caption="0-10CFB01XTH824B:C_1H Sum status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.value6" DataType="System.Single" Caption="0-10CFB02XTH824C:C_1H Sum value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_12.Values.status6" DataType="System.String" Caption="0-10CFB02XTH824C:C_1H Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_3" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="NO2" FriendlyName="Combination5" Order="4" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_NO2" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_3.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_3.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_3.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_3.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_3.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA865:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA865:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" DataType="System.Single" Caption="0-10HNE01XBRAYL863:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status2" DataType="System.String" Caption="0-10HNE01XBRAYL863:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status3" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value4" DataType="System.Single" Caption="0-10HNE01FRRA831:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status4" DataType="System.String" Caption="0-10HNE01FRRA831:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA865:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA865:C_1KK Avg status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value6" DataType="System.Single" Caption="0-10HNE01FRRA831:C_1KK Avg value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status6" DataType="System.String" Caption="0-10HNE01FRRA831:C_1KK Avg status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" DataType="System.Single" Caption="0-10CJA00XB826B:C_1H Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_3.Values.status7" DataType="System.String" Caption="0-10CJA00XB826B:C_1H Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_2" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="SO2" FriendlyName="Combination6" Order="5" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_SO2" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_2.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_2.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_2.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_2.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_2.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA869:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA869:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value2" DataType="System.Single" Caption="0-10HNE01XBRAYL867:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status2" DataType="System.String" Caption="0-10HNE01XBRAYL867:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status3" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value4" DataType="System.Single" Caption="0-10HNE01FRRA835:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status4" DataType="System.String" Caption="0-10HNE01FRRA835:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA869:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA869:C_1KK Avg status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value6" DataType="System.Single" Caption="0-10HNE01FRRA835:C_1KK Avg value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status6" DataType="System.String" Caption="0-10HNE01FRRA835:C_1KK Avg status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.value7" DataType="System.Single" Caption="0-10CJA00XB826B:C_1H Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_2.Values.status7" DataType="System.String" Caption="0-10CJA00XB826B:C_1H Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_5" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="hiuk" FriendlyName="Combination7" Order="6" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_hiuk" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_5.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_5.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_5.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_5.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_5.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" DataType="System.Single" Caption="0-10CJA00XB827B:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status0" DataType="System.String" Caption="0-10CJA00XB827B:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA873:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA873:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value2" DataType="System.Single" Caption="0-10HNE01XBRAYL871:C_1H Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status2" DataType="System.String" Caption="0-10HNE01XBRAYL871:C_1H Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value3" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status3" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value4" DataType="System.Single" Caption="0-10HNE01FRRA839:C_1D Avg value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status4" DataType="System.String" Caption="0-10HNE01FRRA839:C_1D Avg status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA873:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA873:C_1KK Avg status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value6" DataType="System.Single" Caption="0-10HNE01FRRA839:C_1KK Avg value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status6" DataType="System.String" Caption="0-10HNE01FRRA839:C_1KK Avg status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.value7" DataType="System.Single" Caption="0-10CJA00XB826B:C_1H Sum value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_5.Values.status7" DataType="System.String" Caption="0-10CJA00XB826B:C_1H Sum status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_9" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="HCl" FriendlyName="Combination8" Order="7" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_HCl" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_HCl_HF_TOC" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_9.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_9.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_9.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_9.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_9.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value0" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status0" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA846:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA846:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value2" DataType="System.Single" Caption="0-10HNE01MMKOK843:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status2" DataType="System.String" Caption="0-10HNE01MMKOK843:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value3" DataType="System.Single" Caption="0-10HNE01MMPT843:C_30M Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status3" DataType="System.String" Caption="0-10HNE01MMPT843:C_30M Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value4" DataType="System.Single" Caption="0-10HNE01MMKOR843:C_30M Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status4" DataType="System.String" Caption="0-10HNE01MMKOR843:C_30M Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA846:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_9.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA846:C_1KK Avg status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_10" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="HF" FriendlyName="Combination9" Order="8" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_HF" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_HCl_HF_TOC" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_10.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_10.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_10.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_10.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_10.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value0" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status0" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA850:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA850:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value2" DataType="System.Single" Caption="0-10HNE01MMKOK847:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status2" DataType="System.String" Caption="0-10HNE01MMKOK847:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value3" DataType="System.Single" Caption="0-10HNE01MMPT847:C_30M Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status3" DataType="System.String" Caption="0-10HNE01MMPT847:C_30M Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value4" DataType="System.Single" Caption="0-10HNE01MMKOR847:C_30M Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status4" DataType="System.String" Caption="0-10HNE01MMKOR847:C_30M Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA850:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_10.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA850:C_1KK Avg status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_11" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="TOC" FriendlyName="Combination10" Order="9" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_TOC" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_HCl_HF_TOC" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_11.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_11.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_11.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_11.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_11.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value0" DataType="System.Single" Caption="0-10CJA00XBPIT857:C_1D Avg value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status0" DataType="System.String" Caption="0-10CJA00XBPIT857:C_1D Avg status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value1" DataType="System.Single" Caption="0-10HNE01FRRA854:C_1D Avg value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status1" DataType="System.String" Caption="0-10HNE01FRRA854:C_1D Avg status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value2" DataType="System.Single" Caption="0-10HNE01MMKOK851:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status2" DataType="System.String" Caption="0-10HNE01MMKOK851:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value3" DataType="System.Single" Caption="0-10HNE01MMPT851:C_30M Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status3" DataType="System.String" Caption="0-10HNE01MMPT851:C_30M Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value4" DataType="System.Single" Caption="0-10HNE01MMKOR851:C_30M Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status4" DataType="System.String" Caption="0-10HNE01MMKOR851:C_30M Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.value5" DataType="System.Single" Caption="0-10HNE01FRRA854:C_1KK Avg value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_11.Values.status5" DataType="System.String" Caption="0-10HNE01FRRA854:C_1KK Avg status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination_4" ProviderInfo="Query.IA.BasicQueries.Extended" Method="Combination" Description="Raja-arvot" FriendlyName="Combination11" Order="10" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME_PARAM" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD_PARAM" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS_PARAM" Usage="HistoryOptionList" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_PARAM" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_PARAM" Usage="HistoryOperationList" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination_4.args1" Usage="Advanced" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination_4.args2" Usage="Advanced" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination_4.args3" Usage="Advanced" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination_4.args4" Usage="Advanced" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination_4.args5" Usage="Advanced" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value0" DataType="System.Single" Caption="in_ana_1 Avg value (TREC58109VM1!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status0" DataType="System.String" Caption="in_ana_1 Avg status (TREC58109VM1!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value1" DataType="System.Single" Caption="in_ana_2 Avg value (TREC58109VM1!in_ana_2)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status1" DataType="System.String" Caption="in_ana_2 Avg status (TREC58109VM1!in_ana_2)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value2" DataType="System.Single" Caption="in_ana_3 Avg value (TREC58109VM1!in_ana_3)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status2" DataType="System.String" Caption="in_ana_3 Avg status (TREC58109VM1!in_ana_3)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value3" DataType="System.Single" Caption="in_ana_4 Avg value (TREC58109VM1!in_ana_4)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status3" DataType="System.String" Caption="in_ana_4 Avg status (TREC58109VM1!in_ana_4)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value4" DataType="System.Single" Caption="in_ana_5 Avg value (TREC58109VM1!in_ana_5)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status4" DataType="System.String" Caption="in_ana_5 Avg status (TREC58109VM1!in_ana_5)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value5" DataType="System.Single" Caption="in_ana_6 Avg value (TREC58109VM1!in_ana_6)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status5" DataType="System.String" Caption="in_ana_6 Avg status (TREC58109VM1!in_ana_6)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value6" DataType="System.Single" Caption="in_ana_7 Avg value (TREC58109VM1!in_ana_7)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status6" DataType="System.String" Caption="in_ana_7 Avg status (TREC58109VM1!in_ana_7)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value7" DataType="System.Single" Caption="in_ana_8 Avg value (TREC58109VM1!in_ana_8)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status7" DataType="System.String" Caption="in_ana_8 Avg status (TREC58109VM1!in_ana_8)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value8" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value8" DataType="System.Single" Caption="in_ana_9 Avg value (TREC58109VM1!in_ana_9)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status8" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status8" DataType="System.String" Caption="in_ana_9 Avg status (TREC58109VM1!in_ana_9)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value9" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.value9" DataType="System.Single" Caption="in_ana_10 Avg value (TREC58109VM1!in_ana_10)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status9" ID="Query.IA.BasicQueries.Extended.Combination_4.Values.status9" DataType="System.String" Caption="in_ana_10 Avg status (TREC58109VM1!in_ana_10)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.IA.BasicQueries.Extended.Combination" ProviderInfo="/Query.IA.BasicQueries.Extended" Method="Combination" Description="Häiriöt" FriendlyName="Combination12" Order="12" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="STARTTIME" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="ENDTIME" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="PERIOD_HAIRIOT" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="OPTIONS" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="TAGS_HAIRIOT" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="OPS_HAIRIOT" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.IA.BasicQueries.Extended.Combination.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="Query.IA.BasicQueries.Extended.Combination.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="Query.IA.BasicQueries.Extended.Combination.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="Query.IA.BasicQueries.Extended.Combination.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="Query.IA.BasicQueries.Extended.Combination.args5" Usage="" />
+        <DataTable Name="Values" Description="">
+          <DataField Name="ts" ID="Query.IA.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" />
+          <DataField Name="value0" ID="Query.IA.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="0-10CJA00XT826A:C_1H Sum value" Description="" />
+          <DataField Name="status0" ID="Query.IA.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="0-10CJA00XT826A:C_1H Sum status" Description="" />
+          <DataField Name="value1" ID="Query.IA.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="0-10CJA00XT826B:C_1H Sum value" Description="" />
+          <DataField Name="status1" ID="Query.IA.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="0-10CJA00XT826B:C_1H Sum status" Description="" />
+          <DataField Name="value2" ID="Query.IA.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="0-10CJA00XTPIT856:C_30M Sum value" Description="" />
+          <DataField Name="status2" ID="Query.IA.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="0-10CJA00XTPIT856:C_30M Sum status" Description="" />
+          <DataField Name="value3" ID="Query.IA.BasicQueries.Extended.Combination.Values.value3" DataType="System.Single" Caption="0-10CJE10XTH823:C_1H Sum value" Description="" />
+          <DataField Name="status3" ID="Query.IA.BasicQueries.Extended.Combination.Values.status3" DataType="System.String" Caption="0-10CJE10XTH823:C_1H Sum status" Description="" />
+          <DataField Name="value4" ID="Query.IA.BasicQueries.Extended.Combination.Values.value4" DataType="System.Single" Caption="0-10CFB01XTH824A:C_1H Sum value" Description="" />
+          <DataField Name="status4" ID="Query.IA.BasicQueries.Extended.Combination.Values.status4" DataType="System.String" Caption="0-10CFB01XTH824A:C_1H Sum status" Description="" />
+          <DataField Name="value5" ID="Query.IA.BasicQueries.Extended.Combination.Values.value5" DataType="System.Single" Caption="0-10CFB01XTH824B:C_1H Sum value" Description="" />
+          <DataField Name="status5" ID="Query.IA.BasicQueries.Extended.Combination.Values.status5" DataType="System.String" Caption="0-10CFB01XTH824B:C_1H Sum status" Description="" />
+          <DataField Name="value6" ID="Query.IA.BasicQueries.Extended.Combination.Values.value6" DataType="System.Single" Caption="0-10CFB02XTH824C:C_1H Sum value" Description="" />
+          <DataField Name="status6" ID="Query.IA.BasicQueries.Extended.Combination.Values.status6" DataType="System.String" Caption="0-10CFB02XTH824C:C_1H Sum status" Description="" />
+          <DataField Name="value7" ID="Query.IA.BasicQueries.Extended.Combination.Values.value7" DataType="System.Single" Caption="0-10CFB01HYL861A:C_1D Avg value" Description="" />
+          <DataField Name="status7" ID="Query.IA.BasicQueries.Extended.Combination.Values.status7" DataType="System.String" Caption="0-10CFB01HYL861A:C_1D Avg status" Description="" />
+          <DataField Name="value8" ID="Query.IA.BasicQueries.Extended.Combination.Values.value8" DataType="System.Single" Caption="0-10CFB01HYL861B:C_1D Avg value" Description="" />
+          <DataField Name="status8" ID="Query.IA.BasicQueries.Extended.Combination.Values.status8" DataType="System.String" Caption="0-10CFB01HYL861B:C_1D Avg status" Description="" />
+          <DataField Name="value9" ID="Query.IA.BasicQueries.Extended.Combination.Values.value9" DataType="System.Single" Caption="0-10CFB01HYL861C:C_1D Avg value" Description="" />
+          <DataField Name="status9" ID="Query.IA.BasicQueries.Extended.Combination.Values.status9" DataType="System.String" Caption="0-10CFB01HYL861C:C_1D Avg status" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="OPS" Type="System.String[]" InitialValue="Avg&#xA;Avg&#xA;Sum&#xA;Avg&#xA;Avg&#xA;Avg&#xA;Avg&#xA;Sum" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="TAGS_NO2" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="STARTTIME" Type="System.DateTime" InitialValue="*:-1:1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="ENDTIME" Type="System.DateTime" InitialValue="*:*:1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="TAGS_HAIRIOT" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8&#xD;&#xA;in_ana_9&#xD;&#xA;in_ana_10" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="OPS_HAIRIOT" Type="System.String[]" InitialValue="Sum&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Avg&#xA;Avg&#xA;Avg" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="OPTIONS" Type="System.String[]" InitialValue="TS_START,ACTUAL" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="PERIOD" Type="System.String[]" InitialValue="1.00:00:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="PERIOD_HAIRIOT" Type="System.String[]" InitialValue="1.00:00:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="TAGS_PARAM" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8&#xD;&#xA;in_ana_9&#xD;&#xA;in_ana_10" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="OPS_PARAM" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="PERIOD_PARAM" Type="System.String[]" InitialValue="1" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="OPTIONS_PARAM" Type="System.String[]" InitialValue="TS_START,ROWCOUNT" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="MODE" Type="System.String" InitialValue="MONTH" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="PeriodSelectMode" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="STARTTIME_PARAM" Type="System.DateTime" InitialValue="*:-5:1:0:0:0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Size" Type="System.String" InitialValue="Default" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="ViewerSize" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="LIMIT_NOx_LCP" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="16" />
+      <Parameter Name="LIMIT_SO2_LCP" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="17" />
+      <Parameter Name="LIMIT_hiuk_LCP" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="18" />
+      <Parameter Name="LIMIT_NOx_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="19" />
+      <Parameter Name="LIMIT_SO2_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="20" />
+      <Parameter Name="LIMIT_hiuk_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="21" />
+      <Parameter Name="LIMIT_CO_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="22" />
+      <Parameter Name="LIMIT_HCl_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="23" />
+      <Parameter Name="LIMIT_HF_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="24" />
+      <Parameter Name="LIMIT_TOC_WI" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="25" />
+      <Parameter Name="TAG_NOx_KOK" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="26" />
+      <Parameter Name="TAGS_NOx_KOK" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="27" />
+      <Parameter Name="OPS_KOK" Type="System.String[]" InitialValue="Avg&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Avg&#xA;Sum&#xA;Sum&#xA;Sum" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="28" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_1.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_1.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_1.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_1.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_1.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TAGS_SO2" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="29" />
+      <Parameter Name="TAGS_SO2_KOK" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="30" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_6.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_6.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_6.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_6.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_6.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TAGS_hiuk" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="31" />
+      <Parameter Name="TAGS_hiuk_KOK" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6&#xD;&#xA;in_ana_7&#xD;&#xA;in_ana_8" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="32" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_7.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_7.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_7.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_7.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_7.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TAGS_CO" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="33" />
+      <Parameter Name="OPS_CO" Type="System.String[]" InitialValue="Avg&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Sum" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="34" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_8.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_8.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_8.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_8.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_8.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TAGS_HCl" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="35" />
+      <Parameter Name="OPS_HCl_HF_TOC" Type="System.String[]" InitialValue="Avg&#xA;Avg&#xA;Sum&#xA;Sum&#xA;Sum&#xA;Avg" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="36" />
+      <Parameter Name="TAGS_HF" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="37" />
+      <Parameter Name="TAGS_TOC" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="38" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_12.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_12.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_12.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_12.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_12.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TAGS_REF" Type="System.String[]" InitialValue="0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="39" />
+      <Parameter Name="OPS_REF" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="40" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_3.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_3.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_3.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_3.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_3.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_2.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_2.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_2.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_2.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_2.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_5.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_5.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_5.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_5.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_5.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_9.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_9.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_9.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_9.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_9.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_10.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_10.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_10.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_10.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_10.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_11.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_11.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_11.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_11.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_11.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="ViewerType" Type="System.String" InitialValue="HtmlExport" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="ViewerType" Overridable="True" DisplayIndex="41" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_4.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_4.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_4.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_4.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.IA.BasicQueries.Extended.Combination_4.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.0" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.1" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.2" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.0" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.0" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.0" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.0" />
+      </Connection>
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.1" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.1" />
+      </Connection>
+      <Connection ID="28" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.1" />
+      </Connection>
+      <Connection ID="29" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.1" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.2" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.2" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.2" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value.2" />
+      </Connection>
+      <Connection ID="35" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="36" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.1" />
+      </Connection>
+      <Connection ID="37" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.2" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="40" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.1" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.1" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.1" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.1" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.2" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.2" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.2" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.2" />
+      </Connection>
+      <Connection ID="50" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.ts" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.0" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.1" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.2" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.0" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.0" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.0" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.0" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.1" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.1" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.1" />
+      </Connection>
+      <Connection ID="61" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.1" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.2" />
+      </Connection>
+      <Connection ID="63" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.2" />
+      </Connection>
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.2" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value.2" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value.0" />
+      </Connection>
+      <Connection ID="68" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_SO2" />
+      </Connection>
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="77" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="78" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="81" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="82" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="83" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="89" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="90" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="91" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="94" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="95" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="96" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="98" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="99" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="101" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="107" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="108" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="109" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="110" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="112" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="113" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="119" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="121" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="128" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="129" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="130" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="131" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="132" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="133" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="134" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="135" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="136" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="137" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="138" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="139" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="140" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="141" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="142" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="143" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="144" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="145" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="146" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="147" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="148" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="149" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="150" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="151" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="152" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="153" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="154" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="155" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="156" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="vat52021/Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="157" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="158" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="161" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value2" />
+      </Connection>
+      <Connection ID="168" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value4" />
+      </Connection>
+      <Connection ID="171" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value0" />
+      </Connection>
+      <Connection ID="172" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value0" />
+      </Connection>
+      <Connection ID="173" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value0" />
+      </Connection>
+      <Connection ID="178" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value2" />
+      </Connection>
+      <Connection ID="179" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value2" />
+      </Connection>
+      <Connection ID="180" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value2" />
+      </Connection>
+      <Connection ID="181" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value4" />
+      </Connection>
+      <Connection ID="182" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value4" />
+      </Connection>
+      <Connection ID="183" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value4" />
+      </Connection>
+      <Connection ID="188" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="193" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="194" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="195" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="196" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="197" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="198" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="199" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="200" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="201" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="202" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="203" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="204" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="205" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="206" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="207" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="208" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="213" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value0" />
+      </Connection>
+      <Connection ID="214" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value2" />
+      </Connection>
+      <Connection ID="216" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.ts" />
+      </Connection>
+      <Connection ID="219" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.ts" />
+      </Connection>
+      <Connection ID="220" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value4" />
+      </Connection>
+      <Connection ID="221" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.ts" />
+      </Connection>
+      <Connection ID="222" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="223" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="224" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_SO2" />
+      </Connection>
+      <Connection ID="225" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_HIUKKASET" />
+      </Connection>
+      <Connection ID="226" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_NO2" />
+      </Connection>
+      <Connection ID="227" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="228" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="229" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="230" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="231" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="232" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="233" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="234" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="235" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="236" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="244" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="245" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="246" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="248" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="249" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="250" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="251" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="252" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value8" />
+      </Connection>
+      <Connection ID="253" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value8" />
+      </Connection>
+      <Connection ID="254" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value8" />
+      </Connection>
+      <Connection ID="255" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value8" />
+      </Connection>
+      <Connection ID="256" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.value8" />
+      </Connection>
+      <Connection ID="257" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="259" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="260" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="262" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="263" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="267" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="268" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="270" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="275" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="276" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="277" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status5" />
+      </Connection>
+      <Connection ID="279" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.status5" />
+      </Connection>
+      <Connection ID="280" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.status5" />
+      </Connection>
+      <Connection ID="281" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status5" />
+      </Connection>
+      <Connection ID="284" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" />
+      </Connection>
+      <Connection ID="288" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.ts" />
+      </Connection>
+      <Connection ID="290" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.ts" />
+      </Connection>
+      <Connection ID="291" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="STARTTIME" />
+      </Connection>
+      <Connection ID="298" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Values.ts" />
+      </Connection>
+      <Connection ID="302" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="TREL06141/Query.IA.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="303" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="304" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status5" />
+      </Connection>
+      <Connection ID="305" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value6" />
+      </Connection>
+      <Connection ID="306" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.ts" />
+      </Connection>
+      <Connection ID="307" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="308" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="310" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="311" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value6" />
+      </Connection>
+      <Connection ID="314" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status5" />
+      </Connection>
+      <Connection ID="315" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status5" />
+      </Connection>
+      <Connection ID="316" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="317" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="318" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="319" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="320" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="322" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="323" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="324" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="325" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="326" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="327" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="328" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="329" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status5" />
+      </Connection>
+      <Connection ID="330" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="331" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="334" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status1" />
+      </Connection>
+      <Connection ID="335" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status0" />
+      </Connection>
+      <Connection ID="336" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status0" />
+      </Connection>
+      <Connection ID="337" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status1" />
+      </Connection>
+      <Connection ID="338" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status0" />
+      </Connection>
+      <Connection ID="339" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status1" />
+      </Connection>
+      <Connection ID="340" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.ts" />
+      </Connection>
+      <Connection ID="341" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.ts" />
+      </Connection>
+      <Connection ID="342" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_CO" />
+      </Connection>
+      <Connection ID="343" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status0" />
+      </Connection>
+      <Connection ID="344" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="345" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status1" />
+      </Connection>
+      <Connection ID="346" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="348" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value1" />
+      </Connection>
+      <Connection ID="349" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="350" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status1" />
+      </Connection>
+      <Connection ID="351" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="352" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="353" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value8" />
+      </Connection>
+      <Connection ID="354" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="355" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="356" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="357" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="358" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="359" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value8" />
+      </Connection>
+      <Connection ID="360" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="361" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="362" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="363" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status2" />
+      </Connection>
+      <Connection ID="364" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="365" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status2" />
+      </Connection>
+      <Connection ID="366" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="367" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="368" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="369" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value4" />
+      </Connection>
+      <Connection ID="370" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value4" />
+      </Connection>
+      <Connection ID="371" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value4" />
+      </Connection>
+      <Connection ID="373" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.ts" />
+      </Connection>
+      <Connection ID="374" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" />
+      </Connection>
+      <Connection ID="375" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="376" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status0" />
+      </Connection>
+      <Connection ID="377" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="378" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="379" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="380" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="381" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="382" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="383" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="384" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="385" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="386" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="387" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="388" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="389" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value8" />
+      </Connection>
+      <Connection ID="390" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value9" />
+      </Connection>
+      <Connection ID="391" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_NOx_LCP" />
+      </Connection>
+      <Connection ID="392" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_SO2_LCP" />
+      </Connection>
+      <Connection ID="393" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_hiuk_LCP" />
+      </Connection>
+      <Connection ID="394" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_NOx_WI" />
+      </Connection>
+      <Connection ID="395" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_SO2_WI" />
+      </Connection>
+      <Connection ID="396" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_hiuk_WI" />
+      </Connection>
+      <Connection ID="397" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_CO_WI" />
+      </Connection>
+      <Connection ID="398" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_HCl_WI" />
+      </Connection>
+      <Connection ID="399" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_HF_WI" />
+      </Connection>
+      <Connection ID="400" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="LIMIT_TOC_WI" />
+      </Connection>
+      <Connection ID="401" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="402" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="403" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="404" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="405" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="406" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="407" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="408" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="409" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="410" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="411" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status1" />
+      </Connection>
+      <Connection ID="412" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="413" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.status1" />
+      </Connection>
+      <Connection ID="414" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="415" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="416" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="417" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="418" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="419" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="420" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="421" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="422" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="423" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="424" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="425" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="426" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="427" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="428" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status0" />
+      </Connection>
+      <Connection ID="429" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="430" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="431" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="432" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="433" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="434" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="435" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value8" />
+      </Connection>
+      <Connection ID="436" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value9" />
+      </Connection>
+      <Connection ID="437" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="438" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="439" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="440" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="441" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value8" />
+      </Connection>
+      <Connection ID="442" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value9" />
+      </Connection>
+      <Connection ID="443" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="444" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="445" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="446" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="447" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="448" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value4" />
+      </Connection>
+      <Connection ID="449" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value4" />
+      </Connection>
+      <Connection ID="450" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="451" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="452" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="453" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="454" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="455" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="456" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="457" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="458" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="459" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value2" />
+      </Connection>
+      <Connection ID="460" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="461" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="462" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="463" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="464" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="465" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="466" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="467" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="468" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="469" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="470" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="471" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="472" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="473" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="474" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value6" />
+      </Connection>
+      <Connection ID="475" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" />
+      </Connection>
+      <Connection ID="476" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" />
+      </Connection>
+      <Connection ID="477" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" />
+      </Connection>
+      <Connection ID="478" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" />
+      </Connection>
+      <Connection ID="479" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_1.Values.value7" />
+      </Connection>
+      <Connection ID="480" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="481" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="482" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="483" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status1" />
+      </Connection>
+      <Connection ID="484" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="485" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value4" />
+      </Connection>
+      <Connection ID="486" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.status4" />
+      </Connection>
+      <Connection ID="487" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="488" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="489" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value2" />
+      </Connection>
+      <Connection ID="490" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value0" />
+      </Connection>
+      <Connection ID="491" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value3" />
+      </Connection>
+      <Connection ID="492" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value1" />
+      </Connection>
+      <Connection ID="493" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value6" />
+      </Connection>
+      <Connection ID="494" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value5" />
+      </Connection>
+      <Connection ID="495" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value8" />
+      </Connection>
+      <Connection ID="496" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="497" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="498" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="499" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="500" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status1" />
+      </Connection>
+      <Connection ID="501" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="502" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="503" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value3" />
+      </Connection>
+      <Connection ID="504" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value4" />
+      </Connection>
+      <Connection ID="505" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.status4" />
+      </Connection>
+      <Connection ID="506" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="507" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="508" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value2" />
+      </Connection>
+      <Connection ID="509" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="510" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="511" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value4" />
+      </Connection>
+      <Connection ID="512" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value4" />
+      </Connection>
+      <Connection ID="513" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value6" />
+      </Connection>
+      <Connection ID="514" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value5" />
+      </Connection>
+      <Connection ID="515" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value8" />
+      </Connection>
+      <Connection ID="516" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value7" />
+      </Connection>
+      <Connection ID="517" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value0" />
+      </Connection>
+      <Connection ID="518" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value0" />
+      </Connection>
+      <Connection ID="519" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" />
+      </Connection>
+      <Connection ID="520" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" />
+      </Connection>
+      <Connection ID="521" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" />
+      </Connection>
+      <Connection ID="522" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" />
+      </Connection>
+      <Connection ID="523" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value1" />
+      </Connection>
+      <Connection ID="524" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" />
+      </Connection>
+      <Connection ID="525" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" />
+      </Connection>
+      <Connection ID="526" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" />
+      </Connection>
+      <Connection ID="527" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" />
+      </Connection>
+      <Connection ID="528" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value2" />
+      </Connection>
+      <Connection ID="529" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" />
+      </Connection>
+      <Connection ID="530" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" />
+      </Connection>
+      <Connection ID="531" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" />
+      </Connection>
+      <Connection ID="532" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" />
+      </Connection>
+      <Connection ID="533" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value3" />
+      </Connection>
+      <Connection ID="534" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value4" />
+      </Connection>
+      <Connection ID="535" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value4" />
+      </Connection>
+      <Connection ID="536" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" />
+      </Connection>
+      <Connection ID="537" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" />
+      </Connection>
+      <Connection ID="538" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" />
+      </Connection>
+      <Connection ID="539" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" />
+      </Connection>
+      <Connection ID="540" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value5" />
+      </Connection>
+      <Connection ID="541" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" />
+      </Connection>
+      <Connection ID="542" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" />
+      </Connection>
+      <Connection ID="543" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" />
+      </Connection>
+      <Connection ID="544" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" />
+      </Connection>
+      <Connection ID="545" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value6" />
+      </Connection>
+      <Connection ID="546" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" />
+      </Connection>
+      <Connection ID="547" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" />
+      </Connection>
+      <Connection ID="548" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" />
+      </Connection>
+      <Connection ID="549" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" />
+      </Connection>
+      <Connection ID="550" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_6.Values.value7" />
+      </Connection>
+      <Connection ID="551" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_7.Values.value0" />
+      </Connection>
+      <Connection ID="552" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_7.Values.value0" />
+      </Connection>
+      <Connection ID="553" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_7.Values.value4" />
+      </Connection>
+      <Connection ID="554" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_7.Values.value4" />
+      </Connection>
+      <Connection ID="555" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" />
+      </Connection>
+      <Connection ID="556" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" />
+      </Connection>
+      <Connection ID="557" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value0" />
+      </Connection>
+      <Connection ID="558" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value1" />
+      </Connection>
+      <Connection ID="559" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value1" />
+      </Connection>
+      <Connection ID="560" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value1" />
+      </Connection>
+      <Connection ID="561" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value6" />
+      </Connection>
+      <Connection ID="562" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value5" />
+      </Connection>
+      <Connection ID="563" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value3" />
+      </Connection>
+      <Connection ID="564" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value3" />
+      </Connection>
+      <Connection ID="565" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value2" />
+      </Connection>
+      <Connection ID="566" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value2" />
+      </Connection>
+      <Connection ID="567" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value2" />
+      </Connection>
+      <Connection ID="568" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value2" />
+      </Connection>
+      <Connection ID="569" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.status1" />
+      </Connection>
+      <Connection ID="570" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value4" />
+      </Connection>
+      <Connection ID="571" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.status4" />
+      </Connection>
+      <Connection ID="572" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value4" />
+      </Connection>
+      <Connection ID="573" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value4" />
+      </Connection>
+      <Connection ID="574" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value8" />
+      </Connection>
+      <Connection ID="575" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value7" />
+      </Connection>
+      <Connection ID="576" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value0" />
+      </Connection>
+      <Connection ID="577" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value0" />
+      </Connection>
+      <Connection ID="578" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" />
+      </Connection>
+      <Connection ID="579" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" />
+      </Connection>
+      <Connection ID="580" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" />
+      </Connection>
+      <Connection ID="581" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" />
+      </Connection>
+      <Connection ID="582" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value1" />
+      </Connection>
+      <Connection ID="583" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value9" />
+      </Connection>
+      <Connection ID="584" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value9" />
+      </Connection>
+      <Connection ID="585" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value9" />
+      </Connection>
+      <Connection ID="586" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_8.Values.value5" />
+      </Connection>
+      <Connection ID="587" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value0" />
+      </Connection>
+      <Connection ID="588" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value0" />
+      </Connection>
+      <Connection ID="589" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value1" />
+      </Connection>
+      <Connection ID="590" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value1" />
+      </Connection>
+      <Connection ID="591" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value1" />
+      </Connection>
+      <Connection ID="592" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.status1" />
+      </Connection>
+      <Connection ID="593" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value6" />
+      </Connection>
+      <Connection ID="594" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value5" />
+      </Connection>
+      <Connection ID="595" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value0" />
+      </Connection>
+      <Connection ID="596" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value0" />
+      </Connection>
+      <Connection ID="597" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value1" />
+      </Connection>
+      <Connection ID="598" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value1" />
+      </Connection>
+      <Connection ID="599" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value1" />
+      </Connection>
+      <Connection ID="600" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.status1" />
+      </Connection>
+      <Connection ID="601" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value6" />
+      </Connection>
+      <Connection ID="602" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value5" />
+      </Connection>
+      <Connection ID="603" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value0" />
+      </Connection>
+      <Connection ID="604" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value0" />
+      </Connection>
+      <Connection ID="605" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value0" />
+      </Connection>
+      <Connection ID="606" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value1" />
+      </Connection>
+      <Connection ID="607" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value1" />
+      </Connection>
+      <Connection ID="608" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value1" />
+      </Connection>
+      <Connection ID="609" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.status1" />
+      </Connection>
+      <Connection ID="610" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value6" />
+      </Connection>
+      <Connection ID="611" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value5" />
+      </Connection>
+      <Connection ID="612" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="613" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value7" />
+      </Connection>
+      <Connection ID="614" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value5" />
+      </Connection>
+      <Connection ID="615" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_3.Values.value6" />
+      </Connection>
+      <Connection ID="616" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value7" />
+      </Connection>
+      <Connection ID="617" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value5" />
+      </Connection>
+      <Connection ID="618" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_2.Values.value6" />
+      </Connection>
+      <Connection ID="619" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value7" />
+      </Connection>
+      <Connection ID="620" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value5" />
+      </Connection>
+      <Connection ID="621" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_5.Values.value6" />
+      </Connection>
+      <Connection ID="622" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_9.Values.value5" />
+      </Connection>
+      <Connection ID="623" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_10.Values.value5" />
+      </Connection>
+      <Connection ID="624" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination_11.Values.value5" />
+      </Connection>
+      <Connection ID="625" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="626" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="627" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="False" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="False" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="False" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_OFFICE" Read="True" Write="False" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

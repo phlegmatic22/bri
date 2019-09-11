@@ -1,0 +1,122 @@
+<eDNAproReports_Report>
+  <Report Name="Expressions in URL" ID="Expressions in URL" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T11:58:18" CreatedDate="2009-12-21T10:12:05" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Expressions in URL.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Information.TagList" ProviderInfo="$default/Query.BasicQueries.Information" Method="TagList" Description="TagInfo" FriendlyName="TagInfo" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="nameFilter" Ref="namefilter" Usage="" />
+        <DataSetParameter Name="descriptionFilter" Ref="$default/Query.BasicQueries.Information.TagList.descriptionFilter" Usage="" />
+        <DataSetParameter Name="departmentFilter" Ref="$default/Query.BasicQueries.Information.TagList.departmentFilter" Usage="" />
+        <DataSetParameter Name="procAreaFilter" Ref="$default/Query.BasicQueries.Information.TagList.procAreaFilter" Usage="" />
+        <DataSetParameter Name="unitFilter" Ref="$default/Query.BasicQueries.Information.TagList.unitFilter" Usage="" />
+        <DataSetParameter Name="typeFilter" Ref="$default/Query.BasicQueries.Information.TagList.typeFilter" Usage="" />
+        <DataSetParameter Name="options" Ref="$default/Query.BasicQueries.Information.TagList.options" Usage="" />
+        <DataTable Name="Tag" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DataSource" ID="$default/Query.BasicQueries.Information.TagList.Tag.DataSource" DataType="System.String" Caption="DataSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Query.BasicQueries.Information.TagList.Tag.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName" ID="$default/Query.BasicQueries.Information.TagList.Tag.ShortTagName" DataType="System.String" Caption="ShortTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$default/Query.BasicQueries.Information.TagList.Tag.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department" ID="$default/Query.BasicQueries.Information.TagList.Tag.Department" DataType="System.String" Caption="Department" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea" ID="$default/Query.BasicQueries.Information.TagList.Tag.ProcessArea" DataType="System.String" Caption="ProcessArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$default/Query.BasicQueries.Information.TagList.Tag.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType" ID="$default/Query.BasicQueries.Information.TagList.Tag.TagType" DataType="System.String" Caption="TagType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min" ID="$default/Query.BasicQueries.Information.TagList.Tag.Min" DataType="System.Double" Caption="Min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max" ID="$default/Query.BasicQueries.Information.TagList.Tag.Max" DataType="System.Double" Caption="Max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Query.BasicQueries.Information.TagList.Tag.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode" ID="$default/Query.BasicQueries.Information.TagList.Tag.InterpolationMode" DataType="System.String" Caption="InterpolationMode" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Query.StrTools.StrToolsQuery" ProviderInfo="$default/Query.StrTools" Method="StrToolsQuery" Description="StrData" FriendlyName="StrData" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="" />
+        <DataSetParameter Name="options" Ref="options" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="tagDescriptions" Ref="$default/Query.StrTools.StrToolsQuery.tagDescriptions" Usage="" />
+        <DataSetParameter Name="tagUnits" Ref="$default/Query.StrTools.StrToolsQuery.tagUnits" Usage="" />
+        <DataSetParameter Name="factors" Ref="$default/Query.StrTools.StrToolsQuery.factors" Usage="" />
+        <DataSetParameter Name="offsets" Ref="$default/Query.StrTools.StrToolsQuery.offsets" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="tagName" ID="$default/Query.StrTools.StrToolsQuery.Values.tagName" DataType="System.String" Caption="tagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="description" ID="$default/Query.StrTools.StrToolsQuery.Values.description" DataType="System.String" Caption="description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="unit" ID="$default/Query.StrTools.StrToolsQuery.Values.unit" DataType="System.String" Caption="unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Query.StrTools.StrToolsQuery.Values.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="first" ID="$default/Query.StrTools.StrToolsQuery.Values.first" DataType="System.Single" Caption="first" Description="" FriendlyName="" Expression="" />
+          <DataField Name="last" ID="$default/Query.StrTools.StrToolsQuery.Values.last" DataType="System.Single" Caption="last" Description="" FriendlyName="" Expression="" />
+          <DataField Name="avg" ID="$default/Query.StrTools.StrToolsQuery.Values.avg" DataType="System.Single" Caption="avg" Description="" FriendlyName="" Expression="" />
+          <DataField Name="min" ID="$default/Query.StrTools.StrToolsQuery.Values.min" DataType="System.Single" Caption="min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="max" ID="$default/Query.StrTools.StrToolsQuery.Values.max" DataType="System.Single" Caption="max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="sum" ID="$default/Query.StrTools.StrToolsQuery.Values.sum" DataType="System.Single" Caption="sum" Description="" FriendlyName="" Expression="" />
+          <DataField Name="good" ID="$default/Query.StrTools.StrToolsQuery.Values.good" DataType="System.Single" Caption="good" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ng" ID="$default/Query.StrTools.StrToolsQuery.Values.ng" DataType="System.Single" Caption="ng" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="namefilter" Type="System.String" InitialValue="in*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.descriptionFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.departmentFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.procAreaFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.unitFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.typeFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Information.TagList.options" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="First&#xD;&#xA;Last&#xD;&#xA;Avg&#xD;&#xA;Min&#xD;&#xA;Max&#xD;&#xA;Sum&#xD;&#xA;Good&#xD;&#xA;Ng" HeaderControl="" Editable="true" Mapping="Runtime" Description="Operation list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="options" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options" Usage="" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2&#xD;&#xA;in_ana_3&#xD;&#xA;in_ana_4&#xD;&#xA;in_ana_5&#xD;&#xA;in_ana_6" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="$default/Query.StrTools.StrToolsQuery.tagDescriptions" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.StrTools.StrToolsQuery.tagUnits" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.StrTools.StrToolsQuery.factors" Type="System.Double[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.StrTools.StrToolsQuery.offsets" Type="System.Double[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="allow" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="AllowParameterExpression" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="Parameter8" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
+    </Parameters>
+    <Connections>
+      <Connection ID="173" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.tagName" />
+      </Connection>
+      <Connection ID="174" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.description" />
+      </Connection>
+      <Connection ID="175" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.unit" />
+      </Connection>
+      <Connection ID="176" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.status" />
+      </Connection>
+      <Connection ID="177" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.first" />
+      </Connection>
+      <Connection ID="178" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.last" />
+      </Connection>
+      <Connection ID="179" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.avg" />
+      </Connection>
+      <Connection ID="180" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.min" />
+      </Connection>
+      <Connection ID="181" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.max" />
+      </Connection>
+      <Connection ID="182" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.sum" />
+      </Connection>
+      <Connection ID="183" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.good" />
+      </Connection>
+      <Connection ID="184" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.StrTools.StrToolsQuery.Values.ng" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

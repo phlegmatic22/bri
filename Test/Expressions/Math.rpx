@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10080" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Height="1440" BackColor="16777215" />
+    <Section Type="PageHeader" Name="PageHeader1" Height="360" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail1" Height="360" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox1" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;2054&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="0" Top="0" Width="1440" Height="288" Text="ID" />
+      <Control Type="AR.Field" Name="TextBox2" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;2055&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="1440" Top="0" Width="1440" Height="288" Text="SampleText" />
+      <Control Type="AR.Field" Name="TextBox3" Tag="2056" Left="2880" Top="0" Width="1440" Height="288" Text="Math_Sin" />
+      <Control Type="AR.Field" Name="TextBox4" Tag="2057" Left="4320" Top="0" Width="1440" Height="288" Text="Math_Cos" />
+      <Control Type="AR.Field" Name="TextBox5" Tag="2058" Left="5760" Top="0" Width="1440" Height="288" Text="Math_Tan" />
+      <Control Type="AR.Field" Name="TextBox6" Tag="2059" Left="7200" Top="0" Width="1440" Height="288" Text="Math_Sqrt" />
+      <Control Type="AR.Field" Name="TextBox7" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;2060&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="8640" Top="0" Width="1440" Height="288" Text="Math_Pow" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

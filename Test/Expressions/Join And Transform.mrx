@@ -1,0 +1,283 @@
+<eDNAproReports_Report>
+  <Report Name="Join And Transform" ID="Join And Transform" Version="3.0.0.0">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T10:46:38" CreatedDate="2009-11-06T13:07:59" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Join And Transform.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample" ProviderInfo="$default/Query.Samples.Samples1.SampleData" Method="TypedDataSetSample" Description="Calculations with SampleData" FriendlyName="SampleData1" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="count" Ref="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Usage="" />
+        <DataTable Name="SampleData" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample_1" ProviderInfo="$default/Query.Samples.Samples1.SampleData" Method="TypedDataSetSample" Description="Calculations with SampleData" FriendlyName="SampleData2" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="count" Ref="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample_1.count" Usage="" />
+        <DataTable Name="SampleData" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample_1.SampleData.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample_1.SampleData.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f" ProviderInfo="=DynamicReportDataSource" Method="=Fields!SampleData1!SampleData.Join(Fields!SampleData2!SampleData)" Description="Join" FriendlyName="Join" ProviderType="" Order="2" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+          <DataField Name="RowID" ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.RowID" DataType="System.Int32" Caption="RowID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ID1" ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.ID1" DataType="System.Int32" Caption="ID1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText1" ID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.SampleText1" DataType="System.String" Caption="SampleText1" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54" ProviderInfo="=DynamicReportDataSource" Method="=Fields!SampleData1!SampleData.Transpose()" Description="Transpose" FriendlyName="Transpose" ProviderType="" Order="3" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ColumnName" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.ColumnName" DataType="System.String" Caption="ColumnName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="column1" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column1" DataType="System.String" Caption="column1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="column2" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column2" DataType="System.String" Caption="column2" Description="" FriendlyName="" Expression="" />
+          <DataField Name="column3" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column3" DataType="System.String" Caption="column3" Description="" FriendlyName="" Expression="" />
+          <DataField Name="column4" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column4" DataType="System.String" Caption="column4" Description="" FriendlyName="" Expression="" />
+          <DataField Name="column5" ID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column5" DataType="System.String" Caption="column5" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8" ProviderInfo="=DynamicReportDataSource" Method="=Parameters!tagNameList.JoinForEach(tag =&gt; Information.TagInformation(tag))" Description="JoinForEach" FriendlyName="JoinForEach" ProviderType="" Order="4" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DataSource" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.DataSource" DataType="System.String" Caption="DataSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ShortTagName" DataType="System.String" Caption="ShortTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Department" DataType="System.String" Caption="Department" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ProcessArea" DataType="System.String" Caption="ProcessArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagType" DataType="System.String" Caption="TagType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Min" DataType="System.Double" Caption="Min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Max" DataType="System.Double" Caption="Max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.InterpolationMode" DataType="System.String" Caption="InterpolationMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRead" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowRead" DataType="System.Boolean" Caption="AllowRead" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowWrite" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowWrite" DataType="System.Boolean" Caption="AllowWrite" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowOperate" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowOperate" DataType="System.Boolean" Caption="AllowOperate" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLimit" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLimit" DataType="System.Double" Caption="LowLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLowLimit" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLowLimit" DataType="System.Double" Caption="LowLowLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighLimit" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighLimit" DataType="System.Double" Caption="HighLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighHighLimit" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighHighLimit" DataType="System.Double" Caption="HighHighLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CollectionCycle" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.CollectionCycle" DataType="System.Int64" Caption="CollectionCycle" Description="" FriendlyName="" Expression="" />
+          <DataField Name="RowID" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.RowID" DataType="System.Int32" Caption="RowID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DataSource1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.DataSource1" DataType="System.String" Caption="DataSource1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagName1" DataType="System.String" Caption="TagName1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ShortTagName1" DataType="System.String" Caption="ShortTagName1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Description1" DataType="System.String" Caption="Description1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Department1" DataType="System.String" Caption="Department1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ProcessArea1" DataType="System.String" Caption="ProcessArea1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Unit1" DataType="System.String" Caption="Unit1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagType1" DataType="System.String" Caption="TagType1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Min1" DataType="System.Double" Caption="Min1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Max1" DataType="System.Double" Caption="Max1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Value1" DataType="System.Single" Caption="Value1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.InterpolationMode1" DataType="System.String" Caption="InterpolationMode1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRead1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowRead1" DataType="System.Boolean" Caption="AllowRead1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowWrite1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowWrite1" DataType="System.Boolean" Caption="AllowWrite1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowOperate1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowOperate1" DataType="System.Boolean" Caption="AllowOperate1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLimit1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLimit1" DataType="System.Double" Caption="LowLimit1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLowLimit1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLowLimit1" DataType="System.Double" Caption="LowLowLimit1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighLimit1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighLimit1" DataType="System.Double" Caption="HighLimit1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighHighLimit1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighHighLimit1" DataType="System.Double" Caption="HighHighLimit1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CollectionCycle1" ID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.CollectionCycle1" DataType="System.Int64" Caption="CollectionCycle1" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8" ProviderInfo="=DynamicReportDataSource" Method="=Fields!Join!Table.Replace&lt;int&gt;(&#xA;  &#xA;    // Replace all ID* values below 50&#xA;    value =&gt; value &lt; 50,&#xA;&#xA;    // with -1&#xA;    value =&gt; -1,&#xA;    &#xA;    // Replace all fields starting with '*'&#xA;    &quot;ID*&quot;)" Description="Replace" FriendlyName="Replace" ProviderType="" Order="5" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8.Table.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8.Table.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+          <DataField Name="RowID" ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8.Table.RowID" DataType="System.Int32" Caption="RowID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ID1" ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8.Table.ID1" DataType="System.Int32" Caption="ID1" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText1" ID="5ba3e68f-8bb6-48af-b854-c23f5a5de7f8.Table.SampleText1" DataType="System.String" Caption="SampleText1" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="00:05:00&#xD;&#xA;00:10:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="calcParamInt" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="calcParamFloat" Type="System.Single" InitialValue="1.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="calcParamIntA" Type="System.Int32[]" InitialValue="1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="calcParamFloatA" Type="System.Single[]" InitialValue="1.5&#xD;&#xA;2.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="9" />
+      <Parameter Name="calcParamDateTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="10" />
+      <Parameter Name="indexParam" Type="System.Int32[]" InitialValue="0&#xD;&#xA;1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="11" />
+      <Parameter Name="startTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="endTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Type="System.Int32" InitialValue="100" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample_1.count" Type="System.Int32" InitialValue="100" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="952" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.ID" />
+      </Connection>
+      <Connection ID="953" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.SampleText" />
+      </Connection>
+      <Connection ID="954" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.RowID" />
+      </Connection>
+      <Connection ID="955" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.ID1" />
+      </Connection>
+      <Connection ID="956" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="bd83c66f-6dc6-4cdf-88a5-74da31524d1f.Table.SampleText1" />
+      </Connection>
+      <Connection ID="957" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.ColumnName" />
+      </Connection>
+      <Connection ID="958" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column1" />
+      </Connection>
+      <Connection ID="959" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column2" />
+      </Connection>
+      <Connection ID="960" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column3" />
+      </Connection>
+      <Connection ID="961" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column4" />
+      </Connection>
+      <Connection ID="962" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="0a0594b9-ad63-4b71-b7c7-a8e20d31da54.Table.column5" />
+      </Connection>
+      <Connection ID="963" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.DataSource" />
+      </Connection>
+      <Connection ID="964" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagName" />
+      </Connection>
+      <Connection ID="965" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ShortTagName" />
+      </Connection>
+      <Connection ID="966" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Description" />
+      </Connection>
+      <Connection ID="967" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Department" />
+      </Connection>
+      <Connection ID="968" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ProcessArea" />
+      </Connection>
+      <Connection ID="969" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Unit" />
+      </Connection>
+      <Connection ID="970" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagType" />
+      </Connection>
+      <Connection ID="971" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Min" />
+      </Connection>
+      <Connection ID="972" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Max" />
+      </Connection>
+      <Connection ID="973" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Value" />
+      </Connection>
+      <Connection ID="974" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.InterpolationMode" />
+      </Connection>
+      <Connection ID="975" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowRead" />
+      </Connection>
+      <Connection ID="976" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowWrite" />
+      </Connection>
+      <Connection ID="977" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowOperate" />
+      </Connection>
+      <Connection ID="978" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLimit" />
+      </Connection>
+      <Connection ID="979" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLowLimit" />
+      </Connection>
+      <Connection ID="980" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighLimit" />
+      </Connection>
+      <Connection ID="981" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighHighLimit" />
+      </Connection>
+      <Connection ID="982" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.CollectionCycle" />
+      </Connection>
+      <Connection ID="983" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.RowID" />
+      </Connection>
+      <Connection ID="984" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.DataSource1" />
+      </Connection>
+      <Connection ID="985" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagName1" />
+      </Connection>
+      <Connection ID="986" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ShortTagName1" />
+      </Connection>
+      <Connection ID="987" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Description1" />
+      </Connection>
+      <Connection ID="988" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Department1" />
+      </Connection>
+      <Connection ID="989" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.ProcessArea1" />
+      </Connection>
+      <Connection ID="990" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Unit1" />
+      </Connection>
+      <Connection ID="991" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.TagType1" />
+      </Connection>
+      <Connection ID="992" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Min1" />
+      </Connection>
+      <Connection ID="993" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Max1" />
+      </Connection>
+      <Connection ID="994" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.Value1" />
+      </Connection>
+      <Connection ID="995" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.InterpolationMode1" />
+      </Connection>
+      <Connection ID="996" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowRead1" />
+      </Connection>
+      <Connection ID="997" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowWrite1" />
+      </Connection>
+      <Connection ID="998" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.AllowOperate1" />
+      </Connection>
+      <Connection ID="999" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLimit1" />
+      </Connection>
+      <Connection ID="1000" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.LowLowLimit1" />
+      </Connection>
+      <Connection ID="1001" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighLimit1" />
+      </Connection>
+      <Connection ID="1002" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.HighHighLimit1" />
+      </Connection>
+      <Connection ID="1003" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="36138374-1c5e-44a8-a2ac-6ade9a0b90f8.Table.CollectionCycle1" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="11175" DocumentName="ActiveReports Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0" />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="1395" BackColor="16777215">
+      <Control Type="AR.Shape" Name="Shape1" Left="0" Top="270" Width="11250" Height="1080" BackColor="14805985" BackStyle="1" LineColor="16777215" RoundingRadius="9.999999" />
+      <Control Type="AR.Label" Name="Label31" Tag="" Left="3420" Top="1080" Width="1170" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label1" Tag="" Left="270" Top="1050" Width="1530" Height="270" Caption="Päivä" Style="font-size: 9pt; text-align: center; text-decoration: none; ddo-char-set: 0" />
+      <Control Type="AR.Line" Name="Line4" Tag="" X1="1800" Y1="450" X2="1800" Y2="1320" LineColor="12632256" />
+      <Control Type="AR.Label" Name="Label28" Tag="" Left="2520" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label32" Tag="" Left="4590" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line16" Tag="" X1="2520" Y1="1350" X2="2520" Y2="540" LineColor="13882323" />
+      <Control Type="AR.Label" Name="Label37" Tag="" Left="5490" Top="810" Width="900" Height="270" Caption="Yhteensä" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label3" Tag="" Left="4590" Top="630" Width="900" Height="450" Caption="Mittalaite-häiriöt" Style="font-size: 8.25pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label27" Tag="" Left="2520" Top="630" Width="900" Height="450" Caption="Normaali-toiminta" Style="font-size: 8.25pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line7" Tag="" X1="10260" Y1="1260" X2="10260" Y2="540" LineColor="13882323" />
+      <Control Type="AR.Label" Name="Label" Left="3420" Top="630" Width="1170" Height="450" Caption="Ylös/alasajo + suodinhäiriöt" Style="font-size: 8.25pt; text-align: center; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label4" Tag="" Left="5490" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label2" Tag="" Left="1800" Top="810" Width="720" Height="270" Caption="LCP-ajo" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label9" Tag="" Left="1800" Top="1080" Width="720" Height="270" Caption="-" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line" Tag="" X1="5490" Y1="1350" X2="5490" Y2="540" LineColor="13882323" />
+      <Control Type="AR.Field" Name="TextBox14" Left="1800" Top="360" Width="4590" Height="270" Text="LCP" Style="font-size: 9.75pt; font-weight: bold; text-align: center; white-space: inherit" />
+      <Control Type="AR.Label" Name="Label10" Tag="" Left="8190" Top="1080" Width="1170" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label11" Tag="" Left="7290" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label12" Tag="" Left="9360" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line1" Tag="" X1="7290" Y1="1350" X2="7290" Y2="540" LineColor="13882323" />
+      <Control Type="AR.Label" Name="Label13" Tag="" Left="10260" Top="810" Width="900" Height="270" Caption="Yhteensä" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label14" Tag="" Left="9360" Top="630" Width="900" Height="450" Caption="Mittalaite-häiriöt" Style="font-size: 8.25pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label15" Tag="" Left="7290" Top="630" Width="900" Height="450" Caption="Normaali-toiminta" Style="font-size: 8.25pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label16" Left="8190" Top="630" Width="1170" Height="450" Caption="Ylös/alasajo + suodinhäiriöt" Style="font-size: 8.25pt; text-align: center; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label17" Tag="" Left="10260" Top="1080" Width="900" Height="270" Caption="t" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label18" Tag="" Left="6570" Top="810" Width="720" Height="270" Caption="WI-ajo" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Label" Name="Label19" Tag="" Left="6570" Top="1080" Width="720" Height="270" Caption="-" Style="font-size: 9pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line9" Tag="" X1="10260" Y1="1350" X2="10260" Y2="540" LineColor="13882323" />
+      <Control Type="AR.Field" Name="TextBox15" Left="6570" Top="360" Width="4590" Height="270" Text="WI" Style="font-size: 9.75pt; font-weight: bold; text-align: center; white-space: inherit" />
+      <Control Type="AR.Line" Name="Line11" Tag="" X1="0" Y1="1350" X2="11160" Y2="1350" />
+      <Control Type="AR.Line" Name="Line10" X1="6480" Y1="180" X2="6480" Y2="1530" LineColor="16777215" LineWeight="10" />
+      <Control Type="AR.Field" Name="TextBox13" Left="1800" Top="0" Width="8010" Height="270" Text="Hiukkaset kokonaispäästötarkastelu" Style="font-size: 9.75pt; font-weight: bold; text-align: center; white-space: inherit" />
+      <Control Type="AR.Line" Name="Line8" Tag="" X1="0" Y1="270" X2="11160" Y2="270" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="240" BackColor="16777215" KeepTogether="1">
+      <Control Type="AR.Shape" Name="detailShape" Left="0" Top="0" Width="11250" Height="270" BackColor="16777215" LineColor="16777215" RoundingRadius="9.999999" />
+      <Control Type="AR.Field" Name="TextBox2" Tag="320" Left="270" Top="0" Width="1530" Height="270" Text="ts" OutputFormat="dd" Style="font-family: Verdana; text-align: center; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox27" DataField="norm1" Tag="" Left="2430" Top="0" Width="810" Height="270" Text="norm1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox28" DataField="ylos1" Tag="" Left="3510" Top="0" Width="810" Height="270" Text="ylos1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox29" Tag="551" Left="1800" Top="0" Width="450" Height="270" Text="0-10CJA00XB827B:C_1D Avg value" OutputFormat="0" Style="font-family: Verdana; font-size: 10pt; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line2" Tag="" X1="1800" Y1="285" X2="1800" Y2="0" LineColor="13882323" />
+      <Control Type="AR.Line" Name="Line5" Tag="" X1="2520" Y1="285" X2="2520" Y2="0" LineColor="13882323" />
+      <Control Type="AR.Line" Name="Line12" Tag="" X1="10260" Y1="285" X2="10260" Y2="0" LineColor="13882323" />
+      <Control Type="AR.Field" Name="Texbox1" DataField="kok1" Tag="" Left="5400" Top="0" Width="810" Height="270" Text="kok1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox5" DataField="mitta1" Tag="" Left="4500" Top="0" Width="810" Height="270" Text="mitta1" OutputFormat="#,##0.000" Style="font-family: Verdana; font-size: 10pt; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox" DataField="norm2" Tag="" Left="7110" Top="0" Width="810" Height="270" Text="norm2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="ylos2" Tag="" Left="8190" Top="0" Width="810" Height="270" Text="ylos2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox16" Tag="553" Left="6570" Top="0" Width="450" Height="270" Text="0-10CJA00XBPIT857:C_1D Avg value" OutputFormat="0" Style="font-family: Verdana; font-size: 10pt; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line13" Tag="" X1="7290" Y1="285" X2="7290" Y2="0" LineColor="13882323" />
+      <Control Type="AR.Field" Name="TextBox18" DataField="kok2" Tag="" Left="10170" Top="0" Width="810" Height="270" Text="kok2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox19" DataField="mitta2" Tag="" Left="9180" Top="0" Width="810" Height="270" Text="mitta2" OutputFormat="#,##0.000" Style="font-family: Verdana; font-size: 10pt; text-align: right; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line17" X1="6480" Y1="0" X2="6480" Y2="270" LineColor="16777215" LineWeight="10" />
+      <Control Type="AR.Line" Name="Line20" X1="5490" Y1="0" X2="5490" Y2="270" LineColor="13882323" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="1499" BackColor="16777215">
+      <Control Type="AR.Label" Name="Label5" Tag="" Left="90" Top="90" Width="1800" Height="270" Caption="Keskiarvo" Style="font-size: 9pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label6" Tag="" Left="90" Top="630" Width="1800" Height="270" Caption="Minimi" Style="font-size: 9pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label7" Tag="" Left="90" Top="360" Width="1800" Height="270" Caption="Summa" Style="font-size: 9pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label8" Tag="" Left="90" Top="900" Width="1800" Height="270" Caption="Maksimi" Style="font-size: 9pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Line" Name="Line6" Tag="" X1="1800" Y1="0" X2="1800" Y2="1260" LineColor="12632256" />
+      <Control Type="AR.Field" Name="TextBox24" DataField="norm1" Tag="" Left="2430" Top="90" Width="810" Height="270" Text="norm1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox30" DataField="norm1" Tag="" Left="2430" Top="630" Width="810" Height="270" Text="norm1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox31" DataField="norm1" Tag="" Left="2430" Top="900" Width="810" Height="288" Text="norm1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox17" DataField="ylos1" Tag="" Left="3510" Top="90" Width="810" Height="270" Text="ylos1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox32" DataField="ylos1" Tag="" Left="3510" Top="630" Width="810" Height="270" Text="ylos1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox36" DataField="ylos1" Tag="" Left="3510" Top="900" Width="810" Height="288" Text="ylos1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox50" DataField="norm1" Tag="" Left="2430" Top="360" Width="810" Height="270" Text="norm1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox51" DataField="ylos1" Tag="" Left="3510" Top="360" Width="810" Height="270" Text="ylos1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Line" Name="Line3" Tag="" X1="0" Y1="1260" X2="11160" Y2="1260" />
+      <Control Type="AR.Line" Name="Line18" Tag="" X1="0" Y1="1290" X2="11160" Y2="1290" />
+      <Control Type="AR.Line" Name="Line19" Tag="" X1="10260" Y1="0" X2="10260" Y2="1260" LineColor="13882323" />
+      <Control Type="AR.Line" Name="Line21" Tag="" X1="5490" Y1="0" X2="5490" Y2="1260" LineColor="13882323" />
+      <Control Type="AR.Field" Name="TextBox4" Tag="552" Left="1890" Top="360" Width="360" Height="270" Text="0-10CJA00XB827B:C_1D Avg value" OutputFormat="0" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Line" Name="Line14" Tag="" X1="0" Y1="0" X2="11160" Y2="0" />
+      <Control Type="AR.Field" Name="TextBox1" DataField="mitta1" Tag="" Left="4500" Top="90" Width="810" Height="270" Text="mitta1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox6" DataField="mitta1" Tag="" Left="4500" Top="630" Width="810" Height="270" Text="mitta1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="mitta1" Tag="" Left="4500" Top="900" Width="810" Height="288" Text="mitta1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox8" DataField="kok1" Tag="" Left="5400" Top="90" Width="810" Height="270" Text="kok1" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox9" DataField="kok1" Tag="" Left="5400" Top="630" Width="810" Height="270" Text="kok1" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox10" DataField="kok1" Tag="" Left="5400" Top="900" Width="810" Height="288" Text="kok1" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox11" DataField="mitta1" Tag="" Left="4500" Top="360" Width="810" Height="270" Text="mitta1" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox12" DataField="kok1" Tag="" Left="5400" Top="360" Width="810" Height="270" Text="kok1" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: inherit; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox20" DataField="norm2" Tag="" Left="7110" Top="90" Width="810" Height="270" Text="norm2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox21" DataField="norm2" Tag="" Left="7110" Top="630" Width="810" Height="270" Text="norm2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox22" DataField="norm2" Tag="" Left="7110" Top="900" Width="810" Height="288" Text="norm2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox23" DataField="ylos2" Tag="" Left="8190" Top="90" Width="810" Height="270" Text="ylos2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox25" DataField="ylos2" Tag="" Left="8190" Top="630" Width="810" Height="270" Text="ylos2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox26" DataField="ylos2" Tag="" Left="8190" Top="900" Width="810" Height="288" Text="ylos2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox33" DataField="norm2" Tag="" Left="7110" Top="360" Width="810" Height="270" Text="norm2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox34" DataField="ylos2" Tag="" Left="8190" Top="360" Width="810" Height="270" Text="ylos2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox35" Tag="554" Left="6660" Top="360" Width="360" Height="270" Text="0-10CJA00XBPIT857:C_1D Avg value" OutputFormat="0" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox37" DataField="mitta2" Tag="" Left="9180" Top="90" Width="810" Height="270" Text="mitta2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox38" DataField="mitta2" Tag="" Left="9180" Top="630" Width="810" Height="270" Text="mitta2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox39" DataField="mitta2" Tag="" Left="9180" Top="900" Width="810" Height="288" Text="mitta2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox40" DataField="kok2" Tag="" Left="10170" Top="90" Width="810" Height="270" Text="kok2" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="1" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox41" DataField="kok2" Tag="" Left="10170" Top="630" Width="810" Height="270" Text="kok2" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="3" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox42" DataField="kok2" Tag="" Left="10170" Top="900" Width="810" Height="288" Text="kok2" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: nowrap; ddo-char-set: 1" SummaryType="1" SummaryFunc="4" SummaryRunning="2" />
+      <Control Type="AR.Field" Name="TextBox44" DataField="kok2" Tag="" Left="10170" Top="360" Width="810" Height="270" Text="kok2" OutputFormat="0.000" Style="font-family: Verdana; text-align: right; white-space: inherit; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+      <Control Type="AR.Line" Name="Line22" X1="7290" Y1="0" X2="7290" Y2="1260" LineColor="13882323" />
+      <Control Type="AR.Line" Name="Line23" Tag="" X1="2520" Y1="0" X2="2520" Y2="1260" LineColor="12632256" />
+      <Control Type="AR.Field" Name="TextBox43" DataField="mitta2" Tag="" Left="9180" Top="360" Width="810" Height="270" Text="mitta2" OutputFormat="#,##0.000" Style="font-family: Verdana; text-align: right; white-space: inherit; ddo-char-set: 1" SummaryType="1" SummaryRunning="2" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[static int i = 0;
+
+public void Detail_Format()
+{
+
+	// Use the modulo operator to achieve alternating back color 
+	// for each row
+	if (i % 2 == 0)
+	{
+	Shape sh = (Shape)rpt.Sections["Detail"].Controls["detailShape"];
+	sh.BackColor = System.Drawing.Color.FromArgb(247,247,247); 
+	}
+	else 
+	{
+	Shape sh = (Shape)rpt.Sections["Detail"].Controls["detailShape"];
+	sh.BackColor = System.Drawing.Color.White; 
+	}
+	i++; 
+
+}
+	
+public void ActiveReport_DataInitialize()
+{
+	// Lasketun kentän lisääminen 
+
+  System.Data.DataSet ds = (System.Data.DataSet)rpt.DataSource;
+  ds.Tables[0].Columns.Add("norm1",typeof(double) ,"value1/1000");
+  ds.Tables[0].Columns.Add("ylos1",typeof(double) ,"value2/1000");
+  ds.Tables[0].Columns.Add("mitta1",typeof(double),"value3/1000");    
+  ds.Tables[0].Columns.Add("kok1",typeof(double),"IIF(value3>0,(value1+value2)/1000,(value1+value2+value3)/1000)");
+  
+  ds.Tables[0].Columns.Add("norm2",typeof(double) ,"value5/1000");
+  ds.Tables[0].Columns.Add("ylos2",typeof(double) ,"value6/1000");
+  ds.Tables[0].Columns.Add("mitta2",typeof(double),"value7/1000"); 
+  ds.Tables[0].Columns.Add("kok2",typeof(double),"IIF(value7>0,(value5+value6)/1000,(value5+value6+value7)/1000)");
+   	  
+  rpt.DataSource = null;
+  rpt.DataSource = ds;  
+
+}
+
+]]></Script>
+  <PageSettings PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+  <Parameters />
+</ActiveReportsLayout>

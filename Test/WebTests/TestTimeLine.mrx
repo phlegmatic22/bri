@@ -1,0 +1,96 @@
+<eDNAproReports_Report>
+  <Report Name="TestTimeLine" ID="TestTimeLine" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="KateComputer\Kate" Expiration="" Category="" Version="" ModifiedBy="KateComputer\Kate" ModificationDate="2013-11-18T15:52:44" CreatedDate="" CreatedBy="" Global="False" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="TestTimeLine.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.History.Avg" ProviderInfo="$default/Query.BasicQueries.History" Method="Avg" Description="" FriendlyName="Avg" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="tagName" Ref="$default/Query.BasicQueries.History.Avg.tagName" Usage="HistoryTagName" />
+        <DataSetParameter Name="startTime" Ref="$default/Query.BasicQueries.History.Avg.startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="$default/Query.BasicQueries.History.Avg.endTime" Usage="EndTime" />
+        <DataSetParameter Name="period" Ref="$default/Query.BasicQueries.History.Avg.period" Usage="HistoryPeriod" />
+        <DataSetParameter Name="options" Ref="$default/Query.BasicQueries.History.Avg.options" Usage="HistoryOption" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.History.Avg.Values.ts" DataType="System.DateTime" Caption="DataGeneration!Random(0,100) Avg ts (DataGeneration!Random(0,100))" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Query.BasicQueries.History.Avg.Values.value" DataType="System.Single" Caption="DataGeneration!Random(0,100) Avg value (DataGeneration!Random(0,100))" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Query.BasicQueries.History.Avg.Values.status" DataType="System.String" Caption="DataGeneration!Random(0,100) Avg status (DataGeneration!Random(0,100))" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-8:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="11:11:11" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="DiskReadTimeC&#xD;&#xA;DiskReadTimeD&#xD;&#xA;=[DiskReadTimeC] - [DiskReadTimeD]" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="$default/Query.BasicQueries.History.Avg.tagName" Type="System.String" InitialValue="DataGeneration!Random(0,100)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="HistoryTagName" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.History.Avg.startTime" Type="System.DateTime" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="StartTime" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.History.Avg.endTime" Type="System.DateTime" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="EndTime" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.History.Avg.period" Type="System.String" InitialValue="20" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="HistoryPeriodCount" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.History.Avg.options" Type="System.String" InitialValue="ROWCOUNT" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="HistoryOption" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String" InitialValue="Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="0" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.History.Avg.Values.ts" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.History.Avg.Values.value" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.History.Avg.Values.status" />
+      </Connection>
+      <Connection ID="35" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="periods" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

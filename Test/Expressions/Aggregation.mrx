@@ -1,0 +1,79 @@
+<eDNAproReports_Report>
+  <Report Name="Aggregation" ID="Aggregation" Version="3.0.0.0">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T10:33:38" CreatedDate="2009-11-06T13:07:59" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Aggregation.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample" ProviderInfo="$default/Query.Samples.Samples1.SampleData" Method="TypedDataSetSample" Description="Calculations with SampleData" FriendlyName="CalculatedData" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="count" Ref="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Usage="" />
+        <DataTable Name="SampleData" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Aggregation_Average" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Average" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Average()" />
+          <DataField Name="Aggregate_Sum" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregate_Sum" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Sum()" />
+          <DataField Name="Aggregation_Min" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Min" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Min()" />
+          <DataField Name="Aggregation_Max" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Max" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Max()" />
+          <DataField Name="Aggregation_Count" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Count" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Count()" />
+          <DataField Name="Aggregation_Percentage" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Percentage" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].Percentage(v=&gt;v &lt; 3)" />
+          <DataField Name="Aggregation_CSum1" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_CSum1" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].CumulativeSum(Globals!RowNumber)" />
+          <DataField Name="Aggregation_CSum2" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_CSum2" DataType="System.Double[]" Caption="" Description="" FriendlyName="" Expression="=Fields!ID[].CumulativeSum()" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Type="System.Int32" InitialValue="5" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="00:05:00&#xD;&#xA;00:10:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="calcParamInt" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="calcParamFloat" Type="System.Single" InitialValue="1.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="calcParamIntA" Type="System.Int32[]" InitialValue="1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="calcParamFloatA" Type="System.Single[]" InitialValue="1.5&#xD;&#xA;2.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="9" />
+      <Parameter Name="calcParamDateTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="10" />
+      <Parameter Name="indexParam" Type="System.Int32[]" InitialValue="0&#xD;&#xA;1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="11" />
+      <Parameter Name="startTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="endTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Average" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregate_Sum" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Min" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Max" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Count" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_Percentage" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_CSum1" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Aggregation_CSum2" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

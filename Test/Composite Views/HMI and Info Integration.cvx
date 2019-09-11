@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<CompositeViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserRights>
+    <UserRole Name="IA_CONFIG" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_ENTRY" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_OFFICE" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_SUPPORT" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_USER" Read="true" Write="false" Operate="true" />
+    <UserRole Name="OPERATOR" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_ADMIN" Read="true" Write="true" Operate="true" />
+  </UserRights>
+  <Info Global="false" Owner="dnaadmin" />
+  <CompositeViewLayoutModel>
+    <Size>0</Size>
+    <Panels>
+      <CompositeViewLayoutModel>
+        <Position>center</Position>
+        <Size>49</Size>
+        <Url>http%3A%2F%2Fwebhmi-develop-demo.rd.metso.com%2Fdefault%2F</Url>
+        <AdditionalParameters />
+      </CompositeViewLayoutModel>
+      <CompositeViewLayoutModel>
+        <Position>west</Position>
+        <Size>51</Size>
+        <Panels>
+          <CompositeViewLayoutModel>
+            <Position>center</Position>
+            <Size>47</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FDiagnostic%2520Variables%2FDiagnostic%2520Variables%2520Summary</Url>
+            <AdditionalParameters>
+              <Parameter name="scaleContentByWidth">true</Parameter>
+            </AdditionalParameters>
+          </CompositeViewLayoutModel>
+          <CompositeViewLayoutModel>
+            <Position>north</Position>
+            <Size>53</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FDiagnostic%2520Variables%2FDiagnostic%2520Variables%2520Log</Url>
+            <AdditionalParameters>
+              <Parameter name="scaleContentByWidth">true</Parameter>
+            </AdditionalParameters>
+          </CompositeViewLayoutModel>
+        </Panels>
+      </CompositeViewLayoutModel>
+    </Panels>
+  </CompositeViewLayoutModel>
+</CompositeViewModel>

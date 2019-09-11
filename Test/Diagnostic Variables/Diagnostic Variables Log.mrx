@@ -1,0 +1,1426 @@
+<eDNAproReports_Report>
+  <Report Name="Base Report" ID="Base Report" Version="3.0.0.0">
+    <HyperLinks />
+    <UserRights />
+    <Info Title="" Owner="administrator" Expiration="" Category="Report.BaseReport" Version="" ModifiedBy="administrator" ModificationDate="2012-02-22T18:00:53" CreatedDate="2012-02-22T17:49:28" CreatedBy="administrator" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description>
+      </Description>
+    </Info>
+    <Viewer ReportName="/_Templates/_Log/Base Report" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
+    <DataSources>
+      <DataSet ID="Query.BaseReport.BaseReport.GetReportData" ProviderInfo="Query.BaseReport.BaseReport" Method="GetReportData" Description="" FriendlyName="GetReportData" Order="0" Enabled="true">
+        <Data>
+        </Data>
+        <DataSetParameter Name="Tags" Ref="Tags" Usage="" />
+        <DataSetParameter Name="Units" Ref="Units" Usage="" />
+        <DataSetParameter Name="Descriptions" Ref="Descriptions" Usage="" />
+        <DataTable Name="info" Description="" OrderBy="">
+          <DataField Name="tag 0" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 0" DataType="System.String" Caption="tag 0" Description="" />
+          <DataField Name="tag description 0" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 0" DataType="System.String" Caption="tag description 0" Description="" />
+          <DataField Name="tag unit 0" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 0" DataType="System.String" Caption="tag unit 0" Description="" />
+          <DataField Name="tag 1" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 1" DataType="System.String" Caption="tag 1" Description="" />
+          <DataField Name="tag description 1" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 1" DataType="System.String" Caption="tag description 1" Description="" />
+          <DataField Name="tag unit 1" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 1" DataType="System.String" Caption="tag unit 1" Description="" />
+          <DataField Name="tag 2" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 2" DataType="System.String" Caption="tag 2" Description="" />
+          <DataField Name="tag description 2" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 2" DataType="System.String" Caption="tag description 2" Description="" />
+          <DataField Name="tag unit 2" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 2" DataType="System.String" Caption="tag unit 2" Description="" />
+          <DataField Name="tag 3" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 3" DataType="System.String" Caption="tag 3" Description="" />
+          <DataField Name="tag description 3" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 3" DataType="System.String" Caption="tag description 3" Description="" />
+          <DataField Name="tag unit 3" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 3" DataType="System.String" Caption="tag unit 3" Description="" />
+          <DataField Name="tag 4" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 4" DataType="System.String" Caption="tag 4" Description="" />
+          <DataField Name="tag description 4" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 4" DataType="System.String" Caption="tag description 4" Description="" />
+          <DataField Name="tag unit 4" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 4" DataType="System.String" Caption="tag unit 4" Description="" />
+          <DataField Name="tag 5" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 5" DataType="System.String" Caption="tag 5" Description="" />
+          <DataField Name="tag description 5" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 5" DataType="System.String" Caption="tag description 5" Description="" />
+          <DataField Name="tag unit 5" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 5" DataType="System.String" Caption="tag unit 5" Description="" />
+          <DataField Name="tag 6" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 6" DataType="System.String" Caption="tag 6" Description="" />
+          <DataField Name="tag description 6" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 6" DataType="System.String" Caption="tag description 6" Description="" />
+          <DataField Name="tag unit 6" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 6" DataType="System.String" Caption="tag unit 6" Description="" />
+          <DataField Name="tag 7" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 7" DataType="System.String" Caption="tag 7" Description="" />
+          <DataField Name="tag description 7" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 7" DataType="System.String" Caption="tag description 7" Description="" />
+          <DataField Name="tag unit 7" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 7" DataType="System.String" Caption="tag unit 7" Description="" />
+          <DataField Name="tag 8" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 8" DataType="System.String" Caption="tag 8" Description="" />
+          <DataField Name="tag description 8" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 8" DataType="System.String" Caption="tag description 8" Description="" />
+          <DataField Name="tag unit 8" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 8" DataType="System.String" Caption="tag unit 8" Description="" />
+          <DataField Name="tag 9" ID="Query.BaseReport.BaseReport.GetReportData.info.tag 9" DataType="System.String" Caption="tag 9" Description="" />
+          <DataField Name="tag description 9" ID="Query.BaseReport.BaseReport.GetReportData.info.tag description 9" DataType="System.String" Caption="tag description 9" Description="" />
+          <DataField Name="tag unit 9" ID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 9" DataType="System.String" Caption="tag unit 9" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="Query.BasicQueries.Extended.Combination_Scaled" ProviderInfo="Query.BasicQueries.Extended" Method="Combination_Scaled" Description="" FriendlyName="Combination_Scaled" Order="1" Enabled="true">
+        <Data>
+        </Data>
+        <DataSetParameter Name="startTime" Ref="StartTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="EndTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="Periods" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="optionsList" Ref="options" Usage="HistoryOptionList" />
+        <DataSetParameter Name="tagNameList" Ref="Tags" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="Functions" Usage="HistoryOperationList" />
+        <DataSetParameter Name="factors" Ref="Factors" Usage="" />
+        <DataSetParameter Name="offsets" Ref="Offsets" Usage="" />
+        <DataSetParameter Name="args1" Ref="Query.BasicQueries.Extended.Combination_Scaled.args1" Usage="Advanced" />
+        <DataSetParameter Name="args2" Ref="Query.BasicQueries.Extended.Combination_Scaled.args2" Usage="Advanced" />
+        <DataSetParameter Name="args3" Ref="Query.BasicQueries.Extended.Combination_Scaled.args3" Usage="Advanced" />
+        <DataSetParameter Name="args4" Ref="Query.BasicQueries.Extended.Combination_Scaled.args4" Usage="Advanced" />
+        <DataSetParameter Name="args5" Ref="Query.BasicQueries.Extended.Combination_Scaled.args5" Usage="Advanced" />
+        <DataTable Name="Values" Description="" OrderBy="" FriendlyName="" Filter="">
+          <DataField Name="ts" ID="Query.BasicQueries.Extended.Combination_Scaled.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="StartTime" Type="System.DateTime" InitialValue="*:*:-1:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="StartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="Tags" Type="System.String[]" InitialValue="AvailableMBytes&#xD;&#xA;CommittedBytes&#xD;&#xA;DiskReadTimeC&#xD;&#xA;DiskReadTimeD&#xD;&#xA;DiskWriteTimeC&#xD;&#xA;DiskWriteTimeD&#xD;&#xA;FreeSpaceC&#xD;&#xA;FreeSpaceD&#xD;&#xA;ProcessorTime&#xD;&#xA;ServerSessions" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="Units" Type="System.String[]" InitialValue="(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagUnit" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="Descriptions" Type="System.String[]" InitialValue="Available megabytes&#xD;&#xA;Committed bytes&#xD;&#xA;% value of read requests in C&#xD;&#xA;% value of read requests in D&#xD;&#xA;% value of write requests in C&#xD;&#xA;% value of write requests in D&#xD;&#xA;% value of free space in C&#xD;&#xA;% value of free space in D&#xD;&#xA;% value of processor time&#xD;&#xA;Nbr of active server sessions" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagDescription" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Factors" Type="System.Double[]" InitialValue="1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagFactor" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="Offsets" Type="System.Double[]" InitialValue="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagOffset" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="Functions" Type="System.String[]" InitialValue="avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg&#xD;&#xA;avg" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagFunction" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="options" Type="System.String[]" InitialValue="TS_START, AutoDataType" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="DAY" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="Periods" Type="System.String[]" InitialValue="01:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriodList" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="TagConrolPanelMode" Type="System.String" InitialValue="General" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TagConrolPanelMode" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="AboutPath" Type="System.String" InitialValue="/DNA/DNAreportShared/dnareportbasereport/About.aspx" HeaderControl="" Editable="false" Mapping="Runtime" Description="Path to about dialog" Usage="AboutPath" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="UserGuideStartPage" Type="System.String" InitialValue="BaseReportUserGuide.htm" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide start page name" Usage="UserGuideStartPage" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="UserGuideFolderName" Type="System.String" InitialValue="dnareportbasereport" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide folder name" Usage="UserGuideFolderName" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="EnableFormatting" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="15" Group="" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args1" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" DisplayIndex="-1" Group="" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args2" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" DisplayIndex="-1" Group="" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args3" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" DisplayIndex="-1" Group="" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args4" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" DisplayIndex="-1" Group="" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args5" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" DisplayIndex="-1" Group="" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="2" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Tags.name" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.period" />
+      </Connection>
+      <Connection ID="9" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Tags.unit" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.name0" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.name1" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.name2" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.unit0" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.unit1" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Tags.unit2" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.period" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value1" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value2" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value0" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value1" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value1" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value1" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value1" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value2" />
+      </Connection>
+      <Connection ID="35" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value2" />
+      </Connection>
+      <Connection ID="36" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value2" />
+      </Connection>
+      <Connection ID="37" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.value2" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.avg(tag0*1+0)" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value1" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value2" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value3" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value5" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value6" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value7" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value8" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value9" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value4" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value1" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value1" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value1" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value1" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value2" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value2" />
+      </Connection>
+      <Connection ID="61" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value2" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value2" />
+      </Connection>
+      <Connection ID="63" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value3" />
+      </Connection>
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value3" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value3" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value3" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value4" />
+      </Connection>
+      <Connection ID="68" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value4" />
+      </Connection>
+      <Connection ID="69" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value4" />
+      </Connection>
+      <Connection ID="70" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value4" />
+      </Connection>
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value5" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value5" />
+      </Connection>
+      <Connection ID="73" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value5" />
+      </Connection>
+      <Connection ID="74" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value5" />
+      </Connection>
+      <Connection ID="75" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value6" />
+      </Connection>
+      <Connection ID="76" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value6" />
+      </Connection>
+      <Connection ID="77" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value6" />
+      </Connection>
+      <Connection ID="78" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value6" />
+      </Connection>
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value7" />
+      </Connection>
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value7" />
+      </Connection>
+      <Connection ID="81" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value7" />
+      </Connection>
+      <Connection ID="82" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value7" />
+      </Connection>
+      <Connection ID="83" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value8" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value8" />
+      </Connection>
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value8" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value8" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value9" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value9" />
+      </Connection>
+      <Connection ID="89" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value9" />
+      </Connection>
+      <Connection ID="90" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value9" />
+      </Connection>
+      <Connection ID="91" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value0" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value0" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value0" />
+      </Connection>
+      <Connection ID="94" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value0" />
+      </Connection>
+      <Connection ID="96" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.scaled value0" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataMultiColumns.Values.ts_string" />
+      </Connection>
+      <Connection ID="98" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.ts" />
+      </Connection>
+      <Connection ID="99" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value0" />
+      </Connection>
+      <Connection ID="100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value1" />
+      </Connection>
+      <Connection ID="101" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value0" />
+      </Connection>
+      <Connection ID="102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value0" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value0" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value0" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value1" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value1" />
+      </Connection>
+      <Connection ID="107" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value1" />
+      </Connection>
+      <Connection ID="108" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value1" />
+      </Connection>
+      <Connection ID="109" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value2" />
+      </Connection>
+      <Connection ID="110" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value2" />
+      </Connection>
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value2" />
+      </Connection>
+      <Connection ID="112" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value2" />
+      </Connection>
+      <Connection ID="113" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value2" />
+      </Connection>
+      <Connection ID="114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value3" />
+      </Connection>
+      <Connection ID="115" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value3" />
+      </Connection>
+      <Connection ID="116" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value3" />
+      </Connection>
+      <Connection ID="117" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value3" />
+      </Connection>
+      <Connection ID="118" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value3" />
+      </Connection>
+      <Connection ID="119" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value4" />
+      </Connection>
+      <Connection ID="120" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value4" />
+      </Connection>
+      <Connection ID="121" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value4" />
+      </Connection>
+      <Connection ID="122" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value4" />
+      </Connection>
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value4" />
+      </Connection>
+      <Connection ID="124" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value5" />
+      </Connection>
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value5" />
+      </Connection>
+      <Connection ID="126" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value5" />
+      </Connection>
+      <Connection ID="127" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value5" />
+      </Connection>
+      <Connection ID="128" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value5" />
+      </Connection>
+      <Connection ID="129" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value6" />
+      </Connection>
+      <Connection ID="130" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value6" />
+      </Connection>
+      <Connection ID="131" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value6" />
+      </Connection>
+      <Connection ID="132" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value6" />
+      </Connection>
+      <Connection ID="133" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value6" />
+      </Connection>
+      <Connection ID="134" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value7" />
+      </Connection>
+      <Connection ID="135" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value7" />
+      </Connection>
+      <Connection ID="136" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value7" />
+      </Connection>
+      <Connection ID="137" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value7" />
+      </Connection>
+      <Connection ID="138" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value7" />
+      </Connection>
+      <Connection ID="139" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value8" />
+      </Connection>
+      <Connection ID="140" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value8" />
+      </Connection>
+      <Connection ID="141" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value8" />
+      </Connection>
+      <Connection ID="142" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value8" />
+      </Connection>
+      <Connection ID="143" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value8" />
+      </Connection>
+      <Connection ID="144" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value9" />
+      </Connection>
+      <Connection ID="145" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value9" />
+      </Connection>
+      <Connection ID="146" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value9" />
+      </Connection>
+      <Connection ID="147" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value9" />
+      </Connection>
+      <Connection ID="148" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportDataTenColumns.Values.value9" />
+      </Connection>
+      <Connection ID="149" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="150" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="151" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="152" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="153" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="154" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="155" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="156" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="157" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="158" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="159" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="160" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="161" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="162" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="163" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="164" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="165" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="167" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="168" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="169" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="170" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="171" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="172" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="173" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="174" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="175" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="176" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="177" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="178" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="179" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="180" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="181" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="182" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="183" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="184" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="185" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="186" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="187" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="188" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="189" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="190" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="191" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="192" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="193" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="194" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="195" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="196" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="197" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="198" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="199" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="200" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.ts" />
+      </Connection>
+      <Connection ID="201" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value0" />
+      </Connection>
+      <Connection ID="202" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value0" />
+      </Connection>
+      <Connection ID="203" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value0" />
+      </Connection>
+      <Connection ID="204" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value0" />
+      </Connection>
+      <Connection ID="205" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value0" />
+      </Connection>
+      <Connection ID="206" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value1" />
+      </Connection>
+      <Connection ID="207" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value1" />
+      </Connection>
+      <Connection ID="208" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value1" />
+      </Connection>
+      <Connection ID="209" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value1" />
+      </Connection>
+      <Connection ID="210" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value1" />
+      </Connection>
+      <Connection ID="211" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value2" />
+      </Connection>
+      <Connection ID="212" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value2" />
+      </Connection>
+      <Connection ID="213" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value2" />
+      </Connection>
+      <Connection ID="214" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value2" />
+      </Connection>
+      <Connection ID="215" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value2" />
+      </Connection>
+      <Connection ID="216" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value3" />
+      </Connection>
+      <Connection ID="217" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value3" />
+      </Connection>
+      <Connection ID="218" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value3" />
+      </Connection>
+      <Connection ID="219" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value3" />
+      </Connection>
+      <Connection ID="220" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value3" />
+      </Connection>
+      <Connection ID="221" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value4" />
+      </Connection>
+      <Connection ID="222" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value4" />
+      </Connection>
+      <Connection ID="223" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value4" />
+      </Connection>
+      <Connection ID="224" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value4" />
+      </Connection>
+      <Connection ID="225" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value4" />
+      </Connection>
+      <Connection ID="226" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value5" />
+      </Connection>
+      <Connection ID="227" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value5" />
+      </Connection>
+      <Connection ID="228" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value5" />
+      </Connection>
+      <Connection ID="229" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value5" />
+      </Connection>
+      <Connection ID="230" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value5" />
+      </Connection>
+      <Connection ID="231" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value6" />
+      </Connection>
+      <Connection ID="232" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value6" />
+      </Connection>
+      <Connection ID="233" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value6" />
+      </Connection>
+      <Connection ID="234" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value6" />
+      </Connection>
+      <Connection ID="235" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value6" />
+      </Connection>
+      <Connection ID="236" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value7" />
+      </Connection>
+      <Connection ID="237" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value7" />
+      </Connection>
+      <Connection ID="238" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value7" />
+      </Connection>
+      <Connection ID="239" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value7" />
+      </Connection>
+      <Connection ID="240" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value7" />
+      </Connection>
+      <Connection ID="241" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value8" />
+      </Connection>
+      <Connection ID="242" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value8" />
+      </Connection>
+      <Connection ID="243" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value8" />
+      </Connection>
+      <Connection ID="244" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value8" />
+      </Connection>
+      <Connection ID="245" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value8" />
+      </Connection>
+      <Connection ID="246" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value9" />
+      </Connection>
+      <Connection ID="247" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value9" />
+      </Connection>
+      <Connection ID="248" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value9" />
+      </Connection>
+      <Connection ID="249" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value9" />
+      </Connection>
+      <Connection ID="250" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.Values.value9" />
+      </Connection>
+      <Connection ID="251" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime" />
+      </Connection>
+      <Connection ID="252" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime description" />
+      </Connection>
+      <Connection ID="253" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime unit" />
+      </Connection>
+      <Connection ID="254" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1" />
+      </Connection>
+      <Connection ID="255" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 description" />
+      </Connection>
+      <Connection ID="256" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 unit" />
+      </Connection>
+      <Connection ID="257" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2" />
+      </Connection>
+      <Connection ID="258" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 description" />
+      </Connection>
+      <Connection ID="259" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 unit" />
+      </Connection>
+      <Connection ID="260" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3" />
+      </Connection>
+      <Connection ID="261" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 description" />
+      </Connection>
+      <Connection ID="262" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 unit" />
+      </Connection>
+      <Connection ID="263" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4" />
+      </Connection>
+      <Connection ID="264" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 description" />
+      </Connection>
+      <Connection ID="265" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 unit" />
+      </Connection>
+      <Connection ID="266" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5" />
+      </Connection>
+      <Connection ID="267" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 description" />
+      </Connection>
+      <Connection ID="268" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 unit" />
+      </Connection>
+      <Connection ID="269" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6" />
+      </Connection>
+      <Connection ID="270" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 description" />
+      </Connection>
+      <Connection ID="271" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 unit" />
+      </Connection>
+      <Connection ID="272" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7" />
+      </Connection>
+      <Connection ID="273" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 description" />
+      </Connection>
+      <Connection ID="274" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 unit" />
+      </Connection>
+      <Connection ID="275" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8" />
+      </Connection>
+      <Connection ID="276" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 description" />
+      </Connection>
+      <Connection ID="277" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 unit" />
+      </Connection>
+      <Connection ID="278" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9" />
+      </Connection>
+      <Connection ID="279" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 description" />
+      </Connection>
+      <Connection ID="280" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 unit" />
+      </Connection>
+      <Connection ID="281" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime" />
+      </Connection>
+      <Connection ID="282" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime description" />
+      </Connection>
+      <Connection ID="283" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime description" />
+      </Connection>
+      <Connection ID="284" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime" />
+      </Connection>
+      <Connection ID="285" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime description" />
+      </Connection>
+      <Connection ID="286" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime unit" />
+      </Connection>
+      <Connection ID="287" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1" />
+      </Connection>
+      <Connection ID="288" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 description" />
+      </Connection>
+      <Connection ID="289" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 unit" />
+      </Connection>
+      <Connection ID="290" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2" />
+      </Connection>
+      <Connection ID="291" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 description" />
+      </Connection>
+      <Connection ID="292" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 unit" />
+      </Connection>
+      <Connection ID="293" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3" />
+      </Connection>
+      <Connection ID="294" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 description" />
+      </Connection>
+      <Connection ID="295" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 unit" />
+      </Connection>
+      <Connection ID="296" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4" />
+      </Connection>
+      <Connection ID="297" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 description" />
+      </Connection>
+      <Connection ID="298" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 unit" />
+      </Connection>
+      <Connection ID="299" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5" />
+      </Connection>
+      <Connection ID="300" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 description" />
+      </Connection>
+      <Connection ID="301" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 unit" />
+      </Connection>
+      <Connection ID="302" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6" />
+      </Connection>
+      <Connection ID="303" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 description" />
+      </Connection>
+      <Connection ID="304" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 unit" />
+      </Connection>
+      <Connection ID="305" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7" />
+      </Connection>
+      <Connection ID="306" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 description" />
+      </Connection>
+      <Connection ID="307" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 unit" />
+      </Connection>
+      <Connection ID="308" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8" />
+      </Connection>
+      <Connection ID="309" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 description" />
+      </Connection>
+      <Connection ID="310" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 unit" />
+      </Connection>
+      <Connection ID="311" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9" />
+      </Connection>
+      <Connection ID="312" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 description" />
+      </Connection>
+      <Connection ID="313" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 unit" />
+      </Connection>
+      <Connection ID="314" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime 0" />
+      </Connection>
+      <Connection ID="315" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime description 0" />
+      </Connection>
+      <Connection ID="316" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.ProcessorTime unit 0" />
+      </Connection>
+      <Connection ID="317" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 1" />
+      </Connection>
+      <Connection ID="318" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 description 1" />
+      </Connection>
+      <Connection ID="319" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag1 unit 1" />
+      </Connection>
+      <Connection ID="320" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 2" />
+      </Connection>
+      <Connection ID="321" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 description 2" />
+      </Connection>
+      <Connection ID="322" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag2 unit 2" />
+      </Connection>
+      <Connection ID="323" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 3" />
+      </Connection>
+      <Connection ID="324" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 description 3" />
+      </Connection>
+      <Connection ID="325" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag3 unit 3" />
+      </Connection>
+      <Connection ID="326" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 4" />
+      </Connection>
+      <Connection ID="327" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 description 4" />
+      </Connection>
+      <Connection ID="328" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag4 unit 4" />
+      </Connection>
+      <Connection ID="329" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 5" />
+      </Connection>
+      <Connection ID="330" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 description 5" />
+      </Connection>
+      <Connection ID="331" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag5 unit 5" />
+      </Connection>
+      <Connection ID="332" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 6" />
+      </Connection>
+      <Connection ID="333" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 description 6" />
+      </Connection>
+      <Connection ID="334" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag6 unit 6" />
+      </Connection>
+      <Connection ID="335" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 7" />
+      </Connection>
+      <Connection ID="336" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 description 7" />
+      </Connection>
+      <Connection ID="337" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag7 unit 7" />
+      </Connection>
+      <Connection ID="338" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 8" />
+      </Connection>
+      <Connection ID="339" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 description 8" />
+      </Connection>
+      <Connection ID="340" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag8 unit 8" />
+      </Connection>
+      <Connection ID="341" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 9" />
+      </Connection>
+      <Connection ID="342" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 description 9" />
+      </Connection>
+      <Connection ID="343" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag9 unit 9" />
+      </Connection>
+      <Connection ID="344" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="345" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="346" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="347" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="348" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="349" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="350" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="351" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="352" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="353" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="354" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="355" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="356" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="357" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="358" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="359" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="360" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="361" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="362" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="363" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="364" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value3" />
+      </Connection>
+      <Connection ID="365" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="366" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="367" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="368" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="369" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="370" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="371" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="372" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="373" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value4" />
+      </Connection>
+      <Connection ID="374" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value5" />
+      </Connection>
+      <Connection ID="375" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="376" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="377" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="378" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="379" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value6" />
+      </Connection>
+      <Connection ID="380" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="381" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="382" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="383" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="384" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value7" />
+      </Connection>
+      <Connection ID="385" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="386" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="387" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="388" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="389" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value8" />
+      </Connection>
+      <Connection ID="390" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="391" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="392" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="393" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="394" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.value9" />
+      </Connection>
+      <Connection ID="395" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-100:me 0" />
+      </Connection>
+      <Connection ID="396" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-100:me description 0" />
+      </Connection>
+      <Connection ID="397" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-100:me unit 0" />
+      </Connection>
+      <Connection ID="398" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-101:me 1" />
+      </Connection>
+      <Connection ID="399" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-101:me description 1" />
+      </Connection>
+      <Connection ID="400" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-101:me description 1" />
+      </Connection>
+      <Connection ID="401" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-101:me unit 1" />
+      </Connection>
+      <Connection ID="402" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25LIC-100:me 2" />
+      </Connection>
+      <Connection ID="403" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25LIC-100:me unit 2" />
+      </Connection>
+      <Connection ID="404" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25PC-100:me 3" />
+      </Connection>
+      <Connection ID="405" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25PC-100:me description 3" />
+      </Connection>
+      <Connection ID="406" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25PC-100:me unit 3" />
+      </Connection>
+      <Connection ID="407" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25QC-100:me 4" />
+      </Connection>
+      <Connection ID="408" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25QC-100:me description 4" />
+      </Connection>
+      <Connection ID="409" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25QC-100:me unit 4" />
+      </Connection>
+      <Connection ID="410" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25LIC-100:me 2" />
+      </Connection>
+      <Connection ID="411" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25LIC-100:me description 2" />
+      </Connection>
+      <Connection ID="412" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25LIC-100:me unit 2" />
+      </Connection>
+      <Connection ID="413" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-101:me unit 1" />
+      </Connection>
+      <Connection ID="414" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="415" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="416" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="417" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="418" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="419" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.25FC-100:me 0" />
+      </Connection>
+      <Connection ID="420" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 0" />
+      </Connection>
+      <Connection ID="421" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 0" />
+      </Connection>
+      <Connection ID="422" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 0" />
+      </Connection>
+      <Connection ID="423" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 1" />
+      </Connection>
+      <Connection ID="424" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 1" />
+      </Connection>
+      <Connection ID="425" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 1" />
+      </Connection>
+      <Connection ID="426" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 2" />
+      </Connection>
+      <Connection ID="427" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 2" />
+      </Connection>
+      <Connection ID="428" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 2" />
+      </Connection>
+      <Connection ID="429" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 3" />
+      </Connection>
+      <Connection ID="430" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 3" />
+      </Connection>
+      <Connection ID="431" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 3" />
+      </Connection>
+      <Connection ID="432" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 4" />
+      </Connection>
+      <Connection ID="433" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 4" />
+      </Connection>
+      <Connection ID="434" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 4" />
+      </Connection>
+      <Connection ID="435" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 5" />
+      </Connection>
+      <Connection ID="436" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 5" />
+      </Connection>
+      <Connection ID="437" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 5" />
+      </Connection>
+      <Connection ID="438" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 6" />
+      </Connection>
+      <Connection ID="439" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 6" />
+      </Connection>
+      <Connection ID="440" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 6" />
+      </Connection>
+      <Connection ID="441" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 7" />
+      </Connection>
+      <Connection ID="442" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 7" />
+      </Connection>
+      <Connection ID="443" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 7" />
+      </Connection>
+      <Connection ID="444" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 8" />
+      </Connection>
+      <Connection ID="445" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 8" />
+      </Connection>
+      <Connection ID="446" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 8" />
+      </Connection>
+      <Connection ID="447" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 9" />
+      </Connection>
+      <Connection ID="448" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 9" />
+      </Connection>
+      <Connection ID="449" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 9" />
+      </Connection>
+      <Connection ID="450" Type="ConstantConnection" LanguageConversion="True" Constant="start_time" />
+      <Connection ID="451" Type="ConstantConnection" LanguageConversion="True" Constant="end_time" />
+      <Connection ID="452" Type="ConstantConnection" LanguageConversion="True" Constant="time" />
+      <Connection ID="453" Type="ConstantConnection" LanguageConversion="True" Constant="average" />
+      <Connection ID="454" Type="ConstantConnection" LanguageConversion="True" Constant="total" />
+      <Connection ID="455" Type="ConstantConnection" LanguageConversion="True" Constant="max" />
+      <Connection ID="456" Type="ConstantConnection" LanguageConversion="True" Constant="min" />
+      <Connection ID="457" Type="ConstantConnection" LanguageConversion="True" Constant="print_time" />
+      <Connection ID="458" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag 0" />
+      </Connection>
+      <Connection ID="459" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag description 0" />
+      </Connection>
+      <Connection ID="460" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.BaseReport.BaseReport.GetReportData.info.tag unit 0" />
+      </Connection>
+      <Connection ID="461" Type="ConstantConnection" LanguageConversion="True" Constant="average" />
+      <Connection ID="462" Type="ConstantConnection" LanguageConversion="True" Constant="total" />
+      <Connection ID="463" Type="ConstantConnection" LanguageConversion="True" Constant="max" />
+      <Connection ID="464" Type="ConstantConnection" LanguageConversion="True" Constant="min" />
+    </Connections>
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,404 @@
+<eDNAproReports_Report>
+  <Report Name="Runtime Errors" ID="Runtime Errors" Version="3.0.0.0">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T11:12:01" CreatedDate="2009-11-06T13:07:59" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Runtime Errors.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="Calculations with BQ with partly null values " FriendlyName="CalculatedData_BQ_DBNull" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="in_ana_1 Avg value (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="in_ana_1 Avg status (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="in_ana_2 Avg value (trec10017344!in_ana_2)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="in_ana_2 Avg status (trec10017344!in_ana_2)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Math_Sin" ID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Sin" DataType="System.Double" Caption="Math_Sin" Description="" FriendlyName="" Expression="=Math.Sin(Fields!value1_ERROR)" />
+          <DataField Name="Math_Cos" ID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Cos" DataType="System.Double" Caption="Math_Cos" Description="" FriendlyName="" Expression="=Math.Cos(Fields!value1)" />
+          <DataField Name="Math_Tan" ID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Tan" DataType="System.Double" Caption="Math_Tan" Description="" FriendlyName="" Expression="=Math.Tan(Fields!value1)" />
+          <DataField Name="Math_Sqrt" ID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Sqrt" DataType="System.Double" Caption="Math_Sqrt" Description="" FriendlyName="" Expression="=Math.Sqrt(Fields!value1)" />
+          <DataField Name="Math_Pow" ID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Pow" DataType="System.Double" Caption="Math_Pow" Description="" FriendlyName="" Expression="=Math.Pow(Fields!value1, 2)" />
+          <DataField Name="Aggregation_Average" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Average" DataType="System.Single" Caption="Aggregation_Average" Description="" FriendlyName="" Expression="=Fields!value1[].Average()" />
+          <DataField Name="Aggregate_Sum" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregate_Sum" DataType="System.Single" Caption="Aggregate_Sum" Description="" FriendlyName="" Expression="=Fields!value1[].Sum()" />
+          <DataField Name="Aggregation_Min" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Min" DataType="System.Single" Caption="Aggregation_Min" Description="" FriendlyName="" Expression="=Fields!value1[].Min()" />
+          <DataField Name="Aggregation_Max" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Max" DataType="System.Single" Caption="Aggregation_Max" Description="" FriendlyName="" Expression="=Fields!value1[].Max()" />
+          <DataField Name="Aggregation_Count" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Count" DataType="System.Int32" Caption="Aggregation_Count" Description="" FriendlyName="" Expression="=Fields!value1[].Count()" />
+          <DataField Name="Aggregation_Percentage" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Percentage" DataType="System.Double" Caption="Aggregation_Percentage" Description="" FriendlyName="" Expression="=Fields!value1[].Percentage(v=&gt;v &lt; 3)" />
+          <DataField Name="Aggregation_CSum1" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_CSum1" DataType="System.Single" Caption="Aggregation_CSum1" Description="" FriendlyName="" Expression="=Fields!value1[].CumulativeSum(Globals!RowNumber)" />
+          <DataField Name="Aggregation_CSum2" ID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_CSum2" DataType="System.Single[]" Caption="Aggregation_CSum2" Description="" FriendlyName="" Expression="=Fields!value1[].CumulativeSum()" />
+          <DataField Name="Condition_Simple" ID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_Simple" DataType="System.String" Caption="Condition_Simple" Description="" FriendlyName="" Expression="=Fields!value1 &lt; 3 ? &quot;&lt;3&quot; : &quot;&gt;=3&quot; " />
+          <DataField Name="Condition_Switch" ID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_Switch" DataType="System.String" Caption="Condition_Switch" Description="" FriendlyName="" Expression="=Switch(Fields!value1 &lt; 2, &quot;&lt;2&quot;, Fields!value1 &gt;= 2 &amp;&amp; Fields!value1 &lt; 3, &quot;&gt;=2 &lt;3&quot;, Fields!value1&gt;=3, &quot;&gt;=3&quot;)" />
+          <DataField Name="Condition_IsNum" ID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_IsNum" DataType="System.Single" Caption="Condition_IsNum" Description="" FriendlyName="" Expression="=IsNum(Fields!value1) ? Fields!value1: 0" />
+          <DataField Name="Selection_Where" ID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Where" DataType="System.Int32" Caption="Selection_Where" Description="" FriendlyName="" Expression="=(from value in Fields!value1[] where value &lt; 3 select value).Count()" />
+          <DataField Name="Selection_First" ID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_First" DataType="System.Single" Caption="Selection_First" Description="" FriendlyName="" Expression="=Fields!value1[].First()" />
+          <DataField Name="Selection_Last" ID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Last" DataType="System.Single" Caption="Selection_Last" Description="" FriendlyName="" Expression="=Fields!value1[].Last()" />
+          <DataField Name="Selection_Take" ID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Take" DataType="System.Int32" Caption="Selection_Take" Description="" FriendlyName="" Expression="=Fields!value1[].Take(2).Count()" />
+          <DataField Name="FieldSelection_Previous" ID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_Previous" DataType="System.Single" Caption="FieldSelection_Previous" Description="" FriendlyName="" Expression="=Fields!value1!Previous" />
+          <DataField Name="FieldSelection_Next" ID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_Next" DataType="System.Single" Caption="FieldSelection_Next" Description="" FriendlyName="" Expression="=Fields!value1!Next" />
+          <DataField Name="FieldSelection_PreviousOrCurrent" ID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_PreviousOrCurrent" DataType="System.Single" Caption="FieldSelection_PreviousOrCurrent" Description="" FriendlyName="" Expression="=Fields!value1!PreviousOrCurrent" />
+          <DataField Name="FieldSelection_NextOrCurrent" ID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_NextOrCurrent" DataType="System.Single" Caption="FieldSelection_NextOrCurrent" Description="" FriendlyName="" Expression="=Fields!value1!NextOrCurrent" />
+          <DataField Name="Time_RelativeMask1" ID="$default/Query.BasicQueries.Extended.Combination.Values.Time_RelativeMask1" DataType="System.DateTime" Caption="Time_RelativeMask1" Description="" FriendlyName="" Expression="=RelativeTime(&quot;*:*:*:*:*:*&quot;)" />
+          <DataField Name="Time_RelativeTime2" ID="$default/Query.BasicQueries.Extended.Combination.Values.Time_RelativeTime2" DataType="System.DateTime" Caption="Time_RelativeTime2" Description="" FriendlyName="" Expression="=RelativeTime(&quot;2001:-1:*:*:*:*&quot;, DateTime.Now.AddDays(-1))" />
+          <DataField Name="Parameter_IntCalc" ID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_IntCalc" DataType="System.Single" Caption="" Description="" FriendlyName="" Expression="=Fields!value1 + Parameters!calcParamInt" />
+          <DataField Name="Parameter_FloatCalc" ID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_FloatCalc" DataType="System.Single" Caption="" Description="" FriendlyName="" Expression="=Fields!value1 + Parameters!calcParamFloat" />
+          <DataField Name="Parameter_IntACalc" ID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_IntACalc" DataType="System.Single" Caption="" Description="" FriendlyName="" Expression="=Fields!value1 + Parameters!calcParamIntA[1]" />
+          <DataField Name="Parameter_FloatACalc" ID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_FloatACalc" DataType="System.Single" Caption="" Description="" FriendlyName="" Expression="=Fields!value1 + Parameters!calcParamFloatA[1]" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-2:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="00:05:00&#xD;&#xA;00:10:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="calcParamInt" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="calcParamFloat" Type="System.Single" InitialValue="1.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="calcParamIntA" Type="System.Int32[]" InitialValue="1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="9" />
+      <Parameter Name="calcParamFloatA" Type="System.Single[]" InitialValue="1.5&#xD;&#xA;2.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="10" />
+      <Parameter Name="calcParamDateTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="11" />
+      <Parameter Name="indexParam" Type="System.Int32[]" InitialValue="0&#xD;&#xA;1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="12" />
+      <Parameter Name="startTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="13" />
+      <Parameter Name="endTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="14" />
+      <Parameter Name="ErrorMode" Type="System.String" InitialValue="Default" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ExpressionErrorMode" Overridable="True" Group="" DisplayIndex="0" />
+    </Parameters>
+    <Connections>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="40" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.status0" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.status1" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Sin" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Cos" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Tan" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Sqrt" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Math_Pow" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Average" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregate_Sum" />
+      </Connection>
+      <Connection ID="50" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Min" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Max" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Count" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_Percentage" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_CSum1" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Aggregation_CSum2" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_Simple" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_Switch" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Condition_IsNum" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Where" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_First" />
+      </Connection>
+      <Connection ID="61" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Last" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Selection_Take" />
+      </Connection>
+      <Connection ID="63" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_Previous" />
+      </Connection>
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_Next" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_PreviousOrCurrent" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.FieldSelection_NextOrCurrent" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Time_RelativeMask1" />
+      </Connection>
+      <Connection ID="68" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Time_RelativeTime2" />
+      </Connection>
+      <Connection ID="69" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_IntCalc" />
+      </Connection>
+      <Connection ID="70" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_FloatCalc" />
+      </Connection>
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_IntACalc" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.Parameter_FloatACalc" />
+      </Connection>
+      <Connection ID="73" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="74" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="75" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.status0" />
+      </Connection>
+      <Connection ID="76" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="77" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.status1" />
+      </Connection>
+      <Connection ID="78" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Math_Sin" />
+      </Connection>
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Math_Cos" />
+      </Connection>
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Math_Tan" />
+      </Connection>
+      <Connection ID="81" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Math_Sqrt" />
+      </Connection>
+      <Connection ID="82" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Math_Pow" />
+      </Connection>
+      <Connection ID="83" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_Average" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregate_Sum" />
+      </Connection>
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_Min" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_Max" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_Count" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_Percentage" />
+      </Connection>
+      <Connection ID="89" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_CSum1" />
+      </Connection>
+      <Connection ID="90" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Aggregation_CSum2" />
+      </Connection>
+      <Connection ID="91" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Condition_Simple" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Condition_Switch" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Condition_IsNum" />
+      </Connection>
+      <Connection ID="94" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Selection_Where" />
+      </Connection>
+      <Connection ID="95" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Selection_First" />
+      </Connection>
+      <Connection ID="96" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Selection_Last" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Selection_Take" />
+      </Connection>
+      <Connection ID="98" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FieldSelection_Previous" />
+      </Connection>
+      <Connection ID="99" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FieldSelection_Next" />
+      </Connection>
+      <Connection ID="100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FieldSelection_PreviousOrCurrent" />
+      </Connection>
+      <Connection ID="101" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FieldSelection_NextOrCurrent" />
+      </Connection>
+      <Connection ID="102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Time_RelativeMask1" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Time_RelativeTime2" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Parameter_IntCalc" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Parameter_FloatCalc" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Parameter_IntACalc" />
+      </Connection>
+      <Connection ID="107" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.Parameter_FloatACalc" />
+      </Connection>
+      <Connection ID="108" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.ts" />
+      </Connection>
+      <Connection ID="109" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="110" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.status0" />
+      </Connection>
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.value1" />
+      </Connection>
+      <Connection ID="112" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.status1" />
+      </Connection>
+      <Connection ID="113" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Math_Sin" />
+      </Connection>
+      <Connection ID="114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Math_Cos" />
+      </Connection>
+      <Connection ID="115" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Math_Tan" />
+      </Connection>
+      <Connection ID="116" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Math_Sqrt" />
+      </Connection>
+      <Connection ID="117" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Math_Pow" />
+      </Connection>
+      <Connection ID="118" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_Average" />
+      </Connection>
+      <Connection ID="119" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregate_Sum" />
+      </Connection>
+      <Connection ID="120" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_Min" />
+      </Connection>
+      <Connection ID="121" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_Max" />
+      </Connection>
+      <Connection ID="122" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_Count" />
+      </Connection>
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_Percentage" />
+      </Connection>
+      <Connection ID="124" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_CSum1" />
+      </Connection>
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Aggregation_CSum2" />
+      </Connection>
+      <Connection ID="126" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Condition_Simple" />
+      </Connection>
+      <Connection ID="127" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Condition_Switch" />
+      </Connection>
+      <Connection ID="128" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Condition_IsNum" />
+      </Connection>
+      <Connection ID="129" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Selection_Where" />
+      </Connection>
+      <Connection ID="130" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Selection_First" />
+      </Connection>
+      <Connection ID="131" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Selection_Last" />
+      </Connection>
+      <Connection ID="132" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Selection_Take" />
+      </Connection>
+      <Connection ID="133" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FieldSelection_Previous" />
+      </Connection>
+      <Connection ID="134" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FieldSelection_Next" />
+      </Connection>
+      <Connection ID="135" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FieldSelection_PreviousOrCurrent" />
+      </Connection>
+      <Connection ID="136" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FieldSelection_NextOrCurrent" />
+      </Connection>
+      <Connection ID="137" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Time_RelativeMask1" />
+      </Connection>
+      <Connection ID="138" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Time_RelativeTime2" />
+      </Connection>
+      <Connection ID="139" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Parameter_IntCalc" />
+      </Connection>
+      <Connection ID="140" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Parameter_FloatCalc" />
+      </Connection>
+      <Connection ID="141" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Parameter_IntACalc" />
+      </Connection>
+      <Connection ID="142" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.Parameter_FloatACalc" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

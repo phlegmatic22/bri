@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="59340" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Height="1440" BackColor="16777215" />
+    <Section Type="PageHeader" Name="PageHeader1" Height="360" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail1" Height="360" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox1" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;963&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="300" Top="0" Width="1440" Height="288" Text="DataSource" HyperLink="javascript:void(window.open('http://www.google.fi'))" />
+      <Control Type="AR.Field" Name="TextBox2" Tag="964" Left="1740" Top="0" Width="1440" Height="288" Text="TagName" />
+      <Control Type="AR.Field" Name="TextBox3" Tag="965" Left="3180" Top="0" Width="1440" Height="288" Text="ShortTagName" />
+      <Control Type="AR.Field" Name="TextBox4" Tag="966" Left="4620" Top="0" Width="1440" Height="288" Text="Description" />
+      <Control Type="AR.Field" Name="TextBox5" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;967&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="6060" Top="0" Width="1440" Height="288" Text="Department" />
+      <Control Type="AR.Field" Name="TextBox6" Tag="968" Left="7500" Top="0" Width="1440" Height="288" Text="ProcessArea" />
+      <Control Type="AR.Field" Name="TextBox7" Tag="969" Left="8940" Top="0" Width="1440" Height="288" Text="Unit" />
+      <Control Type="AR.Field" Name="TextBox8" Tag="970" Left="10380" Top="0" Width="1440" Height="288" Text="TagType" />
+      <Control Type="AR.Field" Name="TextBox9" Tag="971" Left="11820" Top="0" Width="1440" Height="288" Text="Min" />
+      <Control Type="AR.Field" Name="TextBox10" Tag="972" Left="13260" Top="0" Width="1440" Height="288" Text="Max" />
+      <Control Type="AR.Field" Name="TextBox11" Tag="973" Left="14700" Top="0" Width="1440" Height="288" Text="Value" />
+      <Control Type="AR.Field" Name="TextBox12" Tag="974" Left="16140" Top="0" Width="1440" Height="288" Text="InterpolationMode" />
+      <Control Type="AR.Field" Name="TextBox13" Tag="975" Left="17580" Top="0" Width="1440" Height="288" Text="AllowRead" />
+      <Control Type="AR.Field" Name="TextBox14" Tag="976" Left="19020" Top="0" Width="1440" Height="288" Text="AllowWrite" />
+      <Control Type="AR.Field" Name="TextBox15" Tag="977" Left="20460" Top="0" Width="1440" Height="288" Text="AllowOperate" />
+      <Control Type="AR.Field" Name="TextBox16" Tag="978" Left="21900" Top="0" Width="1440" Height="288" Text="LowLimit" />
+      <Control Type="AR.Field" Name="TextBox17" Tag="979" Left="23340" Top="0" Width="1440" Height="288" Text="LowLowLimit" />
+      <Control Type="AR.Field" Name="TextBox18" Tag="980" Left="24780" Top="0" Width="1440" Height="288" Text="HighLimit" />
+      <Control Type="AR.Field" Name="TextBox19" Tag="981" Left="26220" Top="0" Width="1440" Height="288" Text="HighHighLimit" />
+      <Control Type="AR.Field" Name="TextBox20" Tag="982" Left="27660" Top="0" Width="1440" Height="288" Text="CollectionCycle" />
+      <Control Type="AR.Field" Name="TextBox21" Tag="983" Left="29100" Top="0" Width="1440" Height="288" Text="RowID" />
+      <Control Type="AR.Field" Name="TextBox22" Tag="984" Left="30540" Top="0" Width="1440" Height="288" Text="DataSource1" />
+      <Control Type="AR.Field" Name="TextBox23" Tag="985" Left="31980" Top="0" Width="1440" Height="288" Text="TagName1" />
+      <Control Type="AR.Field" Name="TextBox24" Tag="986" Left="33420" Top="0" Width="1440" Height="288" Text="ShortTagName1" />
+      <Control Type="AR.Field" Name="TextBox25" Tag="987" Left="34860" Top="0" Width="1440" Height="288" Text="Description1" />
+      <Control Type="AR.Field" Name="TextBox26" Tag="988" Left="36300" Top="0" Width="1440" Height="288" Text="Department1" />
+      <Control Type="AR.Field" Name="TextBox27" Tag="989" Left="37740" Top="0" Width="1440" Height="288" Text="ProcessArea1" />
+      <Control Type="AR.Field" Name="TextBox28" Tag="990" Left="39180" Top="0" Width="1440" Height="288" Text="Unit1" />
+      <Control Type="AR.Field" Name="TextBox29" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;991&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="40620" Top="0" Width="1440" Height="288" Text="TagType1" />
+      <Control Type="AR.Field" Name="TextBox30" Tag="992" Left="42060" Top="0" Width="1440" Height="288" Text="Min1" />
+      <Control Type="AR.Field" Name="TextBox31" Tag="993" Left="43500" Top="0" Width="1440" Height="288" Text="Max1" />
+      <Control Type="AR.Field" Name="TextBox32" Tag="994" Left="44940" Top="0" Width="1440" Height="288" Text="Value1" />
+      <Control Type="AR.Field" Name="TextBox33" Tag="995" Left="46380" Top="0" Width="1440" Height="288" Text="InterpolationMode1" />
+      <Control Type="AR.Field" Name="TextBox34" Tag="996" Left="47820" Top="0" Width="1440" Height="288" Text="AllowRead1" />
+      <Control Type="AR.Field" Name="TextBox35" Tag="997" Left="49260" Top="0" Width="1440" Height="288" Text="AllowWrite1" />
+      <Control Type="AR.Field" Name="TextBox36" Tag="998" Left="50700" Top="0" Width="1440" Height="288" Text="AllowOperate1" />
+      <Control Type="AR.Field" Name="TextBox37" Tag="999" Left="52140" Top="0" Width="1440" Height="288" Text="LowLimit1" />
+      <Control Type="AR.Field" Name="TextBox38" Tag="1000" Left="53580" Top="0" Width="1440" Height="288" Text="LowLowLimit1" />
+      <Control Type="AR.Field" Name="TextBox39" Tag="1001" Left="55020" Top="0" Width="1440" Height="288" Text="HighLimit1" />
+      <Control Type="AR.Field" Name="TextBox40" Tag="1002" Left="56460" Top="0" Width="1440" Height="288" Text="HighHighLimit1" />
+      <Control Type="AR.Field" Name="TextBox41" Tag="1003" Left="57900" Top="0" Width="1440" Height="288" Text="CollectionCycle1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[public void Detail1_Format()
+{
+	
+}
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<CompositeViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserRights>
+    <UserRole Name="IA_ADMIN" Read="true" Write="true" Operate="true" />
+  </UserRights>
+  <Info Global="true" Owner="" />
+  <CompositeViewLayoutModel>
+    <Size>0</Size>
+    <AdditionalParameters />
+    <Panels>
+      <CompositeViewLayoutModel>
+        <Position>center</Position>
+        <Size>44</Size>
+        <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTimeline%2FLog%20-%20Day</Url>
+        <AdditionalParameters />
+        <Panels />
+      </CompositeViewLayoutModel>
+      <CompositeViewLayoutModel>
+        <Position>east</Position>
+        <Size>56</Size>
+        <AdditionalParameters />
+        <Panels>
+          <CompositeViewLayoutModel>
+            <Position>center</Position>
+            <Size>39</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTimeline%2FSummary%20-%20Minus%202%20Hours%20-%20Endtime%20Now</Url>
+            <AdditionalParameters />
+            <Panels />
+          </CompositeViewLayoutModel>
+          <CompositeViewLayoutModel>
+            <Position>south</Position>
+            <Size>61</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTimeline%2FLog%20-%20Unlimited%20-%20Minus%208%20Hours%20-%20Endtime%20Now%20-%20AutoUpdate</Url>
+            <AdditionalParameters />
+            <Panels />
+          </CompositeViewLayoutModel>
+        </Panels>
+      </CompositeViewLayoutModel>
+    </Panels>
+  </CompositeViewLayoutModel>
+</CompositeViewModel>

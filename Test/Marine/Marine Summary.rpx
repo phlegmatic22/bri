@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="20296.8" MaxPages="1000" DocumentName="ActiveReports Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; font-family: &quot;Arial&quot;; ddo-char-set: 204" />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="1440" BackColor="16777215">
+      <Control Type="AR.Image" Name="Picture1" Left="18434.88" Top="0" Width="1800" Height="540" BackColor="16777215" BackStyle="1" LineColor="16777215" LineWeight="0">0D0D000402FA0D000089504E470D0A1A0A0000000D494844520000007800000028080600000035EA3E25000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000001974455874536F6674776172650041646F626520496D616765526561647971C9653C00000D7F49444154785EED5C6DD05555153E4088020E15048980828A22A8A5198A428502914670AF01815C2F119F02238A0EA5E334F9D134A4C658E36093A9354D1F3A8CD8D820914C566A630CA6D2A0334428168183A38EF1A1BC3DCFDD679FBDF73A6B9F73EEDB3FE2C79A73EE3EFBEBAC673F6BADBDF679DFA4A3A323392647AF0E8E817B942FF063001FF500D792B11DF5E457905F76D49235B8AE82CC83D4F07B1CAEA7E0DA0DD7242A353CB3E2D76399FDEDDFFB75A625C9937386254903153469A23285CFFCFB587D596EDBFAE55A59517FFEF855E628C792E395CD49ABEF97C5E6EF955BB74B0008DE4CC83B900E00D5D1BA5AA925EFE17E3B6413642D6431E4ACB45D398031602DC804B85102B055584C319D05BE9D763190AB2C962A75AA2CCCD8E25216AF0FB0615F3D190E792600D7073ABC3F8C7A2F405643AE801C97637719B096F100786363A863AFA6C8CE28485B145598D32653A29647B31865EF5165EC8A962B04986C3280F4C6F5C928C892DD8EF1DBD06E05DA0D098096A65B33E312E0B217D09420CBAA98C42A26B96C2E6566BF0C50EB76CAFAD1EA95B4C903EC40EE05907490E3005BD3BE1F6DEF847CACD067BBB1920ECD445BD359A4A022F32AFD768C4D5A1FB17E63EC92F52BF8C768AC510664519CE2B7C51C74809DE23F02809ECF3139EF9F437FEDCCF80EB4ADB54096A65AB2786A1A6449507D531D6364915F94205759349D655467412D8A2D3A6361BC79C4017611EE9900E82D2FD88A812983323F50BB3D03B8208ADE34E7D43082AEC2A298728A945DC564B6C1921C13ABF45FC5CF56A953E23E1CC045C1502DF96A61D0E5333A6EBE7F883EBAAB269B63C3443FD81CE5B64231DF52A6BCAAC01699F62A51AA657999FB90D6206651DAF1F3725117BC7315065BF3FABB8A91B5BFB5926CBF4735D7B41630D1AB168E2BDFE356099C623EB59D4513F3DF55175859BDAA8076B69FB45D35808DB91E0D395219648DC9C637733B95DF3783C15F5B34216470559F160B708A164399E28A181E6FDB0DE6FA3CC87590932A6D9D8AAC45D9629626DC8F4572005B13AD05430E900D05001FC4B3D7D2A0ECA934027F1AD797216F7A899357F1FBF8C027A7635EBCF84B61B64ABEBC16209529A128726E27B8F1959707E55280F973C836C807C8B475E03A2A97716BC77DF87393C0493D5432D1DADE349F969C00608E6460D5920300EBD790F9283B1DD25309A6BAA2AC1F6422EAD10FBF0F59247DF1DE19BD92645943F7C155CD99D82214A63D3BBB15D119B7360595C0520EE1F7D02CB55A2512AEB278DB599069DD7890A5E78FBB0098570016D399774098F50AB740BE25D0FB381B6DAE0D008679FE697364922CBF56E69A4F87B2CE87A2CE6F5D1BB5DE29687D5156C3FD1AC8C3903B2163449EFA43F83D0EB20AF2602ACB701D14CD671B2674815C025902F901E47EC88D186F3CAEC7656D43D0380F03AE61EF615CEBB87E329DF799CA9827A0EC32D4BB01B216F7949590C99001E97BEA2EAB593F07CF1B6877573ABF5B719D021998B5CB011C3B44084D37F3D5374346468325D98F0EF228B4BF17D2D502BD7B469FA4C752303854DC6F33C51905CE87AC80BC2E1863157B0F9EF5C0B326AE5B328553E946F1947F4126AA0A6CD4A6A1FC3931A66DC7EB5F213315B0D6E4E6E3C066BB3F07EF65E6F7B78271F6A13F9A7D69D13E87B22720EFB7C673EF6417D79B78761FE4643B5E2C55A99D180D0018BF87F0B021CFDA980FD7011F9C9AF95B3326A3FD57164D943E3804B8597F3703CD32C6BF9A17D615172A642FEA39969845754BA670A9B8909D54EC4D02301D6037B7E73C7FBC30034703C9B4791B75241B97A0ECFD8245E12FC45DA847EB5190C90A413CAD152C99C8F80DC889D28796FE0E83B781E88B41194DFD29ADB630D3EBAE192E19BC310A680C0409BC56CF947DD163C8E58AE2F6A3EC6750EA2F52858726B851FB8407B233D1FE627063BF94D6ED87FEF6E5C66AD65F46192DCE1BE9B33F667D1BDF4CE6DAE0CD01D9AC93B13B20071436BF8AB2BE71063B40FA03801721764FCBC0EA8C80C53240D3CDB26F154600609E44B1CFE5B6AF17670F90A7491B9589BF8317BA1FE5F491B741F62BE6F108CA1F81D0E7DE00794551EAE23408E2D6E60FC1F3669DA67898A7E4B371BF4B8C43BF6EE72B7D3099B61A72632A57A7634D5516125D0EFD3E81EC03B90AF75FF0C6E6B367B2766ED1D01DD10AF5809C8B767F52FABE05E55D0872B82F75E6963E72BD07AE05F952D5071745E2218327B7FA3416E13E1B79EF9CF56169A21DC0E6C5DEC584C778E68E0ACEB3A7515BE8299F75660800D917C1E7B33314D3373655B80BFA1A35FA4DDFEF916DBDD23EE41C0EA17C500AAAEF471B0A08DF107395568CC1E307A2DD534A9B2118EF6D51EFEFF83D2604384C42CC6D81904F5A5CEDFBCE52F39CFF9AE32E6FD1FCD8B66F6D95C20C926430838F13BDD5CDFAB72B01C7A733E51A109D09760C589AF6335DB083EC5B9E32896CB2F2AD8CC1A68F83F87D4601C02382799A795CA8581BF6F51B94CFC5B5AF02DC4AC58AAD10EF6717C56651F730FA5BE9000E59D6038ADF92011C827C7D6550F3592B1E43EEF6005E6D3FF3D936BBBF4C551A1FECFC1A7D4E3FA1046E91FC0083F763057B262A8A5D9AD6B95D8C21FBF27DAF7C76810A70B34E063B80C39D015D87B30476C199EBEB100670C77BEFF880F27ED38415B3007F57A9FB800138BF7FBD4831CDD644F37B2DFD339DA26341F36CA1E877B635F75B679DA407594E217180C360CA985827DC1649A55A06DFAD58001DE4FC42FA5425068773214B3707F3C9F7BB01CFADA57ACC5BE0E61D9AF5C901835DA6CBEC04425D3C166370C3F393F2D0E0FA5CC6AA38C56917433FF4B92B03B886D4662DE963A3E81FCD3D57EEFB6414AD039CDF6EE800878AB400DF916370B3BE1B65DC6A14C98E52131D4BA336EBDDD13783AB170AACC7DDE9E27948018D6E43FB00F1DE6CB13A901F8AF9E0252A838DA9763E58DBE7CA28DAFD7E50F8F49B324B806DD28C85938A4D74A316026C149837D1CDBA03D8F874C3E0703F6B4DF44CC5C78D4719A3D39EAA34EB3DF1FC04489794495A90355C5811699D38AFAE1066C8D60BFFCEB9EE81702130BB252D0AB37321C0E63D4D92C681CBE0CCF3C16130C42F2C6387FBFC8C36FF95462C1B66EA5E27FA7B1665E6233DCCF530DE75D0D259E50C6ED6431FDCACDFA928278C824DE64A2AC9024C205C02C15883F528B3E0F991741E24A3E8EF8945C26DDA853980E5E94F08D2A3021CE6B399ECB858599C7F4119B777FE7C46E2F77F445DFAF48B630C663A9107030664174D73FF3A420DB2E2D9ACE9A86FF7BDEC6F3BFA1BECB3F791B923908B5E529DC1CEEF840C36AB376FA2F3090F6BA2A9A8A7730BA0597F1665732067410643B8102E81D297E34A30AEF4147C73D6DE8DC37D29F7BDCC2D9385F4A9CC8FD3A77E13C2DC3AF7B1F4C94C9A6C0D6201B3E5E90FE13E788B78C677E43E9CB97AB6E7FB32592217317523F6C121331FCFF9E15AB2AF753A5494730E03B0A9A87FC85B28FCB67A98B400172DC2893F010EF3AFD57CB0CC1E49131D63B063000F17C83A2DBF4B769319DC72D820878AF4B762530206CB98A0597F0DF5BBA1CE790204A624E976B4B11F6FE9C26EF36C9FE142E5568DED5DA4EFA272EE81FB951DF893C5EE7B2CC3E69720D92181CA6407F0023C3FE0EDA3D7E1FEE301B8F0BD1BF8170D0477D9026902370985BCC5497B2FCEFADF56562E4F91FCC5322900CF28C1263AAC5B9887B283AAB2426009F24ED4A37FB6F3E529D7F38AABB00BE2FB69DDAF2B73D52276B2D72C2067A916A02C4C78E8A0B3BF7F40B898945C743E1B751940D9EBF9CF9F5464EF6D1EFB77E27E5E16790BF68F593405E02ED6007E022F48A51B69D6FF896B980C68D699AEB4CF6D5D7312E340BE3CE8C7D45F2C160AEB8F463DE69E990E8D6D95A87C46DE325E606A93C19201C13189BF7994C7FE6741B6B780D20F1A682568B5462B73E3789F41F93A5CDF0BC670E3FD1BE5DCF60DB1EDCB186CB6373CCCAF278FA64C9C16032A057E289E6F4EC1E55F3D301AE7E7B7F9132ABCB339E89F0B5964000E03117EF6721A84CAE3F554084D9DCFF48FB69E35EBC35A62EA994481ABC7B35753C7F5D54701C9B29E67C65426539CD7A47215DAD3D76547713910CC78A320F4BD3C56BC026D98C7767336D139932093F06C76DA37AF9FC76F3DF2CE7FB1413D4C80B05D13C26C1CDD0C0F33823826FEE1BB1E304D0050FC706E22401C886B2F5CBB437AE3FE64C86771FF30AEDF818C87B83F5693FBE414F0BDD30970D3016C81897FF714FFEAA3A84D1871FE6F5F8E84A6D3B714B128BB4A241ED6D1DEC51F37F63EA25D3183E57EB69E5CE099EAB771CF94E31E80BAB56582EB094F9EF8D587657EFC2F112DC02D060B80E5E4F54D7DA8CCA2978FF5179AF17C7F7933EC40A8A26C6DDCE26FBBF40552D426B6F54AC72E3E2ECCB36E6DEEE0A1863F39AD25E754F4CB39C033062F5F08A0E757674391F262C08481577E2C4D91655641B689D58FB1BECAE22B7B9F025D94FB601774F1907F8F1738D1CF5EA9FAD6A28487DD86A58BC7F86030B805702E8ACEAFE892151BF18BC5CC2862723B2C6C776E3E709D7149B1B9797D55FB64C780313735CFFCD3D22F9732369EAE0CCC770EE098E9ABCAA498D2AAB4EF0C40450CD4DE45CEA35D60CBDE43B0BDE8AF0BFDD322064B2B21530260652016CF64457D71164593C1CB2B30B8AA492BAB57455131932E19DF2E48ED2E42B9F08A16895D54691D07F051FE3F2AFEDFFF83D0B17FC272942FF0FF0276F51371B16B59950000000049454E44AE426082</Control>
+      <Control Type="AR.Label" Name="TextBox1" Tag="" Left="90" Top="90" Width="16549.2" Height="450" Caption="PortalTree_Summary" Style="color: #005E57; font-size: 14pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox2" Tag="1" Left="1080" Top="540" Width="3060" Height="288" Text="startTime" Style="white-space: nowrap" />
+      <Control Type="AR.Field" Name="TextBox3" Tag="2" Left="1080" Top="810" Width="3060" Height="288" Text="endTime" Style="white-space: nowrap" />
+      <Control Type="AR.Label" Name="Label8" Left="90" Top="1170" Width="3780" Height="270.72" Caption="Reports_RowLimit" />
+      <Control Type="AR.Label" Name="Label9" Left="3960" Top="1170" Width="4320" Height="270" Caption="Reports_RowsRetrieved" />
+      <Control Type="AR.Label" Name="Label11" Left="15418.08" Top="809.28" Width="2790.72" Height="288" Caption="Reports_PrintTime" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label_ST" Left="90" Top="540" Width="1080" Height="270" Caption="Reports_StartTime" />
+      <Control Type="AR.Label" Name="Label_ET" Left="90" Top="810" Width="1080" Height="270" Caption="Reports_EndTime" />
+      <Control Type="AR.Field" Name="TextBox7" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;1868&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="18208.8" Top="809.28" Width="2088" Height="288" Text="PrintTime" />
+      <Control Type="AR.Field" Name="TextBox6" Visible="0" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;1869&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="13844.16" Top="792" Width="1440" Height="288" Text="PrintDate" />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="689" BackStyle="1" BackColor="14671581">
+      <Control Type="AR.Label" Name="Label" Left="90" Top="90" Width="1350" Height="360" Caption="Reports_Type" Style="font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label1" Left="1440" Top="90" Width="1170" Height="540" Caption="Reports_EventStartTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label6" Left="17429.76" Top="92.16" Width="1905.12" Height="540" Caption="Reports_Event" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label7" Left="9780.48" Top="91.44" Width="1620" Height="540" Caption="Reports_Area" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label3" Left="8969.76" Top="92.16" Width="810" Height="540" Caption="Reports_PriorityLevel" Style="color: Black; font-size: 10pt; font-weight: normal; text-align: left; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line" X1="0" Y1="0" X2="17190" Y2="0" LineColor="13684944" />
+      <Control Type="AR.Label" Name="Label19" Left="14715.36" Top="92.16" Width="2714.4" Height="540" Caption="Reports_Description" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label2" Left="2700" Top="90" Width="1170" Height="540" Caption="Reports_EventEndTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label10" Left="3960" Top="90" Width="1170" Height="540" Caption="Reports_EventAckTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label4" Left="19605.6" Top="92.16" Width="630" Height="540" Caption="Reports_Counter" Style="color: Black; font-size: 10pt; font-weight: normal; text-align: right; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label12" Visible="0" Left="9780.48" Top="90.72" Width="1620" Height="540" Caption="Reports_Area" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label13" Visible="0" Left="3960" Top="90.72" Width="1170" Height="540" Caption="Reports_EventAckTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label14" Visible="0" Left="90.72" Top="90.72" Width="1350" Height="360" Caption="Reports_Type" Style="font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label15" Visible="0" Left="1440" Top="89.28001" Width="1170" Height="540" Caption="Reports_EventStartTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label16" Visible="0" Left="2700" Top="90.72" Width="1170" Height="540" Caption="Reports_EventEndTime" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label5" Left="11400.48" Top="90.72" Width="3314.88" Height="540" Caption="Reports_Tag" Style="color: Black; font-size: 10pt; font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox19" Left="6480" Top="89.28001" Width="1260.001" Height="537.12" Text="End time (Marine)" />
+      <Control Type="AR.Field" Name="TextBox20" Left="5220" Top="89.28001" Width="1260" Height="537.12" Text="Start time (Marine)" />
+      <Control Type="AR.Field" Name="TextBox21" Left="7740" Top="95.04" Width="1260.001" Height="537.12" Text="Ack time (Marine)" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="540" ColumnDirection="1" ColumnSpacing="1440" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox" Tag="30" Left="90" Top="45" Width="1350" Height="270" Text="EventType" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox8" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;46&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="1440" Top="45" Width="1260" Height="270" Text="StartTime" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox9" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;32&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="2700" Top="45" Width="1260" Height="270" Text="EndTime" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox10" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;33&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="3960" Top="44.64" Width="1260" Height="270" Text="AckTime" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox11" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;34&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="8970.48" Top="46.44" Width="810" Height="289.08" Text="PriorityLevel" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox13" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;36&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="9780.48" Top="46.44" Width="1620" Height="289.08" Text="EventAreaDescription" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox14" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;37&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="11400.48" Top="45.72" Width="3314.88" Height="289.8" Text="Tag" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox15" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;38&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="14715.36" Top="47.16" Width="2714.4" Height="288" Text="TagDescription" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox16" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;39&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="17429.76" Top="47.16" Width="1905.12" Height="288" Text="EventDescription" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox5" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;48&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="19605.6" Top="27.36" Width="630" Height="288" Text="Counter" Style="text-align: right" />
+      <Control Type="AR.Field" Name="TextBox12" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;1871&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;Text&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;=Fields!Marine_EndTime == DateTime.MinValue ? string.Empty : Fields!Marine_EndTime.ToString()&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description&gt;Text - Condition&lt;/Description&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="6480" Top="45" Width="1260" Height="270" Text="Marine_EndTime" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox17" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;1870&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="5220" Top="45" Width="1260" Height="270" Text="Marine_StartTime" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox18" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;1872&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;Text&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;=Fields!Marine_AckTime == DateTime.MinValue ? string.Empty : Fields!Marine_AckTime.ToString()&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description&gt;Text - Condition&lt;/Description&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="7740" Top="44.64" Width="1260" Height="270" Text="Marine_AckTime" Style="white-space: inherit" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter" Height="810" BackColor="16777215">
+      <Control Type="AR.Label" Name="Label20" Left="90" Top="90" Width="12870" Height="270" Caption="Reports_FilterCriteria" Style="font-weight: normal; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="0" X2="17190" Y2="0" LineColor="11052708" />
+      <Control Type="AR.Field" Name="TextBox4" Tag="47" Left="180" Top="450" Width="10530" Height="288" Text="DNAreportAE_CriteriaList" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[
+  //Version 1.4.0
+  
+  public void Localization(string ReportSection)
+{
+	// number of controls on the page header section
+	int count = rpt.Sections[ReportSection].Controls.Count;
+	// variable to collect all labels default values
+	string labs = "";
+	// select all labels and needed textboxes from controls and collect their values
+	for (int i=0; i<count; i++)
+	{
+		// if control type is 'Label'
+		if (rpt.Sections[ReportSection].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.Label")
+		{
+			// get its text value to use it as key for getting localization string
+			DataDynamics.ActiveReports.Label lbl = (Label)rpt.Sections[ReportSection].Controls[i];
+			labs += lbl.Text + "\r\n";
+		}
+	}
+	// if key string was added with some value
+	// remove two last simbols '\r\n' to get right array 
+
+	if (labs.Length > 2)
+		labs = labs.Substring(0,labs.Length - 2); 
+	// convert string value to array of strings to use as request parameter
+    string[] labs_ar = labs.Replace("\r","").Split('\n');
+    labs = "";
+    // create method request object
+    Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject dobj = (Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject)
+      Metso.DNA.IA.DNAdata.RemoteUtils.CreateRemote("DNAdataObject");
+    // get user language information using current thread
+    System.Collections.Specialized.NameValueCollection additionalSettings = new System.Collections.Specialized.NameValueCollection();
+    additionalSettings.Add("langid", System.Threading.Thread.CurrentThread.CurrentUICulture.Name);
+
+	object[] args = {labs_ar};
+
+	// try to invoke the localization method
+	try
+	{
+	    // invoke Metso.DNA.IA.DNAdiary.Entries.GetStrings method
+	    System.Data.DataSet ds = (System.Data.DataSet)dobj.InvokeMethod("GetLocalStrings", "$DNAalarmHistorian/Query.DNAreportAE.DataClass", additionalSettings, args);
+		
+		// for each report detail section label control try to find value from result dataset 
+		for (int i=0; i<count; i++)
+		{
+			// if control type is 'Label' 
+			if (rpt.Sections[ReportSection].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.Label")
+			{
+				DataDynamics.ActiveReports.Label lbl = (Label)rpt.Sections[ReportSection].Controls[i];
+            	// use default text value of label as key to get localization string
+            	// and find result using this key 
+            	System.Data.DataRow[] str = ds.Tables["Strings"].Select("key = '" + lbl.Text + "'");
+            	// if result string isn't empty, change label text with local string
+            	if (str[0][1].ToString() != null && str[0][1].ToString() != "")
+            		lbl.Text = str[0][1].ToString();
+			}
+		}
+	}
+	catch
+	{
+		// ignore to leave labels with default values
+	}
+
+}
+
+
+int i = 1;
+
+//Detail_Format, runs for every row in report detail data.
+public void Detail_Format()
+{
+	// Use the modulo operator to achieve alternating back color 
+	// for each row
+	if (i % 2 == 0)
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(247,247,247); 
+	}
+	else 
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(255,255,255); 
+	}
+	i++; 
+}
+
+
+public void ReportHeader_Format()
+{
+	((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox7"]).Text = DateTime.Parse(((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox6"]).Text).ToShortDateString() + " " + DateTime.Parse(((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox7"]).Text).ToShortTimeString();
+	
+	
+	DataDynamics.ActiveReports.Label r_limit = (Label) rpt.Sections["ReportHeader"].Controls["Label8"];
+	DataDynamics.ActiveReports.Label r_retriv = (Label)rpt.Sections["ReportHeader"].Controls["Label9"];
+	//DataDynamics.ActiveReports.Label no_limit = (Label)rpt.Sections["ReportHeader"].Controls["Label2"];
+
+	if (g_Parameters["DNAreportAE_RowLimit"] != null)
+	{
+		//int v = System.Convert.ToInt32(g_Parameters["DNAreportAE_RowLimit"]);
+		//r_limit.Text += " " + (v != 0 ? v.ToString() : no_limit.Text);  
+		r_limit.Text += " " + g_Parameters["DNAreportAE_RowLimit"].ToString();
+	}
+	//DataDynamics.ActiveReports.TextBox tb = (TextBox)rpt.Sections["ReportHeader"].Controls["RowsRetrieved"];
+	if (g_DataSets["$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary"] != null)
+	{
+		System.Data.DataSet ds = (System.Data.DataSet)g_DataSets["$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary"];
+		System.Data.DataTable dt = ds.Tables["Summary"];
+		r_retriv.Text += " " + dt.Rows.Count.ToString();
+	}
+	
+}
+
+public void ActiveReport_DataInitialize()
+{
+	Localization("PageHeader");
+	Localization("ReportHeader");
+	Localization("ReportFooter");
+}
+
+public void ActiveReport_ReportStart()
+{
+  rpt.Document.Printer.PrinterName="";
+  rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+  rpt.Document.Printer.PaperSize = new System.Drawing.Printing.PaperSize("CustomSize", 1169, 827); 
+}]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

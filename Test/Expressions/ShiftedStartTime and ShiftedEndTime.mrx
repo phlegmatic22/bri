@@ -1,0 +1,190 @@
+<eDNAproReports_Report>
+  <Report Name="ShiftedStartTime and ShiftedEndTime" ID="ShiftedStartTime and ShiftedEndTime" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T12:00:10" CreatedDate="2009-11-19T13:54:03" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="ShiftedStartTime and ShiftedEndTime.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="päivän_alusta" FriendlyName="päivän_alusta" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="in_ana_1 Avg value (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="in_ana_1 Avg status (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination_1" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="kk_alusta" FriendlyName="kk_alusta" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="kk_alusta" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="kk_alusta_et" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination_1.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination_1.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination_1.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination_1.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination_1.args5" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination_1.Values.value0" DataType="System.Single" Caption="in_ana_1 Avg value (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination_1.Values.status0" DataType="System.String" Caption="in_ana_1 Avg status (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination_2" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="vuoden_alusta" FriendlyName="vuoden_alusta" ProviderType="" Order="2" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="vuoden alusta" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="vuoden_alusta_et" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination_2.args1" Usage="" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination_2.args2" Usage="" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination_2.args3" Usage="" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination_2.args4" Usage="" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination_2.args5" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination_2.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination_2.Values.value0" DataType="System.Single" Caption="in_ana_1 Avg value (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination_2.Values.status0" DataType="System.String" Caption="in_ana_1 Avg status (trec10017344!in_ana_1)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="RelativeStartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="RelativeEndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="ROWCOUNT,TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="kk_alusta" Type="System.DateTime" InitialValue="*:*:1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ShiftedStartTime" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="vuoden alusta" Type="System.DateTime" InitialValue="*:1:1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ShiftedStartTime" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="kk_alusta_et" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ShiftedEndTime" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="vuoden_alusta_et" Type="System.DateTime" InitialValue="*:*:1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ShiftedEndTime" Overridable="True" Group="" DisplayIndex="9" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_1.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_1.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_1.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_1.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_1.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_2.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_2.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_2.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_2.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination_2.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.ts" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.value0" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.status0" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.RowID" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.ts1" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.value01" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.status01" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.ts2" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.value02" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="2d35056a-9493-4188-ba2f-bc69b840ec61.Table.status02" />
+      </Connection>
+      <Connection ID="40" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="41" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="42" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="kk_alusta" />
+      </Connection>
+      <Connection ID="43" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="kk_alusta_et" />
+      </Connection>
+      <Connection ID="44" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="vuoden alusta" />
+      </Connection>
+      <Connection ID="45" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="vuoden_alusta_et" />
+      </Connection>
+      <Connection ID="46" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagNameList" />
+      </Connection>
+      <Connection ID="47" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Parameter11" />
+      </Connection>
+      <Connection ID="48" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Parameter12" />
+      </Connection>
+      <Connection ID="49" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Parameter13" />
+      </Connection>
+      <Connection ID="50" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Parameter12" />
+      </Connection>
+      <Connection ID="164" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="165" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.status0" />
+      </Connection>
+      <Connection ID="166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="167" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="168" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="169" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.status0" />
+      </Connection>
+      <Connection ID="170" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.ts" />
+      </Connection>
+      <Connection ID="171" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.value0" />
+      </Connection>
+      <Connection ID="172" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.status0" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

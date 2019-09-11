@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<CompositeViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserRights>
+    <UserRole Name="IA_CONFIG" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_ENTRY" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_OFFICE" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_SUPPORT" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_USER" Read="true" Write="false" Operate="true" />
+    <UserRole Name="OPERATOR" Read="true" Write="false" Operate="true" />
+    <UserRole Name="IA_ADMIN" Read="true" Write="true" Operate="true" />
+  </UserRights>
+  <Info Global="false" Owner="dnaadmin" />
+  <CompositeViewLayoutModel>
+    <Size>0</Size>
+    <Panels>
+      <CompositeViewLayoutModel>
+        <Position>center</Position>
+        <Size>50</Size>
+        <Panels>
+          <CompositeViewLayoutModel>
+            <Position>center</Position>
+            <Size>46</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTrend%2FBasicTemplate1</Url>
+            <AdditionalParameters />
+          </CompositeViewLayoutModel>
+          <CompositeViewLayoutModel>
+            <Position>east</Position>
+            <Size>54</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTrend%2FBasicTemplate1</Url>
+            <AdditionalParameters />
+          </CompositeViewLayoutModel>
+        </Panels>
+      </CompositeViewLayoutModel>
+      <CompositeViewLayoutModel>
+        <Position>south</Position>
+        <Size>50</Size>
+        <Panels>
+          <CompositeViewLayoutModel>
+            <Position>center</Position>
+            <Size>45</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTrend%2FBasicTemplate1</Url>
+            <AdditionalParameters />
+          </CompositeViewLayoutModel>
+          <CompositeViewLayoutModel>
+            <Position>east</Position>
+            <Size>55</Size>
+            <Url>%2Fdna%2FDNAreport%2FViewer.aspx%3Freport%3DTest%2FTrend%2FBasicTemplate1</Url>
+            <AdditionalParameters />
+          </CompositeViewLayoutModel>
+        </Panels>
+      </CompositeViewLayoutModel>
+    </Panels>
+  </CompositeViewLayoutModel>
+</CompositeViewModel>

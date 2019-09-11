@@ -1,0 +1,251 @@
+<eDNAproReports_Report>
+  <Report Name="Marine Summary" ID="Marine Summary" Version="3.0.0.0">
+    <Viewer ReportName="Marine Summary.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="FilterCriteria.ascx" />
+    <Header ClassName="DNAreportAEsorting.ascx" />
+    <Header ClassName="DNAreportAE_RelatedReports.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary" ProviderInfo="$DNAalarmHistorian/Query.DNAreportAE.DataClass" Method="GetSummary" Description="" FriendlyName="GetSummary" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="eventTypes" Ref="DNAreportAE_EventType" Usage="" />
+        <DataSetParameter Name="priorities" Ref="DNAreportAE_Priority" Usage="" />
+        <DataSetParameter Name="tagName" Ref="DNAreportAE_TagName" Usage="" />
+        <DataSetParameter Name="tagDesc" Ref="DNAreportAE_TagDesc" Usage="" />
+        <DataSetParameter Name="eventDesc" Ref="DNAreportAE_EventDesc" Usage="" />
+        <DataSetParameter Name="filterIn" Ref="DNAreportAE_FilterIn" Usage="" />
+        <DataSetParameter Name="rowLimit" Ref="DNAreportAE_RowLimit" Usage="" />
+        <DataSetParameter Name="eventOrigins" Ref="DNAreportAE_EventOrigin" Usage="" />
+        <DataSetParameter Name="areas" Ref="DNAreportAE_Area" Usage="" />
+        <DataSetParameter Name="sources" Ref="DNAreportAE_Source" Usage="" />
+        <DataSetParameter Name="tagGroups" Ref="DNAreportAE_TagGroup" Usage="" />
+        <DataSetParameter Name="tgFilterIn" Ref="DNAreportAE_TGFilterIn" Usage="" />
+        <DataSetParameter Name="sorting" Ref="DNAreportAE_Sorting" Usage="" />
+        <DataTable Name="Summary" Description="" OrderBy="">
+          <DataField Name="PriorityLevel" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.PriorityLevel" DataType="System.String" Caption="PriorityLevel" Description="" />
+          <DataField Name="EventOrigin" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventOrigin" DataType="System.String" Caption="EventOrigin" Description="" />
+          <DataField Name="EventType" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventType" DataType="System.String" Caption="EventType" Description="" />
+          <DataField Name="StartTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.StartTime" DataType="System.DateTime" Caption="StartTime" Description="" />
+          <DataField Name="PriorityNumber" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.PriorityNumber" DataType="System.Int32" Caption="PriorityNumber" Description="" />
+          <DataField Name="EventArea" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventArea" DataType="System.String" Caption="EventArea" Description="" />
+          <DataField Name="EventAreaDescription" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventAreaDescription" DataType="System.String" Caption="EventAreaDescription" Description="" />
+          <DataField Name="Tag" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Tag" DataType="System.String" Caption="Tag" Description="" />
+          <DataField Name="TagDescription" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.TagDescription" DataType="System.String" Caption="TagDescription" Description="" />
+          <DataField Name="EventDescription" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventDescription" DataType="System.String" Caption="EventDescription" Description="" />
+          <DataField Name="Actor" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Actor" DataType="System.String" Caption="Actor" Description="" />
+          <DataField Name="EventOriginDescription" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventOriginDescription" DataType="System.String" Caption="EventOriginDescription" Description="" />
+          <DataField Name="EndTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EndTime" DataType="System.DateTime" Caption="EndTime" Description="" />
+          <DataField Name="AckTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.AckTime" DataType="System.DateTime" Caption="AckTime" Description="" />
+          <DataField Name="EventID" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventID" DataType="System.Int32" Caption="EventID" Description="" />
+          <DataField Name="EventLimit" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventLimit" DataType="System.String" Caption="EventLimit" Description="" />
+          <DataField Name="NewVal" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.NewVal" DataType="System.String" Caption="NewVal" Description="" />
+          <DataField Name="OldVal" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.OldVal" DataType="System.String" Caption="OldVal" Description="" />
+          <DataField Name="ValUnit" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.ValUnit" DataType="System.String" Caption="ValUnit" Description="" />
+          <DataField Name="EventDscr2" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventDscr2" DataType="System.String" Caption="EventDscr2" Description="" />
+          <DataField Name="msStartTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.msStartTime" DataType="System.Int32" Caption="msStartTime" Description="" />
+          <DataField Name="msEndTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.msEndTime" DataType="System.Int32" Caption="msEndTime" Description="" />
+          <DataField Name="msAckTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.msAckTime" DataType="System.Int32" Caption="msAckTime" Description="" />
+          <DataField Name="Counter" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Counter" DataType="System.Int32" Caption="Counter" Description="" />
+          <DataField Name="Marine_StartTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_StartTime" DataType="System.DateTime" Caption="Marine_StartTime" Description="" FriendlyName="" Expression="=Fields!StartTime.ToMarineTime()" />
+          <DataField Name="Marine_EndTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_EndTime" DataType="System.DateTime" Caption="Marine_EndTime" Description="" FriendlyName="" Expression="=Fields!EndTime == DateTime.MinValue ? Fields!EndTime : Fields!EndTime.ToMarineTime()" />
+          <DataField Name="Marine_AckTime" ID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_AckTime" DataType="System.DateTime" Caption="Marine_AckTime" Description="" FriendlyName="" Expression="=Fields!AckTime == DateTime.MinValue ? Fields!AckTime : Fields!AckTime.ToMarineTime()" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="2011:5:1:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="2011:6:1:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="DNAreportAE_EventType" Type="System.String[]" InitialValue="Alarm" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_EventType" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="DNAreportAE_Priority" Type="System.String" InitialValue="1-200,201-400,401-600,601-800,801-1000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_Priority" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="DNAreportAE_TagName" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_TagName" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="DNAreportAE_TagDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_TagDesc" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="DNAreportAE_EventDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_EventDesc" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="DNAreportAE_TGFilterIn" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_TGFilterIn" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="DNAreportAE_EventOrigin" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_EventOrigin" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="DNAreportAE_Area" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_Area" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="DNAreportAE_Source" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_Source" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="DNAreportAE_TagGroup" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_TagGroup" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="DNAreportAE_Tabs" Type="System.String" InitialValue="OAF,SGF" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_Tabs" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="DNAreportAE_RowLimit" Type="System.Int32" InitialValue="5000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_RowLimit" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="DNAreportAE_DefaultTab" Type="System.String" InitialValue="OAF" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_DefaultTab" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="DNAreportAE_FilterIn" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_FilterIn" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="DNAreportAE_Sorting" Type="System.String" InitialValue="Date D" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_Sorting" Overridable="True" DisplayIndex="16" />
+      <Parameter Name="DNAreportAE_SelectedGroups" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedGroups" Overridable="True" DisplayIndex="17" />
+      <Parameter Name="DNAreportAE_CriteriaList" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_CriteriaList" Overridable="True" DisplayIndex="18" />
+      <Parameter Name="DNAreportAE_CurrentReportID" Type="System.String" InitialValue="Summary" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_CurrentReportID" Overridable="True" DisplayIndex="19" />
+      <Parameter Name="DNAreportAE_SelectedSources" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedSources" Overridable="True" DisplayIndex="20" />
+      <Parameter Name="DNAreportAE_SelectedAreas" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedAreas" Overridable="True" DisplayIndex="21" />
+      <Parameter Name="DNAreportAE_SelectedOrigins" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedOrigins" Overridable="True" DisplayIndex="22" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="23" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.EventType" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.PriorityLevel" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.EventSource" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.Tag" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.EventDescription" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.TagDescription" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetEventList.AlarmData.US_operator" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetAreaList.AlarmData.AreaName" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetAreaList.AlarmData.AreaDescription" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmHistorian.AlarmQueries.GetAreaList.AlarmData.AreaName" />
+      </Connection>
+      <Connection ID="17" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="rowLimit" />
+      </Connection>
+      <Connection ID="18" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="FilterOutput" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.event_type" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.event_time" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.priority_level" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.priority_number" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.event_source" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.tag" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.tag_descr" />
+      </Connection>
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.event_descr" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.tag_descr" />
+      </Connection>
+      <Connection ID="28" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.AlarmList.GetAlarmList.AlarmList.AlarmTable.event_descr" />
+      </Connection>
+      <Connection ID="29" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="FilterOutput" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventType" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventTime" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EndTime" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.AckTime" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.PriorityLevel" />
+      </Connection>
+      <Connection ID="35" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.PriorityNumber" />
+      </Connection>
+      <Connection ID="36" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventAreaDescription" />
+      </Connection>
+      <Connection ID="37" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Tag" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.TagDescription" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventDescription" />
+      </Connection>
+      <Connection ID="40" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Actor" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventLimit" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventOrigin" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventOriginDescription" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.EventArea" />
+      </Connection>
+      <Connection ID="45" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="DNAreportAE_RowLimit" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.StartTime" />
+      </Connection>
+      <Connection ID="47" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="DNAreportAE_CriteriaList" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Counter" />
+      </Connection>
+      <Connection ID="1868" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="1869" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1870" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_StartTime" />
+      </Connection>
+      <Connection ID="1871" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_EndTime" />
+      </Connection>
+      <Connection ID="1872" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.DataClass.GetSummary.Summary.Marine_AckTime" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <Info Title="" Owner="WIN-OGMB0DB2ABU\dna" Expiration="" Category="" Version="1.0.5" ModifiedBy="WIN-OGMB0DB2ABU\dna" ModificationDate="2012-03-12T11:11:51" CreatedDate="2006-04-19T11:59:47" CreatedBy="Metso\Metso DNA" Global="True" Template="False">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

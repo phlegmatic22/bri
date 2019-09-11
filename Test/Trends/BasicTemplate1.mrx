@@ -1,0 +1,79 @@
+<eDNAproReports_Report>
+  <Report Name="BasicTemplate1" ID="BasicTemplate1" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="TEA1\dnaadmin" Expiration="" Category="" Version="" ModifiedBy="TEA1\dnaadmin" ModificationDate="2014-03-10T15:53:22" CreatedDate="2014-03-10T15:22:36" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="BasicTemplate1.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="HistoryOptionList" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="HistoryOperationList" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination.args1" Usage="Advanced" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination.args2" Usage="Advanced" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination.args3" Usage="Advanced" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination.args4" Usage="Advanced" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="Advanced" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="freespacec Trend value (TEA1!FreeSpaceC)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="freespacec Trend status (TEA1!FreeSpaceC)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="RelativeStartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="RelativeEndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="01:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="freespacec" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Trend" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="21" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagNameList" />
+      </Connection>
+      <Connection ID="24" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="28" Type="ConstantConnection" LanguageConversion="false" Constant="DNAreportAE_TagName" />
+      <Connection ID="29" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagNameList" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="32" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="33" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="34" Type="ConstantConnection" LanguageConversion="false" Constant="/DNA/DNAreport" />
+      <Connection ID="35" Type="ConstantConnection" LanguageConversion="false" Constant="/_DNAreportAE/Events " />
+      <Connection ID="36" Type="ConstantConnection" LanguageConversion="false" Constant="http" />
+      <Connection ID="37" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="50" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="51" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="1" Protocol="-1" Host="33" Path="34" File="37">
+        <UrlParameters Name="24" Value="35" Description="" />
+        <UrlParameters Name="28" Value="29" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

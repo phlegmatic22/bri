@@ -1,0 +1,412 @@
+<eDNAproReports_Report>
+  <Report Name="Summary" ID="Summary" Version="3.0.0.0">
+    <HyperLinks />
+    <UserRights />
+    <Info Title="Summary Template" Owner="administrator" Expiration="" Category="STRTools" Version="2.6.0" ModifiedBy="dnaadmin" ModificationDate="2014-01-07T14:08:47" CreatedDate="2012-02-22T17:51:36" CreatedBy="Metso\metsoDNA" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description>
+      </Description>
+    </Info>
+    <Viewer ReportName="/_Templates/_STR/Summary" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
+    <DataSources>
+      <DataSet ID="Query.StrTools.StrToolsQuery" ProviderInfo="Query.StrTools" Method="StrToolsQuery" FriendlyName="StrToolsQuery" Order="0" Enabled="true">
+        <Data>
+        </Data>
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="operationList" Ref="ops" Usage="" />
+        <DataSetParameter Name="options" Ref="Query.StrTools.StrToolsQuery.options" Usage="" />
+        <DataSetParameter Name="tagNameList" Ref="tags" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="tagDescriptions" Ref="Description" Usage="" />
+        <DataSetParameter Name="tagUnits" Ref="Unit" Usage="" />
+        <DataSetParameter Name="factors" Ref="Factor" Usage="" />
+        <DataSetParameter Name="offsets" Ref="Offset" Usage="" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="tagName" ID="Query.StrTools.StrToolsQuery.Values.tagName" DataType="System.String" Caption="tagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="description" ID="Query.StrTools.StrToolsQuery.Values.description" DataType="System.String" Caption="description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="unit" ID="Query.StrTools.StrToolsQuery.Values.unit" DataType="System.String" Caption="unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="Query.StrTools.StrToolsQuery.Values.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="first" ID="Query.StrTools.StrToolsQuery.Values.first" DataType="System.Single" Caption="first" Description="" FriendlyName="" Expression="" />
+          <DataField Name="last" ID="Query.StrTools.StrToolsQuery.Values.last" DataType="System.Single" Caption="last" Description="" FriendlyName="" Expression="" />
+          <DataField Name="avg" ID="Query.StrTools.StrToolsQuery.Values.avg" DataType="System.Single" Caption="avg" Description="" FriendlyName="" Expression="" />
+          <DataField Name="min" ID="Query.StrTools.StrToolsQuery.Values.min" DataType="System.Single" Caption="min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="max" ID="Query.StrTools.StrToolsQuery.Values.max" DataType="System.Single" Caption="max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="sum" ID="Query.StrTools.StrToolsQuery.Values.sum" DataType="System.Single" Caption="sum" Description="" FriendlyName="" Expression="" />
+          <DataField Name="good" ID="Query.StrTools.StrToolsQuery.Values.good" DataType="System.Single" Caption="good" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ng" ID="Query.StrTools.StrToolsQuery.Values.ng" DataType="System.Single" Caption="ng" Description="" FriendlyName="" Expression="" />
+          <DataField Name="std" ID="Query.StrTools.StrToolsQuery.Values.std" DataType="System.Single" Caption="std" Description="" FriendlyName="" Expression="" />
+          <DataField Name="rng" ID="Query.StrTools.StrToolsQuery.Values.rng" DataType="System.Single" Caption="rng" Description="" FriendlyName="" Expression="" />
+          <DataField Name="var" ID="Query.StrTools.StrToolsQuery.Values.var" DataType="System.Single" Caption="var" Description="" FriendlyName="" Expression="" />
+          <DataField Name="counterDifference" ID="Query.StrTools.StrToolsQuery.Values.counterDifference" DataType="System.Single" Caption="counterDifference" Description="" FriendlyName="" Expression="" />
+          <DataField Name="flowInPeriod" ID="Query.StrTools.StrToolsQuery.Values.flowInPeriod" DataType="System.Single" Caption="flowInPeriod" Description="" FriendlyName="" Expression="" />
+          <DataField Name="runtime" ID="Query.StrTools.StrToolsQuery.Values.runtime" DataType="System.TimeSpan" Caption="runtime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="startCount" ID="Query.StrTools.StrToolsQuery.Values.startCount" DataType="System.Int32" Caption="startCount" Description="" FriendlyName="" Expression="" />
+          <DataField Name="lastStart" ID="Query.StrTools.StrToolsQuery.Values.lastStart" DataType="System.DateTime" Caption="lastStart" Description="" FriendlyName="" Expression="" />
+          <DataField Name="state" ID="Query.StrTools.StrToolsQuery.Values.state" DataType="System.Single" Caption="state" Description="" FriendlyName="" Expression="" />
+          <DataField Name="difference" ID="Query.StrTools.StrToolsQuery.Values.difference" DataType="System.TimeSpan" Caption="difference" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="ShowTrend" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="false" Mapping="Runtime" Description="Show Trend in Report" Usage="STR_ShowTrend" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:6:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start Time" Usage="StartTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:6:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End Time" Usage="EndTime" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="tags" Type="System.String[]" InitialValue="AvailableMBytes&#xD;&#xA;CommittedBytes&#xD;&#xA;DiskReadTimeC&#xD;&#xA;DiskReadTimeD&#xD;&#xA;DiskWriteTimeC&#xD;&#xA;DiskWriteTimeD&#xD;&#xA;FreeSpaceC&#xD;&#xA;FreeSpaceD&#xD;&#xA;ProcessorTime&#xD;&#xA;ServerSessions" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of tags" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="Description" Type="System.String[]" InitialValue="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of descriptions" Usage="HistoryTagDescription" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Unit" Type="System.String[]" InitialValue="(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)&#xD;&#xA;(No unit)" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Units" Usage="HistoryTagUnit" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="Factor" Type="System.Double[]" InitialValue="1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1&#xD;&#xA;1" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Factors" Usage="HistoryTagFactor" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="Offset" Type="System.Double[]" InitialValue="0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0&#xD;&#xA;0" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Offsets" Usage="HistoryTagOffset" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="ops" Type="System.String[]" InitialValue="AllAggregates&#xD;&#xA;Last" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="host" Type="System.String" InitialValue="localhost" HeaderControl="" Editable="false" Mapping="Runtime" Description="Host of service" Usage="" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="ShowInTrends" Type="System.String[]" InitialValue="AvailableMBytes" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="STR_ShowInTrends" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="TagConrolPanelMode" Type="System.String" InitialValue="STR" HeaderControl="" Editable="false" Mapping="Runtime" Description="Mode of the panel" Usage="TagConrolPanelMode" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="AboutPath" Type="System.String" InitialValue="/DNA/DNAreportShared/dnareportstr/About.aspx" HeaderControl="" Editable="false" Mapping="Runtime" Description="Path to about dialog" Usage="AboutPath" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="UserGuideStartPage" Type="System.String" InitialValue="dnareport_str_help.htm" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide start page name" Usage="UserGuideStartPage" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="UserGuideFolderName" Type="System.String" InitialValue="dnareportstr" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide folder name" Usage="UserGuideFolderName" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="Query.StrTools.StrToolsQuery.options" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" Group="" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value1.ts" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value1.value" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value2.ts" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value2.value" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value3.ts" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value3.value" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value4.ts" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value4.value" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value5.ts" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value5.value" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value6.ts" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value6.value" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value7.ts" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value7.value" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value8.ts" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value8.value" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value9.ts" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value9.value" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value10.ts" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value10.value" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value11.ts" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value11.value" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value12.ts" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value12.value" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value13.ts" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value13.value" />
+      </Connection>
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value14.ts" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value14.value" />
+      </Connection>
+      <Connection ID="28" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value15.ts" />
+      </Connection>
+      <Connection ID="29" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value15.value" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value16.ts" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value16.value" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value17.ts" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value17.value" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value18.ts" />
+      </Connection>
+      <Connection ID="35" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value18.value" />
+      </Connection>
+      <Connection ID="36" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value19.ts" />
+      </Connection>
+      <Connection ID="37" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value19.value" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value20.ts" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value20.value" />
+      </Connection>
+      <Connection ID="40" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value1.ts" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value1.value" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value2.ts" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value2.value" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value3.ts" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value3.value" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value4.ts" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value4.value" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value5.ts" />
+      </Connection>
+      <Connection ID="50" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value5.value" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value6.ts" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value6.value" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value7.ts" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value7.value" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value8.ts" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value8.value" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value9.ts" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value9.value" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value10.ts" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value10.value" />
+      </Connection>
+      <Connection ID="61" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value11.ts" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value11.value" />
+      </Connection>
+      <Connection ID="63" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value12.ts" />
+      </Connection>
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value12.value" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value13.ts" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value13.value" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value14.ts" />
+      </Connection>
+      <Connection ID="68" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value14.value" />
+      </Connection>
+      <Connection ID="69" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value15.ts" />
+      </Connection>
+      <Connection ID="70" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value15.value" />
+      </Connection>
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value16.ts" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value16.value" />
+      </Connection>
+      <Connection ID="73" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value17.ts" />
+      </Connection>
+      <Connection ID="74" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value17.value" />
+      </Connection>
+      <Connection ID="75" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value18.ts" />
+      </Connection>
+      <Connection ID="76" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value18.value" />
+      </Connection>
+      <Connection ID="77" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value19.ts" />
+      </Connection>
+      <Connection ID="78" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value19.value" />
+      </Connection>
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value20.ts" />
+      </Connection>
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAPortalStr.Trends.Values.Value20.value" />
+      </Connection>
+      <Connection ID="81" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.tagName" />
+      </Connection>
+      <Connection ID="82" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.description" />
+      </Connection>
+      <Connection ID="83" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.unit" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.avg" />
+      </Connection>
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.min" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.max" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.std" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.last" />
+      </Connection>
+      <Connection ID="89" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.tagName" />
+      </Connection>
+      <Connection ID="90" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.last" />
+      </Connection>
+      <Connection ID="91" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.std" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.max" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.min" />
+      </Connection>
+      <Connection ID="95" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.unit" />
+      </Connection>
+      <Connection ID="96" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.description" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.avg" />
+      </Connection>
+      <Connection ID="98" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.avg" />
+      </Connection>
+      <Connection ID="99" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.min" />
+      </Connection>
+      <Connection ID="100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.max" />
+      </Connection>
+      <Connection ID="101" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.std" />
+      </Connection>
+      <Connection ID="102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.StrTools.StrToolsQuery.Values.last" />
+      </Connection>
+      <Connection ID="103" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="104" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="105" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="106" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="107" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="108" Type="ConstantConnection" LanguageConversion="True" Constant="Variable" />
+      <Connection ID="109" Type="ConstantConnection" LanguageConversion="True" Constant="Description" />
+      <Connection ID="110" Type="ConstantConnection" LanguageConversion="True" Constant="Unit" />
+      <Connection ID="111" Type="ConstantConnection" LanguageConversion="True" Constant="Average" />
+      <Connection ID="112" Type="ConstantConnection" LanguageConversion="True" Constant="Min" />
+      <Connection ID="113" Type="ConstantConnection" LanguageConversion="True" Constant="Max" />
+      <Connection ID="114" Type="ConstantConnection" LanguageConversion="True" Constant="Std_Dev" />
+      <Connection ID="115" Type="ConstantConnection" LanguageConversion="True" Constant="Last" />
+      <Connection ID="116" Type="ConstantConnection" LanguageConversion="True" Constant="Start_Time" />
+      <Connection ID="117" Type="ConstantConnection" LanguageConversion="True" Constant="End_Time" />
+      <Connection ID="118" Type="ConstantConnection" LanguageConversion="True" Constant="Print_Time" />
+      <Connection ID="119" Type="ConstantConnection" LanguageConversion="True" Constant="SummaryTitle" />
+      <Connection ID="120" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="121" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+    </Connections>
+  </Report>
+</eDNAproReports_Report>

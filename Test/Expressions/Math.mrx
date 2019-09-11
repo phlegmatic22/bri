@@ -1,0 +1,53 @@
+<eDNAproReports_Report>
+  <Report Name="Math" ID="Math" Version="3.0.0.0">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-17T10:56:51" CreatedDate="2009-11-06T13:07:59" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Math.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample" ProviderInfo="$default/Query.Samples.Samples1.SampleData" Method="TypedDataSetSample" Description="Calculations with SampleData" FriendlyName="CalculatedData" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="count" Ref="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Usage="" />
+        <DataTable Name="SampleData" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Math_Sin" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Sin" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Math.Sin(Fields!ID)" />
+          <DataField Name="Math_Cos" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Cos" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Math.Cos(Fields!ID)" />
+          <DataField Name="Math_Tan" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Tan" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Math.Tan(Fields!ID)" />
+          <DataField Name="Math_Sqrt" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Sqrt" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Math.Sqrt(Fields!ID)" />
+          <DataField Name="Math_Pow" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Pow" DataType="System.Double" Caption="" Description="" FriendlyName="" Expression="=Math.Pow(Fields!ID, 2)" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Type="System.Int32" InitialValue="5" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="2054" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" />
+      </Connection>
+      <Connection ID="2055" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" />
+      </Connection>
+      <Connection ID="2056" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Sin" />
+      </Connection>
+      <Connection ID="2057" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Cos" />
+      </Connection>
+      <Connection ID="2058" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Tan" />
+      </Connection>
+      <Connection ID="2059" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Sqrt" />
+      </Connection>
+      <Connection ID="2060" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Math_Pow" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

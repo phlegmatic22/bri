@@ -1,0 +1,48 @@
+<eDNAproReports_Report>
+  <Report Name="Selection And Time" ID="Selection And Time" Version="3.0.0.0">
+    <Info Title="" Owner="TREC58109VM1\Administrator" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-02-16T12:14:42" CreatedDate="2009-11-06T13:07:59" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Selection And Time.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample" ProviderInfo="$default/Query.Samples.Samples1.SampleData" Method="TypedDataSetSample" Description="Calculations with SampleData" FriendlyName="CalculatedData" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="count" Ref="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Usage="" />
+        <DataTable Name="SampleData" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ID" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.ID" DataType="System.Int32" Caption="ID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SampleText" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.SampleText" DataType="System.String" Caption="SampleText" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Selection_Where" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Selection_Where" DataType="System.Int32" Caption="Selection_Where" Description="" FriendlyName="" Expression="=(from value in Fields!ID[] where value &lt; 3 select value).Count()" />
+          <DataField Name="Selection_Take" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Selection_Take" DataType="System.Int32" Caption="Selection_Take" Description="" FriendlyName="" Expression="=Fields!ID[].Take(2).Count()" />
+          <DataField Name="FieldSelection_Previous" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.FieldSelection_Previous" DataType="System.Int32" Caption="FieldSelection_Previous" Description="" FriendlyName="" Expression="=Fields!ID!Previous" />
+          <DataField Name="FieldSelection_Next" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.FieldSelection_Next" DataType="System.Int32" Caption="FieldSelection_Next" Description="" FriendlyName="" Expression="=Fields!ID!Next" />
+          <DataField Name="FieldSelection_PreviousOrCurrent" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.FieldSelection_PreviousOrCurrent" DataType="System.Int32" Caption="FieldSelection_PreviousOrCurrent" Description="" FriendlyName="" Expression="=Fields!ID!PreviousOrCurrent" />
+          <DataField Name="FieldSelection_NextOrCurrent" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.FieldSelection_NextOrCurrent" DataType="System.Int32" Caption="FieldSelection_NextOrCurrent" Description="" FriendlyName="" Expression="=Fields!ID!NextOrCurrent" />
+          <DataField Name="Time_RelativeMask1" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Time_RelativeMask1" DataType="System.DateTime" Caption="Time_RelativeMask1" Description="" FriendlyName="" Expression="=RelativeTime(&quot;*:*:*:*:*:*&quot;)" />
+          <DataField Name="Time_RelativeTime2" ID="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.SampleData.Time_RelativeTime2" DataType="System.DateTime" Caption="Time_RelativeTime2" Description="" FriendlyName="" Expression="=RelativeTime(&quot;2001:-1:*:*:*:*&quot;, DateTime.Now.AddDays(-1))" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="00:05:00&#xD;&#xA;00:10:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="in_ana_1&#xD;&#xA;in_ana_2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="calcParamInt" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="calcParamFloat" Type="System.Single" InitialValue="1.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="calcParamIntA" Type="System.Int32[]" InitialValue="1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="calcParamFloatA" Type="System.Single[]" InitialValue="1.5&#xD;&#xA;2.5" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="9" />
+      <Parameter Name="calcParamDateTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="10" />
+      <Parameter Name="indexParam" Type="System.Int32[]" InitialValue="0&#xD;&#xA;1&#xD;&#xA;2" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="11" />
+      <Parameter Name="startTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="endTime2" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="$default/Query.Samples.Samples1.SampleData.TypedDataSetSample.count" Type="System.Int32" InitialValue="5" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

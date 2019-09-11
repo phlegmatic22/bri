@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<CompositeViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserRights>
+    <UserRole Name="IA_ADMIN" Read="true" Write="true" Operate="true" />
+  </UserRights>
+  <Info Global="true" Owner="" />
+  <CompositeViewLayoutModel>
+    <Size>0</Size>
+    <AdditionalParameters />
+    <Panels>
+      <CompositeViewLayoutModel>
+        <Position>center</Position>
+        <Size>50</Size>
+        <AdditionalParameters />
+        <Panels>
+          <CompositeViewLayoutModel>
+            <Position>center</Position>
+            <Size>50</Size>
+            <Url>%2FDNA%2FAgent%2FTaskList.aspx</Url>
+            <AdditionalParameters />
+            <Panels />
+          </CompositeViewLayoutModel>
+          <CompositeViewLayoutModel>
+            <Position>east</Position>
+            <Size>50</Size>
+            <Url>%2Fdna%2Fserverconfigurator%2F</Url>
+            <AdditionalParameters />
+            <Panels />
+          </CompositeViewLayoutModel>
+        </Panels>
+      </CompositeViewLayoutModel>
+      <CompositeViewLayoutModel>
+        <Position>south</Position>
+        <Size>50</Size>
+        <Url>%2FDNA%2Fdnadiary%2Fadmin.aspx</Url>
+        <AdditionalParameters />
+        <Panels />
+      </CompositeViewLayoutModel>
+    </Panels>
+  </CompositeViewLayoutModel>
+</CompositeViewModel>

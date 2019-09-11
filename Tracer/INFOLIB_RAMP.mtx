@@ -1,0 +1,33 @@
+<eDNAproReports_Report>
+  <Report Name="Trend" ID="Trend" Version="3.0.0.0">
+    <HyperLinks />
+    <UserRights />
+    <Info Title="" Owner="metsoDNA" Expiration="" Category="" Version="" ModifiedBy="dnaadmin" ModificationDate="2013-06-27T09:29:19" CreatedDate="2010-10-18T18:38:56" CreatedBy="metsoDNA" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description>Basic trend</Description>
+    </Info>
+    <Viewer ReportName="_Templates/Trend" ClassName="Link" Layout="_Templates/Trend" />
+    <DataSources>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-8:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="tags" Type="System.String[]" InitialValue="TEA1!INFOLIB-RAMP1&#xD;&#xA;TEA1!INFOLIB-RAMP2" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="periodList" Type="System.String[]" InitialValue="00:01:00&#xD;&#xA;00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriodList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="defaultPeriod" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriod" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="offsetList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OffsetList" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Trend&#xD;&#xA;Trend" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OperationList" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="valueCount" Type="System.Int32" InitialValue="480" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryValueCount" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="options" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="autoUpdate" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdate" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="updateInterval" Type="System.TimeSpan" InitialValue="00:00:06" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdateInterval" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="resizeWindow" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="ResizeWindow" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="descrs" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagDescriptionList" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="units" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagUnitList" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="interpols" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagInterpolationList" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="incremental" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="IncrementalQuery" Overridable="True" DisplayIndex="14" />
+    </Parameters>
+    <Connections>
+    </Connections>
+  </Report>
+</eDNAproReports_Report>
