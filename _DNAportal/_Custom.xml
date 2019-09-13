@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<ReportRepository>
+ <Repository Name="Other links" Level="0">
+   <Report Name="Web HMI Master Demo - Default" Level="1" Product="General" Url="http://webhmi-master-demo.rd.metso.com/default/" Filter="" Icon="" Target="main" />
+   <Report Name="Web HMI Master Demo - Testing" Level="1" Product="General" Url="http://webhmi-master-demo.rd.metso.com/testing/" Filter="" Icon="" Target="main" />
+   <Report Name="Web HMI Develop Demo - Default" Level="1" Product="General" Url="http://webhmi-develop-demo.rd.metso.com/default/" Filter="" Icon="" Target="main" />
+   <Report Name="Web HMI Develop Demo - Testing" Level="1" Product="General" Url="http://webhmi-develop-demo.rd.metso.com/testing/" Filter="" Icon="" Target="main" />
+ </Repository>
+</ReportRepository>

@@ -1,0 +1,228 @@
+<eDNAproReports_Report>
+  <Report Name="TraceDiagnostics" ID="TraceDiagnostics" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="EU2\kotilpe" Expiration="" Category="" Version="" ModifiedBy="TREC58109VM1\Administrator" ModificationDate="2010-03-30T15:57:07" CreatedDate="2009-11-19T13:56:33" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="TraceDiagnostics.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="DnaReportTraceDiagnostics.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog" ProviderInfo="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager" Method="GetDatabaseListenerLog" Description="" FriendlyName="GetDatabaseListenerLog" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="categories" Ref="categories" Usage="" />
+        <DataSetParameter Name="activity" Ref="activity" Usage="" />
+        <DataSetParameter Name="path" Ref="path" Usage="" />
+        <DataSetParameter Name="depth" Ref="depth" Usage="" />
+        <DataTable Name="Log" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="LogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.LogID" DataType="System.Int32" Caption="LogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Level" DataType="System.Int32" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParentLogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ParentLogID" DataType="System.Int32" Caption="ParentLogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Category" DataType="System.String" Caption="Category" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ActivityID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ActivityID" DataType="System.String" Caption="ActivityID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ProcessID" DataType="System.String" Caption="ProcessID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ElapsedTimeFromStart_1" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ElapsedTimeFromStart_1" DataType="System.TimeSpan" Caption="ElapsedTimeFromStart_1" Description="" FriendlyName="ElapsedTimeFromStart" Expression="=Fields!Timestamp-Fields!TimeStamp[0]" />
+          <DataField Name="ElapsedTimeFromPrevious_1" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ElapsedTimeFromPrevious_1" DataType="System.TimeSpan" Caption="ElapsedTimeFromPrevious_1" Description="" FriendlyName="ElapsedTimeFromPrevious" Expression="=Fields!Timestamp-Fields!TimeStamp!PreviousOrCurrent" />
+          <DataField Name="RowNumber" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.RowNumber" DataType="System.Int32" Caption="RowNumber" Description="" FriendlyName="" Expression="=Globals!RowNumber+1" />
+        </DataTable>
+        <DataTable Name="Level0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="LogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.LogID" DataType="System.Int32" Caption="LogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.Level" DataType="System.Int32" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParentLogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.ParentLogID" DataType="System.Int32" Caption="ParentLogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.Category" DataType="System.String" Caption="Category" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ActivityID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.ActivityID" DataType="System.String" Caption="ActivityID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.ProcessID" DataType="System.String" Caption="ProcessID" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Level1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="LogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.LogID" DataType="System.Int32" Caption="LogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.Level" DataType="System.Int32" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParentLogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.ParentLogID" DataType="System.Int32" Caption="ParentLogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.Category" DataType="System.String" Caption="Category" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ActivityID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.ActivityID" DataType="System.String" Caption="ActivityID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.ProcessID" DataType="System.String" Caption="ProcessID" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Level2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="LogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.LogID" DataType="System.Int32" Caption="LogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.Level" DataType="System.Int32" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParentLogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.ParentLogID" DataType="System.Int32" Caption="ParentLogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.Category" DataType="System.String" Caption="Category" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ActivityID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.ActivityID" DataType="System.String" Caption="ActivityID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.ProcessID" DataType="System.String" Caption="ProcessID" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Level3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="LogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.LogID" DataType="System.Int32" Caption="LogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.Level" DataType="System.Int32" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParentLogID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.ParentLogID" DataType="System.Int32" Caption="ParentLogID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.Category" DataType="System.String" Caption="Category" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ActivityID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.ActivityID" DataType="System.String" Caption="ActivityID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessID" ID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.ProcessID" DataType="System.String" Caption="ProcessID" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Log</ParentTable>
+          <ChildTable>Log</ChildTable>
+          <Name>Children</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.LogID" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ParentLogID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Log</ParentTable>
+          <ChildTable>Log</ChildTable>
+          <Name>Parent</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ParentLogID" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.LogID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Level0</ParentTable>
+          <ChildTable>Level1</ChildTable>
+          <Name>ToLevel1</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level0.LogID" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.ParentLogID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Level1</ParentTable>
+          <ChildTable>Level2</ChildTable>
+          <Name>ToLevel2</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level1.LogID" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.ParentLogID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Level2</ParentTable>
+          <ChildTable>Level3</ChildTable>
+          <Name>ToLevel3</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level2.LogID" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Level3.ParentLogID" />
+        </Relation>
+      </DataSet>
+      <DataSet ID="5716bcc1-27cb-4539-a5df-468c3b99d47c" ProviderInfo="=DynamicReportDataSource" Method="=ToTable(&#xA;	&#xA;	// Number of items &#xA;	Fields!GetDatabaseListenerLog!Log.Count(),&#xA;&#xA;	// Reported span&#xA;	Fields!GetDatabaseListenerLog!Log!Timestamp[].LastOrDefault()-Fields!GetDatabaseListenerLog!Log!Timestamp[].FirstOrDefault()&#xA;&#xA;	)" Description="AdditionalData" FriendlyName="AdditionalData" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="column0" ID="5716bcc1-27cb-4539-a5df-468c3b99d47c.Table.column0" DataType="System.Int32" Caption="column0" Description="" FriendlyName="Count" Expression="" />
+          <DataField Name="column1" ID="5716bcc1-27cb-4539-a5df-468c3b99d47c.Table.column1" DataType="System.TimeSpan" Caption="column1" Description="" FriendlyName="Span" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start Time" Usage="RelativeStartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End Time" Usage="RelativeEndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="categories" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="true" Mapping="Runtime" Description="Categories, " Usage="TraceCategories" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="activity" Type="System.String" InitialValue="(null)" HeaderControl="" Editable="true" Mapping="Runtime" Description="ActivityID" Usage="TraceActivityFilter" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="path" Type="System.String" InitialValue="(null)" HeaderControl="" Editable="true" Mapping="Runtime" Description="Root path" Usage="" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="depth" Type="System.Int32" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Max nr of Levels" Usage="" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="IndentationLevel" Type="System.Single" InitialValue="0.3" HeaderControl="" Editable="true" Mapping="Runtime" Description="Indentation in inches" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="ViewerType" Type="System.String" InitialValue="HtmlExport" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ViewerType" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="8" />
+      <Parameter Name="DisabledFunctions" Type="System.String[]" InitialValue="Delete&#xD;&#xA;Save" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.LogID" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Timestamp" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Level" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ParentLogID" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Path" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Category" />
+      </Connection>
+      <Connection ID="50" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Message" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ActivityID" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ProcessID" />
+      </Connection>
+      <Connection ID="378" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="13543db0-f5c2-4ea6-bb46-b7a87c562cb5.Table.column0" />
+      </Connection>
+      <Connection ID="379" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="00e55915-1318-494c-b944-f98723aefe5b.Table.Category" />
+      </Connection>
+      <Connection ID="380" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="00e55915-1318-494c-b944-f98723aefe5b.Table.Timestamp" />
+      </Connection>
+      <Connection ID="381" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="00e55915-1318-494c-b944-f98723aefe5b.Table.Message" />
+      </Connection>
+      <Connection ID="382" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Category" />
+      </Connection>
+      <Connection ID="383" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Timestamp" />
+      </Connection>
+      <Connection ID="384" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Message" />
+      </Connection>
+      <Connection ID="385" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.ElapsedTimeFromPrevious" />
+      </Connection>
+      <Connection ID="386" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d7a89dd4-2738-4760-ad77-9a9ba5214156.Table.Category" />
+      </Connection>
+      <Connection ID="387" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d7a89dd4-2738-4760-ad77-9a9ba5214156.Table.Timestamp" />
+      </Connection>
+      <Connection ID="388" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d7a89dd4-2738-4760-ad77-9a9ba5214156.Table.Message" />
+      </Connection>
+      <Connection ID="465" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="5716bcc1-27cb-4539-a5df-468c3b99d47c.Table.column0" />
+      </Connection>
+      <Connection ID="466" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="5716bcc1-27cb-4539-a5df-468c3b99d47c.Table.column1" />
+      </Connection>
+      <Connection ID="467" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="5716bcc1-27cb-4539-a5df-468c3b99d47c.Table.column1" />
+      </Connection>
+      <Connection ID="514" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="categories" />
+      </Connection>
+      <Connection ID="515" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="516" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="517" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="activity" />
+      </Connection>
+      <Connection ID="518" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Category" />
+      </Connection>
+      <Connection ID="519" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Timestamp" />
+      </Connection>
+      <Connection ID="520" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAdata.Diagnostics.TraceManager.GetDatabaseListenerLog.Log.Message" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,22 @@
+<eDNAproReports_Report>
+  <Report Name="Alarm management detailed" ID="Alarm management detailed" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_Diagnostic/Alarm management detailed" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters />
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

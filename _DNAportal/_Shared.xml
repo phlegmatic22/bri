@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<ReportRepository>
+	<Repository Name="Configuration" Level="0">
+		<Report Name="DNAdata Configurator" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" Level="1" Product="General" Url="/dna/dnadataconfigurator/" Filter="" Icon=""/>
+		<Report Name="Server Configurator" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" Level="1" Product="General" Url="/dna/serverconfigurator/" Filter="" Icon="Images/DNA configuration_16.png"/>
+	<Report Name="My Community Configurator" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" Level="1" Product="General" Url="/DNA/MyCommunityConfigurator" Filter="" Icon="" Target="DNAwindow" />
+	</Repository>
+</ReportRepository>

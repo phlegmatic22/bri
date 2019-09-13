@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hdrStartTime" xml:space="preserve">
+    <value>Start Time:</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrEndTime" xml:space="preserve">
+    <value>End Time:</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrTimeSpan" xml:space="preserve">
+    <value>Time Span:</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrSpanLock" xml:space="preserve">
+    <value>Span Lock</value>
+    <comment>Lock time span</comment>
+  </data>
+  <data name="hdrLock" xml:space="preserve">
+    <value>Lock</value>
+    <comment>Lock time</comment>
+  </data>
+  <data name="hdrPrint" xml:space="preserve">
+    <value>Print</value>
+    <comment>Print</comment>
+  </data>
+  <data name="hdrUpdate" xml:space="preserve">
+    <value>Update</value>
+    <comment>Update report</comment>
+  </data>
+  <data name="hdrParameters" xml:space="preserve">
+    <value>Parameters</value>
+    <comment>Reprot parameters</comment>
+  </data>
+  <data name="prmParameterName" xml:space="preserve">
+    <value>Parameter</value>
+    <comment>Parameter table column header</comment>
+  </data>
+  <data name="prmValue" xml:space="preserve">
+    <value>Value</value>
+    <comment>Parameter table column header</comment>
+  </data>
+  <data name="prmInitialValue" xml:space="preserve">
+    <value>Initial Value</value>
+    <comment>Parameter table column header</comment>
+  </data>
+  <data name="prmEdit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Parameter editing actions</comment>
+  </data>
+  <data name="prmUpdate" xml:space="preserve">
+    <value>Update</value>
+    <comment>Parameter editing actions</comment>
+  </data>
+  <data name="prmCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Parameter editing actions</comment>
+  </data>
+  <data name="hdrStartTimeBtnTip" xml:space="preserve">
+    <value>Set Start Time</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrEndTimeBtnTip" xml:space="preserve">
+    <value>Set End Time</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrStartDateBtnTip" xml:space="preserve">
+    <value>Set Start Date</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrEndDateBtnTip" xml:space="preserve">
+    <value>Set End Date</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrEndTimeClockTip" xml:space="preserve">
+    <value>Set End Time To Now</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrEndTimeRightTip" xml:space="preserve">
+    <value>Increase End Time</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrStartTimeLeftTip" xml:space="preserve">
+    <value>Decrease Start Time</value>
+    <comment>Time panel settings</comment>
+  </data>
+  <data name="hdrTimeSet" xml:space="preserve">
+    <value>Set</value>
+    <comment>Set time</comment>
+  </data>
+  <data name="hdrPDFexport" xml:space="preserve">
+    <value>PDF Preview</value>
+  </data>
+  <data name="hdrXLSexport" xml:space="preserve">
+    <value>Excel Preview</value>
+  </data>
+  <data name="savReportName" xml:space="preserve">
+    <value>Report name:</value>
+    <comment>Reaport name in SaveAs</comment>
+  </data>
+  <data name="savDescr" xml:space="preserve">
+    <value>Description:</value>
+    <comment>Description in SaveAs</comment>
+  </data>
+  <data name="savOwner" xml:space="preserve">
+    <value>Owner:</value>
+    <comment>Owner in SaveAs</comment>
+  </data>
+  <data name="savCreatedBy" xml:space="preserve">
+    <value>Created by:</value>
+    <comment>Created by in SaveAs</comment>
+  </data>
+  <data name="savCreationDate" xml:space="preserve">
+    <value>Created:</value>
+    <comment>Create date in SaveAs</comment>
+  </data>
+  <data name="savModifiedBy" xml:space="preserve">
+    <value>Modified by:</value>
+    <comment>Modified by in SaveAs</comment>
+  </data>
+  <data name="savModificationDate" xml:space="preserve">
+    <value>Modified:</value>
+    <comment>Modification date in SaveAs</comment>
+  </data>
+  <data name="savExpirationPre" xml:space="preserve">
+    <value>Remove report automatically after</value>
+    <comment>Expiration days pre label in SaveAs</comment>
+  </data>
+  <data name="savExpirationPost" xml:space="preserve">
+    <value>days</value>
+    <comment>Expiration days post label in SaveAs</comment>
+  </data>
+  <data name="savGlobal" xml:space="preserve">
+    <value>Global report</value>
+    <comment>Global in SaveAs</comment>
+  </data>
+  <data name="savRole" xml:space="preserve">
+    <value>Role</value>
+    <comment>Role header in SaveAs</comment>
+  </data>
+  <data name="savAllowed" xml:space="preserve">
+    <value>Allowed</value>
+    <comment>Allowed header in SaveAs</comment>
+  </data>
+  <data name="savRead" xml:space="preserve">
+    <value>Read</value>
+    <comment>Read header in SaveAs</comment>
+  </data>
+  <data name="savWrite" xml:space="preserve">
+    <value>Write</value>
+    <comment>Write header in SaveAs</comment>
+  </data>
+  <data name="savOperate" xml:space="preserve">
+    <value>Operate</value>
+    <comment>Operate header in SaveAs</comment>
+  </data>
+  <data name="savSave" xml:space="preserve">
+    <value>Save</value>
+    <comment>Save button in SaveAs</comment>
+  </data>
+  <data name="savClose" xml:space="preserve">
+    <value>Close</value>
+    <comment>Close button in SaveAs</comment>
+  </data>
+  <data name="savTemp" xml:space="preserve">
+    <value>Temporary report</value>
+  </data>
+  <data name="errReportAuthor" xml:space="preserve">
+    <value>Report auhorization failed!</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="errReadAccess" xml:space="preserve">
+    <value>No read access to report.</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="errWriteAccess" xml:space="preserve">
+    <value>No write access to report.</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="errOperateAccess" xml:space="preserve">
+    <value>No operate access to report.</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="SHIFT" xml:space="preserve">
+    <value>Shift</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="DAY" xml:space="preserve">
+    <value>Day</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="WEEK" xml:space="preserve">
+    <value>Week</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="MONTH" xml:space="preserve">
+    <value>Month</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="YEAR" xml:space="preserve">
+    <value>Year</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="chkAutoUpdate" xml:space="preserve">
+    <value>Auto update</value>
+    <comment>Auto update check box label</comment>
+  </data>
+  <data name="3DAY" xml:space="preserve">
+    <value>3 days</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="7DAY" xml:space="preserve">
+    <value>7 days</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="14DAY" xml:space="preserve">
+    <value>14 days</value>
+    <comment>Span text</comment>
+  </data>
+  <data name="tbSave" xml:space="preserve">
+    <value>Save</value>
+    <comment>Toolbar button</comment>
+  </data>
+  <data name="tbSaveAs" xml:space="preserve">
+    <value>Save as...</value>
+    <comment>Toolbar button</comment>
+  </data>
+  <data name="tbDelete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Toolbar button</comment>
+  </data>
+  <data name="tbAbout" xml:space="preserve">
+    <value>About</value>
+    <comment>Toolbar button</comment>
+  </data>
+  <data name="tbEmail" xml:space="preserve">
+    <value>E-mail</value>
+    <comment>Toolbar button</comment>
+  </data>
+</root>

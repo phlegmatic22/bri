@@ -1,0 +1,84 @@
+<eDNAproReports_Report>
+  <Report Name="Calculation Log" ID="Calculation Log" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.LogReport.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetLogDataByTime" Description="" FriendlyName="GetLogDataByTime" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="logName" Ref="logName" Usage="" />
+        <DataSetParameter Name="calcName" Ref="calcName" Usage="" />
+        <DataSetParameter Name="typeFilter" Ref="typeFilter" Usage="" />
+        <DataSetParameter Name="reverseOrder" Ref="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.reverseOrder" Usage="" />
+        <DataSetParameter Name="top" Ref="rowLimit" Usage="" />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="EndTime" Usage="EndTime" />
+        <DataSetParameter Name="showErrorDetails" Ref="showErrorDetails" Usage="" />
+        <DataTable Name="LogEvents" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Type" DataType="System.String" Caption="Type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Time" DataType="System.DateTime" Caption="Time" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Source" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Source" DataType="System.String" Caption="Source" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.EventID" DataType="System.Int32" Caption="EventID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CategoryNumber" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.CategoryNumber" DataType="System.Int16" Caption="CategoryNumber" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.CalculationTime" DataType="System.DateTime" Caption="CalculationTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CycleId" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.CycleId" DataType="System.String" Caption="CycleId" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Number" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Number" DataType="System.Int32" Caption="Number" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timespan" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Timespan" DataType="System.String" Caption="Timespan" Description="" FriendlyName="" Expression="" />
+          <DataField Name="GroupTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.GroupTime" DataType="System.DateTime" Caption="GroupTime" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="typeFilter" Type="System.String" InitialValue="1,2,4" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="typeFilter" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="logName" Type="System.String" InitialValue="DNAcalcCalculation" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="logName" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="calcName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="calcName" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="rowLimit" Type="System.Int32" InitialValue="300" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="rowLimit" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Delete&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;Edit" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="showErrorDetails" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="Indicates if exception stack trace must be shown" Usage="showErrorDetails" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.reverseOrder" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Type" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Time" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Source" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Message" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.CycleId" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Number" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.LogEvents.Timespan" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="Calculation Log.rpx" ClassName="Layout" Layout="" />
+</eDNAproReports_Report>

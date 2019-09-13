@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="14426.88" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" />
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="828" BackStyle="1" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox2" Left="86.4" Top="57.6" Width="14112" Height="270" Text="Services" Style="font-size: 11pt; font-weight: normal; white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox3" Left="270.0003" Top="457.92" Width="2610" Height="270" Text="Service" Style="font-size: 10pt; font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox4" Left="4680" Top="457.92" Width="2700.001" Height="270" Text="Service status" Style="font-size: 10pt; font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="0" X2="14428.8" Y2="0" LineColor="13684944" />
+      <Control Type="AR.Line" Name="Line2" X1="0" Y1="0" X2="14428.8" Y2="0" LineColor="5726464" />
+      <Control Type="AR.Line" Name="Line3" X1="0" Y1="400.32" X2="14428.8" Y2="400.32" LineColor="5726464" />
+      <Control Type="AR.Line" Name="Line4" X1="270.72" Y1="784.8" X2="14457.6" Y2="784.8" LineColor="5920856" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="333" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;11&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="270.0003" Top="14.4" Width="4410" Height="288" Text="processName" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="12" Left="4950" Top="14.4" Width="2430" Height="288" Text="status" />
+      <Control Type="AR.Image" Name="picError" Visible="0" Left="4674" Top="14.4" Width="270" Height="270" LineColor="16777215" LineWeight="0">0D0D0004026402000089504E470D0A1A0A0000000D494844520000000D0000000D0802000000FD89732B000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000206348524D00007A26000080840000FA00000080E8000075300000EA6000003A98000017709CBA513C000001E249444154285363FCFFFF3F0318BCD9BFFFD9DAB5ACECEC8C8C8CFF1919FEFDFFCF6164A21C1509916500AA0382973B763CEDEDFD7FED1A025DBFFEB4BFFFC9A64D100520752FB66E7DD8D4F4FFECD9FF274EFC3F7E1C8A80EC73E71EB7B5BDDCB51BA4EEE9EEDDD70A8BFE6CDEF47CD7AE67070EBC5BB2E4F3AAD540F2E9DEBDCFB66FFFB379F3B5C2C267FBF632EC080A7E3D79D2870913DE3F7BFEFBFFFF273B773EE9EA7AB26BD79FFFFF3F3E7FFEB1BFFFF5C44907539218768687DF292ABA515C7C7BDEDCAFDF7F7CFEFAFDC595AB9FBFFDF8FAFDFB9DB9F36E1697DC2C28389A97C7B0CEC373AF8FCF212F9F3DD6D627CA2BEEDC7B74F3FEE3DBF71E9E2C2BDB6F6575C8DB67B7A7D79EA42486E5F60E5B4C4D76999B6F3732DADBD074E8F89983A7CE1F3A7E767F43D30E23C3DDE6E69B8C8CB6444630CC3636D9ABAEB6DFC0E06047F7991B770F1F3DB9B3ABE7F0D15340F6C18EAE7D0606BB9455567AFB321C9B346999A8D81965E5F3C74EDC79F97A5F6ADA2179B9BD69E9775FBDB90454AEA4BC4C54F4E4EC590CFFFFFD3BDCD5B94E48E89AAC2C105D8121105746669DA0E0FECE4E683803A9833DBD9B8585EF888BDF1397B8272101246F4B8803450E75811421D401593BEAEB1719E8AD3633052153D325C6C69BCA2B208A800000FC883ECB79BC2F840000000049454E44AE426082</Control>
+      <Control Type="AR.Image" Name="picOK" Visible="0" Left="4680" Top="14.4" Width="270" Height="270" LineColor="16777215" LineWeight="0">0D0D0004028701000089504E470D0A1A0A0000000D494844520000000D0000000D0802000000FD89732B000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000206348524D00007A26000080840000FA00000080E8000075300000EA6000003A98000017709CBA513C000001054944415428535D90A196C2301045675D64DD46E2A8442223912BF904249F50898CACAC4456222B9191C145665D655DF7A603650F39737A26F3EEBC99E66B9E6759CEE3F731E4DB5D863C8DD6547B71CE1EB6DF5B55058ED3067FB83B97373FE39E20D9C5AABE6EA82B50382E54D134C835EA25149594D22A7C103E37AEDFD9CEC41CC5F72D4DABC16AD38D6DCE99D19537CDAD113AD41F6185706256885139777142660621420AF8832A348D13360C85B3272BB05C9443669642ECA350753175530B4DA5A333C7FEA84FF001C949CED7B3308B8ED2E79F284E7A2DF5251855DEAF08AF126BFC273063E0F39D156559680442132A0ABDB9F20A29B0072B23F325D73FD3F3075CD3FCEC2A2A0C7B0000000049454E44AE426082</Control>
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[public void Detail_Format()
+{
+  DataDynamics.ActiveReports.Picture picOK = (DataDynamics.ActiveReports.Picture)rpt.Sections["Detail"].Controls["picOK"];
+  DataDynamics.ActiveReports.Picture picError = (DataDynamics.ActiveReports.Picture)rpt.Sections["Detail"].Controls["picError"];
+  DataDynamics.ActiveReports.TextBox TextBox1 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox1"];
+
+	picOK.Visible = false;picError.Visible = false;
+  if (TextBox1.Text == "Running")
+  {
+   picOK.Visible = true;picError.Visible = false;}
+  else
+     if (TextBox1.Text == "Stopped")
+     {
+     picError.Visible = true;picOK.Visible = false;}
+}	]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

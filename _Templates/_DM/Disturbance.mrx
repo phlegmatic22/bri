@@ -1,0 +1,192 @@
+<eDNAproReports_Report>
+  <Report Name="Disturbance" ID="Disturbance" Version="3.0.0.0">
+    <Viewer ReportName="Disturbance.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances" ProviderInfo="Query.Disturbance.DisturbanceData" Method="GetActivatedDisturbances" Description="" FriendlyName="GetActivatedDisturbances" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="StartTime" Ref="StartTime" Usage="" />
+        <DataSetParameter Name="EndTime" Ref="EndTime" Usage="" />
+        <DataTable Name="ActivatedDisturbances" Description="">
+          <DataField Name="DisturbanceActivatedID" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceActivatedID" DataType="System.Int32" Caption="DisturbanceActivatedID" Description="" />
+          <DataField Name="DisturbanceName" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceName" DataType="System.String" Caption="DisturbanceName" Description="" />
+          <DataField Name="DisturbanceID" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceID" DataType="System.Int32" Caption="DisturbanceID" Description="" />
+          <DataField Name="ServerID" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ServerID" DataType="System.Int32" Caption="ServerID" Description="" />
+          <DataField Name="ServerName" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ServerName" DataType="System.String" Caption="ServerName" Description="" />
+          <DataField Name="ActivationTag" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTag" DataType="System.String" Caption="ActivationTag" Description="" />
+          <DataField Name="ActivationTime" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTime" DataType="System.DateTime" Caption="ActivationTime" Description="" />
+          <DataField Name="StartTime" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" DataType="System.DateTime" Caption="StartTime" Description="" />
+          <DataField Name="EndTime" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTime" DataType="System.DateTime" Caption="EndTime" Description="" />
+          <DataField Name="Comment" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.Comment" DataType="System.String" Caption="Comment" Description="" />
+          <DataField Name="ConnectedTags" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" DataType="System.String" Caption="ConnectedTags" Description="" />
+          <DataField Name="StartTimeStr" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTimeStr" DataType="System.String" Caption="StartTimeStr" Description="" />
+          <DataField Name="EndTimeStr" ID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTimeStr" DataType="System.String" Caption="EndTimeStr" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="StartTime" Type="System.DateTime" InitialValue="*:-1:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceName" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTag" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTime" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTime" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.Comment" />
+      </Connection>
+      <Connection ID="12" Type="ConstantConnection" LanguageConversion="false" Constant="deletedisturbance.aspx" />
+      <Connection ID="13" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="14" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="15" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="16" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="17" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceActivatedID" />
+      </Connection>
+      <Connection ID="20" Type="ConstantConnection" LanguageConversion="false" Constant="editcomment.aspx" />
+      <Connection ID="21" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="22" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="23" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="24" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="25" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceActivatedID" />
+      </Connection>
+      <Connection ID="59" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" />
+      </Connection>
+      <Connection ID="104" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="109" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="114" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreportShared/disturbance" />
+      <Connection ID="115" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreportShared/disturbance" />
+      <Connection ID="117" Type="ConstantConnection" LanguageConversion="false" Constant="DNAtracer" />
+      <Connection ID="118" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="119" Type="ConstantConnection" LanguageConversion="false" Constant="_templates/eventtrend" />
+      <Connection ID="120" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="121" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" />
+      </Connection>
+      <Connection ID="122" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" />
+      </Connection>
+      <Connection ID="124" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTime" />
+      </Connection>
+      <Connection ID="126" Type="ConstantConnection" LanguageConversion="false" Constant="DnaAuthTicket" />
+      <Connection ID="127" Type="ConstantConnection" LanguageConversion="false" Constant="(DnaAuthTicket)" />
+      <Connection ID="128" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="129" Type="ConstantConnection" LanguageConversion="false" Constant="/DNA" />
+      <Connection ID="130" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="131" Type="ConstantConnection" LanguageConversion="false" Constant="_templates/eventtrend" />
+      <Connection ID="132" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="133" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" />
+      </Connection>
+      <Connection ID="134" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="135" Type="ConstantConnection" LanguageConversion="false" Constant="_templates/eventtrend" />
+      <Connection ID="138" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="140" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="142" Type="ConstantConnection" LanguageConversion="false" Constant="DnaAuthTicket" />
+      <Connection ID="143" Type="ConstantConnection" LanguageConversion="false" Constant="(DnaAuthTicket)" />
+      <Connection ID="144" Type="ConstantConnection" LanguageConversion="false" Constant="Enter a value" />
+      <Connection ID="145" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="DnaAuthTicket" />
+      </Connection>
+      <Connection ID="146" Type="ConstantConnection" LanguageConversion="false" Constant="{0}" />
+      <Connection ID="147" Type="ConstantConnection" LanguageConversion="false" Constant="{1}" />
+      <Connection ID="149" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="151" Type="ConstantConnection" LanguageConversion="false" Constant="DnaAuthTicket" />
+      <Connection ID="152" Type="ConstantConnection" LanguageConversion="false" Constant="(DnaAuthTicket)" />
+      <Connection ID="156" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="158" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="163" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" />
+      </Connection>
+      <Connection ID="164" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTimeStr" />
+      </Connection>
+      <Connection ID="165" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTimeStr" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_OFFICE" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="PC\Administrator" ModificationDate="2014-02-11T15:44:13" CreatedDate="" CreatedBy="" Global="False" Template="True">
+    <Comment />
+    <Description />
+  </Info>
+  <HyperLink ID="1" Protocol="-1" Host="109" Path="115" File="12">
+    <UrlParameters Name="13" Value="14" Description="" />
+    <UrlParameters Name="15" Value="16" Description="" />
+    <UrlParameters Name="17" Value="18" Description="" />
+  </HyperLink>
+  <HyperLink ID="2" Protocol="-1" Host="104" Path="114" File="20">
+    <UrlParameters Name="21" Value="22" Description="" />
+    <UrlParameters Name="23" Value="24" Description="" />
+    <UrlParameters Name="25" Value="26" Description="" />
+  </HyperLink>
+  <HyperLink ID="4" Protocol="59" Host="128" Path="129" File="117">
+    <UrlParameters Name="134" Value="135" Description="" />
+    <UrlParameters Name="158" Value="163" Description="" />
+    <UrlParameters Name="138" Value="164" Description="" />
+    <UrlParameters Name="149" Value="165" Description="" />
+    <UrlParameters Name="151" Value="152" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

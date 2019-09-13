@@ -1,0 +1,109 @@
+<eDNAproReports_Report>
+  <Report Name="Collection Groups" ID="Collection Groups" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Collection Groups.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups" ProviderInfo="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus" Method="GetCollectionGroups" Description="" FriendlyName="GetCollectionGroups" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DEFINITION" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.DEFINITION" DataType="System.String" Caption="DEFINITION" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_#TAGS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#TAGS" DataType="System.String" Caption="IO_#TAGS" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NAME" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.NAME" DataType="System.String" Caption="NAME" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_RECORD_PROCESSING" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_RECORD_PROCESSING" DataType="System.String" Caption="IO_RECORD_PROCESSING" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_FREQUENCY" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_FREQUENCY" DataType="System.String" Caption="IO_FREQUENCY" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_LAST_UPDATE" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_UPDATE" DataType="System.String" Caption="IO_LAST_UPDATE" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_LAST_STATUS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_STATUS" DataType="System.String" Caption="IO_LAST_STATUS" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_LAST_STATUS_DESC" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_STATUS_DESC" DataType="System.String" Caption="IO_LAST_STATUS_DESC" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_#_BAD_TAGS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_BAD_TAGS" DataType="System.String" Caption="IO_#_BAD_TAGS" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_#_GOOD_TAGS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_GOOD_TAGS" DataType="System.String" Caption="IO_#_GOOD_TAGS" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_#_SCAN_OFF_TAGS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_SCAN_OFF_TAGS" DataType="System.String" Caption="IO_#_SCAN_OFF_TAGS" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IO_#_SUSPECT_TAGS" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_SUSPECT_TAGS" DataType="System.String" Caption="IO_#_SUSPECT_TAGS" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Exceptions" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Error" ID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Exceptions.Error" DataType="System.String" Caption="Error" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1717" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.VersionInfo.VersionInfo.VersionInformation.Result.Version" />
+      </Connection>
+      <Connection ID="1719" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1720" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="1721" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.NAME" />
+      </Connection>
+      <Connection ID="1722" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.DEFINITION" />
+      </Connection>
+      <Connection ID="1733" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#TAGS" />
+      </Connection>
+      <Connection ID="1734" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.NAME" />
+      </Connection>
+      <Connection ID="1735" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_RECORD_PROCESSING" />
+      </Connection>
+      <Connection ID="1736" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_FREQUENCY" />
+      </Connection>
+      <Connection ID="1737" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_UPDATE" />
+      </Connection>
+      <Connection ID="1738" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_STATUS" />
+      </Connection>
+      <Connection ID="1739" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_LAST_STATUS_DESC" />
+      </Connection>
+      <Connection ID="1740" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_BAD_TAGS" />
+      </Connection>
+      <Connection ID="1741" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_GOOD_TAGS" />
+      </Connection>
+      <Connection ID="1742" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_SCAN_OFF_TAGS" />
+      </Connection>
+      <Connection ID="1743" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.IO_#_SUSPECT_TAGS" />
+      </Connection>
+      <Connection ID="1776" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.DEFINITION" />
+      </Connection>
+      <Connection ID="1777" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.NAME" />
+      </Connection>
+      <Connection ID="1778" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="1779" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1781" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="1782" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="1787" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.HistoryCollectionStatus.GetCollectionGroups.Table.NAME" />
+      </Connection>
+      <Connection ID="1788" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1791" Type="ConstantConnection" LanguageConversion="false" Constant="Diagnostics/_detailed/Collection Group Tag Status" />
+      <Connection ID="1792" Type="ConstantConnection" LanguageConversion="false" Constant="HistoryTagName" />
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="1" Protocol="1778" Host="1779" Path="1788" File="1781">
+        <UrlParameters Name="1782" Value="1791" Description="" />
+        <UrlParameters Name="1792" Value="1787" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

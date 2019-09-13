@@ -1,0 +1,31 @@
+<eDNAproReports_Report>
+  <Report Name="Task List" ID="Task List" Version="3.0.0.0">
+    <Viewer ReportName="/_Templates/_Agent/Task List" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="q" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="DefaultSaveLocation" Type="System.String" InitialValue="/Agent" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DefaultSaveLocation" Overridable="True" DisplayIndex="1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_OFFICE" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

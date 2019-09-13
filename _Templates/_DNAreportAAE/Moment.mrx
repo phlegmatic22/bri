@@ -1,0 +1,124 @@
+<eDNAproReports_Report>
+  <Report Name="Moment" ID="Moment" Version="3.0.0.0">
+    <Viewer ReportName="Moment.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="FilterCriteria.ascx" />
+    <Header ClassName="DNAreportAEsorting.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment" ProviderInfo="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass" Method="Moments" Description="" FriendlyName="Moment" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="lookbackTimeSpan" Ref="DNAreportAE_LookBackTS" Usage="" />
+        <DataSetParameter Name="moment" Ref="endTime" Usage="" />
+        <DataSetParameter Name="priorities" Ref="DNAreportAE_Priority" Usage="" />
+        <DataSetParameter Name="tagName" Ref="DNAreportAE_TagName" Usage="" />
+        <DataSetParameter Name="tagDesc" Ref="DNAreportAE_TagDesc" Usage="" />
+        <DataSetParameter Name="eventDesc" Ref="DNAreportAE_EventDesc" Usage="" />
+        <DataSetParameter Name="filterIn" Ref="DNAreportAE_FilterIn" Usage="" />
+        <DataSetParameter Name="rowLimit" Ref="DNAreportAE_RowLimit" Usage="" />
+        <DataSetParameter Name="eventOrigins" Ref="DNAreportAE_EventOrigin" Usage="" />
+        <DataSetParameter Name="areas" Ref="DNAreportAE_Area" Usage="" />
+        <DataSetParameter Name="sources" Ref="DNAreportAE_Source" Usage="" />
+        <DataSetParameter Name="tagGroups" Ref="DNAreportAE_TagGroup" Usage="" />
+        <DataSetParameter Name="sorting" Ref="DNAreportAE_Sorting" Usage="" />
+        <DataSetParameter Name="includeShelved" Ref="DNAreportAE_IncludeShelved" Usage="" />
+        <DataSetParameter Name="options" Ref="options" Usage="" />
+        <DataTable Name="Moment" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="PriorityNumber" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.PriorityNumber" DataType="System.Int32" Caption="PriorityNumber" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Area" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Area" DataType="System.String" Caption="Area" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AreaDescription" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.AreaDescription" DataType="System.String" Caption="AreaDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagDescription" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.TagDescription" DataType="System.String" Caption="TagDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventDescription" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.EventDescription" DataType="System.String" Caption="EventDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="StartTime" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.StartTime" DataType="System.DateTime" Caption="StartTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Duration" ID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Duration" DataType="System.String" Caption="Duration" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="DNAreportAE_EventType" Type="System.String[]" InitialValue="Alarm" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_EventType" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="DNAreportAE_Priority" Type="System.String" InitialValue="1-200,201-400,401-600,601-800,801-1000" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Priority" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="DNAreportAE_TagName" Type="System.String" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_TagName" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="DNAreportAE_TagDesc" Type="System.String" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_TagDesc" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="DNAreportAE_EventDesc" Type="System.String" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_EventDesc" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="DNAreportAE_TGFilterIn" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_TGFilterIn" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="DNAreportAE_EventOrigin" Type="System.Int32[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_EventOrigin" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="DNAreportAE_Area" Type="System.Int32[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Area" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="DNAreportAE_Source" Type="System.Int32[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Source" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="DNAreportAE_TagGroup" Type="System.Int32[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_TagGroup" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="DNAreportAE_Tabs" Type="System.String" InitialValue="OAF,SGF,S" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Tabs" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="DNAreportAE_RowLimit" Type="System.Int32" InitialValue="5000" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_RowLimit" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="DNAreportAE_DefaultTab" Type="System.String" InitialValue="S" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_DefaultTab" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="DNAreportAE_FilterIn" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_FilterIn" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="DNAreportAE_Sorting" Type="System.String" InitialValue="Duration D" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Sorting" Overridable="True" DisplayIndex="16" />
+      <Parameter Name="DNAreportAE_SelectedGroups" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedGroups" Overridable="True" DisplayIndex="17" />
+      <Parameter Name="DNAreportAE_CriteriaList" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_CriteriaList" Overridable="True" DisplayIndex="18" />
+      <Parameter Name="DNAreportAE_SelectedSources" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedSources" Overridable="True" DisplayIndex="19" />
+      <Parameter Name="DNAreportAE_SelectedAreas" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedAreas" Overridable="True" DisplayIndex="20" />
+      <Parameter Name="DNAreportAE_SelectedOrigins" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_SelectedOrigins" Overridable="True" DisplayIndex="21" />
+      <Parameter Name="DNAreportAE_EventTypeEnabled" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_EventTypeEnabled" Overridable="True" DisplayIndex="22" />
+      <Parameter Name="DNAreportAE_Mode" Type="System.String" InitialValue="Moment" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_Mode" Overridable="True" DisplayIndex="23" />
+      <Parameter Name="DNAreportAE_LookBackTS" Type="System.String" InitialValue="0.08:00:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_LookBackTS" Overridable="True" DisplayIndex="24" />
+      <Parameter Name="UiDisabledElements" Type="System.String[]" InitialValue="Start&#xA;Span" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="UiDisabledElements" Overridable="True" DisplayIndex="25" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="26" />
+      <Parameter Name="ReportClass" Type="System.String" InitialValue="AAE" HeaderControl="" Editable="false" Mapping="Runtime" Description="For RelatedReport Controll Panel" Usage="ReportClass" Overridable="True" DisplayIndex="27" />
+      <Parameter Name="DNAreportAE_CurrentReportID" Type="System.String" InitialValue="Moment" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DNAreportAE_CurrentReportID" Overridable="True" DisplayIndex="28" />
+      <Parameter Name="XlsExportOptions" Type="System.String" InitialValue=" " HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="XlsExportOptions" Overridable="True" DisplayIndex="29" />
+      <Parameter Name="DefaultSaveLocation" Type="System.String" InitialValue="/DNAreport/AAE" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="DefaultSaveLocation" Overridable="True" DisplayIndex="30" />
+      <Parameter Name="DNAreportAE_IncludeShelved" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="DNAreportAE_IncludeShelved" Overridable="True" Group="" DisplayIndex="25" />
+      <Parameter Name="options" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="26" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="51" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="DNAreportAE_CriteriaList" />
+      </Connection>
+      <Connection ID="74" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Tag" />
+      </Connection>
+      <Connection ID="75" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.TagDescription" />
+      </Connection>
+      <Connection ID="76" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.EventDescription" />
+      </Connection>
+      <Connection ID="77" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.PriorityNumber" />
+      </Connection>
+      <Connection ID="78" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Area" />
+      </Connection>
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.Duration" />
+      </Connection>
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.DNAreportAEadvanced.DataClass.Moment.Moment.StartTime" />
+      </Connection>
+      <Connection ID="2521" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="2522" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="1.0.4" ModifiedBy="PC\Administrator" ModificationDate="2014-02-11T13:39:29" CreatedDate="2006-04-19T11:59:47" CreatedBy="Metso\Metso DNA" Global="True" Template="True">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

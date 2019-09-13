@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="8445" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="Detail" Name="Detail" Height="3150" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Field" Name="TextBox" Tag="35" MOD="4" Left="180" Top="90" Width="6210" Height="288" Text="Date" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="36" MOD="4" Left="1350" Top="450" Width="7020" Height="810" Text="Title" CanShrink="1" RightToLeft="1" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox2" Tag="37" MOD="4" Left="1350" Top="1260" Width="7020" Height="288" Text="Author" CanShrink="1" RightToLeft="1" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox3" Tag="38" MOD="4" Left="360" Top="1710" Width="8010" Height="1260" Text="Comment" CanShrink="1" RightToLeft="1" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="EditLinkTB" MOD="4" Left="6480" Top="90" Width="990" Height="288" Text="Controls.EditRowTexts.Edit" HyperLink="3" Style="color: Blue; text-decoration: underline; text-align: left; white-space: nowrap; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="180" Top="450" Width="1170" Height="270" Caption="Setting.entryTitle" />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="1260" Width="1170" Height="270" Caption="CommentEditDialog.lblAuthor.Text" />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="90" Y1="3060" X2="8640" Y2="3060" LineColor="14805985" />
+      <Control Type="AR.Field" Name="DeleteLinkTB" MOD="4" Left="7470" Top="90" Width="900" Height="288" Text="Operations.Delete" HyperLink="4" Style="color: Blue; text-decoration: underline; text-align: right; white-space: inherit; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <Script>
+    <![CDATA[//*************************************************************************
+// Copyright (C) Metso Automation Inc.
+//
+// Hierarchy code  :
+// Author/date     : Anna Sharonova / 12.09.2006
+// Documents       : 
+// Description     : Basic report script for DNAdiary.
+//				   : Provides report localization with using of 
+// 				   : Query.DNAdiary.Entries.GetStrings method  
+//
+// Comments		   : In this version text values of labels are used as 
+//				   : localization keys. Only labels are localized. 
+//				   : It means that textboxes are data bound fields and 
+//				   : don't require any localization.
+//
+// CHANGE HISTORY
+// 
+// 15.09.2006 Anna Sharonova
+// Comment
+// The possibility of textboxes localization added. 
+// To localize textbox it is necessary to place its name to 'tbs' array
+// as string value and to set local key as textbox text.   
+//
+// Modified
+//
+//*************************************************************************/
+
+
+public void Detail_Format()
+{
+	// string array for localizable textboxes
+	string[] tbs = new string[] {"EditLinkTB","DeleteLinkTB"};
+	// number of controls on the detail section
+	int count = rpt.Sections["Detail"].Controls.Count;
+	// variable to collect all labels default values
+	string labs = "";
+	// select all labels and needed textboxes from controls and collect their values
+	for (int i=0; i<count; i++)
+	{
+		// if control type is 'Label'
+		if (rpt.Sections["Detail"].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.Label")
+		{
+			// get its text value to use it as key for getting localization string
+			DataDynamics.ActiveReports.Label lbl = (Label)rpt.Sections["Detail"].Controls[i];
+			labs += lbl.Text + "\r\n";
+		}
+		// if control type is 'TextBox'
+		if (rpt.Sections["Detail"].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.TextBox")
+		{
+			DataDynamics.ActiveReports.TextBox tb = (TextBox)rpt.Sections["Detail"].Controls[i];
+			// check if textbox name is 'tbs' array in
+			int ind = System.Array.IndexOf(tbs,tb.Name);
+			if (ind!=-1)
+			{
+				// if ok add its value to key string
+				labs += tb.Text + "\r\n";			
+			}
+		}
+	}
+	// if key string was added with some value
+	// remove two last simbols '\r\n' to get right array 
+	if (labs.Length > 2)
+		labs = labs.Substring(0,labs.Length - 2); 
+	// convert string value to array of strings to use as request parameter
+    string[] labs_ar = labs.Replace("\r","").Split('\n');
+    labs = "";
+    // create method request object
+    Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject dobj = (Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject)
+      Metso.DNA.IA.DNAdata.RemoteUtils.CreateRemote("DNAdataObject");
+    // get user language information using current thread
+    System.Collections.Specialized.NameValueCollection additionalSettings = new System.Collections.Specialized.NameValueCollection();
+    additionalSettings.Add("langid", System.Threading.Thread.CurrentThread.CurrentUICulture.Name);
+
+	// try to invoke the localization method
+	try
+	{
+	    // invoke Query.DNAdiary.Entries.GetStrings method
+	    System.Data.DataSet ds = (System.Data.DataSet)dobj.InvokeMethod("GetStrings", "$DNAdiary/Query.DNAdiary.Entries",additionalSettings, labs_ar, null);
+		
+		// for each report detail section label control try to find value from result dataset 
+		for (int i=0; i<count; i++)
+		{
+			// if control type is 'Label' 
+			if (rpt.Sections["Detail"].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.Label")
+			{
+				DataDynamics.ActiveReports.Label lbl = (Label)rpt.Sections["Detail"].Controls[i];
+            	// use default text value of label as key to get localization string
+            	// and find result using this key 
+            	System.Data.DataRow[] str = ds.Tables["Strings"].Select("key = '" + lbl.Text + "'");
+            	// if result string isn't empty, change label text with local string
+            	if (str[0][1].ToString() != null && str[0][1].ToString() != "")
+            		// add colon sign to the end of text if there is no this one
+            		if (lbl.Text.Substring(lbl.Text.Length-1,1) != ":")
+	            		lbl.Text = str[0][1].ToString()+":";
+	            	else
+	            		lbl.Text = str[0][1].ToString();
+			}
+			// if control type is 'TextBox'
+			if (rpt.Sections["Detail"].Controls[i].GetType().ToString() == "DataDynamics.ActiveReports.TextBox")
+			{
+				DataDynamics.ActiveReports.TextBox tb = (TextBox)rpt.Sections["Detail"].Controls[i];
+				// check if textbox name is 'tbs' array in
+				int ind = System.Array.IndexOf(tbs,tb.Name);
+				if (ind!=-1)
+				{
+            		System.Data.DataRow[] str = ds.Tables["Strings"].Select("key = '" + tb.Text + "'");
+            		// if result string isn't empty, change textbox text with it
+            		if (str[0][1].ToString() != null && str[0][1].ToString() != "")
+	        	    		tb.Text = str[0][1].ToString();
+					
+				}			
+			}
+		}
+	}
+	catch
+	{
+		// ignore to leave labels with default values
+	}
+	
+}
+]]></Script>
+  <PageSettings />
+</ActiveReportsLayout>

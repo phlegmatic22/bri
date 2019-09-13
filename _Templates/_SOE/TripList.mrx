@@ -1,0 +1,442 @@
+<eDNAproReports_Report>
+  <Report Name="TripList" ID="TripList" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="SOEreports" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="Valmet\Valmet DNA" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="SOEtripDefinition.ascx" />
+    <Header ClassName="SOEfilters.ascx" />
+    <Header ClassName="SOEtripDetails.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria" ProviderInfo="$DNAalarmHistorian/Query.SOE.SOE" Method="GetTripListFilterCriteria" Description="" FriendlyName="GetTripListFilterCriteria" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="soeEventTypes" Ref="sTypes" Usage="" />
+        <DataSetParameter Name="soePriority" Ref="sPriority" Usage="" />
+        <DataSetParameter Name="soeOriginIds" Ref="sOrigins" Usage="" />
+        <DataSetParameter Name="soeSourceIds" Ref="sSources" Usage="" />
+        <DataSetParameter Name="soeTag" Ref="sTags" Usage="" />
+        <DataSetParameter Name="soeTagDescription" Ref="sTDesc" Usage="" />
+        <DataSetParameter Name="soeAreas" Ref="sAreas" Usage="" />
+        <DataSetParameter Name="soeEventDescription" Ref="sEDesc" Usage="" />
+        <DataSetParameter Name="soeTagGroups" Ref="sTGroups" Usage="" />
+        <DataSetParameter Name="soeFilterIn" Ref="sFilterIn" Usage="" />
+        <DataSetParameter Name="memEventTypes" Ref="mTypes" Usage="" />
+        <DataSetParameter Name="memPriority" Ref="mPriority" Usage="" />
+        <DataSetParameter Name="memOriginIds" Ref="mOrigins" Usage="" />
+        <DataSetParameter Name="memSourceIds" Ref="mSources" Usage="" />
+        <DataSetParameter Name="memTag" Ref="mTags" Usage="" />
+        <DataSetParameter Name="memTagDescription" Ref="mTDesc" Usage="" />
+        <DataSetParameter Name="memAreas" Ref="mAreas" Usage="" />
+        <DataSetParameter Name="memEventDescription" Ref="mEDesc" Usage="" />
+        <DataSetParameter Name="memTagGroups" Ref="mTGroups" Usage="" />
+        <DataSetParameter Name="memFilterIn" Ref="mFilterIn" Usage="" />
+        <DataSetParameter Name="delay" Ref="delay" Usage="" />
+        <DataTable Name="Events" Description="">
+          <DataField Name="EventID" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventID" DataType="System.Int32" Caption="EventID" Description="" />
+          <DataField Name="EventClass" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventClass" DataType="System.String" Caption="EventClass" Description="" />
+          <DataField Name="EventTime" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" DataType="System.DateTime" Caption="EventTime" Description="" />
+          <DataField Name="EventType" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventType" DataType="System.Int32" Caption="EventType" Description="" />
+          <DataField Name="ParentEventID" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.ParentEventID" DataType="System.Int32" Caption="ParentEventID" Description="" />
+          <DataField Name="Priority" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Priority" DataType="System.Int32" Caption="Priority" Description="" />
+          <DataField Name="AckDemand" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.AckDemand" DataType="System.Int32" Caption="AckDemand" Description="" />
+          <DataField Name="EventMainClass" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventMainClass" DataType="System.Int32" Caption="EventMainClass" Description="" />
+          <DataField Name="EventNumber" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventNumber" DataType="System.Int64" Caption="EventNumber" Description="" />
+          <DataField Name="EventQuality" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventQuality" DataType="System.String" Caption="EventQuality" Description="" />
+          <DataField Name="UserQuality" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.UserQuality" DataType="System.String" Caption="UserQuality" Description="" />
+          <DataField Name="Cookie" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Cookie" DataType="System.String" Caption="Cookie" Description="" />
+          <DataField Name="FreeGrouping" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.FreeGrouping" DataType="System.String" Caption="FreeGrouping" Description="" />
+          <DataField Name="Origin" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Origin" DataType="System.String" Caption="Origin" Description="" />
+          <DataField Name="OriginDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.OriginDescription" DataType="System.String" Caption="OriginDescription" Description="" />
+          <DataField Name="Source" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Source" DataType="System.String" Caption="Source" Description="" />
+          <DataField Name="SourceDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.SourceDescription" DataType="System.String" Caption="SourceDescription" Description="" />
+          <DataField Name="Tag" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Tag" DataType="System.String" Caption="Tag" Description="" />
+          <DataField Name="TagDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TagDescription" DataType="System.String" Caption="TagDescription" Description="" />
+          <DataField Name="Area" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Area" DataType="System.String" Caption="Area" Description="" />
+          <DataField Name="AreaDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.AreaDescription" DataType="System.String" Caption="AreaDescription" Description="" />
+          <DataField Name="EventPoint" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventPoint" DataType="System.String" Caption="EventPoint" Description="" />
+          <DataField Name="EventDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventDescription" DataType="System.String" Caption="EventDescription" Description="" />
+          <DataField Name="SubEventPoint" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.SubEventPoint" DataType="System.String" Caption="SubEventPoint" Description="" />
+          <DataField Name="ExternalEvent" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.ExternalEvent" DataType="System.String" Caption="ExternalEvent" Description="" />
+          <DataField Name="TagGroup" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TagGroup" DataType="System.String" Caption="TagGroup" Description="" />
+          <DataField Name="TagGroupDescription" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TagGroupDescription" DataType="System.String" Caption="TagGroupDescription" Description="" />
+          <DataField Name="TripLastEvent" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TripLastEvent" DataType="System.Int32" Caption="TripLastEvent" Description="" />
+        </DataTable>
+        <DataTable Name="TagGroups" Description="">
+          <DataField Name="id" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.TagGroups.id" DataType="System.Int32" Caption="id" Description="" />
+          <DataField Name="name" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.TagGroups.name" DataType="System.String" Caption="name" Description="" />
+          <DataField Name="description" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.TagGroups.description" DataType="System.String" Caption="description" Description="" />
+        </DataTable>
+        <DataTable Name="ah_evtSource" Description="">
+          <DataField Name="ID_evtSource" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtSource.ID_evtSource" DataType="System.Int32" Caption="ID_evtSource" Description="" />
+          <DataField Name="NM_evtSource" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtSource.NM_evtSource" DataType="System.String" Caption="NM_evtSource" Description="" />
+          <DataField Name="DS_evtSource" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtSource.DS_evtSource" DataType="System.String" Caption="DS_evtSource" Description="" />
+        </DataTable>
+        <DataTable Name="ah_evtServer" Description="">
+          <DataField Name="ID_evtServer" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtServer.ID_evtServer" DataType="System.Int32" Caption="ID_evtServer" Description="" />
+          <DataField Name="NM_evtServer" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtServer.NM_evtServer" DataType="System.String" Caption="NM_evtServer" Description="" />
+          <DataField Name="DS_evtServer" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtServer.DS_evtServer" DataType="System.String" Caption="DS_evtServer" Description="" />
+        </DataTable>
+        <DataTable Name="ah_evtArea" Description="">
+          <DataField Name="ID_evtArea" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtArea.ID_evtArea" DataType="System.Int32" Caption="ID_evtArea" Description="" />
+          <DataField Name="NM_evtArea" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtArea.NM_evtArea" DataType="System.String" Caption="NM_evtArea" Description="" />
+          <DataField Name="DS_evtArea" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_evtArea.DS_evtArea" DataType="System.String" Caption="DS_evtArea" Description="" />
+        </DataTable>
+        <DataTable Name="ah_group" Description="">
+          <DataField Name="ID_group" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_group.ID_group" DataType="System.Int32" Caption="ID_group" Description="" />
+          <DataField Name="NM_group" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_group.NM_group" DataType="System.String" Caption="NM_group" Description="" />
+          <DataField Name="DS_groupDescr" ID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.ah_group.DS_groupDescr" DataType="System.String" Caption="DS_groupDescr" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-2:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time (-2 hours)" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End time (current time)" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="sTypes" Type="System.String[]" InitialValue="Alarm" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeEventTypes" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="sPriority" Type="System.String" InitialValue="1-200,201-400,401-600,601-800,801-1000" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soePriority" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="sOrigins" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeOriginIds" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="sSources" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeSourceIds" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="sTags" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeTag" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="sTDesc" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeTagDescription" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="sAreas" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeAreas" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="sEDesc" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeEventDescription" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="sTGroups" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeTagGroups" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="sFilterIn" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeFilterIn" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="sSelectedGroups" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeSelectedGroups" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="sSelectedSources" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeSelectedSources" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="sSelectedAreas" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeSelectedAreas" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="sSelectedOrigins" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_soeSelectedOrigins" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="mTypes" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memEventTypes" Overridable="True" DisplayIndex="16" />
+      <Parameter Name="mPriority" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memPriority" Overridable="True" DisplayIndex="17" />
+      <Parameter Name="mOrigins" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memOriginIds" Overridable="True" DisplayIndex="18" />
+      <Parameter Name="mSources" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memSourceIds" Overridable="True" DisplayIndex="19" />
+      <Parameter Name="mTags" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memTag" Overridable="True" DisplayIndex="20" />
+      <Parameter Name="mTDesc" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memTagDescription" Overridable="True" DisplayIndex="21" />
+      <Parameter Name="mAreas" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memAreas" Overridable="True" DisplayIndex="22" />
+      <Parameter Name="mEDesc" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memEventDescription" Overridable="True" DisplayIndex="23" />
+      <Parameter Name="mTGroups" Type="System.Int32[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memTagGroups" Overridable="True" DisplayIndex="24" />
+      <Parameter Name="mFilterIn" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memFilterIn" Overridable="True" DisplayIndex="25" />
+      <Parameter Name="mSelectedGroups" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memSelectedGroups" Overridable="True" DisplayIndex="26" />
+      <Parameter Name="mSelectedSources" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memSelectedSources" Overridable="True" DisplayIndex="27" />
+      <Parameter Name="mSelectedAreas" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memSelectedAreas" Overridable="True" DisplayIndex="28" />
+      <Parameter Name="mSelectedOrigins" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_memSelectedOrigins" Overridable="True" DisplayIndex="29" />
+      <Parameter Name="delay" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_delay" Overridable="True" DisplayIndex="30" />
+      <Parameter Name="lSpan" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_leftSpan" Overridable="True" DisplayIndex="31" />
+      <Parameter Name="rSpan" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_rightSpan" Overridable="True" DisplayIndex="32" />
+      <Parameter Name="period" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_period" Overridable="True" DisplayIndex="33" />
+      <Parameter Name="tagList" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_tags" Overridable="True" DisplayIndex="34" />
+      <Parameter Name="showTagTable" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="SOE_showTagTable" Overridable="True" DisplayIndex="35" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="36" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="3" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.EventID" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.EventTime" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.Tag" />
+      </Connection>
+      <Connection ID="7" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="8" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="12" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/" />
+      <Connection ID="13" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/" />
+      <Connection ID="14" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="15" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport" />
+      <Connection ID="22" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/Viewer.aspx" />
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.EventID" />
+      </Connection>
+      <Connection ID="28" Type="ConstantConnection" LanguageConversion="false" Constant="ReportMode" />
+      <Connection ID="30" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="31" Type="ConstantConnection" LanguageConversion="false" Constant="SessionId" />
+      <Connection ID="32" Type="ConstantConnection" LanguageConversion="false" Constant="42342-24234-3434-3434" />
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.EventTime" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripEvents.Trip.EventDescription" />
+      </Connection>
+      <Connection ID="35" Type="ConstantConnection" LanguageConversion="True" Constant="EventTime" />
+      <Connection ID="36" Type="ConstantConnection" LanguageConversion="True" Constant="Event" />
+      <Connection ID="37" Type="ConstantConnection" LanguageConversion="True" Constant="Details" />
+      <Connection ID="38" Type="ConstantConnection" LanguageConversion="True" Constant="Report_StartTime" />
+      <Connection ID="39" Type="ConstantConnection" LanguageConversion="True" Constant="Report_EndTime" />
+      <Connection ID="40" Type="ConstantConnection" LanguageConversion="True" Constant="Reports_PrintTime" />
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventDescription" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Tag" />
+      </Connection>
+      <Connection ID="46" Type="ConstantConnection" LanguageConversion="false" Constant="SOE_eventID" />
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventID" />
+      </Connection>
+      <Connection ID="49" Type="ConstantConnection" LanguageConversion="True" Constant="SOE_trip_list" />
+      <Connection ID="50" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="56" Type="ConstantConnection" LanguageConversion="false" Constant="endTime" />
+      <Connection ID="57" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="63" Type="ConstantConnection" LanguageConversion="false" Constant="/_SOE/TripEvents" />
+      <Connection ID="64" Type="ConstantConnection" LanguageConversion="false" Constant="SOE_EventID" />
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventClass" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Area" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="68" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Tag" />
+      </Connection>
+      <Connection ID="69" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventClass" />
+      </Connection>
+      <Connection ID="70" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventDescription" />
+      </Connection>
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.Area" />
+      </Connection>
+      <Connection ID="72" Type="ConstantConnection" LanguageConversion="True" Constant="Details" />
+      <Connection ID="73" Type="ConstantConnection" LanguageConversion="True" Constant="Tag" />
+      <Connection ID="74" Type="ConstantConnection" LanguageConversion="True" Constant="EventClass" />
+      <Connection ID="75" Type="ConstantConnection" LanguageConversion="True" Constant="Area" />
+      <Connection ID="76" Type="ConstantConnection" LanguageConversion="false" Constant="startTime" />
+      <Connection ID="79" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="80" Type="ConstantConnection" LanguageConversion="false" Constant="endTime" />
+      <Connection ID="81" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TripEndTime" />
+      </Connection>
+      <Connection ID="83" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="84" Type="ConstantConnection" LanguageConversion="false" Constant="startTime" />
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="86" Type="ConstantConnection" LanguageConversion="false" Constant="endTime" />
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TripEndTime" />
+      </Connection>
+      <Connection ID="88" Type="ConstantConnection" LanguageConversion="false" Constant="startTime" />
+      <Connection ID="89" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="90" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="91" Type="ConstantConnection" LanguageConversion="false" Constant="startTime" />
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventTime" />
+      </Connection>
+      <Connection ID="93" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="98" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="99" Type="ConstantConnection" LanguageConversion="false" Constant="/_SOE/TripDetails" />
+      <Connection ID="101" Type="ConstantConnection" LanguageConversion="false" Constant="firstEventID" />
+      <Connection ID="102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventID" />
+      </Connection>
+      <Connection ID="103" Type="ConstantConnection" LanguageConversion="false" Constant="lastEventID" />
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TripLastEvent" />
+      </Connection>
+      <Connection ID="105" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="106" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="107" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="108" Type="ConstantConnection" LanguageConversion="false" Constant="/_SOE/TripDetails" />
+      <Connection ID="109" Type="ConstantConnection" LanguageConversion="false" Constant="firstEventID" />
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.EventID" />
+      </Connection>
+      <Connection ID="112" Type="ConstantConnection" LanguageConversion="false" Constant="lastEventID" />
+      <Connection ID="113" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TripLastEvent" />
+      </Connection>
+      <Connection ID="114" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sTypes" />
+      </Connection>
+      <Connection ID="115" Type="ConstantConnection" LanguageConversion="false" Constant="sTypes" />
+      <Connection ID="154" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="delay" />
+      </Connection>
+      <Connection ID="116" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sPriority" />
+      </Connection>
+      <Connection ID="117" Type="ConstantConnection" LanguageConversion="false" Constant="sPriority" />
+      <Connection ID="118" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sSelectedOrigins" />
+      </Connection>
+      <Connection ID="119" Type="ConstantConnection" LanguageConversion="false" Constant="sSelectedOrigins" />
+      <Connection ID="120" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sSelectedSources" />
+      </Connection>
+      <Connection ID="121" Type="ConstantConnection" LanguageConversion="false" Constant="sSelectedSources" />
+      <Connection ID="122" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sTags" />
+      </Connection>
+      <Connection ID="123" Type="ConstantConnection" LanguageConversion="false" Constant="sTags" />
+      <Connection ID="124" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sTDesc" />
+      </Connection>
+      <Connection ID="125" Type="ConstantConnection" LanguageConversion="false" Constant="sTDesc" />
+      <Connection ID="126" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sSelectedAreas" />
+      </Connection>
+      <Connection ID="127" Type="ConstantConnection" LanguageConversion="false" Constant="sSelectedAreas" />
+      <Connection ID="128" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sEDesc" />
+      </Connection>
+      <Connection ID="129" Type="ConstantConnection" LanguageConversion="false" Constant="sEDesc" />
+      <Connection ID="130" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sSelectedGroups" />
+      </Connection>
+      <Connection ID="131" Type="ConstantConnection" LanguageConversion="false" Constant="sSelectedGroups" />
+      <Connection ID="132" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="sFilterIn" />
+      </Connection>
+      <Connection ID="133" Type="ConstantConnection" LanguageConversion="false" Constant="sFilterIn" />
+      <Connection ID="134" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mTypes" />
+      </Connection>
+      <Connection ID="135" Type="ConstantConnection" LanguageConversion="false" Constant="mTypes" />
+      <Connection ID="136" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mPriority" />
+      </Connection>
+      <Connection ID="137" Type="ConstantConnection" LanguageConversion="false" Constant="mPriority" />
+      <Connection ID="138" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mSelectedOrigins" />
+      </Connection>
+      <Connection ID="139" Type="ConstantConnection" LanguageConversion="false" Constant="mSelectedOrigins" />
+      <Connection ID="140" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mSelectedSources" />
+      </Connection>
+      <Connection ID="141" Type="ConstantConnection" LanguageConversion="false" Constant="mSelectedSources" />
+      <Connection ID="142" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mTags" />
+      </Connection>
+      <Connection ID="143" Type="ConstantConnection" LanguageConversion="false" Constant="mTags" />
+      <Connection ID="144" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mTDesc" />
+      </Connection>
+      <Connection ID="145" Type="ConstantConnection" LanguageConversion="false" Constant="mTDesc" />
+      <Connection ID="146" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mSelectedAreas" />
+      </Connection>
+      <Connection ID="147" Type="ConstantConnection" LanguageConversion="false" Constant="mSelectedAreas" />
+      <Connection ID="148" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mEDesc" />
+      </Connection>
+      <Connection ID="149" Type="ConstantConnection" LanguageConversion="false" Constant="mEDesc" />
+      <Connection ID="150" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mSelectedGroups" />
+      </Connection>
+      <Connection ID="151" Type="ConstantConnection" LanguageConversion="false" Constant="mSelectedGroups" />
+      <Connection ID="152" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="mFilterIn" />
+      </Connection>
+      <Connection ID="153" Type="ConstantConnection" LanguageConversion="false" Constant="mFilterIn" />
+      <Connection ID="155" Type="ConstantConnection" LanguageConversion="false" Constant="delay" />
+      <Connection ID="156" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="lSpan" />
+      </Connection>
+      <Connection ID="157" Type="ConstantConnection" LanguageConversion="false" Constant="lSpan" />
+      <Connection ID="158" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="rSpan" />
+      </Connection>
+      <Connection ID="159" Type="ConstantConnection" LanguageConversion="false" Constant="rSpan" />
+      <Connection ID="160" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="period" />
+      </Connection>
+      <Connection ID="161" Type="ConstantConnection" LanguageConversion="false" Constant="period" />
+      <Connection ID="162" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagList" />
+      </Connection>
+      <Connection ID="163" Type="ConstantConnection" LanguageConversion="false" Constant="tagList" />
+      <Connection ID="164" Type="ConstantConnection" LanguageConversion="false" Constant="showTagTable" />
+      <Connection ID="165" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="showTagTable" />
+      </Connection>
+      <Connection ID="166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAalarmHistorian/Query.SOE.SOE.GetTripListFilterCriteria.Events.TagDescription" />
+      </Connection>
+      <Connection ID="167" Type="ConstantConnection" LanguageConversion="True" Constant="TagDescription" />
+      <Connection ID="206" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="207" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <Viewer ReportName="TripList.rpx" ClassName="Layout" Layout="" />
+  <HyperLink ID="8" Protocol="-1" Host="-1" Path="-1" File="30">
+    <UrlParameters Name="50" Value="63" Description="" />
+    <UrlParameters Name="64" Value="47" Description="" />
+    <UrlParameters Name="59" Value="58" Description="" />
+    <UrlParameters Name="61" Value="60" Description="" />
+  </HyperLink>
+  <HyperLink ID="13" Protocol="-1" Host="-1" Path="-1" File="93">
+    <UrlParameters Name="101" Value="102" Description="" />
+    <UrlParameters Name="103" Value="104" Description="" />
+    <UrlParameters Name="98" Value="99" Description="" />
+  </HyperLink>
+  <HyperLink ID="15" Protocol="-1" Host="-1" Path="-1" File="106">
+    <UrlParameters Name="107" Value="108" Description="" />
+    <UrlParameters Name="109" Value="111" Description="" />
+    <UrlParameters Name="112" Value="113" Description="" />
+    <UrlParameters Name="115" Value="114" Description="" />
+    <UrlParameters Name="117" Value="116" Description="" />
+    <UrlParameters Name="119" Value="118" Description="" />
+    <UrlParameters Name="121" Value="120" Description="" />
+    <UrlParameters Name="123" Value="122" Description="" />
+    <UrlParameters Name="125" Value="124" Description="" />
+    <UrlParameters Name="127" Value="126" Description="" />
+    <UrlParameters Name="129" Value="128" Description="" />
+    <UrlParameters Name="131" Value="130" Description="" />
+    <UrlParameters Name="133" Value="132" Description="" />
+    <UrlParameters Name="135" Value="134" Description="" />
+    <UrlParameters Name="137" Value="136" Description="" />
+    <UrlParameters Name="139" Value="138" Description="" />
+    <UrlParameters Name="141" Value="140" Description="" />
+    <UrlParameters Name="143" Value="142" Description="" />
+    <UrlParameters Name="145" Value="144" Description="" />
+    <UrlParameters Name="147" Value="146" Description="" />
+    <UrlParameters Name="149" Value="148" Description="" />
+    <UrlParameters Name="151" Value="150" Description="" />
+    <UrlParameters Name="153" Value="152" Description="" />
+    <UrlParameters Name="155" Value="154" Description="" />
+    <UrlParameters Name="157" Value="156" Description="" />
+    <UrlParameters Name="159" Value="158" Description="" />
+    <UrlParameters Name="161" Value="160" Description="" />
+    <UrlParameters Name="163" Value="162" Description="" />
+    <UrlParameters Name="164" Value="165" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

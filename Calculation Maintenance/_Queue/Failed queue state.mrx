@@ -1,0 +1,26 @@
+<eDNAproReports_Report>
+  <Report Name="Failed queue state" ID="Failed queue state" Version="3.0.0.0" DynamicBaseType="">
+    <Viewer ReportName="/_Templates/_Calculation Maintenance/Failed queue state" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="calcPath" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="Calculation Instances" Owner="" Expiration="" Category="Report.CalculationReports" Version="1.0.5" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="True" Template="False">
+    <Comment />
+    <Description>Shows calculation instance statuses</Description>
+  </Info>
+</eDNAproReports_Report>

@@ -1,0 +1,35 @@
+<eDNAproReports_Report>
+  <Report Name="Level Calculations" ID="Level Calculations" Version="3.0.0.0" DynamicBaseType="">
+    <Viewer ReportName="/_Templates/_Calculation Maintenance/LevelCalculations" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.LevelCalculations.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="groups" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="calculationGroups" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="tagName" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="tagName" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="description" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="description" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="mode" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="mode" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="buttons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="timeline" Type="System.String[]" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="levelIdPrefix" Type="System.String" InitialValue="_builtin/" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="levelIdPrefix" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="groupMode" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="groupMode" Overridable="True" Group="" DisplayIndex="4" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="Level Calculations" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

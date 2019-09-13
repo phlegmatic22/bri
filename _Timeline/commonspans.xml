@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<DnaTimeSpanConfiguration xmlns="http://www.metsoautomation.com/DNA/IA/DnaTimeSpanConfiguration.xsd">
+  <DnaTimeSpan>
+    <SpanName>SHIFT</SpanName>
+    <SpanValue>08:00:00</SpanValue>
+    <SpanText>Shift</SpanText>
+    <SpanInterval>01:00:00</SpanInterval>
+  </DnaTimeSpan>
+  <DnaTimeSpan>
+    <SpanName>DAY</SpanName>
+    <SpanValue>1.00:00:00</SpanValue>
+    <SpanText>Day</SpanText>
+    <SpanInterval>01:00:00</SpanInterval>
+  </DnaTimeSpan>
+    <DnaTimeSpan>
+    <SpanName>3DAY</SpanName>
+    <SpanValue>3.00:00:00</SpanValue>
+    <SpanText>3 days</SpanText>
+    <SpanInterval>12:00:00</SpanInterval>
+  </DnaTimeSpan>
+  <DnaTimeSpan>
+    <SpanName>7DAY</SpanName>
+    <SpanValue>7.00:00:00</SpanValue>
+    <SpanText>7 days</SpanText>
+    <SpanInterval>12:00:00</SpanInterval>
+  </DnaTimeSpan>
+  <DnaTimeSpan>
+    <SpanName>14DAY</SpanName>
+    <SpanValue>14.00:00:00</SpanValue>
+    <SpanText>14 days</SpanText>
+    <SpanInterval>12:00:00</SpanInterval>
+  </DnaTimeSpan>
+  <DnaTimeSpan>
+    <SpanName>MONTH</SpanName>
+    <SpanValue>MONTH</SpanValue>
+    <SpanText>Month</SpanText>
+    <SpanInterval>1.00:00:00</SpanInterval>
+  </DnaTimeSpan>
+  <DnaTimeSpan>
+    <SpanName>YEAR</SpanName>
+    <SpanValue>YEAR</SpanValue>
+    <SpanText>Year</SpanText>
+    <SpanInterval>MONTH</SpanInterval>
+  </DnaTimeSpan>
+</DnaTimeSpanConfiguration>

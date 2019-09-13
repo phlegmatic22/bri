@@ -1,6 +1,6 @@
 <eDNAproReports_Report>
   <Report Name="Briketöinti menu_annosvaaka" ID="Briketöinti menu_annosvaaka" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-11T13:41:44" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-13T14:35:18" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
@@ -26,45 +26,17 @@
           <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="AVSUHDEPANOS_U2:av Avg status (INFOC2015!AVSUHDEPANOS_U2:av)" Description="" FriendlyName="" Expression="" />
           <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="AVSUHDEVRK_U2:av Avg value (INFOC2015!AVSUHDEVRK_U2:av)" Description="" FriendlyName="" Expression="" />
           <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="AVSUHDEVRK_U2:av Avg status (INFOC2015!AVSUHDEVRK_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="BRI_ULOS_U2:av Avg value (INFOC2015!BRI_ULOS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="BRI_ULOS_U2:av Avg status (INFOC2015!BRI_ULOS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value3" ID="$default/Query.BasicQueries.Extended.Combination.Values.value3" DataType="System.Single" Caption="BRIKETIN_KORKEUS_U2:av Avg value (INFOC2015!BRIKETIN_KORKEUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status3" ID="$default/Query.BasicQueries.Extended.Combination.Values.status3" DataType="System.String" Caption="BRIKETIN_KORKEUS_U2:av Avg status (INFOC2015!BRIKETIN_KORKEUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value4" ID="$default/Query.BasicQueries.Extended.Combination.Values.value4" DataType="System.Single" Caption="BRILKM_U2:av Avg value (INFOC2015!BRILKM_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status4" ID="$default/Query.BasicQueries.Extended.Combination.Values.status4" DataType="System.String" Caption="BRILKM_U2:av Avg status (INFOC2015!BRILKM_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value5" ID="$default/Query.BasicQueries.Extended.Combination.Values.value5" DataType="System.Single" Caption="HAIRIOAIKA_U2:av Avg value (INFOC2015!HAIRIOAIKA_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status5" ID="$default/Query.BasicQueries.Extended.Combination.Values.status5" DataType="System.String" Caption="HAIRIOAIKA_U2:av Avg status (INFOC2015!HAIRIOAIKA_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value6" ID="$default/Query.BasicQueries.Extended.Combination.Values.value6" DataType="System.Single" Caption="KAYNTIASTE_U2:av Avg value (INFOC2015!KAYNTIASTE_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status6" ID="$default/Query.BasicQueries.Extended.Combination.Values.status6" DataType="System.String" Caption="KAYNTIASTE_U2:av Avg status (INFOC2015!KAYNTIASTE_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value7" ID="$default/Query.BasicQueries.Extended.Combination.Values.value7" DataType="System.Single" Caption="KOSTEUSMITTAUS_U2:av Avg value (INFOC2015!KOSTEUSMITTAUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status7" ID="$default/Query.BasicQueries.Extended.Combination.Values.status7" DataType="System.String" Caption="KOSTEUSMITTAUS_U2:av Avg status (INFOC2015!KOSTEUSMITTAUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value8" ID="$default/Query.BasicQueries.Extended.Combination.Values.value8" DataType="System.Single" Caption="LISAVESI_U2:av Avg value (INFOC2015!LISAVESI_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status8" ID="$default/Query.BasicQueries.Extended.Combination.Values.status8" DataType="System.String" Caption="LISAVESI_U2:av Avg status (INFOC2015!LISAVESI_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value9" ID="$default/Query.BasicQueries.Extended.Combination.Values.value9" DataType="System.Single" Caption="MAT_KOSTEUS_U2:av Avg value (INFOC2015!MAT_KOSTEUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status9" ID="$default/Query.BasicQueries.Extended.Combination.Values.status9" DataType="System.String" Caption="MAT_KOSTEUS_U2:av Avg status (INFOC2015!MAT_KOSTEUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value10" ID="$default/Query.BasicQueries.Extended.Combination.Values.value10" DataType="System.Single" Caption="PANOSNUMERO_U2:av Avg value (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status10" ID="$default/Query.BasicQueries.Extended.Combination.Values.status10" DataType="System.String" Caption="PANOSNUMERO_U2:av Avg status (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value11" ID="$default/Query.BasicQueries.Extended.Combination.Values.value11" DataType="System.Single" Caption="PINTA1_PROS_U2:av Avg value (INFOC2015!PINTA1_PROS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status11" ID="$default/Query.BasicQueries.Extended.Combination.Values.status11" DataType="System.String" Caption="PINTA1_PROS_U2:av Avg status (INFOC2015!PINTA1_PROS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value12" ID="$default/Query.BasicQueries.Extended.Combination.Values.value12" DataType="System.Single" Caption="PINTA1_TON_U2:av Avg value (INFOC2015!PINTA1_TON_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status12" ID="$default/Query.BasicQueries.Extended.Combination.Values.status12" DataType="System.String" Caption="PINTA1_TON_U2:av Avg status (INFOC2015!PINTA1_TON_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value13" ID="$default/Query.BasicQueries.Extended.Combination.Values.value13" DataType="System.Single" Caption="PINTA2_PROS_U2:av Avg value (INFOC2015!PINTA2_PROS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status13" ID="$default/Query.BasicQueries.Extended.Combination.Values.status13" DataType="System.String" Caption="PINTA2_PROS_U2:av Avg status (INFOC2015!PINTA2_PROS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value14" ID="$default/Query.BasicQueries.Extended.Combination.Values.value14" DataType="System.Single" Caption="PINTA2_TON_U2:av Avg value (INFOC2015!PINTA2_TON_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status14" ID="$default/Query.BasicQueries.Extended.Combination.Values.status14" DataType="System.String" Caption="PINTA2_TON_U2:av Avg status (INFOC2015!PINTA2_TON_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value15" ID="$default/Query.BasicQueries.Extended.Combination.Values.value15" DataType="System.Single" Caption="RUMPULUJUUS_U2:av Avg value (INFOC2015!RUMPULUJUUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status15" ID="$default/Query.BasicQueries.Extended.Combination.Values.status15" DataType="System.String" Caption="RUMPULUJUUS_U2:av Avg status (INFOC2015!RUMPULUJUUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value16" ID="$default/Query.BasicQueries.Extended.Combination.Values.value16" DataType="System.Single" Caption="SEMENTTIOSUUS_U2:av Avg value (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status16" ID="$default/Query.BasicQueries.Extended.Combination.Values.status16" DataType="System.String" Caption="SEMENTTIOSUUS_U2:av Avg status (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="PANOSNUMERO_U2:av Avg value (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="PANOSNUMERO_U2:av Avg status (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
         </DataTable>
       </DataSet>
     </DataSources>
     <Parameters>
       <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="periods" Type="System.String[]" InitialValue="04:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U2:av&#xD;&#xA;AVSUHDEVRK_U2:av&#xD;&#xA;BRI_ULOS_U2:av&#xD;&#xA;BRIKETIN_KORKEUS_U2:av&#xD;&#xA;BRILKM_U2:av&#xD;&#xA;HAIRIOAIKA_U2:av&#xD;&#xA;KAYNTIASTE_U2:av&#xD;&#xA;KOSTEUSMITTAUS_U2:av&#xD;&#xA;LISAVESI_U2:av&#xD;&#xA;MAT_KOSTEUS_U2:av&#xD;&#xA;PANOSNUMERO_U2:av&#xD;&#xA;PINTA1_PROS_U2:av&#xD;&#xA;PINTA1_TON_U2:av&#xD;&#xA;PINTA2_PROS_U2:av&#xD;&#xA;PINTA2_TON_U2:av&#xD;&#xA;RUMPULUJUUS_U2:av&#xD;&#xA;SEMENTTIOSUUS_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U2:av&#xD;&#xA;AVSUHDEVRK_U2:av&#xD;&#xA;PANOSNUMERO_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
@@ -948,6 +920,75 @@
       <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
       <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
       <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
+      <Connection ID="27935" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27936" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27937" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27938" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27939" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27940" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27941" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27942" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value15" />
+      </Connection>
+      <Connection ID="27943" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="27944" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27945" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27946" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="28663" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="30682" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31799" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31800" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="31801" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31802" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="31803" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31804" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="31805" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="31806" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="31807" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
     </Connections>
     <HyperLinks>
       <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />

@@ -1,0 +1,27 @@
+<eDNAproReports_Report>
+  <Report Name="Configuration" ID="Configuration" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="calcID" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="guidCalc" Type="System.String" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="guidCalc" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="calculationTime" Type="System.String" InitialValue="2001-01-01 12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="calculationTime" Overridable="True" DisplayIndex="3" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="/_Templates/_Calculation Maintenance/Configuration" ClassName="Link" Layout="" />
+</eDNAproReports_Report>

@@ -1,0 +1,42 @@
+<eDNAproReports_Report>
+  <Report Name="Version Information" ID="Version Information" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Version Information.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.VersionInfo.VersionInfo.VersionInformation" ProviderInfo="$default/Metso.DNA.VersionInfo.VersionInfo" Method="VersionInformation" Description="" FriendlyName="VersionInformation" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="Result" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Version" ID="$default/Metso.DNA.VersionInfo.VersionInfo.VersionInformation.Result.Version" DataType="System.String" Caption="Version" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1717" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.VersionInfo.VersionInfo.VersionInformation.Result.Version" />
+      </Connection>
+      <Connection ID="1719" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1720" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

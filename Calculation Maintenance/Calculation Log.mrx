@@ -1,0 +1,36 @@
+<eDNAproReports_Report>
+  <Report Name="Calculation Log" ID="Calculation Log" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.LogReport.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="typeFilter" Type="System.String" InitialValue="1,2,4" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="typeFilter" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="logName" Type="System.String" InitialValue="DNAcalcCalculation" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="logName" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="calcName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="calcName" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="rowLimit" Type="System.Int32" InitialValue="300" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="rowLimit" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Delete&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;Edit" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="showErrorDetails" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="Indicates if exception stack trace must be shown" Usage="showErrorDetails" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogDataByTime.reverseOrder" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="/_Templates/_Calculation Maintenance/Calculation Log" ClassName="Link" Layout="" />
+</eDNAproReports_Report>

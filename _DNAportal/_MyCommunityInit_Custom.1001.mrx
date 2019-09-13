@@ -1,0 +1,43 @@
+<eDNAproReports_Report>
+  <Report Name="_MyCommunityInit_Custom.1001" ID="_MyCommunityInit_Custom.1001" Version="2.3.0.0">
+    <Info Title="" Owner="IA-DEMO\Administrator" Expiration="" Category="" Version="" ModifiedBy="IA-DEMO\Administrator" ModificationDate="2007-11-15T12:54:57" CreatedDate="2005-03-18T20:53:46" CreatedBy="VMVAT\matteus" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="_MyCommunityInit_Custom.rpx" ClassName="" />
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout" ProviderInfo="$default/Metso.DNAreport.Repository.Xml" Method="GetReportLayout" Description="">
+        <Data />
+        <DataSetParameter Name="ReportName" Ref="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.ReportName_Custom" Usage="" />
+        <DataTable Name="Repository" Description="">
+          <DataField Name="Name" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Repository.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Repository.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <DataTable Name="Report" Description="">
+          <DataField Name="Name" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Product" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Product" DataType="System.String" Caption="Product" Description="" />
+          <DataField Name="Url" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Url" DataType="System.String" Caption="Url" Description="" />
+          <DataField Name="Filter" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Filter" DataType="System.String" Caption="Filter" Description="" />
+          <DataField Name="Icon" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Icon" DataType="System.String" Caption="Icon" Description="" />
+          <DataField Name="Target" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Target" DataType="System.String" Caption="Target" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="$default/Metso.DNAreport.Repository.Xml.GetReportLayout.ReportName_Custom" Type="System.String" InitialValue="_DNAportal/_Custom" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

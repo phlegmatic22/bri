@@ -1,0 +1,28 @@
+<eDNAproReports_Report>
+  <Report Name="Web Application Usage Statistics" ID="Web Application Usage Statistics" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_Diagnostic/Web Application Usage Statistics" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="RelativeStartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="RelativeEndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="TimeSpan" Type="System.String" InitialValue="MONTH" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="TimeSpan" Overridable="True" Group="" DisplayIndex="4" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

@@ -1,6 +1,6 @@
 <eDNAproReports_Report>
   <Report Name="Briketöinti menu_vrk" ID="Briketöinti menu_vrk" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-11T13:38:27" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-13T14:08:56" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
@@ -56,15 +56,17 @@
           <DataField Name="status15" ID="$default/Query.BasicQueries.Extended.Combination.Values.status15" DataType="System.String" Caption="RUMPULUJUUS_U2:av Avg status (INFOC2015!RUMPULUJUUS_U2:av)" Description="" FriendlyName="" Expression="" />
           <DataField Name="value16" ID="$default/Query.BasicQueries.Extended.Combination.Values.value16" DataType="System.Single" Caption="SEMENTTIOSUUS_U2:av Avg value (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
           <DataField Name="status16" ID="$default/Query.BasicQueries.Extended.Combination.Values.status16" DataType="System.String" Caption="SEMENTTIOSUUS_U2:av Avg status (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value17" ID="$default/Query.BasicQueries.Extended.Combination.Values.value17" DataType="System.Single" Caption="BRI_KONEELTA_U2:av Avg value (INFOC2015!BRI_KONEELTA_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status17" ID="$default/Query.BasicQueries.Extended.Combination.Values.status17" DataType="System.String" Caption="BRI_KONEELTA_U2:av Avg status (INFOC2015!BRI_KONEELTA_U2:av)" Description="" FriendlyName="" Expression="" />
         </DataTable>
       </DataSet>
     </DataSources>
     <Parameters>
       <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="periods" Type="System.String[]" InitialValue="04:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U2:av&#xD;&#xA;AVSUHDEVRK_U2:av&#xD;&#xA;BRI_ULOS_U2:av&#xD;&#xA;BRIKETIN_KORKEUS_U2:av&#xD;&#xA;BRILKM_U2:av&#xD;&#xA;HAIRIOAIKA_U2:av&#xD;&#xA;KAYNTIASTE_U2:av&#xD;&#xA;KOSTEUSMITTAUS_U2:av&#xD;&#xA;LISAVESI_U2:av&#xD;&#xA;MAT_KOSTEUS_U2:av&#xD;&#xA;PANOSNUMERO_U2:av&#xD;&#xA;PINTA1_PROS_U2:av&#xD;&#xA;PINTA1_TON_U2:av&#xD;&#xA;PINTA2_PROS_U2:av&#xD;&#xA;PINTA2_TON_U2:av&#xD;&#xA;RUMPULUJUUS_U2:av&#xD;&#xA;SEMENTTIOSUUS_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U2:av&#xD;&#xA;AVSUHDEVRK_U2:av&#xD;&#xA;BRI_ULOS_U2:av&#xD;&#xA;BRIKETIN_KORKEUS_U2:av&#xD;&#xA;BRILKM_U2:av&#xD;&#xA;HAIRIOAIKA_U2:av&#xD;&#xA;KAYNTIASTE_U2:av&#xD;&#xA;KOSTEUSMITTAUS_U2:av&#xD;&#xA;LISAVESI_U2:av&#xD;&#xA;MAT_KOSTEUS_U2:av&#xD;&#xA;PANOSNUMERO_U2:av&#xD;&#xA;PINTA1_PROS_U2:av&#xD;&#xA;PINTA1_TON_U2:av&#xD;&#xA;PINTA2_PROS_U2:av&#xD;&#xA;PINTA2_TON_U2:av&#xD;&#xA;RUMPULUJUUS_U2:av&#xD;&#xA;SEMENTTIOSUUS_U2:av&#xD;&#xA;BRI_KONEELTA_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
@@ -948,6 +950,66 @@
       <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
       <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
       <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
+      <Connection ID="27935" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27936" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27937" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27938" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27939" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27940" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="27941" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27942" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value15" />
+      </Connection>
+      <Connection ID="27943" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="27944" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27945" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="27946" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="28663" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="29944" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="30311" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value17" />
+      </Connection>
+      <Connection ID="30312" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value16" />
+      </Connection>
+      <Connection ID="30313" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="30314" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="30315" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="30316" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
     </Connections>
     <HyperLinks>
       <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />

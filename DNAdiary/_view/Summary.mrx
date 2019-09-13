@@ -1,0 +1,33 @@
+<eDNAproReports_Report>
+  <Report Name="Summary" ID="Summary" Version="2.3.0.0">
+    <Info Title="Entries report" Owner="" Expiration="" Category="" Version="5.4.1" ModifiedBy="" ModificationDate="" CreatedDate="2005-12-12T12:33:34" CreatedBy="" Global="True" Template="False">
+      <Comment />
+      <Description>Displays short info about entry with possibility to open its detail view.</Description>
+    </Info>
+    <Viewer ReportName="/_Templates/_DNAdiary/Summary" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="SearchPanel.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="StartTime" Type="System.DateTime" InitialValue="*:*:-7:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" />
+      <Parameter Name="EntryTypes" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EntryTypes" Overridable="True" />
+      <Parameter Name="EntryType" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYTYPE" Overridable="True" />
+      <Parameter Name="EntryGroup" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYGROUP" Overridable="True" />
+      <Parameter Name="Author" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_AUTHOR" Overridable="True" />
+      <Parameter Name="EntryTag" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYTAG" Overridable="True" />
+      <Parameter Name="CauseTag" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_CAUSETAG" Overridable="True" />
+      <Parameter Name="Classes" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_CLASSES" Overridable="True" />
+      <Parameter Name="WordSearch" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_WORDSEARCH" Overridable="True" />
+      <Parameter Name="UseTimePeriod" Type="System.Boolean" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_USETIMEPERIOD" Overridable="True" />
+      <Parameter Name="AckStatus" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ACKSTATUS" Overridable="True" />
+      <Parameter Name="SearchPanelMode" Type="System.String" InitialValue="all" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_SEARCHMODE" Overridable="True" />
+      <Parameter Name="DescriptionLength" Type="System.Int32" InitialValue="-1" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" />
+      <Parameter Name="CommentDescrLength" Type="System.Int32" InitialValue="-1" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

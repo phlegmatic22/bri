@@ -1,0 +1,202 @@
+<eDNAproReports_Report>
+  <Report Name="Service Log" ID="Service Log" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus" ProviderInfo="$DNAcalc/Query.CalculationComposer.Statuses" Method="GetDNAcalcScheduleServiceStatus" Description="" FriendlyName="GetDNAcalcScheduleServiceStatus" Order="0" Enabled="false">
+        <Data />
+        <DataTable Name="Statuses" Description="" OrderBy="">
+          <DataField Name="processName" ID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" DataType="System.String" Caption="processName" Description="" />
+          <DataField Name="status" ID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.status" DataType="System.String" Caption="status" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues" ProviderInfo="$DNAcalc/Query.CalculationComposer.Statuses" Method="GetQueues" Description="" FriendlyName="GetQueues" Order="1" Enabled="false">
+        <Data />
+        <DataTable Name="Queues" Description="" OrderBy="">
+          <DataField Name="queueName" ID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.queueName" DataType="System.String" Caption="queueName" Description="" />
+          <DataField Name="number" ID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.number" DataType="System.Int32" Caption="number" Description="" />
+          <DataField Name="date" ID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.date" DataType="System.DateTime" Caption="date" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetLogData" Description="" FriendlyName="GetLogData" Order="2" Enabled="false">
+        <Data />
+        <DataSetParameter Name="logName" Ref="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.logName" Usage="" />
+        <DataTable Name="LogEvents" Description="" OrderBy="">
+          <DataField Name="Type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Type" DataType="System.String" Caption="Type" Description="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Time" DataType="System.DateTime" Caption="Time" Description="" />
+          <DataField Name="Source" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Source" DataType="System.String" Caption="Source" Description="" />
+          <DataField Name="EventID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.EventID" DataType="System.Int32" Caption="EventID" Description="" />
+          <DataField Name="CategoryNumber" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.CategoryNumber" DataType="System.Int16" Caption="CategoryNumber" Description="" />
+          <DataField Name="Message" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Message" DataType="System.String" Caption="Message" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetLogData" Description="" FriendlyName="GetLogData1" Order="3" Enabled="false">
+        <Data />
+        <DataSetParameter Name="logName" Ref="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.logName" Usage="" />
+        <DataTable Name="LogEvents" Description="">
+          <DataField Name="Type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Type" DataType="System.String" Caption="Type" Description="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Time" DataType="System.DateTime" Caption="Time" Description="" />
+          <DataField Name="Source" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Source" DataType="System.String" Caption="Source" Description="" />
+          <DataField Name="EventID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.EventID" DataType="System.Int32" Caption="EventID" Description="" />
+          <DataField Name="CategoryNumber" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.CategoryNumber" DataType="System.Int16" Caption="CategoryNumber" Description="" />
+          <DataField Name="Message" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Message" DataType="System.String" Caption="Message" Description="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetLogData" Description="" FriendlyName="GetLogData2" Order="4" Enabled="false">
+        <Data />
+        <DataSetParameter Name="logName" Ref="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.logName" Usage="" />
+        <DataTable Name="LogEvents" Description="" OrderBy="">
+          <DataField Name="Type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Type" DataType="System.String" Caption="Type" Description="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Time" DataType="System.DateTime" Caption="Time" Description="" />
+          <DataField Name="Source" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Source" DataType="System.String" Caption="Source" Description="" />
+          <DataField Name="EventID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.EventID" DataType="System.Int32" Caption="EventID" Description="" />
+          <DataField Name="CategoryNumber" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.CategoryNumber" DataType="System.Int16" Caption="CategoryNumber" Description="" />
+          <DataField Name="Message" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Message" DataType="System.String" Caption="Message" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.logName" Type="System.String" InitialValue="DNACALCCALCULATION" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.logName" Type="System.String" InitialValue="DNACALCRECALCULATION" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.logName" Type="System.String" InitialValue="DNAcalcTestrun" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" DisplayIndex="-1" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.number" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.date" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.status" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetDNAcalcScheduleServiceStatus.Statuses.status" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.number" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Statuses.GetQueues.Queues.date" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Type" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Time" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Source" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.LogEvents.Message" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Type" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Time" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Source" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.LogEvents.Message" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Type" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Time" />
+      </Connection>
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Source" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.LogEvents.Message" />
+      </Connection>
+      <Connection ID="28" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="31" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="32" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcCalculation" />
+      <Connection ID="34" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="36" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="38" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="39" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcRecalculation" />
+      <Connection ID="40" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="41" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcTestRun" />
+      <Connection ID="1237" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance\Calculation Log" />
+      <Connection ID="1238" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance\Calculation Log" />
+      <Connection ID="1239" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance\Calculation Log" />
+      <Connection ID="1240" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1241" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1242" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="1243" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1244" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1245" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="1246" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1247" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1248" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="Service Log.rpx" ClassName="Layout" Layout="" />
+  <HyperLink ID="1" Protocol="-1" Host="1240" Path="1241" File="1242">
+    <UrlParameters Name="28" Value="1237" Description="" />
+    <UrlParameters Name="31" Value="32" Description="" />
+  </HyperLink>
+  <HyperLink ID="2" Protocol="-1" Host="1243" Path="1244" File="1245">
+    <UrlParameters Name="34" Value="1238" Description="" />
+    <UrlParameters Name="38" Value="39" Description="" />
+  </HyperLink>
+  <HyperLink ID="3" Protocol="-1" Host="1246" Path="1247" File="1248">
+    <UrlParameters Name="36" Value="1239" Description="" />
+    <UrlParameters Name="40" Value="41" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

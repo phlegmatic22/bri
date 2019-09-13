@@ -1,0 +1,112 @@
+<eDNAproReports_Report>
+  <Report Name="Log" ID="Log" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="Metso.DNA.DNAentry.Reports" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Log.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="DNAentry_TagsFilter.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.DNAentry.History.GetLog" ProviderInfo="$default/Query.DNAentry.History" Method="GetLog" Description="" FriendlyName="GetLog" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="logType" Ref="ReportMode" Usage="" />
+        <DataSetParameter Name="tags" Ref="TagList" Usage="" />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="sessionId" Ref="SessionId" Usage="" />
+        <DataSetParameter Name="tagFilter" Ref="TagFilter" Usage="" />
+        <DataSetParameter Name="useTagMask" Ref="UseTagFilter" Usage="" />
+        <DataTable Name="Log" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="id" ID="$default/Query.DNAentry.History.GetLog.Log.id" DataType="System.Int32" Caption="id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Query.DNAentry.History.GetLog.Log.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Timestamp" ID="$default/Query.DNAentry.History.GetLog.Log.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Query.DNAentry.History.GetLog.Log.Value" DataType="System.String" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="UserName" ID="$default/Query.DNAentry.History.GetLog.Log.UserName" DataType="System.String" Caption="UserName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Time" ID="$default/Query.DNAentry.History.GetLog.Log.Time" DataType="System.DateTime" Caption="Time" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Operation" ID="$default/Query.DNAentry.History.GetLog.Log.Operation" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Comment" ID="$default/Query.DNAentry.History.GetLog.Log.Comment" DataType="System.String" Caption="Comment" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="ReportMode" Type="System.String" InitialValue="Full" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="ReportMode" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="TagList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TagList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="SessionId" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SessionId" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Normal" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="TagFilter" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TagFilter" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="UseTagFilter" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UseTagFilter" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="ConstantConnection" LanguageConversion="True" Constant="start_time" />
+      <Connection ID="1" Type="ConstantConnection" LanguageConversion="True" Constant="end_time" />
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="3" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="5" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="6" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.TagName" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.Timestamp" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.Value" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.Operation" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.UserName" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.Time" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.DNAentry.History.GetLog.Log.Comment" />
+      </Connection>
+      <Connection ID="14" Type="ConstantConnection" LanguageConversion="True" Constant="Type" />
+      <Connection ID="15" Type="ConstantConnection" LanguageConversion="True" Constant="Add" />
+      <Connection ID="16" Type="ConstantConnection" LanguageConversion="True" Constant="Update" />
+      <Connection ID="17" Type="ConstantConnection" LanguageConversion="True" Constant="Add" />
+      <Connection ID="18" Type="ConstantConnection" LanguageConversion="True" Constant="EntryTime" />
+      <Connection ID="19" Type="ConstantConnection" LanguageConversion="True" Constant="Tag" />
+      <Connection ID="20" Type="ConstantConnection" LanguageConversion="True" Constant="Value" />
+      <Connection ID="21" Type="ConstantConnection" LanguageConversion="True" Constant="Timestamp" />
+      <Connection ID="22" Type="ConstantConnection" LanguageConversion="True" Constant="Operation" />
+      <Connection ID="23" Type="ConstantConnection" LanguageConversion="True" Constant="User" />
+      <Connection ID="24" Type="ConstantConnection" LanguageConversion="True" Constant="Comment" />
+      <Connection ID="25" Type="ConstantConnection" LanguageConversion="True" Constant="LogTitle" />
+      <Connection ID="26" Type="ConstantConnection" LanguageConversion="True" Constant="PrintoutTitle" />
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_ENTRY" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

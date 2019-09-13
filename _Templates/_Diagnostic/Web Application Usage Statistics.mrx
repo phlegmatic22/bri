@@ -1,0 +1,116 @@
+<eDNAproReports_Report>
+  <Report Name="Web Application Usage Statistics" ID="Web Application Usage Statistics" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Web Application Usage Statistics.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.WebStatistics.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData" ProviderInfo="$default/Metso.DNA.WebApplicationsStat.Statistics" Method="GetData" Description="" FriendlyName="GetData" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="GroupName" ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.GroupName" DataType="System.String" Caption="GroupName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ApplicationName" ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationName" DataType="System.String" Caption="ApplicationName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ApplicationLink" ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" DataType="System.String" Caption="ApplicationLink" Description="" FriendlyName="" Expression="" />
+          <DataField Name="UrlParameterValue" ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.UrlParameterValue" DataType="System.String" Caption="UrlParameterValue" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.Value" DataType="System.Int32" Caption="Value" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="RelativeStartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:+1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="RelativeEndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="TimeSpan" Type="System.String" InitialValue="MONTH" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="TimeSpan" Overridable="True" Group="" DisplayIndex="4" />
+    </Parameters>
+    <Connections>
+      <Connection ID="1717" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.VersionInfo.VersionInfo.VersionInformation.Result.Version" />
+      </Connection>
+      <Connection ID="1719" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1720" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="1730" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.GroupName" />
+      </Connection>
+      <Connection ID="1731" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationName" />
+      </Connection>
+      <Connection ID="1732" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.UrlParameterValue" />
+      </Connection>
+      <Connection ID="1745" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.Value" />
+      </Connection>
+      <Connection ID="1746" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1749" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="1750" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1751" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1752" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1754" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1755" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationLink" />
+      </Connection>
+      <Connection ID="1757" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="2723" Type="ConstantConnection" LanguageConversion="false" Constant="Enter a value" />
+      <Connection ID="3084" Type="ConstantConnection" LanguageConversion="false" Constant="Enter a value" />
+      <Connection ID="3085" Type="ConstantConnection" LanguageConversion="false" Constant="http://" />
+      <Connection ID="3086" Type="ConstantConnection" LanguageConversion="false" Constant="Application" />
+      <Connection ID="3087" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationName" />
+      </Connection>
+      <Connection ID="3088" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="3090" Type="ConstantConnection" LanguageConversion="false" Constant="Diagnostics/Web Application Usage Details" />
+      <Connection ID="3093" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.WebApplicationsStat.Statistics.GetData.Table.ApplicationName" />
+      </Connection>
+      <Connection ID="3094" Type="ConstantConnection" LanguageConversion="false" Constant="ApplicationName" />
+      <Connection ID="3097" Type="ConstantConnection" LanguageConversion="false" Constant="endTime" />
+      <Connection ID="3098" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3099" Type="ConstantConnection" LanguageConversion="false" Constant="TimeSpan" />
+      <Connection ID="3100" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="TimeSpan" />
+      </Connection>
+      <Connection ID="3101" Type="ConstantConnection" LanguageConversion="false" Constant="startTime" />
+      <Connection ID="3102" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="113" Protocol="-1" Host="-1" Path="1757" File="1755" />
+      <HyperLink ID="114" Protocol="-1" Host="-1" Path="-1" File="-1">
+        <UrlParameters Name="3088" Value="3090" Description="" />
+        <UrlParameters Name="3094" Value="3093" Description="" />
+        <UrlParameters Name="3099" Value="3100" Description="" />
+        <UrlParameters Name="3097" Value="3098" Description="" />
+        <UrlParameters Name="3101" Value="3102" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

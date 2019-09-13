@@ -1,0 +1,103 @@
+<eDNAproReports_Report>
+  <Report Name="VectorBrowser" ID="VectorBrowser" Version="2.3.0.0">
+    <Info Title="" Owner="metsoDNA" Expiration="" Category="" Version="" ModifiedBy="metsoDNA" ModificationDate="2010-02-13T02:54:47" CreatedDate="2010-01-15T13:53:34" CreatedBy="metsoDNA" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="VectorBrowser.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.MCM.Vectors.GetVectorList" ProviderInfo="$default/Metso.DNA.MCM.Vectors" Method="GetVectorList" Description="">
+        <Data />
+        <DataSetParameter Name="nameFilter" Ref="nameFilter" Usage="" />
+        <DataSetParameter Name="flagList" Ref="flagList" Usage="" />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="countLimit" Ref="countLimit" Usage="" />
+        <DataSetParameter Name="options" Ref="options" Usage="" />
+        <DataTable Name="Table" Description="">
+          <DataField Name="BinaryAttachmentID" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.BinaryAttachmentID" DataType="System.Guid" Caption="BinaryAttachmentID" Description="" />
+          <DataField Name="Category" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Category" DataType="System.String" Caption="Category" Description="" />
+          <DataField Name="Name" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="XmlMetaData" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.XmlMetaData" DataType="System.String" Caption="XmlMetaData" Description="" />
+          <DataField Name="MetaDataTypeName" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.MetaDataTypeName" DataType="System.String" Caption="MetaDataTypeName" Description="" />
+          <DataField Name="ContentType" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.ContentType" DataType="System.String" Caption="ContentType" Description="" />
+          <DataField Name="Length" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Length" DataType="System.Int64" Caption="Length" Description="" />
+          <DataField Name="Timestamp" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Timestamp" DataType="System.DateTime" Caption="Timestamp" Description="" />
+        </DataTable>
+        <DataTable Name="Table1" Description="">
+          <DataField Name="ms" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.ms" DataType="System.Int32" Caption="ms" Description="" />
+          <DataField Name="query" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.query" DataType="System.String" Caption="query" Description="" />
+        </DataTable>
+        <DataTable Name="Table2" Description="">
+          <DataField Name="cnt" ID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table2.cnt" DataType="System.Int32" Caption="cnt" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="nameFilter" Type="System.String" InitialValue="*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagName" Overridable="True" />
+      <Parameter Name="flagList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="StartTime" Overridable="True" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EndTime" Overridable="True" />
+      <Parameter Name="countLimit" Type="System.Int32" InitialValue="1000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" />
+      <Parameter Name="options" Type="System.String" InitialValue="GETCOUNT" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" />
+      <Parameter Name="resizeWindow" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="ResizeWindow" Overridable="True" />
+      <Parameter Name="autoScroll" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoScroll" Overridable="True" />
+      <Parameter Name="maxDeltaCount" Type="System.Int32" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="maxDeltaCount" Overridable="True" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="nameFilter" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="flagList" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="countLimit" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Timestamp" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Category" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Name" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.XmlMetaData" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.BinaryAttachmentID" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table.Length" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.Column1" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.Column1" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.Column2" />
+      </Connection>
+      <Connection ID="12" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="options" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table2.cnt" />
+      </Connection>
+      <Connection ID="14" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="countLimit" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.ms" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.MCM.Vectors.GetVectorList.Table1.query" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

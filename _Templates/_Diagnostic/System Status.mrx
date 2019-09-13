@@ -1,0 +1,365 @@
+<eDNAproReports_Report>
+  <Report Name="System Status" ID="System Status" Version="3.0.0.0" DynamicBaseType="">
+    <Viewer ReportName="System Status.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo" ProviderInfo="$default/Metso.DNA.Diagnostics.SystemResources" Method="GetSystemResourcesInfo" Description="" FriendlyName="GetSystemResourcesInfo" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="DNAdataServer" Ref="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.DNAdataServer" Usage="" />
+        <DataTable Name="SystemCounters" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Title" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.Title" DataType="System.String" Caption="Title" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IsAlert" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.IsAlert" DataType="System.Boolean" Caption="IsAlert" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.Value" DataType="System.String" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="ServerInfo" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="IP" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.IP" DataType="System.String" Caption="IP" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances" ProviderInfo="$default/Metso.DNA.Diagnostics.SQLServerDatabases" Method="GetInstances" Description="" FriendlyName="GetInstances" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="dbSize" Ref="dbSize" Usage="" />
+        <DataSetParameter Name="dbProcentLimit" Ref="dbProcentLimit" Usage="" />
+        <DataTable Name="Result" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="instanceName" ID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.instanceName" DataType="System.String" Caption="instanceName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="databaseName" ID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.databaseName" DataType="System.String" Caption="databaseName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="databaseSize" ID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.databaseSize" DataType="System.Double" Caption="databaseSize" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.CalculationEnvironment.GetCalculationEnvironmentStatus" ProviderInfo="$default/Metso.DNA.Diagnostics.CalculationEnvironment" Method="GetCalculationEnvironmentStatus" Description="" FriendlyName="GetCalculationEnvironmentStatus" ProviderType="" Order="2" Enabled="true">
+        <Data />
+        <DataTable Name="Status" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ServicesStatus" ID="$default/Metso.DNA.Diagnostics.CalculationEnvironment.GetCalculationEnvironmentStatus.Status.ServicesStatus" DataType="System.String" Caption="ServicesStatus" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LastExecuted" ID="$default/Metso.DNA.Diagnostics.CalculationEnvironment.GetCalculationEnvironmentStatus.Status.LastExecuted" DataType="System.String" Caption="LastExecuted" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses" ProviderInfo="$default/Metso.DNA.Diagnostics.AlarmManagement" Method="GetServiceStatuses" Description="" FriendlyName="GetServiceStatuses" ProviderType="" Order="3" Enabled="true">
+        <Data />
+        <DataTable Name="Statuses" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="processName" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.processName" DataType="System.String" Caption="processName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState" ProviderInfo="$default/Metso.DNA.Diagnostics.CollectionInterfaces" Method="GetCollectionInterfacesState" Description="Collection Interfaces" FriendlyName="GetCollectionInterfacesState" ProviderType="" Order="4" Enabled="true">
+        <Data />
+        <DataSetParameter Name="tagName" Ref="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.tagName" Usage="" />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="period" Ref="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.period" Usage="" />
+        <DataSetParameter Name="options" Ref="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.options" Usage="" />
+        <DataTable Name="PCSIF" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.PCSIF.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.PCSIF.value" DataType="System.Decimal" Caption="value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.PCSIF.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="WEBIF" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.WEBIF.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.WEBIF.value" DataType="System.Decimal" Caption="value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.WEBIF.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="DIAGIF" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.DIAGIF.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.DIAGIF.value" DataType="System.Decimal" Caption="value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.DIAGIF.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Exceptions" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Description" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.Exceptions.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.Exceptions.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Column" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.Exceptions.Column" DataType="System.String" Caption="Column" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ExceptionDetails" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.Exceptions.ExceptionDetails" DataType="System.String" Caption="ExceptionDetails" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="IP21MonitorStatus" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Status" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.IP21MonitorStatus.Status" DataType="System.String" Caption="Status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues" ProviderInfo="$default/Metso.DNA.Diagnostics.AlarmManagement" Method="GetQueues" Description="" FriendlyName="GetQueues" ProviderType="" Order="5" Enabled="true">
+        <Data />
+        <DataTable Name="Queues" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="queueName" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.queueName" DataType="System.String" Caption="queueName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport" ProviderInfo="$default/Metso.DNA.Diagnostics.CollectionInterfaces" Method="GetCollectionInterfacesStateForReport" Description="" FriendlyName="GetCollectionInterfacesStateForReport" ProviderType="" Order="6" Enabled="true">
+        <Data />
+        <DataSetParameter Name="options" Ref="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.options" Usage="" />
+        <DataTable Name="Results" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="PCSIF_value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.PCSIF_value" DataType="System.String" Caption="PCSIF_value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DIAGIF_value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.DIAGIF_value" DataType="System.String" Caption="DIAGIF_value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="WEBIF_value" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.WEBIF_value" DataType="System.String" Caption="WEBIF_value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Index" ID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.Index" DataType="System.String" Caption="Index" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation.GetLicenseCapacityInformation" ProviderInfo="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation" Method="GetLicenseCapacityInformation" Description="" FriendlyName="GetLicenseCapacityInformation" ProviderType="" Order="7" Enabled="true">
+        <Data />
+        <DataTable Name="Result" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Used" ID="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation.GetLicenseCapacityInformation.Result.Used" DataType="System.String" Caption="Used" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Available" ID="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation.GetLicenseCapacityInformation.Result.Available" DataType="System.String" Caption="Available" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="false" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="SelectedHost" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="DNAdata host name" Usage="SelectedHost" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="dbSize" Type="System.Double" InitialValue="8" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="dbProcentLimit" Type="System.Double" InitialValue="90" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.tagName" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.period" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.options" Type="System.String" InitialValue="PCSIF,WEBIF,DIAGIF" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.DNAdataServer" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.tagName" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.period" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.options" Type="System.String" InitialValue="PCSIF,WEBIF,DIAGIF" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.options" Type="System.String" InitialValue="PCSIF, DIAGIF, WEBIF" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="102" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.History.Avg_1.Values.ts" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.History.Avg_1.Values.value" />
+      </Connection>
+      <Connection ID="119" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.Title" />
+      </Connection>
+      <Connection ID="120" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.Value" />
+      </Connection>
+      <Connection ID="122" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="123" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="124" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="125" Type="ConstantConnection" LanguageConversion="false" Constant="DNAtracer.application" />
+      <Connection ID="126" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="129" Type="ConstantConnection" LanguageConversion="False" Constant="DNAtracer.application" />
+      <Connection ID="130" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="131" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAtracer" />
+      <Connection ID="134" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="138" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="139" Type="ConstantConnection" LanguageConversion="False" Constant="/" />
+      <Connection ID="140" Type="ConstantConnection" LanguageConversion="False" Constant="DNA/DNAtracer" />
+      <Connection ID="141" Type="ConstantConnection" LanguageConversion="False" Constant="DNAtracer.application" />
+      <Connection ID="142" Type="ConstantConnection" LanguageConversion="False" Constant="report" />
+      <Connection ID="144" Type="ConstantConnection" LanguageConversion="False" Constant="tags" />
+      <Connection ID="183" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.Name" />
+      </Connection>
+      <Connection ID="184" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.IP" />
+      </Connection>
+      <Connection ID="185" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.Description" />
+      </Connection>
+      <Connection ID="186" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.IP" />
+      </Connection>
+      <Connection ID="187" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.ServerInfo.Description" />
+      </Connection>
+      <Connection ID="194" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="195" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.SystemCounters.TagName" />
+      </Connection>
+      <Connection ID="196" Type="ConstantConnection" LanguageConversion="false" Constant="_Templates/Trend" />
+      <Connection ID="197" Type="ConstantConnection" LanguageConversion="false" Constant="_Templates/Trend" />
+      <Connection ID="204" Type="ConstantConnection" LanguageConversion="false" Constant="ProcessorTime" />
+      <Connection ID="205" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="206" Type="ConstantConnection" LanguageConversion="false" Constant="AvailableMBytes" />
+      <Connection ID="207" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="208" Type="ConstantConnection" LanguageConversion="false" Constant="FreeSpaceC" />
+      <Connection ID="209" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="210" Type="ConstantConnection" LanguageConversion="false" Constant="FreeSpaceD" />
+      <Connection ID="211" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="212" Type="ConstantConnection" LanguageConversion="false" Constant="FreeSpaceE" />
+      <Connection ID="1864" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.instanceName" />
+      </Connection>
+      <Connection ID="1865" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.databaseName" />
+      </Connection>
+      <Connection ID="1866" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.databaseSize" />
+      </Connection>
+      <Connection ID="1919" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="1920" Type="ConstantConnection" LanguageConversion="false" Constant="Instance" />
+      <Connection ID="1922" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.SQLServerDatabases.GetInstances.Result.instanceName" />
+      </Connection>
+      <Connection ID="1923" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="1925" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CalculationEnvironment.GetCalculationEnvironmentStatus.Status.ServicesStatus" />
+      </Connection>
+      <Connection ID="1926" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CalculationEnvironment.GetCalculationEnvironmentStatus.Status.LastExecuted" />
+      </Connection>
+      <Connection ID="1927" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1928" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1929" Type="ConstantConnection" LanguageConversion="false" Constant="viewer.aspx" />
+      <Connection ID="1930" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="1931" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Service Log" />
+      <Connection ID="1932" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="1933" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="1934" Type="ConstantConnection" LanguageConversion="false" Constant="viewer.aspx" />
+      <Connection ID="1935" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="1936" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="1937" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="2234" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="2235" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.status" />
+      </Connection>
+      <Connection ID="2236" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetCommonStatus.Statuses.processName" />
+      </Connection>
+      <Connection ID="2237" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetCommonStatus.Statuses.status" />
+      </Connection>
+      <Connection ID="2238" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="2239" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.status" />
+      </Connection>
+      <Connection ID="2240" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="2241" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.AlarmManagement.AlarmManagement.GetQueues.Queues.status" />
+      </Connection>
+      <Connection ID="2423" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="2507" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="2508" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="2509" Type="ConstantConnection" LanguageConversion="false" Constant="viewer.aspx" />
+      <Connection ID="2604" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionServicesStatus.Status.ServicesStatus" />
+      </Connection>
+      <Connection ID="2689" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="2690" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.status" />
+      </Connection>
+      <Connection ID="2691" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionServicesStatus.Status.ServicesStatus" />
+      </Connection>
+      <Connection ID="2692" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="2693" Type="ConstantConnection" LanguageConversion="false" Constant="ip21healthmonitor" />
+      <Connection ID="2694" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="2695" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="2696" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="2697" Type="ConstantConnection" LanguageConversion="False" Constant="/" />
+      <Connection ID="2698" Type="ConstantConnection" LanguageConversion="False" Constant="DNA/DNAreport" />
+      <Connection ID="2699" Type="ConstantConnection" LanguageConversion="False" Constant="viewer.aspx" />
+      <Connection ID="2700" Type="ConstantConnection" LanguageConversion="False" Constant="report" />
+      <Connection ID="2703" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="2704" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="2705" Type="ConstantConnection" LanguageConversion="false" Constant="Diagnostics/_ErrorSQLLog/ErrorSQLLog" />
+      <Connection ID="2708" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="2710" Type="ConstantConnection" LanguageConversion="false" Constant="Diagnostics\_detailed\Alarm management detailed" />
+      <Connection ID="2711" Type="ConstantConnection" LanguageConversion="false" Constant="Diagnostics\_detailed\ErrorSQLLog" />
+      <Connection ID="2812" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.Index" />
+      </Connection>
+      <Connection ID="2813" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.PCSIF_value" />
+      </Connection>
+      <Connection ID="2814" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.DIAGIF_value" />
+      </Connection>
+      <Connection ID="2815" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesStateForReport.Results.WEBIF_value" />
+      </Connection>
+      <Connection ID="2920" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation.GetLicenseCapacityInformation.Result.Used" />
+      </Connection>
+      <Connection ID="2921" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Shared.Configuration.History.LicenseInformation.GetLicenseCapacityInformation.Result.Available" />
+      </Connection>
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="1" Protocol="122" Host="123" Path="124" File="125" />
+      <HyperLink ID="2" Protocol="126" Host="130" Path="131" File="129">
+        <UrlParameters Name="134" Value="197" Description="" />
+        <UrlParameters Name="194" Value="195" Description="" />
+      </HyperLink>
+      <HyperLink ID="3" Protocol="138" Host="139" Path="140" File="141">
+        <UrlParameters Name="142" Value="196" Description="" />
+        <UrlParameters Name="144" Value="204" Description="" />
+        <UrlParameters Name="205" Value="206" Description="" />
+        <UrlParameters Name="207" Value="208" Description="" />
+        <UrlParameters Name="209" Value="210" Description="" />
+        <UrlParameters Name="211" Value="212" Description="" />
+      </HyperLink>
+      <HyperLink ID="121" Protocol="-1" Host="2695" Path="2696" File="1919">
+        <UrlParameters Name="1920" Value="1922" Description="" />
+        <UrlParameters Name="1923" Value="1924" Description="" />
+      </HyperLink>
+      <HyperLink ID="122" Protocol="-1" Host="1927" Path="1928" File="1929">
+        <UrlParameters Name="1930" Value="1931" Description="" />
+      </HyperLink>
+      <HyperLink ID="123" Protocol="-1" Host="1932" Path="1933" File="1934">
+        <UrlParameters Name="1935" Value="1937" Description="" />
+      </HyperLink>
+      <HyperLink ID="161" Protocol="2704" Host="2507" Path="2508" File="2509">
+        <UrlParameters Name="2423" Value="2710" Description="" />
+      </HyperLink>
+      <HyperLink ID="162" Protocol="2708" Host="2692" Path="2693" File="2694" />
+      <HyperLink ID="163" Protocol="2703" Host="2697" Path="2698" File="2699">
+        <UrlParameters Name="2700" Value="2711" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

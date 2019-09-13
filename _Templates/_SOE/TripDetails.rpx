@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="11232" DocumentName="ActiveReports Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AQAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAEAAAAGBAAAAA1DdXN0b21Db250cm9sEAMAAAABAAAACQUAAAAPBQAAAAAQAAACAAEAAAD/////AQAAAAAAAAAMAgAAAFJUZWVDaGFydCwgVmVyc2lvbj0xLjEuMTc2OS4xOTQ1NywgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj05YzgxMjYyNzZjNzdiZGI3DAMAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQEAAAAVU3RlZW1hLlRlZUNoYXJ0LkNoYXJ0NQAAAAYuV2lkdGgHLkhlaWdodA4uUGFubmluZy5BbGxvdxEuUGFuZWwuTWFyZ2luTGVmdBAuUGFuZWwuTWFyZ2luVG9wEi5QYW5lbC5NYXJnaW5SaWdodBMuUGFuZWwuTWFyZ2luQm90dG9tFi5QYW5lbC5CcnVzaC5JbWFnZU1vZGUSLlBhbmVsLkJydXNoLkNvbG9yEC5QYW5lbC5JbWFnZU1vZGUQLlBhbmVsLlBlbi5Db2xvchIuUGFuZWwuUGVuLlZpc2libGURLkxlZ2VuZC5BbGlnbm1lbnQTLkxlZ2VuZC5MZWdlbmRTdHlsZQ0uSGVhZGVyLkxpbmVzES5IZWFkZXIuRm9udC5TaXplGC5IZWFkZXIuRm9udC5CcnVzaC5Db2xvchMuSGVhZGVyLkJydXNoLlNvbGlkHi5IZWFkZXIuQnJ1c2guR3JhZGllbnQuVmlzaWJsZRguSGVhZGVyLkdyYWRpZW50LlZpc2libGUSLlN1YkhlYWRlci5WaXNpYmxlDy5Gb290ZXIuVmlzaWJsZRIuU3ViRm9vdGVyLlZpc2libGUTLkFzcGVjdC5BcHBseVpPcmRlchIuQXNwZWN0LkNsaXBQb2ludHMSLkFzcGVjdC5PcnRob2dvbmFsDi5Bc3BlY3QuVmlldzNEFS5HcmFwaGljczNELlBlbi5Db2xvchsuR3JhcGhpY3MzRC5CcnVzaC5JbWFnZU1vZGUXLkdyYXBoaWNzM0QuQnJ1c2guQ29sb3IZLkdyYXBoaWNzM0QuQnJ1c2guVmlzaWJsZRUuR3JhcGhpY3MzRC5Gb250LlNpemUTLkdyYXBoaWNzM0QuWENlbnRlchMuR3JhcGhpY3MzRC5ZQ2VudGVyGS5HcmFwaGljczNELlNtb290aGluZ01vZGUdLkdyYXBoaWNzM0QuVGV4dFJlbmRlcmluZ0hpbnQaLkdyYXBoaWNzM0QuU3VwcG9ydHMzRFRleHQVLkdyYXBoaWNzM0QuQmFja0NvbG9yFS5HcmFwaGljczNELlVzZUJ1ZmZlchwuR3JhcGhpY3MzRC5Sb3RhdGlvbkNlbnRlci5YHC5HcmFwaGljczNELlJvdGF0aW9uQ2VudGVyLlkcLkdyYXBoaWNzM0QuUm90YXRpb25DZW50ZXIuWg0uV2FsbHMuVmlldzNEGy5BeGVzLkxlZnQuTGFiZWxzLkZvbnQuU2l6ZRguQXhlcy5MZWZ0LkdyaWQuQ2VudGVyZWQXLkF4ZXMuTGVmdC5HcmlkLlZpc2libGUaLkF4ZXMuVG9wLkxhYmVscy5Gb250LlNpemUWLkF4ZXMuVG9wLkdyaWQuVmlzaWJsZRwuQXhlcy5SaWdodC5MYWJlbHMuRm9udC5TaXplGC5BeGVzLlJpZ2h0LkdyaWQuVmlzaWJsZR0uQXhlcy5Cb3R0b20uTGFiZWxzLkZvbnQuU2l6ZRkuQXhlcy5Cb3R0b20uR3JpZC5WaXNpYmxlGC5BeGVzLkRlcHRoLkdyaWQuVmlzaWJsZQAABAAAAAAEBAQEAAQEBgAEAAAAAAAAAAAAAAQEBAAAAAAEBAAEAAAAAAAAAAAAAAAAAAAACAgbU3RlZW1hLlRlZUNoYXJ0LlNjcm9sbE1vZGVzAgAAAAYGBgYhU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuSW1hZ2VNb2RlAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAAhU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuSW1hZ2VNb2RlAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAABIFN0ZWVtYS5UZWVDaGFydC5MZWdlbmRBbGlnbm1lbnRzAgAAABxTdGVlbWEuVGVlQ2hhcnQuTGVnZW5kU3R5bGVzAgAAAAgUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQEBAQEBAQEBARRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAAhU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuSW1hZ2VNb2RlAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAABCAgIJlN5c3RlbS5EcmF3aW5nLkRyYXdpbmcyRC5TbW9vdGhpbmdNb2RlAwAAACVTeXN0ZW0uRHJhd2luZy5UZXh0LlRleHRSZW5kZXJpbmdIaW50AwAAAAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQgICAEIAQEIAQgBCAEBAgAAANACAABvAQAABfz///8bU3RlZW1hLlRlZUNoYXJ0LlNjcm9sbE1vZGVzAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABABfv///8hU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuSW1hZ2VNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAwAAAAX6////FFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcHAwAAAAr///8AAAAAAAAAAgAB+f////v///8DAAAAAfj////6////CtDQ0P4AAAAAAAACAAEF9////yBTdGVlbWEuVGVlQ2hhcnQuTGVnZW5kQWxpZ25tZW50cwEAAAAHdmFsdWVfXwAIAgAAAAMAAAAF9v///xxTdGVlbWEuVGVlQ2hhcnQuTGVnZW5kU3R5bGVzAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkLAAAAEgAAAAH0////+v///woAAAAAAAAAACMAAQAAAQEAAAAAAAAAAfP////6////CgAAAAAAAAAANAABAAHy////+////wMAAAAB8f////r///8K////AAAAAAAAAAIAAAoAAABoAQAAtwAAAAXw////JlN5c3RlbS5EcmF3aW5nLkRyYXdpbmcyRC5TbW9vdGhpbmdNb2RlAQAAAAd2YWx1ZV9fAAgDAAAAAQAAAAXv////JVN5c3RlbS5EcmF3aW5nLlRleHQuVGV4dFJlbmRlcmluZ0hpbnQBAAAAB3ZhbHVlX18ACAMAAAAAAAAAAAHu////+v///wr///8AAAAAAAAAAgABAAAAAAAAAAAAAAAAAAoAAAABAAoAAAAACgAAAAAKAAAAAAARCwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0" />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit" />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="8654" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox14" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;11&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="90" Width="10800" Height="450" Text="SOE_event_list" Style="color: #005E57; font-size: 14pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox5" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;2&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="6825.601" Top="792" Width="1724.4" Height="288.0001" Text="Reports_PrintTime" Style="text-align: right; white-space: nowrap" />
+      <Control Type="AR.CustomControl" Name="CustomControl" Left="89.28001" Top="1800" Width="10800.72" Height="5505.121" ControlType="Steema.TeeChart.TChart" Assembly="TeeChart, Version=1.1.1769.19457, Culture=neutral, PublicKeyToken=9c8126276c77bdb7" ImageType="0" />
+      <Control Type="AR.Field" Name="TextBoxTime" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;17&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="7470.48" Width="2610.72" Height="630" Text="Time" Style="font-weight: normal; text-align: left; vertical-align: top; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Subreport" Name="SubReport1" DataField="Values" Tag="$DNAalarmHistorian/Query.SOE.SOE.GetTagTabulation" Left="0" Top="8213.761" Width="11188.8" Height="360" ReportName="TagValues" />
+      <Control Type="AR.Field" Name="TextBoxTagValues" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;34&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="1080" Width="3600" Height="359.9999" Text="TagValues" Style="font-size: 12pt; font-weight: bold; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label" Visible="0" Left="3690" Top="1080" Width="7199.28" Height="720" Caption="" Style="color: Red" />
+      <Control Type="AR.Image" Name="Picture1" Left="8428.32" Top="28.8" Width="1860.48" Height="540" BackColor="16777215" BackStyle="1" LineColor="16777215" LineWeight="0">0D0D000402F70B000089504E470D0A1A0A0000000D4948445200000078000000280802000000BA88A972000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000001974455874536F6674776172650041646F626520496D616765526561647971C9653C0000031869545874584D4C3A636F6D2E61646F62652E786D7000000000003C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E203C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E302D633036302036312E3133343334322C20323031302F30312F31302D31383A30363A34332020202020202020223E203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E203C7264663A4465736372697074696F6E207264663A61626F75743D222220786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F2220786D6C6E733A786D704D4D3D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F6D6D2F2220786D6C6E733A73745265663D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F73547970652F5265736F75726365526566232220786D703A43726561746F72546F6F6C3D2241646F62652050686F746F73686F70204353352220786D704D4D3A496E7374616E636549443D22786D702E6969643A37344144363539324539393831314534424144464435353437343536343231442220786D704D4D3A446F63756D656E7449443D22786D702E6469643A3734414436353933453939383131453442414446443535343734353634323144223E203C786D704D4D3A4465726976656446726F6D2073745265663A696E7374616E636549443D22786D702E6969643A3734414436353930453939383131453442414446443535343734353634323144222073745265663A646F63756D656E7449443D22786D702E6469643A3734414436353931453939383131453442414446443535343734353634323144222F3E203C2F7264663A4465736372697074696F6E3E203C2F7264663A5244463E203C2F783A786D706D6574613E203C3F787061636B657420656E643D2272223F3EF3655E6C00000858494441546843ED9AF953535714C7FB6FB59DE94C3B5D42EB0A52041104C482B258F7655A4A415CEA46513A5A17C0CA22B2D5B468A1A3690BB2694880AC84908414838A216C61D1F48BF7CEE5F25E125E54527F78DF39E324E79CFB72FDBCFBCE3D37E41D9FACB048061D26C9A0C32419749824830E9364D0A169726E5239D870CD74B56BA4FDC58B17D42B4132E810E41C77263725AE562AD6362AD6DD51E4761DF6CE7B696C39C9A0A56AC8E38C6BD8A4A8517CD1A060ACBFE9DC2F91B50C5A921C6E676479FC4765119F562A04ACF7B5654FCE4DD0BCC07AC762B16C4ED8B26AF55A62B171F12E978B0697CA66B3B134586E6E1E0D04565E7E01CB3F70F010F5FE1F9A9898A8BA519D9199FDDBEF8DD42559B37373F661475459E2079722C0FA1311EBBD12582FACE8D6D6FB0C07ACA4A494C404BA515DCDA7DDBE7D870602EB2D016D3299E237279269DCBFDF46BDD2343B3B6BB33BAC83369BF3B5582F80C6EE9994BC9511D99ABA8DC404DAB3771FCB59BD66DDB367CF6820B0DE06D073F3F30989496C1A1AAD960624C83B333360B55906AC03D641B0760C3B63AFA72EB2BE19026B5AA32F5DBEC2A602331A4DC4CFE4768F012E4B00741A08AAB701B4D56A65738099CDFD34B09CBC5E6FBFC56A325BCCFD03AFCF9A82D6E974FC6CC09DF8999A9A9AF9849B35B53410546F03688B6580CD0186B7341054A06C32F71B8C26A3A93F18EB0AA9AC2968548F046E4BDC929422E8C6F38F2C22830D0D39B1BDA8D5EA5F6F29ABAB6F5E2FAFA8ACAC6ABC7DC76030F003838076BBDD5A6D0F0A7D4D4D2D86E3CE757474CECCCC2084B2A8D71BFEF8A3A9AAEA4679798552F99B4EAFF77B3AC0455A5A5A6B6BEB9086693435358123CBF478C6B1B1777676B139C0F0164EA2D1D1519229D0B4D70BC43ABD416F308A59BB5C23AEF1C7D1BF2487C49A82868A8B7FE227046434E0F3E1FFBF213A8685D2D2773C7FFE9CEF557843B9073232500C1AC8CE17FFB4EDAB74E6E72D6ED3E69C9CDCC8A868811F96BE3D835F8CB8CDA74F9F59B72E7235368CA5B6634726CA05722E5EBC24B888C0FC3E64D3D3D340DCDBA7EBD3E9C5AC87875DE44686CA7A117477B7869FC4858B3FD380CFD7DEDEC1874A4ACB04C9024335C7468F8162D0BC2754C39E363139898BE0C667677F2DE0CB5B7C7C02F6EA57000DCA40ACD1F6F6F4F689593BFF1DE61FAC90582F82C622DD18BB894D2239652B0DF87C858545CC0FC3623F77BE98F788ED48C1510C7CB3A061F50DBFE2227575F53CD6F5EBA3D2D2D253525279278A49A8A0A7A6A6B53D7DEA6E6DB7A647CC1AD5525CBEA4B35E040D09805A0707E1447BC4DF0094727CDED5AB258D8DB75149474646F014A3DEA1E0EEDABD87A5C56C8CC3D8E0A0D1DB02C72DA512359AF5B9C4CE9C2DACADAB47E8CC9942DEFF6DCE77B8485ADA76063433331BB5184E48ABD532FFAE5D7BEEDD5361F8F779F9FC15F0164E6228EB642034353505BE0F1E763F546BC4ACED8E213165A2E0AC77B6A68FCDB891B604346A2B3F27EC45700AAA04D63249160BACF94CEC69C141F30BAAADBD9DF961E8826860E9106C00D800194DD8EF4B4F7A494929C41F15154D3C52BA8EC9A929F0EDEC7AD8F5402D666DB3DB0351260ACE3AAB25CD333BB60434D0447FB991CD69F7EEBD700AAA04B8C389558CA7F8E8B1E368A833B3B2F71F38585070ECDCB9F37C2672A4837E3A3ACAFC30FEFC86A333F3C7C4C4EAF57A4619969ABA2D2B2B9B19F8B2100A2E864B013D36E679FCF8C9823D79FA04F6141A5D30F425A3CF5054695E600DB9FF6D36A99AFB557F5A5477ADAA7B3695CAA1520DA9FE72AADA1EB5E23E2D010D1D3B7682CD097B1A3E896FFB36C56FC6A7A2BF49DC92CC9C812C24D0E85B991FD6DCFC270DF87C68EFF85057D7038632B86102182E69454F4E612DB7777475743E10AF6BF4CECBAEE80D65C9EF1645BC773EE2839F233E2C8DF8B83CE2B36AC5E7758A55B714997F8B563474F7EE3D7E5A821249EAC60F274FF1CE4016126888F9613C68BCE6432B011A7A65D68CF2FBFE2867FDEDAF4643E3E3E36BD6AEE767C61BA91BFCDEF8555A7A5B5B9BC96CEEE9ED152CBD15028D9E87A75952528A04BF36373787E1124143AFC07A9172B11FCABB5B02741D44070F1DE667C68CD40DD471DE595A7A8D0EC3A7BA5C7C6885402F7CEBC281C60192E605900034766C1AF0A790584BA70CF9018D5D8E9F1933B4A5880A4013279118F4891327D9DBBDFB0E20E7F541C3B37D7B06039D92B2155D26D9AFE6E7E7B1A1A9D5EA818185932191DDEEE0879F3C751AB70A471EF849FF2A9044D6215186FC807EF4E8113F3366ECA18B8D5B2C1D382E9F3A751AB8F1AFE0600DD068B7D95B342718FB46400B0E2CC4A2A363D8EBA2A273642C04A6818AE1F1133FD0A4A55A96B5CB33121265C80F682823234B302778682C94CD10B59BBD45F782B16F04349E2A9C471856B1EDDCB98B8C25CAF92E97BF02B3E494549A215210D606B339E65A6A489421FFA0CBAEFD22981316118D2D94889140DF0A11435FB86FFF01746C48AEACAC625F647B3C9E37021AC269F0C89102015F6691911B50464826E47038B0C1F017618632429344F2CB5A6F32BE0265C83F68B4CF3832F086E549632F850DBDA5B5F5F2E52BE8BBC12EF7FB3CBCB870E1627D7D8346A3997CF9D50F93DD6EAFA8A8C4A9DA6834198C4676CDBEBEC5E31FC4FC309CECA9D7E7C36B3E44BD2F852BE3188DAA9597979F9F5F70F66CE1F5EBE5FFFCD322FEEB0FEE31E686028D2338265CF863514D4D2DE613BC41066BC065ACFB0C0601E54FA45186FC8396C5343DED45C5006B8DAE777D4922A57C89505648A40CC9A0971758F71875AF431992414B92C3ED5C7325DE2FE53DADCB538664D052457E4323A07CB85DFEA5D20A68C8E38C6F486094733A0EC9BFBD5B294DCC4E28079425BACBEDAEFB2F7CC13A168164D061920C3A4C9241874932E8B0C8E7FB0F105E7E40C548B74D0000000049454E44AE426082</Control>
+      <Control Type="AR.Field" Name="TextBox7" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;251&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="8547.841" Top="792" Width="2341.44" Height="288" Text="PrintTime" />
+      <Control Type="AR.Field" Name="TextBox6" Visible="0" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;253&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="5385.601" Top="792" Width="1440" Height="288" Text="PrintDate" />
+      <Control Type="AR.Field" Name="AvgFakeTextBox" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;254&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="2700" Top="7470.72" Width="0" Height="630" Text="Avg" Style="font-weight: normal; text-align: left; vertical-align: top; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="7413.12" X2="11232" Y2="7413.12" LineColor="5726464" />
+      <Control Type="AR.Line" Name="Line2" X1="0" Y1="8166.241" X2="11232" Y2="8166.241" LineColor="5726464" />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" />
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="1147" GroupKeepTogether="1" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox13" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;17&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="809.28" Width="2610.72" Height="270" Text="Time" Style="font-weight: normal; text-align: left; vertical-align: middle; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox15" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;18&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="2700" Top="810" Width="3060" Height="270" Text="Tag" Style="font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox17" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;20&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="8547.841" Top="809.28" Width="2160" Height="270" Text="Event" Style="font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBoxTripEvents" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;35&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="302.4" Width="2610" Height="360" Text="TripEvents" Style="font-size: 12pt; font-weight: bold; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;37&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="5758.56" Top="810" Width="2790" Height="270" Text="TagDescription" Style="font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line3" X1="0" Y1="734.4001" X2="11232" Y2="734.4001" LineColor="5726464" />
+      <Control Type="AR.Line" Name="Line4" X1="0" Y1="1137.6" X2="11232" Y2="1137.6" LineColor="5726464" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="374" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox3" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;22&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28017" Top="28.8" Width="2610.72" Height="288" Text="EventTime" Style="text-align: left; white-space: nowrap" />
+      <Control Type="AR.Field" Name="TextBox4" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;23&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="2700" Top="28.8" Width="3060" Height="288" Text="Tag" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox9" Tag="25" Left="8548.561" Top="28.8" Width="2160" Height="288" Text="EventDescription" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="36" Left="5759.28" Top="28.8" Width="2790.72" Height="288" Text="TagDescription" />
+      <Control Type="AR.Field" Name="TextBox2" Visible="0" Tag="38" Left="8997.12" Top="28.8" Width="1440" Height="288" Text="SOEtype" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="12" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter" Height="15" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter" Height="1080" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox8" Tag="39" Left="90" Top="630" Width="5490" Height="360" Text="sCriteriaList" />
+      <Control Type="AR.Field" Name="TextBox10" Tag="40" Left="5850" Top="630" Width="4950" Height="360" Text="mCriteriaList" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox11" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;42&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="90" Top="180" Width="5490" Height="360" Text="SOEfilter" Style="font-size: 10pt; font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox12" Tag="41" Left="5850" Top="180" Width="4950" Height="360" Text="RelatedFilter" Style="font-size: 10pt; font-weight: normal; white-space: inherit; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line5" X1="0" Y1="0" X2="11232" Y2="0" LineColor="5726464" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[int i=1;
+
+//Detail_Format, runs for every row in report detail data.
+public void Detail_Format()
+{
+  // Use the modulo operator to achieve alternating back color 
+  // for each row
+  if (i % 2 == 0)
+  {
+    rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(247,247,247); 
+  }
+  else 
+  {
+    rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(255,255,255); 
+  }
+  i++;
+  
+  DataDynamics.ActiveReports.TextBox TextBox2 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox2"];
+  DataDynamics.ActiveReports.TextBox TextBox3 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox3"];
+
+  if (TextBox2.Text == "SOE")
+  	TextBox3.Font = new Font(TextBox3.Font, FontStyle.Bold);
+  else
+  	TextBox3.Font = new Font(TextBox3.Font, FontStyle.Regular);
+}
+
+public void ReportHeader_Format()
+{
+((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox7"]).Text = DateTime.Parse(((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox6"]).Text).ToShortDateString() + " " + DateTime.Parse(((TextBox) rpt.Sections["ReportHeader"].Controls["TextBox7"]).Text).ToShortTimeString();
+	
+	DataDynamics.ActiveReports.Label LabelError = (DataDynamics.ActiveReports.Label) rpt.Sections["ReportHeader"].Controls["Label"];
+	
+	System.Drawing.Color[] usedColors = 
+	{
+		System.Drawing.Color.FromArgb(0,94,87),
+		System.Drawing.Color.FromArgb(252,144,0),
+		System.Drawing.Color.FromArgb(152,192,0),
+		System.Drawing.Color.FromArgb(255,184,7),
+		System.Drawing.Color.FromArgb(0,159,160),
+		System.Drawing.Color.FromArgb(196,199,220),
+		System.Drawing.Color.FromArgb(120,204,205),
+		System.Drawing.Color.FromArgb(164,166,168),
+		System.Drawing.Color.FromArgb(128,100,162),
+		System.Drawing.Color.FromArgb(79,129,189)
+	};
+	
+	try 
+	{
+		object ods = g_DataSets["$DNAalarmHistorian/Query.SOE.SOE.GetTrendTagValues"];
+		System.Data.DataSet ds = (System.Data.DataSet)ods;
+		if (ds == null)
+			return;
+		
+		DataDynamics.ActiveReports.CustomControl CustomControl = (DataDynamics.ActiveReports.CustomControl)rpt.Sections["ReportHeader"].Controls["CustomControl"];
+		Steema.TeeChart.TChart TChartCustomControl = (Steema.TeeChart.TChart)CustomControl.Control;
+		
+		DataDynamics.ActiveReports.TextBox TextBox = (DataDynamics.ActiveReports.TextBox)rpt.Sections["GroupHeader1"].Controls["TextBoxTripEvents"];
+		int curColor = 0;
+		foreach(System.Data.DataTable dt in ds.Tables) {
+			Steema.TeeChart.Styles.Line line = new Steema.TeeChart.Styles.Line();
+			// Data binding
+			line.DataSource = dt;
+			line.XValues.DataMember = "ts";
+			line.XValues.DateTime=true;
+			line.YValues.DataMember = "value";
+			
+			line.Color = usedColors[curColor];
+			curColor = (curColor + 1)%usedColors.Length;
+			line.Title = dt.TableName;
+			line.CheckDataSource();
+			
+			// Add Line to chart
+			TChartCustomControl.Series.Add(line);
+		}
+	}
+	catch(System.Exception ex)
+	{
+		LabelError.Visible = true;
+		LabelError.Text = ex.Message;
+	}
+	
+	DataDynamics.ActiveReports.TextBox Avg = (DataDynamics.ActiveReports.TextBox) rpt.Sections["ReportHeader"].Controls["AvgFakeTextBox"];
+	
+	string avgText = Avg.Text;
+	for (int i = 1; i <= TagsCount; i++)
+	{
+		DataDynamics.ActiveReports.TextBox tag = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TagHeader" + i];
+		tag.Text = tag.Text + "\n" + avgText;
+	}
+}
+int TagsCount;
+private void GenerateTitles()
+{
+	DataDynamics.ActiveReports.TextBox TextBox = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBoxTime"];
+
+	DataDynamics.ActiveReports.Section footerSection = rpt.Sections["ReportHeader"];
+	string[] tags = new string[0];
+	if (g_Parameters["tagList"] != "(null)")
+		tags = g_Parameters["tagList"].Split(new string[]{ "\t\n", "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+	
+	DataDynamics.ActiveReports.TextBox newColumn;
+	float step = 0.125f;
+	float left = TextBox.Left + TextBox.Width + step;
+
+	if (tags.Length > 5)
+	{
+		DataDynamics.ActiveReports.SubReport SubReport1 = (DataDynamics.ActiveReports.SubReport)rpt.Sections["ReportHeader"].Controls["SubReport1"];
+		DataDynamics.ActiveReports.CustomControl CustomControl = (DataDynamics.ActiveReports.CustomControl)rpt.Sections["ReportHeader"].Controls["CustomControl"];
+		Steema.TeeChart.TChart TChartCustomControl = (Steema.TeeChart.TChart)CustomControl.Control;
+		DataDynamics.ActiveReports.TextBox TextBox17 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["GroupHeader1"].Controls["TextBox17"];
+		DataDynamics.ActiveReports.TextBox TextBox9 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox9"];
+		DataDynamics.ActiveReports.TextBox TextBox_ = (DataDynamics.ActiveReports.TextBox)rpt.Sections["GroupHeader1"].Controls["TextBox"];
+		DataDynamics.ActiveReports.TextBox TextBox1 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox1"];
+		DataDynamics.ActiveReports.TextBox TextBox15 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["GroupHeader1"].Controls["TextBox15"];
+		DataDynamics.ActiveReports.TextBox TextBox4 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox4"];
+		DataDynamics.ActiveReports.TextBox TextBox14 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBox14"];
+		DataDynamics.ActiveReports.Picture Picture1 = (DataDynamics.ActiveReports.Picture)rpt.Sections["ReportHeader"].Controls["Picture1"];
+		DataDynamics.ActiveReports.TextBox TextBox5 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBox5"];
+		DataDynamics.ActiveReports.TextBox TextBox6 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBox6"];
+		DataDynamics.ActiveReports.TextBox TextBox7 = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBox7"];
+
+	
+		rpt.Document.Printer.PrinterName="";
+ 		rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+ 		rpt.Document.Printer.PaperSize = new System.Drawing.Printing.PaperSize("CustomSize", 1169, 827);
+ 		SubReport1.Width = 11.0f;
+ 		rpt.PrintWidth = 11.0f;
+ 		CustomControl.Width = 10.75f;
+ 		TextBox17.Left += 2.5f;
+ 		TextBox17.Width += 1.60f;
+ 		TextBox9.Left += 2.5f;
+ 		TextBox9.Width += 1.60f;
+ 		TextBox_.Left += 1;
+ 		TextBox_.Width += 1.5f;
+ 		TextBox1.Left += 1;
+ 		TextBox1.Width += 1.5f;
+ 		TextBox15.Width += 1;
+ 		TextBox4.Width += 1;
+ 		TextBox14.Width += 4.6f;
+ 		Picture1.Left += 3.4f;
+ 		TextBox5.Left += 3.4f;
+ 		TextBox6.Left += 3.4f;
+ 		TextBox7.Left += 3.4f;
+ 	}
+	
+	int index = 1;
+	TagsCount = tags.Length;
+	foreach(string tagName in tags)
+	{
+		newColumn = new DataDynamics.ActiveReports.TextBox();
+		newColumn.Top = TextBox.Top;
+		newColumn.Left = left;
+		newColumn.Height = 0.438f;
+		newColumn.Name = "TagHeader" + (index++);
+		left += newColumn.Width + step;
+		newColumn.Text = tagName;
+		newColumn.Style = TextBox.Style;
+		newColumn.VerticalAlignment = TextBox.VerticalAlignment;
+		footerSection.Controls.Add(newColumn);
+	}
+}
+
+public void ActiveReport_ReportStart()
+{
+  	DataDynamics.ActiveReports.TextBox TextBoxTime = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBoxTime"];
+	DataDynamics.ActiveReports.Line line1 = (DataDynamics.ActiveReports.Line)rpt.Sections["ReportHeader"].Controls["Line1"];
+	DataDynamics.ActiveReports.Line line2 = (DataDynamics.ActiveReports.Line)rpt.Sections["ReportHeader"].Controls["Line2"];
+	DataDynamics.ActiveReports.SubReport SubReport1 = (DataDynamics.ActiveReports.SubReport)rpt.Sections["ReportHeader"].Controls["SubReport1"];
+	DataDynamics.ActiveReports.TextBox TextBoxTagValues = (DataDynamics.ActiveReports.TextBox)rpt.Sections["ReportHeader"].Controls["TextBoxTagValues"];
+
+	
+	string[] tags = new string[0];
+	if (g_Parameters["tagList"] != "(null)")
+		tags = g_Parameters["tagList"].Split(new string[]{ "\t\n", "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+	
+	bool flag;
+	if (!bool.TryParse(g_Parameters["showTagTable"], out flag) || !flag || tags.Length == 0) {
+		line1.Visible = false;
+		TextBoxTime.Visible = false;
+		SubReport1.Visible = false;
+		rpt.Sections["ReportHeader"].Height = 4.875f;
+	}
+	else
+		GenerateTitles();
+		
+	if (tags.Length == 0)
+	{
+		rpt.Sections["ReportHeader"].Height = 0.65f;
+		TextBoxTagValues.Visible = false;
+	}
+}
+
+public void ActiveReport_DataInitialize()
+{
+  DataDynamics.ActiveReports.TextBox DetailEventTime = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBox3"];
+  DetailEventTime.OutputFormat = System.Globalization.DateTimeFormatInfo.CurrentInfo.ShortDatePattern + " " +
+  System.Globalization.DateTimeFormatInfo.CurrentInfo.LongTimePattern.Replace(":ss", ":ss.fff");
+}
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

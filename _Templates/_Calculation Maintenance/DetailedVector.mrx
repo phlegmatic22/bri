@@ -1,0 +1,300 @@
+<eDNAproReports_Report>
+  <Report Name="DetailedVector" ID="DetailedVector" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetData" Description="" FriendlyName="GetData" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="calcID" Ref="calcID" Usage="" />
+        <DataSetParameter Name="SessionID" Ref="SessionID" Usage="" />
+        <DataSetParameter Name="CalculationTime" Ref="CalculationTime" Usage="" />
+        <DataSetParameter Name="PackName" Ref="PackName" Usage="" />
+        <DataSetParameter Name="VarName" Ref="VarName" Usage="" />
+        <DataSetParameter Name="testIndex" Ref="testIndex" Usage="" />
+        <DataSetParameter Name="isRecalculation" Ref="$DNAcalc/Query.CalculationComposer.Calculations.GetData.isRecalculation" Usage="" />
+        <DataTable Name="Project" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProjectCompany" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.ProjectCompany" DataType="System.String" Caption="ProjectCompany" Description="" FriendlyName="" Expression="" />
+          <DataField Name="XmlData" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.XmlData" DataType="System.String" Caption="XmlData" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Package" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationModule" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.CalculationModule" DataType="System.String" Caption="CalculationModule" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Order_num" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Order_num" DataType="System.Int32" Caption="Order_num" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Oper_mode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Oper_mode" DataType="System.Int32" Caption="Oper_mode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Flags" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Flags" DataType="System.Double" Caption="Flags" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Last_updated" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Last_updated" DataType="System.DateTime" Caption="Last_updated" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Edited_by" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.Edited_by" DataType="System.String" Caption="Edited_by" Description="" FriendlyName="" Expression="" />
+          <DataField Name="XmlData" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.XmlData" DataType="System.String" Caption="XmlData" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Variable" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Variable_Id" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Variable_Id" DataType="System.Int32" Caption="Variable_Id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="VariableName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.VariableName" DataType="System.String" Caption="VariableName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description2" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Description2" DataType="System.String" Caption="Description2" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Const" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Const" DataType="System.Single" Caption="Const" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Design" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Design" DataType="System.Single" Caption="Design" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLimit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.LowLimit" DataType="System.Single" Caption="LowLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighLimit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.HighLimit" DataType="System.Single" Caption="HighLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Data_type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Data_type" DataType="System.Int32" Caption="Data_type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Var_type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Var_type" DataType="System.Int32" Caption="Var_type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Scale" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Scale" DataType="System.Int32" Caption="Scale" Description="" FriendlyName="" Expression="" />
+          <DataField Name="State" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.State" DataType="System.Int32" Caption="State" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SubstMode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.SubstMode" DataType="System.Int32" Caption="SubstMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Flags" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Flags" DataType="System.Int32" Caption="Flags" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Lin_a" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Lin_a" DataType="System.Single" Caption="Lin_a" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Lin_b" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Lin_b" DataType="System.Single" Caption="Lin_b" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MethodName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.MethodName" DataType="System.String" Caption="MethodName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="XmlData" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.XmlData" DataType="System.String" Caption="XmlData" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultTableName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ResultTableName" DataType="System.String" Caption="ResultTableName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultTSColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ResultTSColumn" DataType="System.String" Caption="ResultTSColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultValueColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ResultValueColumn" DataType="System.String" Caption="ResultValueColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultStatusColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ResultStatusColumn" DataType="System.String" Caption="ResultStatusColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="StatusMode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.StatusMode" DataType="System.String" Caption="StatusMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SubstStatus" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.SubstStatus" DataType="System.String" Caption="SubstStatus" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="MethodParam" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Variable_Id" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.MethodParam.Variable_Id" DataType="System.Int32" Caption="Variable_Id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParamValue" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.MethodParam.ParamValue" DataType="System.String" Caption="ParamValue" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ParamType" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.MethodParam.ParamType" DataType="System.String" Caption="ParamType" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="EditableColumns" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.EditableColumns.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ColumnName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.EditableColumns.ColumnName" DataType="System.String" Caption="ColumnName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.EditableColumns.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="CustomConfiguration" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Key" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.Key" DataType="System.String" Caption="Key" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.Value" DataType="System.String" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CustomConfiguration_Id" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.CustomConfiguration_Id" DataType="System.Int32" Caption="CustomConfiguration_Id" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="UnlockedColumns" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.UnlockedColumns.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.UnlockedColumns.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ColumnName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.UnlockedColumns.ColumnName" DataType="System.String" Caption="ColumnName" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Sorted" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ProjectName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ProjectName" DataType="System.String" Caption="ProjectName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="VariableName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.VariableName" DataType="System.String" Caption="VariableName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description2" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Description2" DataType="System.String" Caption="Description2" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Const" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Const" DataType="System.Single" Caption="Const" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Design" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Design" DataType="System.Single" Caption="Design" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LowLimit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.LowLimit" DataType="System.Single" Caption="LowLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="HighLimit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.HighLimit" DataType="System.Single" Caption="HighLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Data_type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Data_type" DataType="System.Int32" Caption="Data_type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Var_type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Var_type" DataType="System.Int32" Caption="Var_type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Scale" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Scale" DataType="System.Int32" Caption="Scale" Description="" FriendlyName="" Expression="" />
+          <DataField Name="State" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.State" DataType="System.Int32" Caption="State" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SubstMode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.SubstMode" DataType="System.Int32" Caption="SubstMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Flags" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Flags" DataType="System.Int32" Caption="Flags" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Lin_a" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Lin_a" DataType="System.Single" Caption="Lin_a" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Lin_b" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Lin_b" DataType="System.Single" Caption="Lin_b" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MethodName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.MethodName" DataType="System.String" Caption="MethodName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="XmlData" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.XmlData" DataType="System.String" Caption="XmlData" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultTableName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ResultTableName" DataType="System.String" Caption="ResultTableName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultTSColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ResultTSColumn" DataType="System.String" Caption="ResultTSColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultValueColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ResultValueColumn" DataType="System.String" Caption="ResultValueColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ResultStatusColumn" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ResultStatusColumn" DataType="System.String" Caption="ResultStatusColumn" Description="" FriendlyName="" Expression="" />
+          <DataField Name="StatusMode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.StatusMode" DataType="System.String" Caption="StatusMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SubstStatus" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.SubstStatus" DataType="System.String" Caption="SubstStatus" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Variable_Id" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Variable_Id" DataType="System.Int32" Caption="Variable_Id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ReferencedTag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.ReferencedTag" DataType="System.String" Caption="ReferencedTag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Variable type" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Variable type" DataType="System.String" Caption="Variable type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Function" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Function" DataType="System.String" Caption="Function" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MonthFunction" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.MonthFunction" DataType="System.String" Caption="MonthFunction" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CustomMethodName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.CustomMethodName" DataType="System.String" Caption="CustomMethodName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Time" DataType="System.String" Caption="Time" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Value" DataType="System.Double" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Status" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.Status" DataType="System.String" Caption="Status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="calculationID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.calculationID" DataType="System.String" Caption="calculationID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="sessionID" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.sessionID" DataType="System.String" Caption="sessionID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="linkIsVisible" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Sorted.linkIsVisible" DataType="System.Boolean" Caption="linkIsVisible" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="ReportHeader" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="CalculationTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationTime" DataType="System.String" Caption="CalculationTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationTimeUtc" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationTimeUtc" DataType="System.String" Caption="CalculationTimeUtc" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationStartTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationStartTime" DataType="System.String" Caption="CalculationStartTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationStartTimeUtc" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationStartTimeUtc" DataType="System.String" Caption="CalculationStartTimeUtc" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationEndTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationEndTime" DataType="System.String" Caption="CalculationEndTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalculationEndTimeUtc" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.ReportHeader.CalculationEndTimeUtc" DataType="System.String" Caption="CalculationEndTimeUtc" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="VirtualCalculationVariables" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Interval" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VirtualCalculationVariables.Interval" DataType="System.TimeSpan" Caption="Interval" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Delay" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VirtualCalculationVariables.Delay" DataType="System.TimeSpan" Caption="Delay" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="VectorValue" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="PackageName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.PackageName" DataType="System.String" Caption="PackageName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="VariableName" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.VariableName" DataType="System.String" Caption="VariableName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Time" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Time" DataType="System.String" Caption="Time" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Value" DataType="System.Double" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ValueDouble" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.ValueDouble" DataType="System.Double" Caption="ValueDouble" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Status" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Status" DataType="System.String" Caption="Status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="StatusOfTestCalculation" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.StatusOfTestCalculation" DataType="System.String" Caption="StatusOfTestCalculation" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TestCalculationTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.TestCalculationTime" DataType="System.String" Caption="TestCalculationTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TestCalculationTimeUtc" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.TestCalculationTimeUtc" DataType="System.String" Caption="TestCalculationTimeUtc" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Variable</ParentTable>
+          <ChildTable>MethodParam</ChildTable>
+          <Name>Variable_MethodParam</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Variable_Id" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.MethodParam.Variable_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Package</ParentTable>
+          <ChildTable>UnlockedColumns</ChildTable>
+          <Name>FK_Package_UnlockedColumns</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.ProjectName" />
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.PackageName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.UnlockedColumns.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.UnlockedColumns.PackageName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Project</ParentTable>
+          <ChildTable>CustomConfiguration</ChildTable>
+          <Name>Project_CustomConfiguration</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.ProjectName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Package</ParentTable>
+          <ChildTable>CustomConfiguration</ChildTable>
+          <Name>FK_Package_CustomConfiguration</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.PackageName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.CustomConfiguration.PackageName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Project</ParentTable>
+          <ChildTable>Variable</ChildTable>
+          <Name>relProject_Variable</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ProjectName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Package</ParentTable>
+          <ChildTable>Variable</ChildTable>
+          <Name>relPackage_Variable</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.ProjectName" />
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.PackageName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.PackageName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Project</ParentTable>
+          <ChildTable>Package</ChildTable>
+          <Name>relProject_Package</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Project.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.ProjectName" />
+        </Relation>
+        <Relation>
+          <ParentTable>Package</ParentTable>
+          <ChildTable>EditableColumns</ChildTable>
+          <Name>Package_EditableColumns</Name>
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.ProjectName" />
+          <ParentColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Package.PackageName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.EditableColumns.ProjectName" />
+          <ChildColumn DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.EditableColumns.PackageName" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="calcID" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="SessionID" Type="System.String" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="CalculationTime" Type="System.String" InitialValue="2009/01/01 12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="PackName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="VarName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="testIndex" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Index of test in the current testrun" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetData.isRecalculation" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Time" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Value" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Status" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.VariableName" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Description" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Tag" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.Variable.Unit" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.VariableName" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Description" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Tag" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Unit" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Time" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Value" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Status" />
+      </Connection>
+      <Connection ID="14" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="VarName" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Description" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Tag" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.Unit" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetData.VectorValue.ValueDouble" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="DetailedVector.rpx" ClassName="Layout" Layout="" />
+</eDNAproReports_Report>

@@ -1,0 +1,5 @@
+﻿<configuration>
+  <repository path="DNAentry">
+    <license provider="Metso.DNA.DNAentry.License"/>
+  </repository>
+</configuration>

@@ -1,0 +1,50 @@
+<eDNAproReports_Report>
+  <Report Name="_DNAportalInit_DNAdiary" ID="_DNAportalInit_DNAdiary" Version="2.2.0.0">
+    <Info Title="" Owner="IA-DEMO\Administrator" Expiration="" Category="" Version="5.4.1" ModifiedBy="IA-DEMO\Administrator" ModificationDate="2007-02-24T00:27:33" CreatedDate="2005-03-18T20:53:46" CreatedBy="VMVAT\matteus" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="Query.DNAdiary.RepositoryManager.GetReportList" ProviderInfo="$DNAdiary/Query.DNAdiary.RepositoryManager" Method="GetReportList" Description="">
+        <Data />
+        <DataTable Name="Repository" Description="">
+          <DataField Name="Name" ID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Repository_Id" ID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+          <DataField Name="Repository_Id_0" ID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" />
+        </DataTable>
+        <DataTable Name="Report" Description="">
+          <DataField Name="Name" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Product" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Product" DataType="System.String" Caption="Product" Description="" />
+          <DataField Name="Url" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Url" DataType="System.String" Caption="Url" Description="" />
+          <DataField Name="Icon" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Icon" DataType="System.String" Caption="Icon" Description="" />
+          <DataField Name="Target" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Target" DataType="System.String" Caption="Target" Description="" />
+          <DataField Name="Filter" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Filter" DataType="System.String" Caption="Filter" Description="" />
+          <DataField Name="Repository_Id" ID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.RepositoryManager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Query.DNAdiary.RepositoryManager.GetReportList.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="AppsReport" Type="System.String" InitialValue="_DNAportal/_Applications" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+      <Parameter Name="Adds" Type="System.String" InitialValue="_DNAportal/_Additions" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

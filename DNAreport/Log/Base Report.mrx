@@ -1,0 +1,38 @@
+<eDNAproReports_Report>
+  <Report Name="Base Report" ID="Base Report" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="Report.BaseReport" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_Log/Base Report" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="StartTime" Type="System.DateTime" InitialValue="*:*:-1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="StartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="Tags" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="Units" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagUnit" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="Descriptions" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagDescription" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Factors" Type="System.Double[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagFactor" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="Offsets" Type="System.Double[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagOffset" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="Functions" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagFunction" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="options" Type="System.String[]" InitialValue="TS_START, AutoDataType" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="DAY" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="Periods" Type="System.String[]" InitialValue="01:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriodList" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="TagConrolPanelMode" Type="System.String" InitialValue="General" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TagConrolPanelMode" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="AboutPath" Type="System.String" InitialValue="/DNA/DNAreportShared/dnareportbasereport/About.aspx" HeaderControl="" Editable="false" Mapping="Runtime" Description="Path to about dialog" Usage="AboutPath" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="UserGuideStartPage" Type="System.String" InitialValue="BaseReportUserGuide.htm" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide start page name" Usage="UserGuideStartPage" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="UserGuideFolderName" Type="System.String" InitialValue="dnareportbasereport" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide folder name" Usage="UserGuideFolderName" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="EnableFormatting" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="15" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Query.BasicQueries.Extended.Combination_Scaled.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

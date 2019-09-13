@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="8865" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="1560" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox" Tag="67" Left="900" Top="660" Width="7470" Height="288" Text="Title" Style="font-style: normal; text-decoration: none" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="68" Left="0" Top="390" Width="8370" Height="288" Text="Author" Style="font-size: 10pt; font-style: normal; font-weight: normal; white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox2" Tag="69" Left="0" Top="120" Width="8370" Height="288" Text="Date" OutputFormat="" Style="font-size: 10pt; font-style: normal; font-weight: normal; white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox3" Tag="76" Left="900" Top="1020" Width="7470" Height="288" Text="Comment" Style="white-space: inherit" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

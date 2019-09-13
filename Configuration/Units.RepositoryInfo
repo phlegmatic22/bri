@@ -1,0 +1,5 @@
+﻿<configuration>
+  <repository path="Configuration">
+    <license provider="Query.StrTools"/>
+  </repository>
+</configuration>

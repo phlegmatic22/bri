@@ -1,0 +1,5 @@
+<configuration>
+  <repository path="Calculation Maintenance">
+    <license provider="Metso.DNA.DNAcalc.License"/>
+  </repository>
+</configuration>

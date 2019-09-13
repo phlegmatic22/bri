@@ -1,0 +1,189 @@
+<eDNAproReports_Report>
+  <Report Name="STR_Unit_Maintenance" ID="STR_Unit_Maintenance" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="STRUnitMaintanance" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="STR_Unit_Maintenance.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.Configuration.StrUnits.GetUnits" ProviderInfo="$default/Metso.DNA.Configuration.StrUnits" Method="GetUnits" Description="" FriendlyName="GetUnits" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="iaUnitFactor" Description="">
+          <DataField Name="UnitFilterID" ID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.UnitFilterID" DataType="System.Int32" Caption="UnitFilterID" Description="" />
+          <DataField Name="UnitFilter" ID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.UnitFilter" DataType="System.String" Caption="UnitFilter" Description="" />
+          <DataField Name="Factor" ID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.Factor" DataType="System.Int32" Caption="Factor" Description="" />
+          <DataField Name="Description" ID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.Description" DataType="System.String" Caption="Description" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceName" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTag" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ActivationTime" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.EndTime" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.Comment" />
+      </Connection>
+      <Connection ID="11" Type="ConstantConnection" LanguageConversion="false" Constant="disturbance" />
+      <Connection ID="12" Type="ConstantConnection" LanguageConversion="false" Constant="deletedisturbance.aspx" />
+      <Connection ID="13" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="14" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="15" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="16" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="17" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceActivatedID" />
+      </Connection>
+      <Connection ID="19" Type="ConstantConnection" LanguageConversion="false" Constant="disturbance" />
+      <Connection ID="20" Type="ConstantConnection" LanguageConversion="false" Constant="editcomment.aspx" />
+      <Connection ID="21" Type="ConstantConnection" LanguageConversion="false" Constant="starttime" />
+      <Connection ID="22" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="23" Type="ConstantConnection" LanguageConversion="false" Constant="endtime" />
+      <Connection ID="24" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="25" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.DisturbanceActivatedID" />
+      </Connection>
+      <Connection ID="59" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.StartTime" />
+      </Connection>
+      <Connection ID="100" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="101" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="102" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.Disturbance.DisturbanceData.GetActivatedDisturbances.ActivatedDisturbances.ConnectedTags" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.PeriodsData.GetPeriods.TimeSettings.nm_period" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.PeriodsData.GetPeriods.TimeSettings.nm_timespan" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.PeriodsData.GetPeriods.TimeSettings.nm_step" />
+      </Connection>
+      <Connection ID="108" Type="ConstantConnection" LanguageConversion="false" Constant="editperiod.aspx" />
+      <Connection ID="109" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.PeriodsData.GetPeriods.TimeSettings.ID" />
+      </Connection>
+      <Connection ID="113" Type="ConstantConnection" LanguageConversion="false" Constant="deleteperiod.aspx" />
+      <Connection ID="114" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="118" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.PeriodsData.GetPeriods.TimeSettings.ID" />
+      </Connection>
+      <Connection ID="121" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="122" Type="ConstantConnection" LanguageConversion="false" Constant="-1" />
+      <Connection ID="144" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="150" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="153" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="160" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/periodsconfig" />
+      <Connection ID="163" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/periodsconfig" />
+      <Connection ID="164" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.UnitFilter" />
+      </Connection>
+      <Connection ID="165" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.Factor" />
+      </Connection>
+      <Connection ID="166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.Description" />
+      </Connection>
+      <Connection ID="167" Type="ConstantConnection" LanguageConversion="false" Constant="\" />
+      <Connection ID="168" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="169" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/dnareportshared/strunits" />
+      <Connection ID="170" Type="ConstantConnection" LanguageConversion="false" Constant="edit.aspx" />
+      <Connection ID="171" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="172" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.UnitFilterID" />
+      </Connection>
+      <Connection ID="173" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="176" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/dnareportshared/strunits" />
+      <Connection ID="177" Type="ConstantConnection" LanguageConversion="false" Constant="delete.aspx" />
+      <Connection ID="178" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="181" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="182" Type="ConstantConnection" LanguageConversion="false" Constant="id" />
+      <Connection ID="183" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Configuration.StrUnits.GetUnits.iaUnitFactor.UnitFilterID" />
+      </Connection>
+      <Connection ID="185" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreportShared/strunits" />
+      <Connection ID="186" Type="ConstantConnection" LanguageConversion="false" Constant="edit.aspx" />
+      <Connection ID="187" Type="ConstantConnection" LanguageConversion="True" Constant="PrintTime" />
+      <Connection ID="188" Type="ConstantConnection" LanguageConversion="True" Constant="Help" />
+      <Connection ID="189" Type="ConstantConnection" LanguageConversion="True" Constant="About" />
+      <Connection ID="190" Type="ConstantConnection" LanguageConversion="True" Constant="UnitFilter" />
+      <Connection ID="191" Type="ConstantConnection" LanguageConversion="True" Constant="Factor" />
+      <Connection ID="192" Type="ConstantConnection" LanguageConversion="True" Constant="Description" />
+      <Connection ID="193" Type="ConstantConnection" LanguageConversion="True" Constant="AddNewUnit" />
+      <Connection ID="194" Type="ConstantConnection" LanguageConversion="True" Constant="Edit" />
+      <Connection ID="195" Type="ConstantConnection" LanguageConversion="True" Constant="Delete" />
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <HyperLink ID="1" Protocol="-1" Host="-1" Path="11" File="12">
+    <UrlParameters Name="13" Value="14" Description="" />
+    <UrlParameters Name="15" Value="16" Description="" />
+    <UrlParameters Name="17" Value="18" Description="" />
+  </HyperLink>
+  <HyperLink ID="2" Protocol="-1" Host="-1" Path="19" File="20">
+    <UrlParameters Name="21" Value="22" Description="" />
+    <UrlParameters Name="23" Value="24" Description="" />
+    <UrlParameters Name="25" Value="26" Description="" />
+  </HyperLink>
+  <HyperLink ID="4" Protocol="59" Host="100" Path="101" File="102" />
+  <HyperLink ID="5" Protocol="-1" Host="144" Path="160" File="108">
+    <UrlParameters Name="109" Value="111" Description="" />
+  </HyperLink>
+  <HyperLink ID="6" Protocol="-1" Host="150" Path="163" File="113">
+    <UrlParameters Name="114" Value="118" Description="" />
+  </HyperLink>
+  <HyperLink ID="7" Protocol="-1" Host="153" Path="185" File="186">
+    <UrlParameters Name="121" Value="122" Description="" />
+  </HyperLink>
+  <HyperLink ID="9" Protocol="-1" Host="168" Path="169" File="170">
+    <UrlParameters Name="171" Value="172" Description="" />
+  </HyperLink>
+  <HyperLink ID="10" Protocol="-1" Host="173" Path="176" File="177">
+    <UrlParameters Name="182" Value="183" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

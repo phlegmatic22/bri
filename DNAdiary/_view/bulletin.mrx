@@ -1,0 +1,19 @@
+<eDNAproReports_Report>
+  <Report Name="bulletin" ID="bulletin" Version="2.3.0.0">
+    <Info Title="Detail view of Production loss entry" Owner="" Expiration="" Category="" Version="5.4.1" ModifiedBy="" ModificationDate="" CreatedDate="2006-01-18T12:49:04" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_DNAdiary/bulletin" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="OperationsList.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="EntryID" Type="System.Int32" InitialValue="35052" HeaderControl="" Editable="true" Mapping="Runtime" Description="Entry ID" Usage="DNAdiary_EntryID" Overridable="True" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="Only toolbar part of TimeLine is visible" Usage="TimeLineMode" Overridable="True" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

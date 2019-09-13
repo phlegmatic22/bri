@@ -1,0 +1,1009 @@
+<eDNAproReports_Report>
+  <Report Name="EventTrend" ID="EventTrend" Version="3.0.0.0">
+    <Info Title="" Owner="Metso DNA" Expiration="" Category="" Version="" ModifiedBy="Metso DNA" ModificationDate="2013-03-16T16:17:45" CreatedDate="2010-10-20T02:21:40" CreatedBy="metsoDNA" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description>Basic trend with event list</Description>
+    </Info>
+    <Viewer ReportName="EventTrend.rpx" ClassName="" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData" ProviderInfo="$default/Metso.DNA.IA.DNAtrend.Combined" Method="EventData" Description="" FriendlyName="EventData" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="tagNameList" Ref="tags" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="tagDescriptionList" Ref="descrs" Usage="" />
+        <DataSetParameter Name="tagUnitList" Ref="units" Usage="" />
+        <DataSetParameter Name="tagInterpolationList" Ref="interpols" Usage="" />
+        <DataSetParameter Name="periodList" Ref="periodList" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="offsetList" Ref="offsetList" Usage="" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="HistoryOperationList" />
+        <DataSetParameter Name="eventType" Ref="eventTypes" Usage="" />
+        <DataSetParameter Name="incremental" Ref="incremental" Usage="" />
+        <DataSetParameter Name="options" Ref="options" Usage="" />
+        <DataTable Name="Tag" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DataSource" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.DataSource" DataType="System.String" Caption="DataSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.ShortTagName" DataType="System.String" Caption="ShortTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Department" DataType="System.String" Caption="Department" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.ProcessArea" DataType="System.String" Caption="ProcessArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessHierarchy" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.ProcessHierarchy" DataType="System.String" Caption="ProcessHierarchy" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.TagType" DataType="System.String" Caption="TagType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Min" DataType="System.Double" Caption="Min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Max" DataType="System.Double" Caption="Max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.InterpolationMode" DataType="System.String" Caption="InterpolationMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MainTagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.MainTagName" DataType="System.String" Caption="MainTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Offset" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Offset" DataType="System.String" Caption="Offset" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Operation" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Operation" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Period" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Period" DataType="System.String" Caption="Period" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist0Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist1Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist2Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist3Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist4Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist5Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist6Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event0.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event0.value" DataType="System.String" Caption="Alarm" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event1.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event1.value" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event2.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event2.value" DataType="System.String" Caption="Diary" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event3.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event3.value" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event4.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event4.value" DataType="System.String" Caption="Fault" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Hist7Event5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event5.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event5.value" DataType="System.String" Caption="Notification" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Combined" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="EventTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventTime" DataType="System.DateTime" Caption="EventTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EndTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EndTime" DataType="System.DateTime" Caption="EndTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AckTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.AckTime" DataType="System.DateTime" Caption="AckTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PriorityLevel" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.PriorityLevel" DataType="System.String" Caption="PriorityLevel" Description="" FriendlyName="" Expression="" />
+          <DataField Name="PriorityNumber" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.PriorityNumber" DataType="System.Int32" Caption="PriorityNumber" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventID" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventID" DataType="System.Int32" Caption="EventID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventSource" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventSource" DataType="System.String" Caption="EventSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventSourceDescription" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventSourceDescription" DataType="System.String" Caption="EventSourceDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagDescription" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.TagDescription" DataType="System.String" Caption="TagDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventDescription" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventDescription" DataType="System.String" Caption="EventDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventType" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventType" DataType="System.String" Caption="EventType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LinkUrl" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.LinkUrl" DataType="System.String" Caption="LinkUrl" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Offset" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Offset" DataType="System.TimeSpan" Caption="Offset" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventArea" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventArea" DataType="System.String" Caption="EventArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventAreaDescription" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventAreaDescription" DataType="System.String" Caption="EventAreaDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Actor" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Actor" DataType="System.String" Caption="Actor" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventOriginDescription" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventOriginDescription" DataType="System.String" Caption="EventOriginDescription" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventLimit" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventLimit" DataType="System.String" Caption="EventLimit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NewVal" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.NewVal" DataType="System.String" Caption="NewVal" Description="" FriendlyName="" Expression="" />
+          <DataField Name="OldVal" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.OldVal" DataType="System.String" Caption="OldVal" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ValUnit" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.ValUnit" DataType="System.String" Caption="ValUnit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="EventDscr2" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventDscr2" DataType="System.String" Caption="EventDscr2" Description="" FriendlyName="" Expression="" />
+          <DataField Name="msStartTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.msStartTime" DataType="System.Int32" Caption="msStartTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="msEndTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.msEndTime" DataType="System.Int32" Caption="msEndTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="msAckTime" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.msAckTime" DataType="System.Int32" Caption="msAckTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Counter" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Counter" DataType="System.Int32" Caption="Counter" Description="" FriendlyName="" Expression="" />
+          <DataField Name="OriginalType" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.OriginalType" DataType="System.String" Caption="OriginalType" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable0.ts" DataType="System.DateTime" Caption="25FC-100 Trend ts (IASERVER!25FC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable0.value" DataType="System.Single" Caption="25FC-100 Trend value (IASERVER!25FC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable0.status" DataType="System.String" Caption="25FC-100 Trend status (IASERVER!25FC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable1.ts" DataType="System.DateTime" Caption="25FC-101 Trend ts (IASERVER!25FC-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable1.value" DataType="System.Single" Caption="25FC-101 Trend value (IASERVER!25FC-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable1.status" DataType="System.String" Caption="25FC-101 Trend status (IASERVER!25FC-101)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable2.ts" DataType="System.DateTime" Caption="25LIC-100 Trend ts (IASERVER!25LIC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable2.value" DataType="System.Single" Caption="25LIC-100 Trend value (IASERVER!25LIC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable2.status" DataType="System.String" Caption="25LIC-100 Trend status (IASERVER!25LIC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable3.ts" DataType="System.DateTime" Caption="25PC-100 Trend ts (IASERVER!25PC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable3.value" DataType="System.Single" Caption="25PC-100 Trend value (IASERVER!25PC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable3.status" DataType="System.String" Caption="25PC-100 Trend status (IASERVER!25PC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable4.ts" DataType="System.DateTime" Caption="25QC-100 Trend ts (IASERVER!25QC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable4.value" DataType="System.Single" Caption="25QC-100 Trend value (IASERVER!25QC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable4.status" DataType="System.String" Caption="25QC-100 Trend status (IASERVER!25QC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable5.ts" DataType="System.DateTime" Caption="25P-100 Trend ts (IASERVER!25P-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable5.value" DataType="System.Single" Caption="25P-100 Trend value (IASERVER!25P-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable5.status" DataType="System.String" Caption="25P-100 Trend status (IASERVER!25P-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable6" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable6.ts" DataType="System.DateTime" Caption="25M-101 Trend ts (IASERVER!25M-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable6.value" DataType="System.Single" Caption="25M-101 Trend value (IASERVER!25M-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable6.status" DataType="System.String" Caption="25M-101 Trend status (IASERVER!25M-101)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="HistTable7" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable7.ts" DataType="System.DateTime" Caption="25M-102 Trend ts (IASERVER!25M-102)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable7.value" DataType="System.Single" Caption="25M-102 Trend value (IASERVER!25M-102)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable7.status" DataType="System.String" Caption="25M-102 Trend status (IASERVER!25M-102)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-8:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="tags" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="periodList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriodList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="period" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriod" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="offsetList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OffsetList" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OperationList" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="valueCount" Type="System.Int32" InitialValue="480" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryValueCount" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="options" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="eventTypes" Type="System.String" InitialValue="Alarm,Operation,Diary" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EventTypes" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="autoUpdate" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdate" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="updateInterval" Type="System.TimeSpan" InitialValue="00:00:06" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdateInterval" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="resizeWindow" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="true" Mapping="Runtime" Description="If true, sets DNAtracer window dimensions according to report when picture is opened" Usage="ResizeWindow" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="descrs" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagDescriptionList" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="units" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagUnitList" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="interpols" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagInterpolationList" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="incremental" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="IncrementalQuery" Overridable="True" DisplayIndex="16" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NO_PRIOR" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NM_TAG" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="true" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EVTYPE" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NO_PRIOR" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NM_TAG" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DS_TAG" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DS_EVENT" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_1.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_1.AlarmData.NUM_PRIOR" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_2.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_2.AlarmData.FL_NEWEVT" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.KA.DNAdiary.ReportQueries.GetList.Entry.EntryDate" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.KA.DNAdiary.ReportQueries.GetList.Entry.EntryTypeID" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25LIC-100.ts" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25LIC-100.value" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-100.ts" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-100.value" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-101.ts" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-101.value" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25PC-100.ts" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25PC-100.value" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25QC-100.ts" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25QC-100.value" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventType" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.Tag" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.TagDescription" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventDescription" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TagInfo.TagInformation.Tag.TagName" />
+      </Connection>
+      <Connection ID="83" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table8.ts" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table8.value" />
+      </Connection>
+      <Connection ID="85" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table9.ts" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table9.value" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table10.ts" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table10.value" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TagInfo.TagInformation.Tag.Value" />
+      </Connection>
+      <Connection ID="99" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TagInfo.TagInformation.Tag.TagType" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventType" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.Tag" />
+      </Connection>
+      <Connection ID="107" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.TagDescription" />
+      </Connection>
+      <Connection ID="108" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventDescription" />
+      </Connection>
+      <Connection ID="109" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.LastValue" />
+      </Connection>
+      <Connection ID="110" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table11.ts" />
+      </Connection>
+      <Connection ID="112" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table11.value" />
+      </Connection>
+      <Connection ID="114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table12.ts" />
+      </Connection>
+      <Connection ID="115" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table12.value" />
+      </Connection>
+      <Connection ID="116" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table13.ts" />
+      </Connection>
+      <Connection ID="117" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table13.value" />
+      </Connection>
+      <Connection ID="118" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table14.ts" />
+      </Connection>
+      <Connection ID="119" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table14.value" />
+      </Connection>
+      <Connection ID="120" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table15.ts" />
+      </Connection>
+      <Connection ID="121" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table15.value" />
+      </Connection>
+      <Connection ID="122" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table16.ts" />
+      </Connection>
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table16.value" />
+      </Connection>
+      <Connection ID="124" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table17.ts" />
+      </Connection>
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table17.value" />
+      </Connection>
+      <Connection ID="126" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table18.ts" />
+      </Connection>
+      <Connection ID="127" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table18.value" />
+      </Connection>
+      <Connection ID="128" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table19.ts" />
+      </Connection>
+      <Connection ID="129" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table19.value" />
+      </Connection>
+      <Connection ID="131" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventTime" />
+      </Connection>
+      <Connection ID="132" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventType" />
+      </Connection>
+      <Connection ID="133" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.PriorityNumber" />
+      </Connection>
+      <Connection ID="134" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.Tag" />
+      </Connection>
+      <Connection ID="135" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.TagDescription" />
+      </Connection>
+      <Connection ID="136" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventDescription" />
+      </Connection>
+      <Connection ID="137" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventSource" />
+      </Connection>
+      <Connection ID="138" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventID" />
+      </Connection>
+      <Connection ID="139" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.EventTime" />
+      </Connection>
+      <Connection ID="154" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table1.EventTime" />
+      </Connection>
+      <Connection ID="155" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table1.Value" />
+      </Connection>
+      <Connection ID="156" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table2.EventTime" />
+      </Connection>
+      <Connection ID="157" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table2.Value" />
+      </Connection>
+      <Connection ID="158" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table3.EventTime" />
+      </Connection>
+      <Connection ID="159" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Table3.Value" />
+      </Connection>
+      <Connection ID="173" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.LinkUrl" />
+      </Connection>
+      <Connection ID="174" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.Value" />
+      </Connection>
+      <Connection ID="175" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.GetEvents.Combined.Offset" />
+      </Connection>
+      <Connection ID="177" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tags" />
+      </Connection>
+      <Connection ID="178" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="periodList" />
+      </Connection>
+      <Connection ID="186" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table9.ts" />
+      </Connection>
+      <Connection ID="187" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table9.value" />
+      </Connection>
+      <Connection ID="188" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable0.ts" />
+      </Connection>
+      <Connection ID="189" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable0.value" />
+      </Connection>
+      <Connection ID="190" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable1.ts" />
+      </Connection>
+      <Connection ID="191" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable1.value" />
+      </Connection>
+      <Connection ID="192" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable2.ts" />
+      </Connection>
+      <Connection ID="193" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable2.value" />
+      </Connection>
+      <Connection ID="194" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable3.ts" />
+      </Connection>
+      <Connection ID="195" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable3.value" />
+      </Connection>
+      <Connection ID="196" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable4.ts" />
+      </Connection>
+      <Connection ID="197" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable4.value" />
+      </Connection>
+      <Connection ID="198" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable5.ts" />
+      </Connection>
+      <Connection ID="199" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable5.value" />
+      </Connection>
+      <Connection ID="200" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable6.ts" />
+      </Connection>
+      <Connection ID="201" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable6.value" />
+      </Connection>
+      <Connection ID="202" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable7.ts" />
+      </Connection>
+      <Connection ID="203" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.HistTable7.value" />
+      </Connection>
+      <Connection ID="214" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.TagName" />
+      </Connection>
+      <Connection ID="215" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Description" />
+      </Connection>
+      <Connection ID="216" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Unit" />
+      </Connection>
+      <Connection ID="217" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Min" />
+      </Connection>
+      <Connection ID="218" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Max" />
+      </Connection>
+      <Connection ID="225" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventTime" />
+      </Connection>
+      <Connection ID="226" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventType" />
+      </Connection>
+      <Connection ID="227" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.PriorityNumber" />
+      </Connection>
+      <Connection ID="228" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Tag" />
+      </Connection>
+      <Connection ID="229" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.TagDescription" />
+      </Connection>
+      <Connection ID="230" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventDescription" />
+      </Connection>
+      <Connection ID="231" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventSource" />
+      </Connection>
+      <Connection ID="232" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.EventID" />
+      </Connection>
+      <Connection ID="233" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.LinkUrl" />
+      </Connection>
+      <Connection ID="234" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Value" />
+      </Connection>
+      <Connection ID="235" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.Offset" />
+      </Connection>
+      <Connection ID="280" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Period" />
+      </Connection>
+      <Connection ID="326" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Operation" />
+      </Connection>
+      <Connection ID="327" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Period" />
+      </Connection>
+      <Connection ID="328" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.Offset" />
+      </Connection>
+      <Connection ID="329" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.InterpolationMode" />
+      </Connection>
+      <Connection ID="344" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event5.ts" />
+      </Connection>
+      <Connection ID="345" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event5.value" />
+      </Connection>
+      <Connection ID="347" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event5.ts" />
+      </Connection>
+      <Connection ID="348" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event5.value" />
+      </Connection>
+      <Connection ID="349" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event5.ts" />
+      </Connection>
+      <Connection ID="350" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event5.value" />
+      </Connection>
+      <Connection ID="351" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event5.ts" />
+      </Connection>
+      <Connection ID="352" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event5.value" />
+      </Connection>
+      <Connection ID="353" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event5.ts" />
+      </Connection>
+      <Connection ID="354" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event5.value" />
+      </Connection>
+      <Connection ID="355" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event5.ts" />
+      </Connection>
+      <Connection ID="356" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event5.value" />
+      </Connection>
+      <Connection ID="357" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event5.ts" />
+      </Connection>
+      <Connection ID="358" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event5.value" />
+      </Connection>
+      <Connection ID="359" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event5.ts" />
+      </Connection>
+      <Connection ID="360" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event5.value" />
+      </Connection>
+      <Connection ID="361" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event4.ts" />
+      </Connection>
+      <Connection ID="362" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event4.value" />
+      </Connection>
+      <Connection ID="363" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event4.ts" />
+      </Connection>
+      <Connection ID="364" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event4.value" />
+      </Connection>
+      <Connection ID="365" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event4.ts" />
+      </Connection>
+      <Connection ID="366" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event4.value" />
+      </Connection>
+      <Connection ID="367" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event4.ts" />
+      </Connection>
+      <Connection ID="368" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event4.value" />
+      </Connection>
+      <Connection ID="369" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event4.ts" />
+      </Connection>
+      <Connection ID="370" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event4.value" />
+      </Connection>
+      <Connection ID="371" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event4.ts" />
+      </Connection>
+      <Connection ID="372" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event4.value" />
+      </Connection>
+      <Connection ID="373" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event4.ts" />
+      </Connection>
+      <Connection ID="374" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event4.value" />
+      </Connection>
+      <Connection ID="375" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event4.ts" />
+      </Connection>
+      <Connection ID="376" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event4.value" />
+      </Connection>
+      <Connection ID="377" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event3.ts" />
+      </Connection>
+      <Connection ID="378" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event3.value" />
+      </Connection>
+      <Connection ID="379" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event3.ts" />
+      </Connection>
+      <Connection ID="380" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event3.value" />
+      </Connection>
+      <Connection ID="381" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event3.ts" />
+      </Connection>
+      <Connection ID="382" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event3.value" />
+      </Connection>
+      <Connection ID="383" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event3.ts" />
+      </Connection>
+      <Connection ID="384" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event3.value" />
+      </Connection>
+      <Connection ID="385" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event3.ts" />
+      </Connection>
+      <Connection ID="386" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event3.value" />
+      </Connection>
+      <Connection ID="387" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event3.ts" />
+      </Connection>
+      <Connection ID="388" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event3.value" />
+      </Connection>
+      <Connection ID="389" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event3.ts" />
+      </Connection>
+      <Connection ID="390" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event3.value" />
+      </Connection>
+      <Connection ID="391" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event3.ts" />
+      </Connection>
+      <Connection ID="392" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event3.value" />
+      </Connection>
+      <Connection ID="393" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event2.ts" />
+      </Connection>
+      <Connection ID="394" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event2.value" />
+      </Connection>
+      <Connection ID="395" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event2.ts" />
+      </Connection>
+      <Connection ID="396" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event2.value" />
+      </Connection>
+      <Connection ID="397" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event2.ts" />
+      </Connection>
+      <Connection ID="398" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event2.value" />
+      </Connection>
+      <Connection ID="399" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event2.ts" />
+      </Connection>
+      <Connection ID="400" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event2.value" />
+      </Connection>
+      <Connection ID="401" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event2.ts" />
+      </Connection>
+      <Connection ID="402" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event2.value" />
+      </Connection>
+      <Connection ID="403" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event2.ts" />
+      </Connection>
+      <Connection ID="404" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event2.value" />
+      </Connection>
+      <Connection ID="405" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event2.ts" />
+      </Connection>
+      <Connection ID="406" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event2.value" />
+      </Connection>
+      <Connection ID="407" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event2.ts" />
+      </Connection>
+      <Connection ID="408" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event2.value" />
+      </Connection>
+      <Connection ID="409" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event1.ts" />
+      </Connection>
+      <Connection ID="410" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event1.value" />
+      </Connection>
+      <Connection ID="411" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event1.ts" />
+      </Connection>
+      <Connection ID="412" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event1.value" />
+      </Connection>
+      <Connection ID="413" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event1.ts" />
+      </Connection>
+      <Connection ID="414" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event1.value" />
+      </Connection>
+      <Connection ID="415" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event1.ts" />
+      </Connection>
+      <Connection ID="416" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event1.value" />
+      </Connection>
+      <Connection ID="417" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event1.ts" />
+      </Connection>
+      <Connection ID="418" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event1.value" />
+      </Connection>
+      <Connection ID="419" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event1.ts" />
+      </Connection>
+      <Connection ID="420" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event1.value" />
+      </Connection>
+      <Connection ID="421" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event1.ts" />
+      </Connection>
+      <Connection ID="422" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event1.value" />
+      </Connection>
+      <Connection ID="423" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event1.ts" />
+      </Connection>
+      <Connection ID="424" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event1.value" />
+      </Connection>
+      <Connection ID="425" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event0.ts" />
+      </Connection>
+      <Connection ID="426" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist0Event0.value" />
+      </Connection>
+      <Connection ID="427" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event0.ts" />
+      </Connection>
+      <Connection ID="428" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist1Event0.value" />
+      </Connection>
+      <Connection ID="429" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event0.ts" />
+      </Connection>
+      <Connection ID="430" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist2Event0.value" />
+      </Connection>
+      <Connection ID="431" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event0.ts" />
+      </Connection>
+      <Connection ID="432" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist3Event0.value" />
+      </Connection>
+      <Connection ID="433" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event0.ts" />
+      </Connection>
+      <Connection ID="434" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist4Event0.value" />
+      </Connection>
+      <Connection ID="435" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event0.ts" />
+      </Connection>
+      <Connection ID="436" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist5Event0.value" />
+      </Connection>
+      <Connection ID="437" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event0.ts" />
+      </Connection>
+      <Connection ID="438" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist6Event0.value" />
+      </Connection>
+      <Connection ID="439" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event0.ts" />
+      </Connection>
+      <Connection ID="440" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Hist7Event0.value" />
+      </Connection>
+      <Connection ID="1853" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.DataSource" />
+      </Connection>
+      <Connection ID="2523" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.DataSource" />
+      </Connection>
+      <Connection ID="2749" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.ProcessHierarchy" />
+      </Connection>
+      <Connection ID="2750" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Tag.MainTagName" />
+      </Connection>
+      <Connection ID="2751" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.GetData.Combined.OriginalType" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

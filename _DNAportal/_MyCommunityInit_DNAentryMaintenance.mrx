@@ -1,0 +1,48 @@
+<eDNAproReports_Report>
+  <Report Name="_MyCommunityInit_DNAentry.300" ID="_MyCommunityInit_DNAentry.300" Version="2.3.0.0">
+    <Info Title="" Owner="" Expiration="" Category="" Version="1.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes" ProviderInfo="$default/Metso.DNA.DNAentry.Application" Method="GetMyCommunityMaintenanceTreeNodes" Description="">
+        <Data />
+        <DataTable Name="Repository" Description="">
+          <DataField Name="Name" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+          <DataField Name="Repository_Id_0" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" />
+        </DataTable>
+        <DataTable Name="Report" Description="">
+          <DataField Name="Name" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Product" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Product" DataType="System.String" Caption="Product" Description="" />
+          <DataField Name="Url" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Url" DataType="System.String" Caption="Url" Description="" />
+          <DataField Name="Icon" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Icon" DataType="System.String" Caption="Icon" Description="" />
+          <DataField Name="Target" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Target" DataType="System.String" Caption="Target" Description="" />
+          <DataField Name="Filter" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Filter" DataType="System.String" Caption="Filter" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Metso.DNA.DNAentry.Application.GetMyCommunityMaintenanceTreeNodes.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters />
+    <Connections />
+    <HyperLinks />
+  </Report>
+  <Viewer ReportName="_MyCommunityInit_DNAentry.rpx" ClassName="Layout" Layout="" />
+</eDNAproReports_Report>

@@ -1,0 +1,182 @@
+<eDNAproReports_Report>
+  <Report Name="_MyCommunityInit_Reports.1" ID="_MyCommunityInit_Reports.1" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="_MyCommunityInit_Reports.rpx" ClassName="" />
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="Metso.DNAreport.Repository.Manager.GetReportList" ProviderInfo="Metso.DNAreport.Repository.Manager" Method="GetReportList" FriendlyName="GetReportList" Order="0" Enabled="true">
+        <DataSetParameter Name="xPath" Ref="Metso.DNAreport.Repository.Manager.GetReportList.xPath" Usage="" />
+        <DataTable Name="Repository" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Level" DataType="System.String" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Location" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Location" DataType="System.String" Caption="Location" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Mask" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Mask" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRoles" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.AllowRoles" DataType="System.String" Caption="AllowRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DenyRoles" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.DenyRoles" DataType="System.String" Caption="DenyRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NodeType" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.NodeType" DataType="System.String" Caption="NodeType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="FolderID" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.FolderID" DataType="System.String" Caption="FolderID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id_0" ID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Report" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Level" DataType="System.String" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Product" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Product" DataType="System.String" Caption="Product" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Url" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Url" DataType="System.String" Caption="Url" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Icon" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Icon" DataType="System.String" Caption="Icon" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Target" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Target" DataType="System.String" Caption="Target" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Filter" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Filter" DataType="System.String" Caption="Filter" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRoles" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.AllowRoles" DataType="System.String" Caption="AllowRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DenyRoles" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.DenyRoles" DataType="System.String" Caption="DenyRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NodeType" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.NodeType" DataType="System.String" Caption="NodeType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="FolderID" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.FolderID" DataType="System.String" Caption="FolderID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tool" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Tool" DataType="System.String" Caption="Tool" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Repository_Id_0" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportList.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+      <DataSet ID="Metso.DNAtrend.Repository.Manager.GetReportList" ProviderInfo="Metso.DNA.IA.DNAtrend.Repository" Method="GetReportList" FriendlyName="GetReportList1" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="xPath" Ref="Metso.DNAtrend.Repository.Manager.GetReportList.xPath" />
+        <DataTable Name="Repository">
+          <DataField Name="Repository_Id" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" />
+          <DataField Name="Name" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Name" DataType="System.String" Caption="Name" />
+          <DataField Name="Level" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Level" DataType="System.String" Caption="Level" />
+          <DataField Name="Repository_Id_0" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" />
+        </DataTable>
+        <DataTable Name="Report">
+          <DataField Name="Name" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Name" DataType="System.String" Caption="Name" />
+          <DataField Name="Level" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Level" DataType="System.String" Caption="Level" />
+          <DataField Name="Product" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Product" DataType="System.String" Caption="Product" />
+          <DataField Name="Url" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Url" DataType="System.String" Caption="Url" />
+          <DataField Name="Icon" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Icon" DataType="System.String" Caption="Icon" />
+          <DataField Name="Target" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Target" DataType="System.String" Caption="Target" />
+          <DataField Name="Filter" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Filter" DataType="System.String" Caption="Filter" />
+          <DataField Name="Repository_Id" ID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAtrend.Repository.Manager.GetReportList.Report.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAtrend.Repository.Manager.GetReportList.Repository.Repository_Id" />
+        </Relation>
+      </DataSet>
+      <DataSet ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList" ProviderInfo="/Metso.DNAreport.Repository.Exported" Method="GetReportList" FriendlyName="GetReportList2" Order="2" Enabled="true">
+        <Data />
+        <DataSetParameter Name="xPath" Ref="Metso.DNAreport.Repository.Exported.Manager.GetReportList.xPath" />
+        <DataTable Name="Repository">
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" />
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Name" DataType="System.String" Caption="Name" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Level" DataType="System.String" Caption="Level" />
+          <DataField Name="Repository_Id_0" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" />
+        </DataTable>
+        <DataTable Name="Report">
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Name" DataType="System.String" Caption="Name" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Level" DataType="System.String" Caption="Level" />
+          <DataField Name="Product" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Product" DataType="System.String" Caption="Product" />
+          <DataField Name="Url" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Url" DataType="System.String" Caption="Url" />
+          <DataField Name="Icon" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Icon" DataType="System.String" Caption="Icon" />
+          <DataField Name="Target" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Target" DataType="System.String" Caption="Target" />
+          <DataField Name="Filter" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Filter" DataType="System.String" Caption="Filter" />
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Report.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Exported.Manager.GetReportList.Repository.Repository_Id" />
+        </Relation>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList" ProviderInfo="/Metso.DNAreport.Repository.CompositeView" Method="GetReportList" Description="" FriendlyName="GetReportList3" ProviderType="" Order="3" Enabled="true">
+        <Data />
+        <DataSetParameter Name="xPath" Ref="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.xPath" Usage="" />
+        <DataTable Name="Repository" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Level" DataType="System.String" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Location" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Location" DataType="System.String" Caption="Location" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Mask" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Mask" DataType="System.String" Caption="Mask" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRoles" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.AllowRoles" DataType="System.String" Caption="AllowRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DenyRoles" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.DenyRoles" DataType="System.String" Caption="DenyRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NodeType" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.NodeType" DataType="System.String" Caption="NodeType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="FolderID" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.FolderID" DataType="System.String" Caption="FolderID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id_0" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Report" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Name" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Level" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Level" DataType="System.String" Caption="Level" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Product" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Product" DataType="System.String" Caption="Product" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Url" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Url" DataType="System.String" Caption="Url" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Icon" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Icon" DataType="System.String" Caption="Icon" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Target" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Target" DataType="System.String" Caption="Target" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Filter" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Filter" DataType="System.String" Caption="Filter" Description="" FriendlyName="" Expression="" />
+          <DataField Name="AllowRoles" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.AllowRoles" DataType="System.String" Caption="AllowRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="DenyRoles" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.DenyRoles" DataType="System.String" Caption="DenyRoles" Description="" FriendlyName="" Expression="" />
+          <DataField Name="NodeType" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.NodeType" DataType="System.String" Caption="NodeType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="FolderID" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.FolderID" DataType="System.String" Caption="FolderID" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tool" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Tool" DataType="System.String" Caption="Tool" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Path" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Path" DataType="System.String" Caption="Path" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Repository_Id" ID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Repository_Id_0" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="Metso.DNAtrend.Repository.Manager.GetReportList.xPath" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="True" DisplayIndex="-1" />
+      <Parameter Name="Metso.DNAreport.Repository.Exported.Manager.GetReportList.xPath" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="True" DisplayIndex="-1" />
+      <Parameter Name="Metso.DNAreport.Repository.CompositeView.GetReportList.xPath" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNAreport.Repository.CompositeView.GetReportList.xPath" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="Metso.DNAreport.Repository.Manager.GetReportList.xPath" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<SpanConfig>
+  <Span Name="DAY">
+    <HistoryPeriod>01:00:00</HistoryPeriod>
+    <SpanRemask>*:*:*:*:*:*</SpanRemask>
+  </Span>
+  <Span Name="MONTH">
+    <HistoryPeriod>1.00:00:00</HistoryPeriod>
+    <SpanRemask>*:*:1:*:*:*</SpanRemask>
+  </Span>
+  <Span Name="YEAR">
+    <HistoryPeriod>MONTH</HistoryPeriod>
+    <SpanRemask>*:1:1:*:*:*</SpanRemask>
+  </Span>
+</SpanConfig>

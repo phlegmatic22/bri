@@ -1,0 +1,62 @@
+<eDNAproReports_Report>
+  <Report Name="TripDetails" ID="TripDetails" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="SOEreports" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="Valmet\Valmet DNA" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="SOEfilters.ascx" />
+    <Header ClassName="SOEtripDetails.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="firstEventID" Type="System.Int32" InitialValue="2" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="lastEventID" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="sTypes" Type="System.String[]" InitialValue="Alarm" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeEventTypes" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="sPriority" Type="System.String" InitialValue="1-200,201-400,401-600,601-800,801-1000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soePriority" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="sOrigins" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeOriginIds" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="sSources" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeSourceIds" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="sTags" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeTag" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="sTDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeTagDescription" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="sAreas" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeAreas" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="sEDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeEventDescription" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="sTGroups" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeTagGroups" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="sFilterIn" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeFilterIn" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="sSelectedGroups" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeSelectedGroups" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="sSelectedSources" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeSelectedSources" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="sSelectedAreas" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeSelectedAreas" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="sSelectedOrigins" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeSelectedOrigins" Overridable="True" DisplayIndex="16" />
+      <Parameter Name="sCriteriaList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_soeCriteriaList" Overridable="True" DisplayIndex="17" />
+      <Parameter Name="mTypes" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memEventTypes" Overridable="True" DisplayIndex="18" />
+      <Parameter Name="mPriority" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memPriority" Overridable="True" DisplayIndex="19" />
+      <Parameter Name="mOrigins" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memOriginIds" Overridable="True" DisplayIndex="20" />
+      <Parameter Name="mSources" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memSourceIds" Overridable="True" DisplayIndex="21" />
+      <Parameter Name="mTags" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memTag" Overridable="True" DisplayIndex="22" />
+      <Parameter Name="mTDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memTagDescription" Overridable="True" DisplayIndex="23" />
+      <Parameter Name="mAreas" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memAreas" Overridable="True" DisplayIndex="24" />
+      <Parameter Name="mEDesc" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memEventDescription" Overridable="True" DisplayIndex="25" />
+      <Parameter Name="mTGroups" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memTagGroups" Overridable="True" DisplayIndex="26" />
+      <Parameter Name="mFilterIn" Type="System.Boolean" InitialValue="True" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memFilterIn" Overridable="True" DisplayIndex="27" />
+      <Parameter Name="mSelectedGroups" Type="System.String[]" InitialValue="(null)" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memSelectedGroups" Overridable="True" DisplayIndex="28" />
+      <Parameter Name="mSelectedSources" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memSelectedSources" Overridable="True" DisplayIndex="29" />
+      <Parameter Name="mSelectedAreas" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memSelectedAreas" Overridable="True" DisplayIndex="30" />
+      <Parameter Name="mSelectedOrigins" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memSelectedOrigins" Overridable="True" DisplayIndex="31" />
+      <Parameter Name="mCriteriaList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_memCriteriaList" Overridable="True" DisplayIndex="32" />
+      <Parameter Name="delay" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_delay" Overridable="True" DisplayIndex="33" />
+      <Parameter Name="lSpan" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_leftSpan" Overridable="True" DisplayIndex="34" />
+      <Parameter Name="rSpan" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_rightSpan" Overridable="True" DisplayIndex="35" />
+      <Parameter Name="period" Type="System.String" InitialValue="00:01:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_period" Overridable="True" DisplayIndex="36" />
+      <Parameter Name="tagList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_tags" Overridable="True" DisplayIndex="37" />
+      <Parameter Name="showTagTable" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SOE_showTagTable" Overridable="True" DisplayIndex="38" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-8:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="39" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="40" />
+      <Parameter Name="Mode" Type="System.String" InitialValue="MEM" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="FilterMode" Overridable="True" DisplayIndex="41" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="42" />
+      <Parameter Name="DefaultSaveLocation" Type="System.String" InitialValue="/DNAreport/SOE" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DefaultSaveLocation" Overridable="True" DisplayIndex="43" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <Viewer ReportName="/_Templates/_SOE/TripDetails" ClassName="Link" Layout="" />
+</eDNAproReports_Report>

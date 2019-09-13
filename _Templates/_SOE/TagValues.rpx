@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10775.52" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="335" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBoxTS" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;30&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="89.28001" Top="14.4" Width="2160" Height="288" Text="ts" Style="text-align: right; white-space: nowrap" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[public void ActiveReport_DataInitialize()
+{
+	GenerateColumns();
+}
+
+int i=1;
+public void Detail_Format()
+{
+	// Use the modulo operator to achieve alternating back color 
+  // for each row
+  if (i % 2 == 0)
+  {
+    rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(247,247,247); 
+  }
+  else 
+  {
+    rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(255,255,255); 
+  }
+  i++;
+}
+
+private void GenerateColumns()
+{
+	DataDynamics.ActiveReports.TextBox TextBoxTS = (DataDynamics.ActiveReports.TextBox)rpt.Sections["Detail"].Controls["TextBoxTS"];
+
+	DataDynamics.ActiveReports.Section footerSection = rpt.Sections["Detail"];
+	string[] tags = g_Parameters["tagList"].Split(new string[]{ "\t\n", "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
+	
+	DataDynamics.ActiveReports.TextBox newColumn;
+	float step = 0.125f;
+	float left = TextBoxTS.Left + TextBoxTS.Width + step;
+
+	if (tags.Length > 5)
+		rpt.PrintWidth = 11.0f;
+		
+	int colNumber = 0;
+	foreach(string tagName in tags)
+	{
+		newColumn = new DataDynamics.ActiveReports.TextBox();
+		newColumn.Top = TextBoxTS.Top;
+		newColumn.Height = TextBoxTS.Height;
+		newColumn.Alignment = DataDynamics.ActiveReports.TextAlignment.Right;
+		newColumn.Left = left;
+		newColumn.OutputFormat = "#,##0.000"; 
+		left += newColumn.Width + step;
+		newColumn.Text = tagName;
+		newColumn.DataField = "value" + colNumber.ToString();
+		footerSection.Controls.Add(newColumn);
+		colNumber++;
+	}
+}]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

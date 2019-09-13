@@ -1,0 +1,17 @@
+<eDNAproReports_Report>
+  <Report Name="STR Unit Maintenance" ID="STR Unit Maintenance" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="STRUnitMaintanance" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_STR_Unit_Maintenance/STR_Unit_Maintenance" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

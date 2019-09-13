@@ -1,0 +1,178 @@
+<eDNAproReports_Report>
+  <Report Name="LevelCalculations" ID="LevelCalculations" Version="3.0.0.0" DynamicBaseType="">
+    <Viewer ReportName="LevelCalculations.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.LevelCalculations.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="GetLevelCalculations" Description="" FriendlyName="GetLevelCalculations" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="calculationGroups" Ref="groups" Usage="" />
+        <DataSetParameter Name="tagName" Ref="tagName" Usage="" />
+        <DataSetParameter Name="description" Ref="description" Usage="" />
+        <DataSetParameter Name="mode" Ref="mode" Usage="" />
+        <DataSetParameter Name="groupMode" Ref="groupMode" Usage="" />
+        <DataTable Name="Table1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Group" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Group" DataType="System.String" Caption="Group" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Tag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Tag" DataType="System.String" Caption="Tag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Mode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Mode" DataType="System.String" Caption="Mode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="SourceTag" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.SourceTag" DataType="System.String" Caption="SourceTag" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Function" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Function" DataType="System.String" Caption="Function" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Period" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Period" DataType="System.String" Caption="Period" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Options" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Options" DataType="System.String" Caption="Options" Description="" FriendlyName="" Expression="" />
+          <DataField Name="BaseReportPeriod" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.BaseReportPeriod" DataType="System.String" Caption="BaseReportPeriod" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ScheduleMode" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.ScheduleMode" DataType="System.String" Caption="ScheduleMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Status" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Status" DataType="System.String" Caption="Status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LastStartTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastStartTime" DataType="System.String" Caption="LastStartTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LastEndTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastEndTime" DataType="System.String" Caption="LastEndTime" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="groups" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="calculationGroups" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="tagName" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="tagName" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="description" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="description" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="mode" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="mode" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="buttons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="timeline" Type="System.String[]" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="levelIdPrefix" Type="System.String" InitialValue="_builtin/" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="levelIdPrefix" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="groupMode" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="groupMode" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Tag" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Description" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Mode" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.SourceTag" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Function" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Period" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Options" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Group" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Tag" />
+      </Connection>
+      <Connection ID="17" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="18" Type="ConstantConnection" LanguageConversion="false" Constant="DNAreport/Log/Base Report" />
+      <Connection ID="19" Type="ConstantConnection" LanguageConversion="false" Constant="Tags" />
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Tag" />
+      </Connection>
+      <Connection ID="21" Type="ConstantConnection" LanguageConversion="false" Constant="Functions" />
+      <Connection ID="22" Type="ConstantConnection" LanguageConversion="false" Constant="Actual" />
+      <Connection ID="23" Type="ConstantConnection" LanguageConversion="false" Constant="EndTime" />
+      <Connection ID="24" Type="ConstantConnection" LanguageConversion="false" Constant="*:*:*:*:*:*" />
+      <Connection ID="29" Type="ConstantConnection" LanguageConversion="false" Constant="TimeSpan" />
+      <Connection ID="30" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="33" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Log Report" />
+      <Connection ID="34" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.BaseReportPeriod" />
+      </Connection>
+      <Connection ID="39" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="40" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcLevelCalculation" />
+      <Connection ID="41" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Group" />
+      </Connection>
+      <Connection ID="423" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Log" />
+      <Connection ID="538" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Status" />
+      </Connection>
+      <Connection ID="545" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastStartTime" />
+      </Connection>
+      <Connection ID="546" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastEndTime" />
+      </Connection>
+      <Connection ID="839" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.Status" />
+      </Connection>
+      <Connection ID="840" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastStartTime" />
+      </Connection>
+      <Connection ID="841" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.LastEndTime" />
+      </Connection>
+      <Connection ID="842" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.GetLevelCalculations.Table1.ScheduleMode" />
+      </Connection>
+      <Connection ID="843" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="844" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="845" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="846" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="847" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="848" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="894" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="groups" />
+      </Connection>
+      <Connection ID="895" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="groupMode" />
+      </Connection>
+      <Connection ID="896" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagName" />
+      </Connection>
+      <Connection ID="897" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="description" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="Level Calculations" Owner="" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True">
+    <Comment />
+    <Description />
+  </Info>
+  <HyperLink ID="1" Protocol="-1" Host="846" Path="847" File="848">
+    <UrlParameters Name="17" Value="18" Description="" />
+    <UrlParameters Name="19" Value="20" Description="" />
+    <UrlParameters Name="21" Value="22" Description="" />
+    <UrlParameters Name="23" Value="24" Description="" />
+    <UrlParameters Name="29" Value="38" Description="" />
+  </HyperLink>
+  <HyperLink ID="3" Protocol="-1" Host="843" Path="844" File="845">
+    <UrlParameters Name="34" Value="423" Description="" />
+    <UrlParameters Name="39" Value="40" Description="" />
+    <UrlParameters Name="41" Value="42" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

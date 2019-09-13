@@ -1,0 +1,39 @@
+<eDNAproReports_Report>
+  <Report Name="System Status" ID="System Status" Version="3.0.0.0" DynamicBaseType="">
+    <Viewer ReportName="/_Templates/_Diagnostic/System Status" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.DiagnosticReport.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="false" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="SelectedHost" Type="System.String" HeaderControl="" Editable="false" Mapping="Runtime" Description="DNAdata host name" Usage="SelectedHost" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="dbSize" Type="System.Double" InitialValue="8" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="dbProcentLimit" Type="System.Double" InitialValue="90" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="TimeLimitQueue" Type="System.DateTime" InitialValue="*:*:*:-4:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Limit for queue" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.tagName" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.period" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.options" Type="System.String" InitialValue="PCSIF,WEBIF,DIAGIF" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.SystemResources.GetSystemResourcesInfo.DNAdataServer" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.tagName" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.period" Type="System.String" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Metso.DNA.Diagnostics.CollectionInterfaces.GetCollectionInterfacesState.options" Type="System.String" InitialValue="PCSIF,WEBIF,DIAGIF" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

@@ -1,0 +1,33 @@
+<eDNAproReports_Report>
+  <Report Name="Summary" ID="Summary" Version="3.0.0.0">
+    <Info Title="Summary Template" Owner="" Expiration="" Category="STRTools" Version="2.6.0" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="Valmet\valmetDNA" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_STR/Summary" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="ShowTrend" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Runtime" Description="Show Trend in Report" Usage="STR_ShowTrend" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-2:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start Time" Usage="StartTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End Time" Usage="EndTime" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="tags" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of tags" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="Description" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of descriptions" Usage="HistoryTagDescription" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Unit" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Units" Usage="HistoryTagUnit" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="Factor" Type="System.Double[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Factors" Usage="HistoryTagFactor" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="Offset" Type="System.Double[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="List of Offsets" Usage="HistoryTagOffset" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="ops" Type="System.String[]" InitialValue="AllAggregates&#xD;&#xA;Last" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="host" Type="System.String" InitialValue="localhost" HeaderControl="" Editable="false" Mapping="Runtime" Description="Host of service" Usage="" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="ShowInTrends" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="STR_ShowInTrends" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="TagConrolPanelMode" Type="System.String" InitialValue="STR" HeaderControl="" Editable="false" Mapping="Runtime" Description="Mode of the panel" Usage="TagConrolPanelMode" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="AboutPath" Type="System.String" InitialValue="/DNA/DNAreportShared/dnareportstr/About.aspx" HeaderControl="" Editable="false" Mapping="Runtime" Description="Path to about dialog" Usage="AboutPath" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="UserGuideStartPage" Type="System.String" InitialValue="dnareport_str_help.htm" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide start page name" Usage="UserGuideStartPage" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="UserGuideFolderName" Type="System.String" InitialValue="dnareportstr" HeaderControl="" Editable="false" Mapping="Runtime" Description="User guide folder name" Usage="UserGuideFolderName" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="Query.StrTools.StrToolsQuery.options" Type="System.String" InitialValue="" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,412 @@
+<eDNAproReports_Report>
+  <Report Name="Calculation Instances" ID="Calculation Instances" Version="3.0.0.0">
+    <Viewer ReportName="Calculation Instances.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.CalculationReports.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations" ProviderInfo="$DNAcalc/Query.CalculationComposer.Calculations" Method="getListCalculations" Description="" FriendlyName="getListCalculations" ProviderType="" Order="0" Enabled="false">
+        <Data />
+        <DataSetParameter Name="FailedLimit" Ref="FailedLimit" Usage="" />
+        <DataTable Name="Sorted" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="Group" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Group" DataType="System.String" Caption="Group" Description="" FriendlyName="" Expression="" />
+          <DataField Name="GroupPath" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.GroupPath" DataType="System.String" Caption="GroupPath" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Folder" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Folder" DataType="System.String" Caption="Folder" Description="" FriendlyName="" Expression="" />
+          <DataField Name="CalcPath" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" DataType="System.String" Caption="CalcPath" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Name" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Name" DataType="System.String" Caption="Name" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Mode" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" DataType="System.String" Caption="Mode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Status" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Status" DataType="System.String" Caption="Status" Description="" FriendlyName="" Expression="" />
+          <DataField Name="StartTime" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.StartTime" DataType="System.String" Caption="StartTime" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LastStart" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" DataType="System.String" Caption="LastStart" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Next" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Next" DataType="System.String" Caption="Next" Description="" FriendlyName="" Expression="" />
+          <DataField Name="LastEnd" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastEnd" DataType="System.String" Caption="LastEnd" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Interval" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Interval" DataType="System.TimeSpan" Caption="Interval" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Delay" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Delay" DataType="System.TimeSpan" Caption="Delay" Description="" FriendlyName="" Expression="" />
+          <DataField Name="RealtimeQueue" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.RealtimeQueue" DataType="System.Int32" Caption="RealtimeQueue" Description="" FriendlyName="" Expression="" />
+          <DataField Name="RecalculationQueue" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.RecalculationQueue" DataType="System.Int32" Caption="RecalculationQueue" Description="" FriendlyName="" Expression="" />
+          <DataField Name="FailedQueue" ID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.FailedQueue" DataType="System.Int32" Caption="FailedQueue" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="calcPath" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="FailedLimit" Type="System.Int32" InitialValue="10000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="FailedLimit" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.History.Avg.Values.value" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.History.Avg.Values.status" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueries.History.Avg.Values.ts" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Metso.DNA.CalculationComposer.Application.LoadCalculationList.Items.Path" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Metso.DNA.CalculationComposer.Application.LoadCalculationList.Items.Type" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Name" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Description" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Status" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Last" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Next" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.StartTime" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Interval" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Delay" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Group" />
+      </Connection>
+      <Connection ID="25" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="26" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="27" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="28" Type="ConstantConnection" LanguageConversion="false" Constant="instance" />
+      <Connection ID="29" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.GroupPath" />
+      </Connection>
+      <Connection ID="31" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="33" Type="ConstantConnection" LanguageConversion="false" Constant="instance" />
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="40" Type="ConstantConnection" LanguageConversion="false" Constant="calcID" />
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="44" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_Detailed/_Detailed Report" />
+      <Connection ID="55" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="56" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="58" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="59" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcCalculation" />
+      <Connection ID="64" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="65" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Log Report" />
+      <Connection ID="66" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="67" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcCalculation" />
+      <Connection ID="70" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="71" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="77" Type="ConstantConnection" LanguageConversion="false" Constant="instance" />
+      <Connection ID="79" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Log Report" />
+      <Connection ID="80" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Group" />
+      </Connection>
+      <Connection ID="81" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="82" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="83" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="85" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastEnd" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Next" />
+      </Connection>
+      <Connection ID="89" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="90" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="92" Type="ConstantConnection" LanguageConversion="false" Constant="logName" />
+      <Connection ID="93" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcCalculation" />
+      <Connection ID="96" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="97" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="107" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="109" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="110" Type="ConstantConnection" LanguageConversion="false" Constant="calcName" />
+      <Connection ID="111" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Folder" />
+      </Connection>
+      <Connection ID="112" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Queue" />
+      </Connection>
+      <Connection ID="115" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="119" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="120" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="121" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="122" Type="ConstantConnection" LanguageConversion="false" Constant="Mode" />
+      <Connection ID="123" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="124" Type="ConstantConnection" LanguageConversion="false" Constant="Mode" />
+      <Connection ID="125" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="126" Type="ConstantConnection" LanguageConversion="false" Constant="calcPath" />
+      <Connection ID="127" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="130" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="134" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="135" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="136" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Instances" />
+      <Connection ID="137" Type="ConstantConnection" LanguageConversion="false" Constant="Mode" />
+      <Connection ID="138" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="139" Type="ConstantConnection" LanguageConversion="false" Constant="calcPath" />
+      <Connection ID="140" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="141" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="153" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="250" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Group" />
+      </Connection>
+      <Connection ID="251" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="252" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="253" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Status" />
+      </Connection>
+      <Connection ID="254" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="255" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="256" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Description" />
+      </Connection>
+      <Connection ID="257" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="258" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastEnd" />
+      </Connection>
+      <Connection ID="259" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="260" Type="ConstantConnection" LanguageConversion="False" Constant="Viewer.aspx" />
+      <Connection ID="261" Type="ConstantConnection" LanguageConversion="False" Constant="calcID" />
+      <Connection ID="262" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="263" Type="ConstantConnection" LanguageConversion="False" Constant="report" />
+      <Connection ID="265" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_Queue/Failed queue state" />
+      <Connection ID="266" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Queue" />
+      </Connection>
+      <Connection ID="711" Type="ConstantConnection" LanguageConversion="False" Constant="Viewer.aspx" />
+      <Connection ID="712" Type="ConstantConnection" LanguageConversion="False" Constant="calcID" />
+      <Connection ID="713" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="714" Type="ConstantConnection" LanguageConversion="False" Constant="report" />
+      <Connection ID="716" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_Queue/Failed queue state" />
+      <Connection ID="717" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.FailedQueue" />
+      </Connection>
+      <Connection ID="718" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="719" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="720" Type="ConstantConnection" LanguageConversion="false" Constant="calcID" />
+      <Connection ID="721" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="722" Type="ConstantConnection" LanguageConversion="false" Constant="calcID" />
+      <Connection ID="725" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="726" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="728" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_detailed/_Detailed Report" />
+      <Connection ID="730" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_Queue/Failed queue state" />
+      <Connection ID="731" Type="ConstantConnection" LanguageConversion="false" Constant="calcID" />
+      <Connection ID="732" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="735" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/_detailed/_Detailed Report" />
+      <Connection ID="736" Type="ConstantConnection" LanguageConversion="false" Constant="calcPath" />
+      <Connection ID="738" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="739" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="740" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Service Log" />
+      <Connection ID="741" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="742" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Description" />
+      </Connection>
+      <Connection ID="743" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="745" Type="ConstantConnection" LanguageConversion="false" Constant="logName " />
+      <Connection ID="746" Type="ConstantConnection" LanguageConversion="false" Constant="DNAcalcCalculation" />
+      <Connection ID="1030" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Log" />
+      <Connection ID="1031" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Log" />
+      <Connection ID="1032" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance/Calculation Log" />
+      <Connection ID="2833" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Name" />
+      </Connection>
+      <Connection ID="2964" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Name" />
+      </Connection>
+      <Connection ID="2965" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Description" />
+      </Connection>
+      <Connection ID="2966" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Mode" />
+      </Connection>
+      <Connection ID="2967" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Status" />
+      </Connection>
+      <Connection ID="2968" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastStart" />
+      </Connection>
+      <Connection ID="2969" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.LastEnd" />
+      </Connection>
+      <Connection ID="2970" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.RealtimeQueue" />
+      </Connection>
+      <Connection ID="2971" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.FailedQueue" />
+      </Connection>
+      <Connection ID="2972" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Interval" />
+      </Connection>
+      <Connection ID="2973" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.Delay" />
+      </Connection>
+      <Connection ID="3114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.RecalculationQueue" />
+      </Connection>
+      <Connection ID="3115" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="3116" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="3118" Type="ConstantConnection" LanguageConversion="false" Constant="Calculation Maintenance\_Recalculation Batches\Recalculation Batches" />
+      <Connection ID="3119" Type="ConstantConnection" LanguageConversion="false" Constant="calcPath" />
+      <Connection ID="3120" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAcalc/Query.CalculationComposer.Calculations.getListCalculations.Sorted.CalcPath" />
+      </Connection>
+      <Connection ID="3121" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3122" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3123" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3124" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3125" Type="ConstantConnection" LanguageConversion="false" Constant="Viewer.aspx" />
+      <Connection ID="3126" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3127" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3128" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3129" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3130" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3131" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3132" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3133" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3134" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3135" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+      <Connection ID="3136" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="3137" Type="ConstantConnection" LanguageConversion="false" Constant="DNA/DNAreport" />
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="10" File="260">
+        <UrlParameters Name="261" Value="262" Description="" />
+        <UrlParameters Name="263" Value="264" Description="" />
+      </HyperLink>
+      <HyperLink ID="47" File="711">
+        <UrlParameters Name="712" Value="713" Description="" />
+        <UrlParameters Name="714" Value="715" Description="" />
+      </HyperLink>
+      <HyperLink ID="57" Protocol="-1" Host="3136" Path="3137" File="721">
+        <UrlParameters Name="736" Value="738" Description="" />
+        <UrlParameters Name="726" Value="730" Description="" />
+      </HyperLink>
+      <HyperLink ID="66" Protocol="-1" Host="3121" Path="3122" File="741">
+        <UrlParameters Name="739" Value="740" Description="" />
+      </HyperLink>
+      <HyperLink ID="75" Protocol="-1" Host="3123" Path="3124" File="3125">
+        <UrlParameters Name="743" Value="1030" Description="" />
+        <UrlParameters Name="745" Value="746" Description="" />
+      </HyperLink>
+      <HyperLink ID="126" Protocol="-1" Host="3134" Path="3135" File="3115">
+        <UrlParameters Name="3116" Value="3118" Description="" />
+        <UrlParameters Name="3119" Value="3120" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="Calculation Instances" Owner="" Expiration="" Category="Report.CalculationReports" Version="2.0.2" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True">
+    <Comment />
+    <Description>Shows calculation instance statuses</Description>
+  </Info>
+  <HyperLink ID="1" Protocol="-1" Host="-1" Path="-1" File="64">
+    <UrlParameters Name="77" Value="107" Description="" />
+    <UrlParameters Name="81" Value="82" Description="" />
+  </HyperLink>
+  <HyperLink ID="2" Protocol="-1" Host="3126" Path="3127" File="25">
+    <UrlParameters Name="26" Value="27" Description="" />
+    <UrlParameters Name="28" Value="29" Description="" />
+  </HyperLink>
+  <HyperLink ID="3" Protocol="-1" Host="-1" Path="-1" File="153">
+    <UrlParameters Name="31" Value="130" Description="" />
+    <UrlParameters Name="33" Value="34" Description="" />
+  </HyperLink>
+  <HyperLink ID="4" Protocol="-1" Host="3132" Path="3133" File="718">
+    <UrlParameters Name="731" Value="42" Description="" />
+    <UrlParameters Name="732" Value="735" Description="" />
+  </HyperLink>
+  <HyperLink ID="6" Protocol="-1" Host="3128" Path="3129" File="55">
+    <UrlParameters Name="56" Value="1031" Description="" />
+    <UrlParameters Name="58" Value="59" Description="" />
+    <UrlParameters Name="110" Value="111" Description="" />
+  </HyperLink>
+  <HyperLink ID="7" Protocol="-1" Host="3130" Path="3131" File="89">
+    <UrlParameters Name="90" Value="1032" Description="" />
+    <UrlParameters Name="92" Value="93" Description="" />
+    <UrlParameters Name="97" Value="100" Description="" />
+  </HyperLink>
+  <HyperLink ID="8" Protocol="-1" Host="123" Path="-1" File="115">
+    <UrlParameters Name="120" Value="121" Description="" />
+    <UrlParameters Name="124" Value="125" Description="" />
+    <UrlParameters Name="126" Value="127" Description="" />
+  </HyperLink>
+  <HyperLink ID="9" Protocol="-1" Host="-1" Path="-1" File="-1">
+    <UrlParameters Name="135" Value="136" Description="" />
+    <UrlParameters Name="137" Value="138" Description="" />
+    <UrlParameters Name="139" Value="140" Description="" />
+  </HyperLink>
+</eDNAproReports_Report>

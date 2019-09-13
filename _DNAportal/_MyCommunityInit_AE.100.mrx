@@ -1,0 +1,50 @@
+<eDNAproReports_Report>
+  <Report Name="_DNAportalInit_AE" ID="_DNAportalInit_AE" Version="2.2.2.0">
+    <Info Title="" Owner="" Expiration="" Category="" Version="1.0.5" ModifiedBy="" ModificationDate="" CreatedDate="2005-03-18T20:53:46" CreatedBy="Valmet\Valmet DNA" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes" ProviderInfo="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager" Method="GetReportTreeNodes" Description="">
+        <Data />
+        <DataTable Name="Repository" Description="">
+          <DataField Name="Name" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Repository_Id" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+          <DataField Name="Repository_Id_0" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" />
+        </DataTable>
+        <DataTable Name="Report" Description="">
+          <DataField Name="Name" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Product" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Product" DataType="System.String" Caption="Product" Description="" />
+          <DataField Name="Url" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Url" DataType="System.String" Caption="Url" Description="" />
+          <DataField Name="Icon" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Icon" DataType="System.String" Caption="Icon" Description="" />
+          <DataField Name="Target" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Target" DataType="System.String" Caption="Target" Description="" />
+          <DataField Name="Filter" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Filter" DataType="System.String" Caption="Filter" Description="" />
+          <DataField Name="Repository_Id" ID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$DNAalarmHistorian/Query.DNAreportAE.RepositoryManager.GetReportTreeNodes.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="AppsReport" Type="System.String" InitialValue="_DNAportal/_Applications" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+      <Parameter Name="Adds" Type="System.String" InitialValue="_DNAportal/_Additions" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

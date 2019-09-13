@@ -1,0 +1,68 @@
+<eDNAproReports_Report>
+  <Report Name="_MyCommunityInit_Applications" ID="_MyCommunityInit_Applications" Version="2.0.0.0">
+    <Info Title="" Owner="VMVAT\matteus" Expiration="" Category="" Version="" ModifiedBy="VMVAT\matteus" ModificationDate="2005-08-16T19:41:43" CreatedDate="2005-03-18T20:53:46" CreatedBy="VMVAT\matteus" Global="True" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="_MyCommunityInit_Applications.1000.rpx" ClassName="" />
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="Metso.DNAreport.Repository.Manager.GetReportLayout" ProviderInfo="Metso.DNAreport.Repository.Xml" Method="GetReportLayout">
+        <DataSetParameter Name="ReportName" Ref="Metso.DNAreport.Repository.Manager.GetReportLayout.ReportName" />
+        <DataTable Name="Repository">
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Repository.Repository_Id" DataType="System.Int32" />
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Repository.Name" DataType="System.String" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Repository.Level" DataType="System.String" />
+        </DataTable>
+        <DataTable Name="Report">
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Name" DataType="System.String" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Level" DataType="System.String" />
+          <DataField Name="Product" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Product" DataType="System.String" />
+          <DataField Name="Url" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Url" DataType="System.String" />
+          <DataField Name="Filter" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Filter" DataType="System.String" />
+          <DataField Name="Icon" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Icon" DataType="System.String" />
+          <DataField Name="Target" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Target" DataType="System.String" />
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Repository_Id" DataType="System.Int32" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportLayout.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportLayout.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+      <DataSet ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1" ProviderInfo="Metso.DNAreport.Repository.Xml" Method="GetReportLayout">
+        <DataSetParameter Name="ReportName" Ref="Adds" />
+        <DataTable Name="Repository">
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Repository.Repository_Id" DataType="System.Int32" />
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Repository.Name" DataType="System.String" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Repository.Level" DataType="System.String" />
+        </DataTable>
+        <DataTable Name="Report">
+          <DataField Name="Name" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Name" DataType="System.String" />
+          <DataField Name="Level" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Level" DataType="System.String" />
+          <DataField Name="Product" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Product" DataType="System.String" />
+          <DataField Name="Url" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Url" DataType="System.String" />
+          <DataField Name="Filter" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Filter" DataType="System.String" />
+          <DataField Name="Icon" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Icon" DataType="System.String" />
+          <DataField Name="Target" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Target" DataType="System.String" />
+          <DataField Name="Repository_Id" ID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Repository_Id" DataType="System.Int32" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="Metso.DNAreport.Repository.Manager.GetReportLayout_1.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="Metso.DNAreport.Repository.Manager.GetReportLayout.ReportName" Type="System.String" InitialValue="_DNAportal/_Applications" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" />
+      <Parameter Name="Adds" Type="System.String" InitialValue="_DNAportal/_Additions" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+  </Report>
+</eDNAproReports_Report>

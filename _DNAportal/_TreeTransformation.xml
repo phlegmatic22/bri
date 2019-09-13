@@ -1,0 +1,129 @@
+﻿<TreeTransformation>
+  <Action Type="Folder" Path="TrendsAndAnalyses" Location="" Mask="" />
+  <Action Type="Folder" Path="Users" Location="" Mask="" />
+  <Action Type="Rename" Path="TrendsAndAnalyses" Name="$TrendsAndAnalyses$" />
+
+  <Action Type="Folder" Path="AdministrativeTools" Location="" Mask="" />
+  <Action Type="Rename" Path="AdministrativeTools" Name="$AdministrativeTools$" />
+
+  <Action Type="Folder" Path="$AdministrativeTools$\Substitutes" Location="" Mask="" />
+  <Action Type="Rename" Path="$AdministrativeTools$\Substitutes" Name="$Substitutes$" />
+  <Action Type="Rename" Path="Users" Name="$UsersFolder$" />
+  
+  <Action Type="Rename" Path="DNAreport\AE" Name="$AlarmsAndEventsAnalysis$" />
+  <Action Type="Rename" Path="DNAreport\AAE" Name="$AlarmPerformanceMetrics$" />
+  <Action Type="Rename" Path="DNAreport\SOE" Name="$SequenceOfEvents$" />
+  <Action Type="Rename" Path="DNAreport\DM" Name="$DisturbanceReports$" />
+  <Action Type="Rename" Path="DNAreport\log" Name="$LogReports$" />
+  <Action Type="Rename" Path="DNAreport\STR" Name="$StatisticalReports$" />
+  <Action Type="Rename" Path="Calculation Maintenance" Name="$CalculationManagement$" />
+  <Action Type="Rename" Path="DNAreport\$DisturbanceReports$\Disturbance" Name="$Disturbances$" />
+  <Action Type="Rename" Path="DNAreport\$LogReports$\Base Report" Name="$LogReport$" />
+  <Action Type="Rename" Path="DNAreport\$SequenceOfEvents$\Trip List" Name="$TripReport$" />
+  <Action Type="Rename" Path="DNAreport\$StatisticalReports$\Runtime" Name="$DeviceRuntimeReport$" />
+  <Action Type="Rename" Path="DNAreport\$StatisticalReports$\Total" Name="$ConsumptionReport$" />
+  <Action Type="Rename" Path="DNAreport\$StatisticalReports$\Summary" Name="$SummaryReport$" />
+  <Action Type="Rename" Path="MCM\VectorBrowser" Name="$VectorBrowser$" />
+  <Action Type="Rename" Path="Configuration\My Community Configurator" Name="$PortalConfigurator$" />
+  <Action Type="Rename" Path="DNAentry\Configurator" Name="$EntryConfigurator$" />
+  <Action Type="Rename" Path="DNAentry\Log" Name="$EntryLog$" />
+  <Action Type="Rename" Path="DNAReport" Name="$Reports$" />
+  <Action Type="Rename" Path="DNAdiary" Name="$DiaryEntries$" />
+  <Action Type="Rename" Path="DNAentry" Name="$ManualDataEntry$" /> 
+  <Action Type="Rename" Path="Applications\DNAhistorian Maintenance" Name="$DataMaintenance$" />
+  <Action Type="Rename" Path="Agent\Task List" Name="$TaskScheduler$" />
+  <Action Type="Rename" Path="Agent\Tehtävälista" Name="$TaskScheduler$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Application Options" Name="$DiaryConfigurator$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Diary asetukset" Name="$DiaryConfigurator$" />
+  <Action Type="Rename" Path="Configuration\Server Configurator" Name="$ServerConfigurator$" />
+
+  <Action Type="Rename" Path="$DiaryEntries$\Entries" Name="$Entries$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Summary" Name="$Summary$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Add Bulletin Entry" Name="$AddBulletinEntry$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Add Disturbance Entry" Name="$AddDisturbanceEntry$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Add Production Loss Entry" Name="$AddProductionLossEntry$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Add Shift Entry" Name="$AddShiftEntry$" />
+  <Action Type="Rename" Path="$DiaryEntries$\Add Trial Run Entry" Name="$AddTrialRunEntry$" />
+  
+  <Action Type="Rename" Path="Configuration\DNAdata Configurator" Name="$HostConfigurator$" />
+  <Action Type="Rename" Path="Configuration\Unit Maintenance" Name="STR Unit Maintenance" />
+
+  <Action Type="WebPage" Path="$AdministrativeTools$\Web Service Interface" Url="/dna/DNAdataWSI/WebServiceInterfaceUtilsUI.aspx" />
+  <Action Type="WebPage" Path="$TrendsAndAnalyses$\Tracer" Target="DNAwindow" Url="/DNA/DNAtracer?report=_DNAtracer/EventTrend&amp;DnaAuthTicket=(DnaAuthTicket)" />
+
+  <Action Type="Rename" Path="$TrendsAndAnalyses$\Tracer" Name="$Tracer$" />
+  <Action Type="Rename" Path="Diagnostics" Name="$Diagnostics$" />
+
+  <Action Type="MoveTo" Path="Agent\$TaskScheduler$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Configuration\$HostConfigurator$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Applications\$DataMaintenance$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Applications\Audit Trail Report" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Applications\Tag Master" MoveTo="$TrendsAndAnalyses$" />
+  <Action Type="MoveTo" Path="MCM\$VectorBrowser$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="$ManualDataEntry$\$EntryConfigurator$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="$ManualDataEntry$\$EntryLog$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="$DiaryEntries$\$DiaryConfigurator$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Configuration\$PortalConfigurator$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Configuration\STR Unit Maintenance" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="Configuration\$ServerConfigurator$" MoveTo="$AdministrativeTools$" />
+  <Action Type="MoveTo" Path="$AdministrativeTools$\Web Service Interface" MoveTo="$AdministrativeTools$\$Substitutes$" />
+  <Action Type="MoveTo" Path="$AdministrativeTools$\$HostConfigurator$" MoveTo="$AdministrativeTools$\$Substitutes$" />
+  <Action Type="MoveTo" Path="$AdministrativeTools$\STR Unit Maintenance" MoveTo="$AdministrativeTools$\$Substitutes$" />
+
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$AdministrativeTools$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+  <Action Type="MoveUp" Path="$TrendsAndAnalyses$" />
+
+  <Action Type="Visibility" Path="$TrendsAndAnalyses$" AllowRoles="IA_USER,IA_SUPPORT" />
+  <Action Type="Visibility" Path="$CalculationManagement$" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" />
+  <Action Type="Visibility" Path="$AdministrativeTools$" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" />
+  <Action Type="Visibility" Path="$AdministrativeTools$\$VectorBrowser$" AllowRoles="IA_SUPPORT,IA_DEVELOPER" />
+  <Action Type="Visibility" Path="$ManualDataEntry$" AllowRoles="IA_ADMIN,IA_SUPPORT" />
+  <Action Type="Visibility" Path="$Reports$" AllowRoles="IA_USER,IA_SUPPORT" />
+  <Action Type="Visibility" Path="$DiaryEntries$" AllowRoles="IA_USER,IA_SUPPORT" />
+  <Action Type="Visibility" Path="$Diagnostics$" AllowRoles="IA_ADMIN,IA_SUPPORT,IA_DEVELOPER" />
+
+  <Action Type="Visibility" Path="$DiaryEntries$\Search" DenyRoles="*" />
+  <Action Type="Visibility" Path="$DiaryEntries$\Haku" DenyRoles="*" />
+  
+  <Action Type="Visibility" Path="" AllowRoles="*" />
+</TreeTransformation>

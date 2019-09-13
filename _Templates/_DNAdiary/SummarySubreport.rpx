@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10860" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="2084" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Field" Name="txtDate" Tag="62" Left="900" Top="90" Width="1080" Height="288" Text="Date" OutputFormat="t" Multiline="0" CanGrow="0" Style="text-align: left; white-space: nowrap" />
+      <Control Type="AR.Field" Name="txtTitle" Tag="63" Left="1980" Top="90" Width="5220" Height="288" Text="Title" HyperLink="1" CanShrink="1" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="Description" Tag="64" Left="1980" Top="540" Width="8820" Height="270" Text="Description" Style="text-align: left; white-space: inherit" />
+      <Control Type="AR.Image" Name="EntryIcon" Tag="" Left="450" Top="90" Width="360" Height="360" LineColor="16777215" LineWeight="0" />
+      <Control Type="AR.Image" Name="ConfirmationIcon" Tag="" Left="90" Top="90" Width="270" Height="360" LineColor="16777215" LineWeight="0" />
+      <Control Type="AR.Field" Name="txtErrorLabel" Tag="" Left="90" Top="540" Width="1530" Height="270" Text="" CanShrink="1" Style="color: IndianRed; white-space: inherit" />
+      <Control Type="AR.Field" Name="EntryTypeIconPath" Visible="0" Tag="66" Left="360" Top="1080" Width="180" Height="288" Text="EntryTypeIconPath" CanShrink="1" Style="white-space: inherit" />
+      <Control Type="AR.Field" Name="NeedConfirmation" Visible="0" Tag="65" Left="90" Top="1080" Width="180" Height="288" Text="NeedConfirmation" CanShrink="1" />
+      <Control Type="AR.Subreport" Name="SubReport" DataField="DNAdiary_Search_GetComments" Tag="Query.DNAdiary.Entries.Search" Left="1980" Top="1080" Width="8820" Height="810" ReportName="SummarySubSubReport" />
+      <Control Type="AR.Image" Name="PaperClipIcon" Tag="10" Left="1620" Top="540" Width="360" Height="360" LineColor="16777215" LineWeight="0">0D0D0004021401000089504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000206348524D00007A26000080840000FA00000080E8000075300000EA6000003A98000017709CBA513C0000009249444154384F9D53490EC02008B457FDFF533DB7A2C50E04116B42E28159D8AE5AEB9D0E5E2925354CCA390F141144A3A593580FC2D00B132050FC3D75564200E74F372B02B4CB4498EB1268BB5AC42D61055E95239A780AEE2BA09BF2EEC51CADD7C849F0471984BFC5C06EEF94050196812558F3372632D692815165D38145B4BB13BA27714C11DB6A23BF0B3B0513D1038256D2E433CF351F0000000049454E44AE426082</Control>
+      <Control Type="AR.Field" Name="TextBox" Tag="73" Left="7200" Top="90" Width="1710" Height="288" Text="Author" CanShrink="1" Style="text-align: right; white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="74" Left="8910" Top="90" Width="1800" Height="288" Text="Group" CanShrink="1" Style="text-align: right; white-space: inherit" />
+      <Control Type="AR.Field" Name="Attachs" Visible="0" Tag="75" Left="630" Top="1080" Width="1170" Height="288" Text="Attachs" Style="white-space: inherit" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[//*************************************************************************
+// Copyright (C) Metso Automation Inc.
+//
+// Hierarchy code  :
+// Author/date     : Rustem Khusnutdinov / 16.01.2006
+// Documents       : 
+// Description     : Basic report subreport script for DNAdiary.
+//                 : Renders icons for entry types and confirmation.
+//                 : Also provides alternating color of the lines.
+//
+//CHANGE HISTORY
+//
+// Modified
+// 
+// 24.08.2006 (Alexey Chenin)
+// Comment         
+// 		- Cleared all catch section
+// End comment
+// 
+// 08.10.2006 (Anna Sharonova)
+// Comment         
+// 		- Rendering of paper clip icon added
+// End comment
+//
+// 28.11.2006 (Rustem Khusnutdinov)
+// Comment         
+// 		- try catch wrappers removed.
+//      - NeedConfirmation textbox value is converted now to Int32 and 
+//        checked for equality to 1 (earlier the field was boolean and now int)
+// End comment
+//
+//*************************************************************************/
+
+//collections of icons for each type
+System.Collections.Hashtable icons = new System.Collections.Hashtable();
+
+//confirmation icon
+System.Drawing.Image notConfirmed = null;
+
+static bool Alternate = false;
+
+public void Detail_Format()
+{
+	//here we make color alternation from fetch to fetch
+	if ( Alternate ) rpt.Sections["Detail"].BackColor = System.Drawing.Color.FromArgb(247,247,247);
+	else rpt.Sections["Detail"].BackColor = System.Drawing.Color.Transparent;
+	Alternate = !Alternate;
+
+	// Rendering paper clip icon if there are any attachments 
+	// in the entry (picture, file,link)
+	DataDynamics.ActiveReports.TextBox attchs = (TextBox)rpt.Sections["Detail"].Controls["Attachs"];
+	DataDynamics.ActiveReports.Picture paperClipIcon = (Picture)rpt.Sections["Detail"].Controls["PaperClipIcon"];
+
+	if (System.Convert.ToBoolean(attchs.Text))
+		paperClipIcon.Visible = true;
+	else 
+		paperClipIcon.Visible = false;
+	
+	// Rendering icon specific for the entry type of the current entry.
+	// In the same time the icons are stored in the hashtable for reusage.
+	TextBox entryTypeIconPath = 
+		(TextBox)rpt.Sections["Detail"].Controls["EntryTypeIconPath"];
+	Picture EntryIcon = (Picture)rpt.Sections["Detail"].Controls["EntryIcon"];
+  string metsoDNApath = (string)Microsoft.Win32.Registry.GetValue("HKEY_LOCAL_MACHINE\\Software\\Metso Automation", "InstallationDirectory", "C:\\DNA");	
+	System.Drawing.Image img = 
+		(System.Drawing.Image)icons[entryTypeIconPath.Text];
+	if ( img == null )
+	{
+		if (entryTypeIconPath.Text.StartsWith("\\"))
+		{
+			img = System.Drawing.Image.FromFile(metsoDNApath + @"\WWWroot\dnadiary" + entryTypeIconPath.Text);
+		}
+		else
+			img = System.Drawing.Image.FromFile(entryTypeIconPath.Text);
+		
+		icons.Add(entryTypeIconPath.Text, img);
+	}
+	
+	EntryIcon.Image = img;
+	
+	// Rendering confirmation icon for those entries that need confirmation.
+	// The icon is also stored for reusage.
+	TextBox needConfirmation = (TextBox)rpt.Sections["Detail"].Controls["NeedConfirmation"];
+	Picture confIcon = (Picture)rpt.Sections["Detail"].Controls["ConfirmationIcon"];
+	if ( System.Convert.ToInt32(needConfirmation.Text) == 1 )
+	{
+		if ( notConfirmed == null )
+		{
+			TextBox confirmationIconPath = 
+				(TextBox)rpt.ParentReport.Sections["ReportHeader"].Controls["ConfirmationIconPath"];
+			notConfirmed = System.Drawing.Image.FromFile(metsoDNApath + @"\WWWroot\dnadiary\images" + confirmationIconPath.Text);
+		}
+		
+		confIcon.Image = notConfirmed;
+	}
+	else
+		confIcon.Image = null;
+			
+}
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

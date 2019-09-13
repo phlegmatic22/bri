@@ -1,0 +1,31 @@
+<eDNAproReports_Report>
+  <Report Name="Service Log" ID="Service Log" Version="2.3.0.0">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData.logName" Type="System.String" InitialValue="DNACALCCALCULATION" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_1.logName" Type="System.String" InitialValue="DNACALCRECALCULATION" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetLogData_2.logName" Type="System.String" InitialValue="DNAcalcTestrun" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="/_Templates/_Calculation Maintenance/Service Log" ClassName="Link" Layout="" />
+</eDNAproReports_Report>

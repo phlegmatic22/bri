@@ -1,0 +1,125 @@
+<eDNAproReports_Report>
+  <Report Name="Task List" ID="Task List" Version="3.0.0.0">
+    <Viewer ReportName="Task List.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList" ProviderInfo="$default/Query.MyCommunity.Agent.TaskInfo" Method="GetTaskList" Description="" FriendlyName="GetTaskList" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="TaskList" Description="">
+          <DataField Name="id" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.id" DataType="System.Int32" Caption="id" Description="" />
+          <DataField Name="Title" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.Title" DataType="System.String" Caption="Title" Description="" />
+          <DataField Name="CreatedBy" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.CreatedBy" DataType="System.String" Caption="CreatedBy" Description="" />
+          <DataField Name="TimeOfCreation" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfCreation" DataType="System.DateTime" Caption="TimeOfCreation" Description="" />
+          <DataField Name="TriggerDescription" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TriggerDescription" DataType="System.String" Caption="TriggerDescription" Description="" />
+          <DataField Name="ActionDescription" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.ActionDescription" DataType="System.String" Caption="ActionDescription" Description="" />
+          <DataField Name="UpdatedBy" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.UpdatedBy" DataType="System.String" Caption="UpdatedBy" Description="" />
+          <DataField Name="TimeOfLastUpdate" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfLastUpdate" DataType="System.DateTime" Caption="TimeOfLastUpdate" Description="" />
+          <DataField Name="TimeOfLastTriggerOn" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfLastTriggerOn" DataType="System.DateTime" Caption="TimeOfLastTriggerOn" Description="" />
+          <DataField Name="TimeOfLastExecution" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfLastExecution" DataType="System.DateTime" Caption="TimeOfLastExecution" Description="" />
+          <DataField Name="Active" ID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.Active" DataType="System.String" Caption="Active" Description="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="q" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="DefaultSaveLocation" Type="System.String" InitialValue="/Agent" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DefaultSaveLocation" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.Title" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TriggerDescription" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.ActionDescription" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.IsActive" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.IsActiveInternally" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.CreatedBy" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.CreatedDate" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.LastUpdateBy" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.LastUpdateDate" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.IsActiveInternally" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.CreatedBy" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.UpdatedBy" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfCreation" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfLastUpdate" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.IsActiveInternally" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.ActionDescription" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.ActionDescription" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TriggerDescription" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.TimeOfLastExecution" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.MyCommunity.Agent.TaskInfo.GetTaskList.TaskList.Active" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_OFFICE" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True">
+    <Comment />
+    <Description />
+  </Info>
+</eDNAproReports_Report>

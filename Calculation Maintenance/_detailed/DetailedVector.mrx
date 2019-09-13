@@ -1,0 +1,31 @@
+<eDNAproReports_Report>
+  <Report Name="DetailedVector" ID="DetailedVector" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="calcID" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="SessionID" Type="System.String" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="CalculationTime" Type="System.String" InitialValue="2009/01/01 12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="PackName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="VarName" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="testIndex" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Index of test in the current testrun" Usage="" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="$DNAcalc/Query.CalculationComposer.Calculations.GetData.isRecalculation" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Viewer ReportName="/_Templates/_Calculation Maintenance/DetailedVector" ClassName="Link" Layout="" />
+</eDNAproReports_Report>

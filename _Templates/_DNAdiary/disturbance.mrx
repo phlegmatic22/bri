@@ -1,0 +1,336 @@
+<eDNAproReports_Report>
+  <Report Name="disturbance" ID="disturbance" Version="3.0.0.0">
+    <Info Title="Detail view of Production loss entry" Owner="" Expiration="" Category="" Version="5.4.1" ModifiedBy="PC\Administrator" ModificationDate="2014-02-12T13:28:05" CreatedDate="2006-01-18T12:49:04" CreatedBy="" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="disturbance.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="OperationsList.ascx" />
+    <DataSources>
+      <DataSet ID="Query.DNAdiary.Entries.GetEntryDetailView" ProviderInfo="$DNAdiary/Query.DNAdiary.Entries" Method="GetEntryDetailView" Description="" FriendlyName="GetEntryDetailView" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="entryID" Ref="EntryID" Usage="" />
+        <DataTable Name="Entry" Description="" OrderBy="">
+          <DataField Name="DateTime" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.DateTime" DataType="System.String" Caption="DateTime" Description="" />
+          <DataField Name="AuthorGroup" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.AuthorGroup" DataType="System.String" Caption="AuthorGroup" Description="" />
+          <DataField Name="Title" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Title" DataType="System.String" Caption="Title" Description="" />
+          <DataField Name="Description" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Description" DataType="System.String" Caption="Description" Description="" />
+          <DataField Name="EntryTag" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryTag" DataType="System.String" Caption="EntryTag" Description="" />
+          <DataField Name="Link" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Link" DataType="System.String" Caption="Link" Description="" />
+          <DataField Name="TotalLoss" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.TotalLoss" DataType="System.String" Caption="TotalLoss" Description="" />
+          <DataField Name="LossStart" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.LossStart" DataType="System.String" Caption="LossStart" Description="" />
+          <DataField Name="LossEnd" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.LossEnd" DataType="System.String" Caption="LossEnd" Description="" />
+          <DataField Name="CauseTag" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.CauseTag" DataType="System.String" Caption="CauseTag" Description="" />
+          <DataField Name="CauseDescription" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.CauseDescription" DataType="System.String" Caption="CauseDescription" Description="" />
+          <DataField Name="Actions" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Actions" DataType="System.String" Caption="Actions" Description="" />
+          <DataField Name="Confirmation" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Confirmation" DataType="System.String" Caption="Confirmation" Description="" />
+          <DataField Name="EntryType" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryType" DataType="System.String" Caption="EntryType" Description="" />
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="PictureAttachmentLink" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentLink" DataType="System.String" Caption="PictureAttachmentLink" Description="" />
+          <DataField Name="PictureAttachmentFullPath" ID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentFullPath" DataType="System.String" Caption="PictureAttachmentFullPath" Description="" />
+        </DataTable>
+        <DataTable Name="SubLoss" Description="">
+          <DataField Name="Subloss" ID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.Subloss" DataType="System.String" Caption="Subloss" Description="" />
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="SubEntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.SubEntryID" DataType="System.Int32" Caption="SubEntryID" Description="" />
+        </DataTable>
+        <DataTable Name="Comment" Description="">
+          <DataField Name="EditPageLink" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.EditPageLink" DataType="System.String" Caption="EditPageLink" Description="" />
+          <DataField Name="Date" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Date" DataType="System.DateTime" Caption="Date" Description="" />
+          <DataField Name="Author" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Author" DataType="System.String" Caption="Author" Description="" />
+          <DataField Name="Title" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Title" DataType="System.String" Caption="Title" Description="" />
+          <DataField Name="Comment" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Comment" DataType="System.String" Caption="Comment" Description="" />
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="DeleteCommentLink" ID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.DeleteCommentLink" DataType="System.String" Caption="DeleteCommentLink" Description="" />
+        </DataTable>
+        <DataTable Name="GeneralClasses" Description="">
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Classification" ID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.Classification" DataType="System.String" Caption="Classification" Description="" />
+        </DataTable>
+        <DataTable Name="ActionClasses" Description="">
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.ActionClasses.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Classification" ID="Query.DNAdiary.Entries.GetEntryDetailView.ActionClasses.Classification" DataType="System.String" Caption="Classification" Description="" />
+        </DataTable>
+        <DataTable Name="CauseClasses" Description="">
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.CauseClasses.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Classification" ID="Query.DNAdiary.Entries.GetEntryDetailView.CauseClasses.Classification" DataType="System.String" Caption="Classification" Description="" />
+        </DataTable>
+        <DataTable Name="StateClasses" Description="">
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.StateClasses.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Classification" ID="Query.DNAdiary.Entries.GetEntryDetailView.StateClasses.Classification" DataType="System.String" Caption="Classification" Description="" />
+        </DataTable>
+        <DataTable Name="SublossGeneralClasses" Description="">
+          <DataField Name="SubEntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.SublossGeneralClasses.SubEntryID" DataType="System.Int32" Caption="SubEntryID" Description="" />
+          <DataField Name="Classification" ID="Query.DNAdiary.Entries.GetEntryDetailView.SublossGeneralClasses.Classification" DataType="System.String" Caption="Classification" Description="" />
+        </DataTable>
+        <DataTable Name="FileAttachments" Description="">
+          <DataField Name="EntryID" ID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="FileAttachmentLink" ID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.FileAttachmentLink" DataType="System.String" Caption="FileAttachmentLink" Description="" />
+          <DataField Name="FileAttachmentText" ID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.FileAttachmentText" DataType="System.String" Caption="FileAttachmentText" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>FileAttachments</ChildTable>
+          <Name>FK_Entry_FileAttachments</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>SubLoss</ParentTable>
+          <ChildTable>SublossGeneralClasses</ChildTable>
+          <Name>SubLoss_SublossGeneralClasses</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.SubEntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SublossGeneralClasses.SubEntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>Comment</ChildTable>
+          <Name>EntryComment</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>SubLoss</ChildTable>
+          <Name>EntrySubLoss</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>GeneralClasses</ChildTable>
+          <Name>Entry_GeneralClasses</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>StateClasses</ChildTable>
+          <Name>Entry_StateClasses</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.StateClasses.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>CauseClasses</ChildTable>
+          <Name>Entry_CauseClasses</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.CauseClasses.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Entry</ParentTable>
+          <ChildTable>ActionClasses</ChildTable>
+          <Name>Entry_ActionClasses</Name>
+          <ParentColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryID" />
+          <ChildColumn DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.ActionClasses.EntryID" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="EntryID" Type="System.Int32" HeaderControl="" Editable="true" Mapping="Runtime" Description="Entry ID" Usage="DNAdiary_EntryID" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryTypeName" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryDate" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryAuthor" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryGroup" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryTitle" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.EntryXMLDescr" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntry.Entry.AuthorGroup" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryType" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.DateTime" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.AuthorGroup" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Title" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Description" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.LossStart" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.LossEnd" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.TotalLoss" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.Subloss" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.Process Area" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.Process Situation" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.SubLoss.Product" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.CauseClasses" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.CauseTag" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.CauseDescription" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.ActionClassesImmediateAction" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.ActionClassesFinalSolution" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Actions" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Handler" />
+      </Connection>
+      <Connection ID="26" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.State" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.ClassesProcessArea" />
+      </Connection>
+      <Connection ID="28" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.ClassesProcessSituation" />
+      </Connection>
+      <Connection ID="29" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.ClassesProduct" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryTag" />
+      </Connection>
+      <Connection ID="31" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Link" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Date" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Title" />
+      </Connection>
+      <Connection ID="35" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Author" />
+      </Connection>
+      <Connection ID="36" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Comment" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.EditPageLink" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Date" />
+      </Connection>
+      <Connection ID="40" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Title" />
+      </Connection>
+      <Connection ID="41" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Author" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.Comment" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.EditPageLink" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.Classification" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.CauseClasses.Classification" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.ActionClasses.Classification" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.StateClasses.Classification" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.Classification" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.GeneralClasses.Classification" />
+      </Connection>
+      <Connection ID="50" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.CauseClasses.Classification" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.ActionClasses.Classification" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.StateClasses.Classification" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.EntryType" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.DeleteCommentLink" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Comment.DeleteCommentLink" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentText" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.FileAttachmentText" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.FileAttachments.FileAttachmentLink" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentLink" />
+      </Connection>
+      <Connection ID="60" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="61" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentLink" />
+      </Connection>
+      <Connection ID="63" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentLink" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.PictureAttachmentFullPath" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.DNAdiary.Entries.GetEntryDetailView.Entry.Link" />
+      </Connection>
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="9" Protocol="-1" Host="-1" Path="-1" File="66" />
+    </HyperLinks>
+    <UserRights />
+  </Report>
+  <HyperLink ID="3" Protocol="-1" Host="-1" Path="-1" File="38" />
+  <HyperLink ID="4" Protocol="-1" Host="-1" Path="-1" File="43" />
+  <HyperLink ID="6" Protocol="-1" Host="-1" Path="-1" File="55" />
+  <HyperLink ID="7" Protocol="-1" Host="-1" Path="61" File="58" />
+  <HyperLink ID="8" Protocol="-1" Host="-1" Path="63" File="62" />
+</eDNAproReports_Report>

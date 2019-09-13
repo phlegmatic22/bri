@@ -1,0 +1,280 @@
+<eDNAproReports_Report>
+  <Report Name="Search" ID="Search" Version="3.0.0.0">
+    <Info Title="Entries report" Owner="" Expiration="" Category="" Version="5.4.1" ModifiedBy="PC\Administrator" ModificationDate="2014-02-12T13:17:22" CreatedDate="2005-12-12T12:33:34" CreatedBy="" Global="True" Template="True">
+      <Comment />
+      <Description>Displays short info about entry with possibility to open its detail view.</Description>
+    </Info>
+    <Viewer ReportName="Search.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="SearchPanel.ascx" />
+    <DataSources>
+      <DataSet ID="Metso.DNA.IA.DNAdiary.Entries.Search" ProviderInfo="$DNAdiary/Metso.DNA.IA.DNAdiary.Entries" Method="Search" Description="" FriendlyName="Search" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="ST" Ref="StartTime" Usage="" />
+        <DataSetParameter Name="ET" Ref="EndTime" Usage="" />
+        <DataSetParameter Name="Classes" Ref="Classes" Usage="" />
+        <DataSetParameter Name="EntryTypes" Ref="EntryType" Usage="" />
+        <DataSetParameter Name="EntryGroups" Ref="EntryGroup" Usage="" />
+        <DataSetParameter Name="EntryTag" Ref="EntryTag" Usage="" />
+        <DataSetParameter Name="CauseTag" Ref="CauseTag" Usage="" />
+        <DataSetParameter Name="Words" Ref="WordSearch" Usage="" />
+        <DataSetParameter Name="Authors" Ref="Author" Usage="" />
+        <DataSetParameter Name="UseTime" Ref="UseTimePeriod" Usage="" />
+        <DataSetParameter Name="AckStatus" Ref="AckStatus" Usage="" />
+        <DataSetParameter Name="LenDesk" Ref="DescriptionLength" Usage="" />
+        <DataSetParameter Name="LenComm" Ref="CommentDescrLength" Usage="" />
+        <DataTable Name="DNAdiary_Search" Description="">
+          <DataField Name="EntryID" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Date" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Date" DataType="System.DateTime" Caption="Date" Description="" />
+          <DataField Name="Title" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Title" DataType="System.String" Caption="Title" Description="" />
+          <DataField Name="Description" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Description" DataType="System.String" Caption="Description" Description="" />
+          <DataField Name="Location" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Location" DataType="System.String" Caption="Location" Description="" />
+          <DataField Name="ShiftID" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.ShiftID" DataType="System.Int32" Caption="ShiftID" Description="" />
+          <DataField Name="EntryTypeName" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryTypeName" DataType="System.String" Caption="EntryTypeName" Description="" />
+          <DataField Name="Pin" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Pin" DataType="System.Boolean" Caption="Pin" Description="" />
+          <DataField Name="PinGroupName" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.PinGroupName" DataType="System.String" Caption="PinGroupName" Description="" />
+          <DataField Name="NeedConfirmation" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.NeedConfirmation" DataType="System.Int32" Caption="NeedConfirmation" Description="" />
+          <DataField Name="Author" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Author" DataType="System.String" Caption="Author" Description="" />
+          <DataField Name="Group" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Group" DataType="System.String" Caption="Group" Description="" />
+          <DataField Name="DetailViewUrl" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.DetailViewUrl" DataType="System.String" Caption="DetailViewUrl" Description="" />
+          <DataField Name="EntryTypeIconPath" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryTypeIconPath" DataType="System.String" Caption="EntryTypeIconPath" Description="" />
+          <DataField Name="Attachs" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Attachs" DataType="System.Boolean" Caption="Attachs" Description="" />
+          <DataField Name="BulActStartTime" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.BulActStartTime" DataType="System.DateTime" Caption="BulActStartTime" Description="" />
+          <DataField Name="BulActEndTime" ID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.BulActEndTime" DataType="System.DateTime" Caption="BulActEndTime" Description="" />
+        </DataTable>
+        <DataTable Name="GetComments" Description="">
+          <DataField Name="SubEntryID" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.SubEntryID" DataType="System.Int32" Caption="SubEntryID" Description="" />
+          <DataField Name="EntryID" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.EntryID" DataType="System.Int32" Caption="EntryID" Description="" />
+          <DataField Name="Title" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Title" DataType="System.String" Caption="Title" Description="" />
+          <DataField Name="Author" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Author" DataType="System.String" Caption="Author" Description="" />
+          <DataField Name="Date" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Date" DataType="System.DateTime" Caption="Date" Description="" />
+          <DataField Name="Comment" ID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Comment" DataType="System.String" Caption="Comment" Description="" />
+        </DataTable>
+        <DataTable Name="Shift" Description="">
+          <DataField Name="Name" ID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Date" ID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.Date" DataType="System.DateTime" Caption="Date" Description="" />
+          <DataField Name="ID" ID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.ID" DataType="System.Int32" Caption="ID" Description="" />
+        </DataTable>
+        <DataTable Name="ConfirmationIconPath" Description="">
+          <DataField Name="Path" ID="Metso.DNA.IA.DNAdiary.Entries.Search.ConfirmationIconPath.Path" DataType="System.String" Caption="Path" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>DNAdiary_Search</ParentTable>
+          <ChildTable>GetComments</ChildTable>
+          <Name>DNAdiary_Search_GetComments</Name>
+          <ParentColumn DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryID" />
+          <ChildColumn DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.EntryID" />
+        </Relation>
+        <Relation>
+          <ParentTable>Shift</ParentTable>
+          <ChildTable>DNAdiary_Search</ChildTable>
+          <Name>Shift_DNAdiary_Search</Name>
+          <ParentColumn DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.ID" />
+          <ChildColumn DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.ID" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="StartTime" Type="System.DateTime" InitialValue="*:*:-7:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="EndTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="EntryTypes" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="EntryTypes" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="EntryType" Type="System.Int32[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYTYPE" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="EntryGroup" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYGROUP" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="Author" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_AUTHOR" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="EntryTag" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ENTRYTAG" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="CauseTag" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_CAUSETAG" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="Classes" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_CLASSES" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="WordSearch" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_WORDSEARCH" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="UseTimePeriod" Type="System.Boolean" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_USETIMEPERIOD" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="AckStatus" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_ACKSTATUS" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="SearchPanelMode" Type="System.String" InitialValue="all" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="DIARY_SEARCHMODE" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="DescriptionLength" Type="System.Int32" InitialValue="300" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="CommentDescrLength" Type="System.Int32" InitialValue="0" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="14" />
+      <Parameter Name="UiDisabledTollbarButtons" Type="System.String[]" InitialValue="Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="15" />
+      <Parameter Name="TimeSpan" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeSpan" Overridable="True" DisplayIndex="9" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.EntryTitle" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftName" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftHour" />
+      </Connection>
+      <Connection ID="3" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftMinute" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftName" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftHour" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.ShiftMinute" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.Name" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.Date" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Title" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Title" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Title" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Date" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Date" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Title" />
+      </Connection>
+      <Connection ID="17" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="StartTime" />
+      </Connection>
+      <Connection ID="18" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="EndTime" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Location" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Description" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.IconFileName" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.ViewLinkUrl" />
+      </Connection>
+      <Connection ID="30" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.TypeID" />
+      </Connection>
+      <Connection ID="32" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.Confirmation" />
+      </Connection>
+      <Connection ID="33" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.State" />
+      </Connection>
+      <Connection ID="34" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.EntryID" />
+      </Connection>
+      <Connection ID="37" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.EntryTypeIconPath" />
+      </Connection>
+      <Connection ID="38" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.NeedConfirmation" />
+      </Connection>
+      <Connection ID="39" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.ConfirmationIconPath.Path" />
+      </Connection>
+      <Connection ID="40" Type="DataFieldConnection" LanguageConversion="False" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Entry.DetailViewUrl" />
+      </Connection>
+      <Connection ID="42" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.Name" />
+      </Connection>
+      <Connection ID="43" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.Date" />
+      </Connection>
+      <Connection ID="44" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.EntriesByShift.Shift.Name" />
+      </Connection>
+      <Connection ID="45" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.Date" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.Shift.Name" />
+      </Connection>
+      <Connection ID="47" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Date" />
+      </Connection>
+      <Connection ID="48" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Title" />
+      </Connection>
+      <Connection ID="49" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Description" />
+      </Connection>
+      <Connection ID="51" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.DetailViewUrl" />
+      </Connection>
+      <Connection ID="52" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.NeedConfirmation" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryTypeIconPath" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.NeedConfirmation" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.ConfirmationIconPath.Path" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.DetailViewUrl" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Date" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Title" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Description" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.NeedConfirmation" />
+      </Connection>
+      <Connection ID="61" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryTypeIconPath" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Date" />
+      </Connection>
+      <Connection ID="63" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Title" />
+      </Connection>
+      <Connection ID="64" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Description" />
+      </Connection>
+      <Connection ID="65" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.NeedConfirmation" />
+      </Connection>
+      <Connection ID="66" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.EntryTypeIconPath" />
+      </Connection>
+      <Connection ID="67" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Title" />
+      </Connection>
+      <Connection ID="68" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Author" />
+      </Connection>
+      <Connection ID="69" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.GetComments.Date" />
+      </Connection>
+      <Connection ID="70" Type="ConstantConnection" LanguageConversion="false" Constant="/" />
+      <Connection ID="71" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.Attachs" />
+      </Connection>
+      <Connection ID="72" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.BulActStartTime" />
+      </Connection>
+      <Connection ID="73" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAdiary.Entries.Search.DNAdiary_Search.BulActEndTime" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+  <HyperLink ID="1" Protocol="-1" Host="-1" Path="70" File="56" />
+</eDNAproReports_Report>

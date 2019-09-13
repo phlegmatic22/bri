@@ -1,0 +1,6 @@
+﻿<configuration>
+  <repository path="DNAreport\DM\Disturbance.mrx">
+    <license provider="Query.Disturbance.DisturbanceData"/>
+  </repository>
+</configuration>
+

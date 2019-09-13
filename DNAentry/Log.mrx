@@ -1,0 +1,38 @@
+<eDNAproReports_Report>
+  <Report Name="Log" ID="Log" Version="3.0.0.0">
+    <Info Title="" Owner="" Expiration="" Category="Metso.DNA.DNAentry.Reports" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="/_Templates/_DNAentry/Log" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="DNAentry_TagsFilter.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="ReportMode" Type="System.String" InitialValue="Full" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="ReportMode" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="TagList" Type="System.String[]" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TagList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="SessionId" Type="System.String" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="SessionId" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Normal" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="TagFilter" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TagFilter" Overridable="True" Group="" DisplayIndex="6" />
+      <Parameter Name="UseTagFilter" Type="System.Boolean" InitialValue="False" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UseTagFilter" Overridable="True" Group="" DisplayIndex="7" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_MAINT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_ENTRY" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="12855" DocumentName="ActiveReports Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0; " />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="0" BackStyle="1" BackColor="14737632" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox" Tag="0" MOD="4" Left="1620" Top="180" Width="2880" Height="288" Text="nameFilter" Multiline="0" />
+      <Control Type="AR.Field" Name="TextBox1" Tag="1" MOD="4" Left="6120" Top="180" Width="1440" Height="720" Text="flagList" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox2" Tag="2" MOD="4" Left="1620" Top="630" Width="1440" Height="288" Text="countLimit" Multiline="0" />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="180" Top="180" Width="900" Height="270" Caption="Name:" Style="ddo-char-set: 1; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="630" Width="1260" Height="270" Caption="Count Limit:" Style="ddo-char-set: 1; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="5310" Top="180" Width="720" Height="270" Caption="Flags:" Style="ddo-char-set: 1; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="8280" Top="180" Width="900" Height="270" Caption="Options:" Style="ddo-char-set: 1; font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox11" Tag="12" MOD="4" Left="9360" Top="180" Width="2880" Height="288" Text="options" Multiline="0" Style="white-space: inherit; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="9885" BackStyle="1" BackColor="14737632" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox3" Tag="3" MOD="4" Left="90" Top="0" Width="2250" Height="288" Text="Timestamp" OutputFormat="G.fff" />
+      <Control Type="AR.Field" Name="TextBox4" Visible="0" Tag="4" MOD="4" Left="1980" Top="360" Width="1440" Height="288" Text="Category" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox5" Tag="5" MOD="4" Left="2340" Top="0" Width="2520" Height="288" Text="Name" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox6" Tag="8" MOD="4" Left="11460" Top="0" Width="990" Height="288" Text="Length" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox7" Tag="6" MOD="4" Left="4950" Top="0" Width="6480" Height="288" Text="Metadata" Style="white-space: inherit; " />
+      <Control Type="AR.Field" Name="TextBox8" Visible="0" Tag="7" MOD="4" Left="11970" Top="270" Width="3150" Height="288" Text="Id" Style="white-space: inherit; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="0" BackStyle="1" BackColor="14737632" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox9" Tag="15" MOD="4" Left="2070" Top="180" Width="720" Height="288" Text="ms" />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="180" Top="180" Width="1800" Height="270" Caption="Query duration (ms):" Style="ddo-char-set: 1; font-weight: normal; " />
+      <Control Type="AR.Field" Name="TextBox10" Visible="0" Tag="16" MOD="4" Left="180" Top="540" Width="0" Height="540" Text="query" Style="white-space: inherit; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="4410" Top="180" Width="1800" Height="270" Caption="Total count on span:" Style="ddo-char-set: 1; font-weight: normal; " />
+      <Control Type="AR.Field" Name="TextBox12" Tag="13" MOD="4" Left="6300" Top="180" Width="630" Height="288" Text="cnt" Style="white-space: inherit; " />
+    </Section>
+  </Sections>
+  <PageSettings />
+</ActiveReportsLayout>

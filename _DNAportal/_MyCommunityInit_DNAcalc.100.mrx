@@ -1,0 +1,61 @@
+<eDNAproReports_Report>
+  <Report Name="_DNAportalInit_DNAcalc" ID="_DNAportalInit_DNAcalc" Version="2.2.2.0">
+    <Info Title="" Owner="IA-DEMO\Administrator" Expiration="" Category="" Version="2.0.1" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Header ClassName="BaseHeader.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.DNAcalc.RepositoryManager" ProviderInfo="$default/Query.DNAcalc.RepositoryManager" Method="GetReportTreeNodes" Description="">
+        <Data />
+        <DataTable Name="Repository" Description="">
+          <DataField Name="Name" ID="$default/Query.DNAcalc.RepositoryManager.Repository.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Query.DNAcalc.RepositoryManager.Repository.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Query.DNAcalc.RepositoryManager.Repository.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+          <DataField Name="Repository_Id_0" ID="$default/Query.DNAcalc.RepositoryManager.Repository.Repository_Id_0" DataType="System.Int32" Caption="Repository_Id_0" Description="" />
+        </DataTable>
+        <DataTable Name="Report" Description="">
+          <DataField Name="Name" ID="$default/Query.DNAcalc.RepositoryManager.Report.Name" DataType="System.String" Caption="Name" Description="" />
+          <DataField Name="Level" ID="$default/Query.DNAcalc.RepositoryManager.Report.Level" DataType="System.String" Caption="Level" Description="" />
+          <DataField Name="Product" ID="$default/Query.DNAcalc.RepositoryManager.Report.Product" DataType="System.String" Caption="Product" Description="" />
+          <DataField Name="Url" ID="$default/Query.DNAcalc.RepositoryManager.Report.Url" DataType="System.String" Caption="Url" Description="" />
+          <DataField Name="Icon" ID="$default/Query.DNAcalc.RepositoryManager.Report.Icon" DataType="System.String" Caption="Icon" Description="" />
+          <DataField Name="Target" ID="$default/Query.DNAcalc.RepositoryManager.Report.Target" DataType="System.String" Caption="Target" Description="" />
+          <DataField Name="Filter" ID="$default/Query.DNAcalc.RepositoryManager.Report.Filter" DataType="System.String" Caption="Filter" Description="" />
+          <DataField Name="Repository_Id" ID="$default/Query.DNAcalc.RepositoryManager.Report.Repository_Id" DataType="System.Int32" Caption="Repository_Id" Description="" />
+        </DataTable>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Repository</ChildTable>
+          <Name>Repository_Repository</Name>
+          <ParentColumn DataFieldID="$default/Query.DNAcalc.RepositoryManager.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Query.DNAcalc.RepositoryManager.Repository.Repository_Id" />
+        </Relation>
+        <Relation>
+          <ParentTable>Repository</ParentTable>
+          <ChildTable>Report</ChildTable>
+          <Name>Repository_Report</Name>
+          <ParentColumn DataFieldID="$default/Query.DNAcalc.RepositoryManager.Repository.Repository_Id" />
+          <ChildColumn DataFieldID="$default/Query.DNAcalc.RepositoryManager.Report.Repository_Id" />
+        </Relation>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="AppsReport" Type="System.String" InitialValue="_DNAportal/_Applications" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+      <Parameter Name="Adds" Type="System.String" InitialValue="_DNAportal/_Additions" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

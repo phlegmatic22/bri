@@ -1,0 +1,5 @@
+﻿<configuration>
+  <repository path="DNAreport\SOE\Trip List.mrx">
+    <license provider="Query.DNAreportAEadvanced.DataClass"/>
+  </repository>
+</configuration>

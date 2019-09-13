@@ -1,0 +1,31 @@
+<eDNAproReports_Report>
+  <Report Name="Calculation Instances" ID="Calculation Instances" Version="3.0.0.0">
+    <Viewer ReportName="/_Templates/_Calculation Maintenance/Calculation Instances" ClassName="Link" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <Header ClassName="ControlPanel.CalculationReports.ascx" />
+    <DataSources />
+    <Parameters>
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="TimeLineMode" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="UiDisabledToolbarButtons" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="calcPath" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="2" />
+	  <Parameter Name="FailedLimit" Type="System.Int32" InitialValue="10000" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="FailedLimit" Overridable="True" DisplayIndex="3" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_ADMIN" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+  <Info Title="Calculation Instances" Owner="" Expiration="" Category="Report.CalculationReports" Version="1.1.0" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="False">
+    <Comment />
+    <Description>Shows calculation instance statuses</Description>
+  </Info>
+</eDNAproReports_Report>

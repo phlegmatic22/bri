@@ -1,0 +1,91 @@
+<eDNAproReports_Report>
+  <Report Name="Alarm management detailed" ID="Alarm management detailed" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="" Expiration="" Category="" Version="" ModifiedBy="" ModificationDate="" CreatedDate="" CreatedBy="" Global="False" Template="True" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Alarm management detailed.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses" ProviderInfo="$default/Metso.DNA.Diagnostics.AlarmManagement" Method="GetServiceStatuses" Description="" FriendlyName="GetServiceStatuses" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataTable Name="Statuses" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="processName" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.processName" DataType="System.String" Caption="processName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.status" DataType="System.String" Caption="status" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+      <DataSet ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData" ProviderInfo="$default/Metso.DNA.Diagnostics.AlarmManagement" Method="GetLogData" Description="" FriendlyName="GetLogData" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataTable Name="LogEvents" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="QueueName" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.QueueName" DataType="System.String" Caption="QueueName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Type" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Type" DataType="System.String" Caption="Type" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Time" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Time" DataType="System.DateTime" Caption="Time" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Message" ID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Message" DataType="System.String" Caption="Message" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="UiDisabledToolbarButtons" Type="System.String[]" InitialValue="Edit&#xD;&#xA;ExcelExport&#xD;&#xA;Save&#xD;&#xA;SaveAs&#xD;&#xA;Delete" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="UiDisabledToolbarButtons" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="TimeLineMode" Type="System.String" InitialValue="Toolbar" HeaderControl="" Editable="false" Mapping="Runtime" Description="Parameter description" Usage="TimeLineMode" Overridable="True" Group="" DisplayIndex="1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="2320" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.processName" />
+      </Connection>
+      <Connection ID="2321" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.status" />
+      </Connection>
+      <Connection ID="2326" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.queueName" />
+      </Connection>
+      <Connection ID="2327" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetQueues.Queues.status" />
+      </Connection>
+      <Connection ID="2332" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.QueueName" />
+      </Connection>
+      <Connection ID="2333" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Time" />
+      </Connection>
+      <Connection ID="2334" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Message" />
+      </Connection>
+      <Connection ID="2342" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="2343" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="2344" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Type" />
+      </Connection>
+      <Connection ID="2345" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.QueueName" />
+      </Connection>
+      <Connection ID="2346" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Time" />
+      </Connection>
+      <Connection ID="2347" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Message" />
+      </Connection>
+      <Connection ID="2348" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetLogData.LogEvents.Type" />
+      </Connection>
+      <Connection ID="2349" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.processName" />
+      </Connection>
+      <Connection ID="2350" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.Diagnostics.AlarmManagement.GetServiceStatuses.Statuses.status" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_SUPPORT" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_DEVELOPER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>

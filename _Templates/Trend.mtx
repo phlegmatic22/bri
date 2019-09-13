@@ -1,0 +1,457 @@
+<eDNAproReports_Report>
+  <Report Name="Trend" ID="Trend" Version="3.0.0.0">
+    <Info Title="" Owner="Metso DNA" Expiration="" Category="" Version="" ModifiedBy="Metso DNA" ModificationDate="2011-03-15T19:48:27" CreatedDate="2010-10-18T18:38:56" CreatedBy="metsoDNA" Global="True" Template="True" SnapshotTime="">
+      <Comment />
+      <Description>Basic trend</Description>
+    </Info>
+    <Viewer ReportName="Trend.rpx" ClassName="" />
+    <DataSources>
+      <DataSet ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData" ProviderInfo="$default/Metso.DNA.IA.DNAtrend.Combined" Method="TrendData" Description="" FriendlyName="TrendData" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="tagNameList" Ref="tags" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="tagDescriptionList" Ref="descrs" Usage="" />
+        <DataSetParameter Name="tagUnitList" Ref="units" Usage="" />
+        <DataSetParameter Name="tagInterpolationList" Ref="interpols" Usage="" />
+        <DataSetParameter Name="periodList" Ref="periodList" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="offsetList" Ref="offsetList" Usage="" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="HistoryOperationList" />
+        <DataSetParameter Name="incremental" Ref="incremental" Usage="" />
+        <DataSetParameter Name="options" Ref="options" Usage="" />
+        <DataTable Name="Tag" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DataSource" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.DataSource" DataType="System.String" Caption="DataSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.ShortTagName" DataType="System.String" Caption="ShortTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Department" DataType="System.String" Caption="Department" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.ProcessArea" DataType="System.String" Caption="ProcessArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessHierarchy" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.ProcessHierarchy" DataType="System.String" Caption="ProcessHierarchy" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.TagType" DataType="System.String" Caption="TagType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Min" DataType="System.Double" Caption="Min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Max" DataType="System.Double" Caption="Max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.InterpolationMode" DataType="System.String" Caption="InterpolationMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MainTagName" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.MainTagName" DataType="System.String" Caption="MainTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Offset" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Offset" DataType="System.String" Caption="Offset" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Operation" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Operation" DataType="System.String" Caption="Operation" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Period" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Period" DataType="System.String" Caption="Period" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table0" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table0.ts" DataType="System.DateTime" Caption="25FC-100 Trend ts (DEMO08VMWARE!25FC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table0.value" DataType="System.Single" Caption="25FC-100 Trend value (DEMO08VMWARE!25FC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table0.status" DataType="System.String" Caption="25FC-100 Trend status (DEMO08VMWARE!25FC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table1" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table1.ts" DataType="System.DateTime" Caption="25FC-101 Trend ts (DEMO08VMWARE!25FC-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table1.value" DataType="System.Single" Caption="25FC-101 Trend value (DEMO08VMWARE!25FC-101)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table1.status" DataType="System.String" Caption="25FC-101 Trend status (DEMO08VMWARE!25FC-101)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table2" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table2.ts" DataType="System.DateTime" Caption="25LIC-100 Trend ts (DEMO08VMWARE!25LIC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table2.value" DataType="System.Single" Caption="25LIC-100 Trend value (DEMO08VMWARE!25LIC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table2.status" DataType="System.String" Caption="25LIC-100 Trend status (DEMO08VMWARE!25LIC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table3" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table3.ts" DataType="System.DateTime" Caption="25QC-100 Trend ts (DEMO08VMWARE!25QC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table3.value" DataType="System.Single" Caption="25QC-100 Trend value (DEMO08VMWARE!25QC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table3.status" DataType="System.String" Caption="25QC-100 Trend status (DEMO08VMWARE!25QC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table4" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table4.ts" DataType="System.DateTime" Caption="25PC-100 Trend ts (DEMO08VMWARE!25PC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table4.value" DataType="System.Single" Caption="25PC-100 Trend value (DEMO08VMWARE!25PC-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table4.status" DataType="System.String" Caption="25PC-100 Trend status (DEMO08VMWARE!25PC-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table5" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table5.ts" DataType="System.DateTime" Caption="25P-100 Trend ts (DEMO08VMWARE!25P-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table5.value" DataType="System.Single" Caption="25P-100 Trend value (DEMO08VMWARE!25P-100)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table5.status" DataType="System.String" Caption="25P-100 Trend status (DEMO08VMWARE!25P-100)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table6" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table6.ts" DataType="System.DateTime" Caption="25FC-100:pos Trend ts (DEMO08VMWARE!25FC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table6.value" DataType="System.Single" Caption="25FC-100:pos Trend value (DEMO08VMWARE!25FC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table6.status" DataType="System.String" Caption="25FC-100:pos Trend status (DEMO08VMWARE!25FC-100:pos)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table7" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table7.ts" DataType="System.DateTime" Caption="25FC-101:pos Trend ts (DEMO08VMWARE!25FC-101:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table7.value" DataType="System.Single" Caption="25FC-101:pos Trend value (DEMO08VMWARE!25FC-101:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table7.status" DataType="System.String" Caption="25FC-101:pos Trend status (DEMO08VMWARE!25FC-101:pos)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table8" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table8.ts" DataType="System.DateTime" Caption="25LIC-100:pos Trend ts (DEMO08VMWARE!25LIC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table8.value" DataType="System.Single" Caption="25LIC-100:pos Trend value (DEMO08VMWARE!25LIC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table8.status" DataType="System.String" Caption="25LIC-100:pos Trend status (DEMO08VMWARE!25LIC-100:pos)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table9" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table9.ts" DataType="System.DateTime" Caption="25QC-100:pos Trend ts (DEMO08VMWARE!25QC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table9.value" DataType="System.Single" Caption="25QC-100:pos Trend value (DEMO08VMWARE!25QC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table9.status" DataType="System.String" Caption="25QC-100:pos Trend status (DEMO08VMWARE!25QC-100:pos)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table10" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table10.ts" DataType="System.DateTime" Caption="25PC-100:pos Trend ts (DEMO08VMWARE!25PC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table10.value" DataType="System.Single" Caption="25PC-100:pos Trend value (DEMO08VMWARE!25PC-100:pos)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table10.status" DataType="System.String" Caption="25PC-100:pos Trend status (DEMO08VMWARE!25PC-100:pos)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table11" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table11.ts" DataType="System.DateTime" Caption="25FC-100:spa Trend ts (DEMO08VMWARE!25FC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table11.value" DataType="System.Single" Caption="25FC-100:spa Trend value (DEMO08VMWARE!25FC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table11.status" DataType="System.String" Caption="25FC-100:spa Trend status (DEMO08VMWARE!25FC-100:spa)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table12" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table12.ts" DataType="System.DateTime" Caption="25FC-101:spa Trend ts (DEMO08VMWARE!25FC-101:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table12.value" DataType="System.Single" Caption="25FC-101:spa Trend value (DEMO08VMWARE!25FC-101:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table12.status" DataType="System.String" Caption="25FC-101:spa Trend status (DEMO08VMWARE!25FC-101:spa)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table13" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table13.ts" DataType="System.DateTime" Caption="25LIC-100:spa Trend ts (DEMO08VMWARE!25LIC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table13.value" DataType="System.Single" Caption="25LIC-100:spa Trend value (DEMO08VMWARE!25LIC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table13.status" DataType="System.String" Caption="25LIC-100:spa Trend status (DEMO08VMWARE!25LIC-100:spa)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table14" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table14.ts" DataType="System.DateTime" Caption="25QC-100:spa Trend ts (DEMO08VMWARE!25QC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table14.value" DataType="System.Single" Caption="25QC-100:spa Trend value (DEMO08VMWARE!25QC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table14.status" DataType="System.String" Caption="25QC-100:spa Trend status (DEMO08VMWARE!25QC-100:spa)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table15" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table15.ts" DataType="System.DateTime" Caption="25PC-100:spa Trend ts (DEMO08VMWARE!25PC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table15.value" DataType="System.Single" Caption="25PC-100:spa Trend value (DEMO08VMWARE!25PC-100:spa)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table15.status" DataType="System.String" Caption="25PC-100:spa Trend status (DEMO08VMWARE!25PC-100:spa)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table16" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table16.ts" DataType="System.DateTime" Caption="25FC-100:ma Trend ts (DEMO08VMWARE!25FC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table16.value" DataType="System.Single" Caption="25FC-100:ma Trend value (DEMO08VMWARE!25FC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table16.status" DataType="System.String" Caption="25FC-100:ma Trend status (DEMO08VMWARE!25FC-100:ma)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table17" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table17.ts" DataType="System.DateTime" Caption="25FC-101:ma Trend ts (DEMO08VMWARE!25FC-101:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table17.value" DataType="System.Single" Caption="25FC-101:ma Trend value (DEMO08VMWARE!25FC-101:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table17.status" DataType="System.String" Caption="25FC-101:ma Trend status (DEMO08VMWARE!25FC-101:ma)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table18" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table18.ts" DataType="System.DateTime" Caption="25LIC-100:ma Trend ts (DEMO08VMWARE!25LIC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table18.value" DataType="System.Single" Caption="25LIC-100:ma Trend value (DEMO08VMWARE!25LIC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table18.status" DataType="System.String" Caption="25LIC-100:ma Trend status (DEMO08VMWARE!25LIC-100:ma)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+        <DataTable Name="Table19" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table19.ts" DataType="System.DateTime" Caption="25QC-100:ma Trend ts (DEMO08VMWARE!25QC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table19.value" DataType="System.Single" Caption="25QC-100:ma Trend value (DEMO08VMWARE!25QC-100:ma)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status" ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table19.status" DataType="System.String" Caption="25QC-100:ma Trend status (DEMO08VMWARE!25QC-100:ma)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:*:-8:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="tags" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagNameList" Overridable="True" DisplayIndex="2" />
+      <Parameter Name="periodList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriodList" Overridable="True" DisplayIndex="3" />
+      <Parameter Name="defaultPeriod" Type="System.String" InitialValue="0:02:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryPeriod" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="offsetList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OffsetList" Overridable="True" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="OperationList" Overridable="True" DisplayIndex="5" />
+      <Parameter Name="valueCount" Type="System.Int32" InitialValue="480" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryValueCount" Overridable="True" DisplayIndex="6" />
+      <Parameter Name="options" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="" Overridable="True" DisplayIndex="7" />
+      <Parameter Name="autoUpdate" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdate" Overridable="True" DisplayIndex="8" />
+      <Parameter Name="updateInterval" Type="System.TimeSpan" InitialValue="00:00:06" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="AutoUpdateInterval" Overridable="True" DisplayIndex="9" />
+      <Parameter Name="resizeWindow" Type="System.Boolean" InitialValue="true" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="ResizeWindow" Overridable="True" DisplayIndex="10" />
+      <Parameter Name="descrs" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagDescriptionList" Overridable="True" DisplayIndex="11" />
+      <Parameter Name="units" Type="System.String[]" InitialValue="" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="HistoryTagUnitList" Overridable="True" DisplayIndex="12" />
+      <Parameter Name="interpols" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="" Usage="HistoryTagInterpolationList" Overridable="True" DisplayIndex="13" />
+      <Parameter Name="incremental" Type="System.Boolean" InitialValue="false" HeaderControl="" Editable="false" Mapping="Runtime" Description="" Usage="IncrementalQuery" Overridable="True" DisplayIndex="14" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="1" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NO_PRIOR" />
+      </Connection>
+      <Connection ID="2" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NM_TAG" />
+      </Connection>
+      <Connection ID="4" Type="DataFieldConnection" LanguageConversion="true" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EVTYPE" />
+      </Connection>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NO_PRIOR" />
+      </Connection>
+      <Connection ID="6" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.NM_TAG" />
+      </Connection>
+      <Connection ID="7" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DS_TAG" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DS_EVENT" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_1.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="10" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_1.AlarmData.NUM_PRIOR" />
+      </Connection>
+      <Connection ID="11" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_2.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.Alarm.BLqueries6.AlarmQueries.IAlarmListEntry_2.AlarmData.FL_NEWEVT" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.KA.DNAdiary.ReportQueries.GetList.Entry.EntryDate" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.KA.DNAdiary.ReportQueries.GetList.Entry.EntryTypeID" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25LIC-100.ts" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25LIC-100.value" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-100.ts" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-100.value" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-101.ts" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25FC-101.value" />
+      </Connection>
+      <Connection ID="21" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25PC-100.ts" />
+      </Connection>
+      <Connection ID="22" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25PC-100.value" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25QC-100.ts" />
+      </Connection>
+      <Connection ID="24" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.IA.BasicQueriesTests.TrendData.Trend.25QC-100.value" />
+      </Connection>
+      <Connection ID="46" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DT_START" />
+      </Connection>
+      <Connection ID="53" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="54" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventType" />
+      </Connection>
+      <Connection ID="55" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.Tag" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.TagDescription" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Query.Demo.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventDescription" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="94" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.AlarmValue" />
+      </Connection>
+      <Connection ID="95" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="96" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.OperationValue" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="98" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.DiaryValue" />
+      </Connection>
+      <Connection ID="103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventTime" />
+      </Connection>
+      <Connection ID="104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventType" />
+      </Connection>
+      <Connection ID="105" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="106" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.Tag" />
+      </Connection>
+      <Connection ID="107" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.TagDescription" />
+      </Connection>
+      <Connection ID="108" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.EventDescription" />
+      </Connection>
+      <Connection ID="109" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.LastValue" />
+      </Connection>
+      <Connection ID="110" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.AlarmDiary.AlarmsAndDiaryEntries.AlarmData.PriorityNumber" />
+      </Connection>
+      <Connection ID="126" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table18.ts" />
+      </Connection>
+      <Connection ID="127" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table18.value" />
+      </Connection>
+      <Connection ID="128" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table19.ts" />
+      </Connection>
+      <Connection ID="129" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="Metso.DNA.IA.DNAtrend.TrendData.GetTrendOperData.Table19.value" />
+      </Connection>
+      <Connection ID="1822" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.TagName" />
+      </Connection>
+      <Connection ID="1823" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Description" />
+      </Connection>
+      <Connection ID="1824" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Unit" />
+      </Connection>
+      <Connection ID="1825" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Min" />
+      </Connection>
+      <Connection ID="1826" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Max" />
+      </Connection>
+      <Connection ID="1827" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Operation" />
+      </Connection>
+      <Connection ID="1828" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Period" />
+      </Connection>
+      <Connection ID="1829" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.Offset" />
+      </Connection>
+      <Connection ID="1830" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.InterpolationMode" />
+      </Connection>
+      <Connection ID="1831" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.DataSource" />
+      </Connection>
+      <Connection ID="1833" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table0.ts" />
+      </Connection>
+      <Connection ID="1834" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table0.value" />
+      </Connection>
+      <Connection ID="1835" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table1.ts" />
+      </Connection>
+      <Connection ID="1836" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table1.value" />
+      </Connection>
+      <Connection ID="1837" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table2.ts" />
+      </Connection>
+      <Connection ID="1838" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table2.value" />
+      </Connection>
+      <Connection ID="1839" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table3.ts" />
+      </Connection>
+      <Connection ID="1840" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table3.value" />
+      </Connection>
+      <Connection ID="1841" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table4.ts" />
+      </Connection>
+      <Connection ID="1842" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table4.value" />
+      </Connection>
+      <Connection ID="1843" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table5.ts" />
+      </Connection>
+      <Connection ID="1844" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table5.value" />
+      </Connection>
+      <Connection ID="1845" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table6.ts" />
+      </Connection>
+      <Connection ID="1846" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table6.value" />
+      </Connection>
+      <Connection ID="1847" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table7.ts" />
+      </Connection>
+      <Connection ID="1848" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table7.value" />
+      </Connection>
+      <Connection ID="1849" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table8.ts" />
+      </Connection>
+      <Connection ID="1850" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table8.value" />
+      </Connection>
+      <Connection ID="1851" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table9.ts" />
+      </Connection>
+      <Connection ID="1852" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table9.value" />
+      </Connection>
+      <Connection ID="1853" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table10.ts" />
+      </Connection>
+      <Connection ID="1854" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table10.value" />
+      </Connection>
+      <Connection ID="1855" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table11.ts" />
+      </Connection>
+      <Connection ID="1856" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table11.value" />
+      </Connection>
+      <Connection ID="1857" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table12.ts" />
+      </Connection>
+      <Connection ID="1858" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table12.value" />
+      </Connection>
+      <Connection ID="1859" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table13.ts" />
+      </Connection>
+      <Connection ID="1860" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table13.value" />
+      </Connection>
+      <Connection ID="1861" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table14.ts" />
+      </Connection>
+      <Connection ID="1862" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table14.value" />
+      </Connection>
+      <Connection ID="1863" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table15.ts" />
+      </Connection>
+      <Connection ID="1864" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table15.value" />
+      </Connection>
+      <Connection ID="1865" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table16.ts" />
+      </Connection>
+      <Connection ID="1866" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table16.value" />
+      </Connection>
+      <Connection ID="1867" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table17.ts" />
+      </Connection>
+      <Connection ID="1868" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Table17.value" />
+      </Connection>
+      <Connection ID="2945" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.ProcessHierarchy" />
+      </Connection>
+      <Connection ID="2946" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData.Tag.MainTagName" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>
