@@ -1,0 +1,993 @@
+<eDNAproReports_Report>
+  <Report Name="_Briketöinti menu_sementtisiilot" ID="_Briketöinti menu_sementtisiilot" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-17T12:53:33" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="_Briketöinti menu_sementtisiilot.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="HistoryOptionList" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="HistoryOperationList" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination.args1" Usage="Advanced" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination.args2" Usage="Advanced" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination.args3" Usage="Advanced" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination.args4" Usage="Advanced" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="Advanced" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="AVSUHDEPANOS_U3:av Avg value (INFOC2015!AVSUHDEPANOS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="AVSUHDEPANOS_U3:av Avg status (INFOC2015!AVSUHDEPANOS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="AVSUHDEVRK_U3:av Avg value (INFOC2015!AVSUHDEVRK_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="AVSUHDEVRK_U3:av Avg status (INFOC2015!AVSUHDEVRK_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="BRI_ULOS_U3:av Avg value (INFOC2015!BRI_ULOS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="BRI_ULOS_U3:av Avg status (INFOC2015!BRI_ULOS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value3" ID="$default/Query.BasicQueries.Extended.Combination.Values.value3" DataType="System.Single" Caption="BRIKETIN_KORKEUS_U3:av Avg value (INFOC2015!BRIKETIN_KORKEUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status3" ID="$default/Query.BasicQueries.Extended.Combination.Values.status3" DataType="System.String" Caption="BRIKETIN_KORKEUS_U3:av Avg status (INFOC2015!BRIKETIN_KORKEUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value4" ID="$default/Query.BasicQueries.Extended.Combination.Values.value4" DataType="System.Single" Caption="BRILKM_U3:av Avg value (INFOC2015!BRILKM_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status4" ID="$default/Query.BasicQueries.Extended.Combination.Values.status4" DataType="System.String" Caption="BRILKM_U3:av Avg status (INFOC2015!BRILKM_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value5" ID="$default/Query.BasicQueries.Extended.Combination.Values.value5" DataType="System.Single" Caption="HAIRIOAIKA_U3:av Avg value (INFOC2015!HAIRIOAIKA_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status5" ID="$default/Query.BasicQueries.Extended.Combination.Values.status5" DataType="System.String" Caption="HAIRIOAIKA_U3:av Avg status (INFOC2015!HAIRIOAIKA_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value6" ID="$default/Query.BasicQueries.Extended.Combination.Values.value6" DataType="System.Single" Caption="KAYNTIASTE_U3:av Avg value (INFOC2015!KAYNTIASTE_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status6" ID="$default/Query.BasicQueries.Extended.Combination.Values.status6" DataType="System.String" Caption="KAYNTIASTE_U3:av Avg status (INFOC2015!KAYNTIASTE_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value7" ID="$default/Query.BasicQueries.Extended.Combination.Values.value7" DataType="System.Single" Caption="KOSTEUSMITTAUS_U3:av Avg value (INFOC2015!KOSTEUSMITTAUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status7" ID="$default/Query.BasicQueries.Extended.Combination.Values.status7" DataType="System.String" Caption="KOSTEUSMITTAUS_U3:av Avg status (INFOC2015!KOSTEUSMITTAUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value8" ID="$default/Query.BasicQueries.Extended.Combination.Values.value8" DataType="System.Single" Caption="LISAVESI_U3:av Avg value (INFOC2015!LISAVESI_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status8" ID="$default/Query.BasicQueries.Extended.Combination.Values.status8" DataType="System.String" Caption="LISAVESI_U3:av Avg status (INFOC2015!LISAVESI_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value9" ID="$default/Query.BasicQueries.Extended.Combination.Values.value9" DataType="System.Single" Caption="MAT_KOSTEUS_U3:av Avg value (INFOC2015!MAT_KOSTEUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status9" ID="$default/Query.BasicQueries.Extended.Combination.Values.status9" DataType="System.String" Caption="MAT_KOSTEUS_U3:av Avg status (INFOC2015!MAT_KOSTEUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value10" ID="$default/Query.BasicQueries.Extended.Combination.Values.value10" DataType="System.Single" Caption="PANOSNUMERO_U3:av Avg value (INFOC2015!PANOSNUMERO_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status10" ID="$default/Query.BasicQueries.Extended.Combination.Values.status10" DataType="System.String" Caption="PANOSNUMERO_U3:av Avg status (INFOC2015!PANOSNUMERO_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value11" ID="$default/Query.BasicQueries.Extended.Combination.Values.value11" DataType="System.Single" Caption="PINTA1_PROS_U3:av Avg value (INFOC2015!PINTA1_PROS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status11" ID="$default/Query.BasicQueries.Extended.Combination.Values.status11" DataType="System.String" Caption="PINTA1_PROS_U3:av Avg status (INFOC2015!PINTA1_PROS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value12" ID="$default/Query.BasicQueries.Extended.Combination.Values.value12" DataType="System.Single" Caption="PINTA1_TON_U3:av Avg value (INFOC2015!PINTA1_TON_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status12" ID="$default/Query.BasicQueries.Extended.Combination.Values.status12" DataType="System.String" Caption="PINTA1_TON_U3:av Avg status (INFOC2015!PINTA1_TON_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value13" ID="$default/Query.BasicQueries.Extended.Combination.Values.value13" DataType="System.Single" Caption="PINTA2_PROS_U3:av Avg value (INFOC2015!PINTA2_PROS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status13" ID="$default/Query.BasicQueries.Extended.Combination.Values.status13" DataType="System.String" Caption="PINTA2_PROS_U3:av Avg status (INFOC2015!PINTA2_PROS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value14" ID="$default/Query.BasicQueries.Extended.Combination.Values.value14" DataType="System.Single" Caption="PINTA2_TON_U3:av Avg value (INFOC2015!PINTA2_TON_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status14" ID="$default/Query.BasicQueries.Extended.Combination.Values.status14" DataType="System.String" Caption="PINTA2_TON_U3:av Avg status (INFOC2015!PINTA2_TON_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value15" ID="$default/Query.BasicQueries.Extended.Combination.Values.value15" DataType="System.Single" Caption="RUMPULUJUUS_U3:av Avg value (INFOC2015!RUMPULUJUUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status15" ID="$default/Query.BasicQueries.Extended.Combination.Values.status15" DataType="System.String" Caption="RUMPULUJUUS_U3:av Avg status (INFOC2015!RUMPULUJUUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value16" ID="$default/Query.BasicQueries.Extended.Combination.Values.value16" DataType="System.Single" Caption="SEMENTTIOSUUS_U3:av Avg value (INFOC2015!SEMENTTIOSUUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status16" ID="$default/Query.BasicQueries.Extended.Combination.Values.status16" DataType="System.String" Caption="SEMENTTIOSUUS_U3:av Avg status (INFOC2015!SEMENTTIOSUUS_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value17" ID="$default/Query.BasicQueries.Extended.Combination.Values.value17" DataType="System.Single" Caption="BRI_KONEELTA_U3:av Avg value (INFOC2015!BRI_KONEELTA_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status17" ID="$default/Query.BasicQueries.Extended.Combination.Values.status17" DataType="System.String" Caption="BRI_KONEELTA_U3:av Avg status (INFOC2015!BRI_KONEELTA_U3:av)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U3:av&#xD;&#xA;AVSUHDEVRK_U3:av&#xD;&#xA;BRI_ULOS_U3:av&#xD;&#xA;BRIKETIN_KORKEUS_U3:av&#xD;&#xA;BRILKM_U3:av&#xD;&#xA;HAIRIOAIKA_U3:av&#xD;&#xA;KAYNTIASTE_U3:av&#xD;&#xA;KOSTEUSMITTAUS_U3:av&#xD;&#xA;LISAVESI_U3:av&#xD;&#xA;MAT_KOSTEUS_U3:av&#xD;&#xA;PANOSNUMERO_U3:av&#xD;&#xA;PINTA1_PROS_U3:av&#xD;&#xA;PINTA1_TON_U3:av&#xD;&#xA;PINTA2_PROS_U3:av&#xD;&#xA;PINTA2_TON_U3:av&#xD;&#xA;RUMPULUJUUS_U3:av&#xD;&#xA;SEMENTTIOSUUS_U3:av&#xD;&#xA;BRI_KONEELTA_U3:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="8" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="9" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="12" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="13" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="14" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="23" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="25" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="27" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="28" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="41" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Vakio" />
+      </Connection>
+      <Connection ID="42" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Vakio" />
+      </Connection>
+      <Connection ID="56" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="57" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="58" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="59" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="60" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="62" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="84" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="86" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.value9" />
+      </Connection>
+      <Connection ID="87" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="88" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.status10" />
+      </Connection>
+      <Connection ID="92" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value10" />
+      </Connection>
+      <Connection ID="93" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="94" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="95" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="97" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="843" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.DateOfAnalysis" />
+      </Connection>
+      <Connection ID="907" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="939" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.LoopPerformanceValue" />
+      </Connection>
+      <Connection ID="941" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.IA.BasicQueries.Extended.Combination_1.Values.value5" />
+      </Connection>
+      <Connection ID="943" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.AutomationUtilityIndex_auto" />
+      </Connection>
+      <Connection ID="944" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.ControlSaturationLevel_NotSaturated" />
+      </Connection>
+      <Connection ID="945" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.MeasurementStatus_OK" />
+      </Connection>
+      <Connection ID="946" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.LoopPerformanceValue" />
+      </Connection>
+      <Connection ID="1020" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.AutomationUtilityIndex_auto" />
+      </Connection>
+      <Connection ID="1021" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.ControlSaturationLevel_NotSaturated" />
+      </Connection>
+      <Connection ID="1022" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.MeasurementStatus_OK" />
+      </Connection>
+      <Connection ID="1023" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.LoopPerformanceValue" />
+      </Connection>
+      <Connection ID="1024" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.LoopPerformanceValue" />
+      </Connection>
+      <Connection ID="1025" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.LoopPerformanceValue" />
+      </Connection>
+      <Connection ID="1026" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.AutomationUtilityIndex_auto" />
+      </Connection>
+      <Connection ID="1027" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.ControlSaturationLevel_NotSaturated" />
+      </Connection>
+      <Connection ID="1028" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag_1.Table.MeasurementStatus_OK" />
+      </Connection>
+      <Connection ID="1029" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.AutomationUtilityIndex_auto" />
+      </Connection>
+      <Connection ID="1030" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.ControlSaturationLevel_NotSaturated" />
+      </Connection>
+      <Connection ID="1031" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="METSO-LM-SERVER/Metso.DNA.IP21ProcedureCall.IP21ProcedureCall.IP21ProcedureCall.DNAIAGetDataByProcedure1Tag.Table.MeasurementStatus_OK" />
+      </Connection>
+      <Connection ID="1035" Type="ConstantConnection" LanguageConversion="false" Constant="localhost" />
+      <Connection ID="1096" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1097" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1098" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1099" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="1100" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1101" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="1102" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1103" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.ts" />
+      </Connection>
+      <Connection ID="1104" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1225" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1226" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1227" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1228" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value1" />
+      </Connection>
+      <Connection ID="1229" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1230" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value2" />
+      </Connection>
+      <Connection ID="1231" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1232" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1233" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1234" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1235" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1236" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1237" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1238" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1239" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1240" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status0" />
+      </Connection>
+      <Connection ID="1241" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status2" />
+      </Connection>
+      <Connection ID="1242" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status0" />
+      </Connection>
+      <Connection ID="1243" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status2" />
+      </Connection>
+      <Connection ID="1244" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status0" />
+      </Connection>
+      <Connection ID="1245" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1246" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1247" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1248" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1249" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value2" />
+      </Connection>
+      <Connection ID="1250" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1251" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1252" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1253" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1254" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1255" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1256" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value1" />
+      </Connection>
+      <Connection ID="1349" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1350" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1351" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1352" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1353" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1354" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1355" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1356" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1357" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="1358" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="1359" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status1" />
+      </Connection>
+      <Connection ID="1360" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1361" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1362" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status0" />
+      </Connection>
+      <Connection ID="1363" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1364" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1365" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.status0" />
+      </Connection>
+      <Connection ID="1366" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1367" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1368" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="6f38495b-b5eb-4ed1-abc1-31e9885aeb91.Table.column1" />
+      </Connection>
+      <Connection ID="1369" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="6f38495b-b5eb-4ed1-abc1-31e9885aeb91.Table.column1" />
+      </Connection>
+      <Connection ID="1370" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="6f38495b-b5eb-4ed1-abc1-31e9885aeb91.Table.value0" />
+      </Connection>
+      <Connection ID="1371" Type="ConstantConnection" LanguageConversion="false" Constant="http://" />
+      <Connection ID="1374" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1375" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value1" />
+      </Connection>
+      <Connection ID="1376" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value2" />
+      </Connection>
+      <Connection ID="1377" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value0" />
+      </Connection>
+      <Connection ID="1378" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1379" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1380" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value1" />
+      </Connection>
+      <Connection ID="1381" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value0" />
+      </Connection>
+      <Connection ID="1382" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value1" />
+      </Connection>
+      <Connection ID="1383" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1384" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.ts" />
+      </Connection>
+      <Connection ID="1385" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.status1" />
+      </Connection>
+      <Connection ID="1386" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value2" />
+      </Connection>
+      <Connection ID="1516" Type="ConstantConnection" LanguageConversion="false" Constant="production%20Trends" />
+      <Connection ID="1517" Type="ConstantConnection" LanguageConversion="false" Constant="/dna/DNAreport/Viewer.aspx?report=EPS%20Templates/" />
+      <Connection ID="1518" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="1519" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value3" />
+      </Connection>
+      <Connection ID="1520" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled_1.Values.value4" />
+      </Connection>
+      <Connection ID="1619" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_Scaled.Values.value1" />
+      </Connection>
+      <Connection ID="10921" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Net" />
+      </Connection>
+      <Connection ID="10922" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Efficiency" />
+      </Connection>
+      <Connection ID="10923" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="10924" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="10925" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Efficiency" />
+      </Connection>
+      <Connection ID="10926" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Net" />
+      </Connection>
+      <Connection ID="11064" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Efficiency" />
+      </Connection>
+      <Connection ID="11065" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Net" />
+      </Connection>
+      <Connection ID="11066" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Net" />
+      </Connection>
+      <Connection ID="11067" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Efficiency" />
+      </Connection>
+      <Connection ID="11068" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="11069" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.BHT_Efficiency" />
+      </Connection>
+      <Connection ID="11356" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.LS_Pressure" />
+      </Connection>
+      <Connection ID="11357" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.LS_Temp" />
+      </Connection>
+      <Connection ID="11358" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Endtime" />
+      </Connection>
+      <Connection ID="16241" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.LS_Pressure" />
+      </Connection>
+      <Connection ID="16242" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FG_Temp" />
+      </Connection>
+      <Connection ID="16243" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.LS_Heatflow" />
+      </Connection>
+      <Connection ID="16244" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.lS_Massflow" />
+      </Connection>
+      <Connection ID="16245" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_2.Values.FG_Massflow" />
+      </Connection>
+      <Connection ID="16246" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16247" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16248" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16249" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16250" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16251" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="16252" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.LS_Heatflow" />
+      </Connection>
+      <Connection ID="16253" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FG_Massflow" />
+      </Connection>
+      <Connection ID="16254" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.LS_Massflow" />
+      </Connection>
+      <Connection ID="16255" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.LS_Temp" />
+      </Connection>
+      <Connection ID="16256" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.LS_Pressure" />
+      </Connection>
+      <Connection ID="16257" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FG_Temp" />
+      </Connection>
+      <Connection ID="16258" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.FG_Massflow" />
+      </Connection>
+      <Connection ID="22761" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Starttime" />
+      </Connection>
+      <Connection ID="22762" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Starttime_trend" />
+      </Connection>
+      <Connection ID="22763" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Starttime_trend" />
+      </Connection>
+      <Connection ID="22764" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22765" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22766" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value0" />
+      </Connection>
+      <Connection ID="22767" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value1" />
+      </Connection>
+      <Connection ID="22768" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22769" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22770" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value3" />
+      </Connection>
+      <Connection ID="22771" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value4" />
+      </Connection>
+      <Connection ID="22772" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22773" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22774" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value5" />
+      </Connection>
+      <Connection ID="22775" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value6" />
+      </Connection>
+      <Connection ID="22776" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22777" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.ts" />
+      </Connection>
+      <Connection ID="22778" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value7" />
+      </Connection>
+      <Connection ID="22779" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="f48dc450-a765-4219-8987-8cb1ac98a927.Table.value8" />
+      </Connection>
+      <Connection ID="22780" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Starttime_trend" />
+      </Connection>
+      <Connection ID="22781" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Endtime_trend" />
+      </Connection>
+      <Connection ID="22782" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22783" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22784" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value0" />
+      </Connection>
+      <Connection ID="22785" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value1" />
+      </Connection>
+      <Connection ID="22786" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22787" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value3" />
+      </Connection>
+      <Connection ID="22788" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value2" />
+      </Connection>
+      <Connection ID="22789" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value3" />
+      </Connection>
+      <Connection ID="22790" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22791" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22792" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22793" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value5" />
+      </Connection>
+      <Connection ID="22794" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value6" />
+      </Connection>
+      <Connection ID="22795" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22796" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.ts" />
+      </Connection>
+      <Connection ID="22797" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value6" />
+      </Connection>
+      <Connection ID="22798" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="a572114f-6a40-440c-a943-beaa616112e2.Table.value7" />
+      </Connection>
+      <Connection ID="22799" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.ts" />
+      </Connection>
+      <Connection ID="22800" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.value0" />
+      </Connection>
+      <Connection ID="22801" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.value1" />
+      </Connection>
+      <Connection ID="22802" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.ts" />
+      </Connection>
+      <Connection ID="22803" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.ts" />
+      </Connection>
+      <Connection ID="22804" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.ts" />
+      </Connection>
+      <Connection ID="22805" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.value0" />
+      </Connection>
+      <Connection ID="22806" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.value2" />
+      </Connection>
+      <Connection ID="22807" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="d8fba5ba-a750-46a7-a482-6db542eb6073.Table.value3" />
+      </Connection>
+      <Connection ID="22808" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Starttime_trend" />
+      </Connection>
+      <Connection ID="22809" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="Endtime_trend" />
+      </Connection>
+      <Connection ID="22810" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="22811" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="23027" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="23028" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="23029" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="23030" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="23031" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23032" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23033" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23034" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23258" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="23259" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="23260" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23261" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23262" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value6" />
+      </Connection>
+      <Connection ID="23263" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value7" />
+      </Connection>
+      <Connection ID="23264" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="23265" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25114" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25115" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25127" Type="ConstantConnection" LanguageConversion="false" Constant="\" />
+      <Connection ID="25129" Type="ConstantConnection" LanguageConversion="false" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25130" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="25131" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="25132" Type="ConstantConnection" LanguageConversion="false" Constant="Report" />
+      <Connection ID="25134" Type="ConstantConnection" LanguageConversion="false" Constant="Starttime" />
+      <Connection ID="25135" Type="ConstantConnection" LanguageConversion="false" Constant="Enter a value" />
+      <Connection ID="25136" Type="ConstantConnection" LanguageConversion="false" Constant="st" />
+      <Connection ID="25137" Type="ConstantConnection" LanguageConversion="false" Constant="Starttime_trend" />
+      <Connection ID="25139" Type="ConstantConnection" LanguageConversion="false" Constant="et" />
+      <Connection ID="25140" Type="ConstantConnection" LanguageConversion="false" Constant="Endtime_trend" />
+      <Connection ID="25141" Type="ConstantConnection" LanguageConversion="false" Constant="st" />
+      <Connection ID="25142" Type="ConstantConnection" LanguageConversion="false" Constant="Starttime_trend" />
+      <Connection ID="25144" Type="ConstantConnection" LanguageConversion="false" Constant="et" />
+      <Connection ID="25147" Type="ConstantConnection" LanguageConversion="false" Constant="Endtime_trend" />
+      <Connection ID="25148" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25149" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25150" Type="ConstantConnection" LanguageConversion="False" Constant="\" />
+      <Connection ID="25151" Type="ConstantConnection" LanguageConversion="False" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25152" Type="ConstantConnection" LanguageConversion="False" Constant="Report" />
+      <Connection ID="25153" Type="ConstantConnection" LanguageConversion="False" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP UUNI1 POLTTOJAKSO" />
+      <Connection ID="25154" Type="ConstantConnection" LanguageConversion="False" Constant="st" />
+      <Connection ID="25155" Type="ConstantConnection" LanguageConversion="False" Constant="Starttime_trend" />
+      <Connection ID="25156" Type="ConstantConnection" LanguageConversion="False" Constant="et" />
+      <Connection ID="25157" Type="ConstantConnection" LanguageConversion="False" Constant="Endtime_trend" />
+      <Connection ID="25158" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25159" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25160" Type="ConstantConnection" LanguageConversion="False" Constant="\" />
+      <Connection ID="25161" Type="ConstantConnection" LanguageConversion="False" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25162" Type="ConstantConnection" LanguageConversion="False" Constant="Report" />
+      <Connection ID="25164" Type="ConstantConnection" LanguageConversion="False" Constant="st" />
+      <Connection ID="25165" Type="ConstantConnection" LanguageConversion="False" Constant="Starttime_trend" />
+      <Connection ID="25166" Type="ConstantConnection" LanguageConversion="False" Constant="et" />
+      <Connection ID="25167" Type="ConstantConnection" LanguageConversion="False" Constant="Endtime_trend" />
+      <Connection ID="25168" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25169" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25170" Type="ConstantConnection" LanguageConversion="False" Constant="\" />
+      <Connection ID="25171" Type="ConstantConnection" LanguageConversion="False" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25172" Type="ConstantConnection" LanguageConversion="False" Constant="Report" />
+      <Connection ID="25173" Type="ConstantConnection" LanguageConversion="False" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP UUNI1 POLTTOJAKSO" />
+      <Connection ID="25174" Type="ConstantConnection" LanguageConversion="False" Constant="st" />
+      <Connection ID="25175" Type="ConstantConnection" LanguageConversion="False" Constant="Starttime_trend" />
+      <Connection ID="25176" Type="ConstantConnection" LanguageConversion="False" Constant="et" />
+      <Connection ID="25177" Type="ConstantConnection" LanguageConversion="False" Constant="Endtime_trend" />
+      <Connection ID="25178" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25179" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25180" Type="ConstantConnection" LanguageConversion="False" Constant="\" />
+      <Connection ID="25181" Type="ConstantConnection" LanguageConversion="False" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25182" Type="ConstantConnection" LanguageConversion="False" Constant="Report" />
+      <Connection ID="25184" Type="ConstantConnection" LanguageConversion="False" Constant="st" />
+      <Connection ID="25185" Type="ConstantConnection" LanguageConversion="False" Constant="Starttime_trend" />
+      <Connection ID="25186" Type="ConstantConnection" LanguageConversion="False" Constant="et" />
+      <Connection ID="25187" Type="ConstantConnection" LanguageConversion="False" Constant="Endtime_trend" />
+      <Connection ID="25188" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP TUOTANTO" />
+      <Connection ID="25189" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP UUNI1 POLTTOJAKSO" />
+      <Connection ID="25190" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP UUNI1 POLTTOJAKSO" />
+      <Connection ID="25192" Type="ConstantConnection" LanguageConversion="false" Constant="Drag and drop data item here from the Fields Explorer" />
+      <Connection ID="25193" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP TUOTANTO" />
+      <Connection ID="25196" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Kalkinpoltto\aliraportit\KP UUNI1 POLTTOJAKSO" />
+      <Connection ID="25200" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25201" Type="ConstantConnection" LanguageConversion="False" Constant="" />
+      <Connection ID="25202" Type="ConstantConnection" LanguageConversion="False" Constant="\" />
+      <Connection ID="25203" Type="ConstantConnection" LanguageConversion="False" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="25204" Type="ConstantConnection" LanguageConversion="False" Constant="Report" />
+      <Connection ID="25206" Type="ConstantConnection" LanguageConversion="False" Constant="st" />
+      <Connection ID="25207" Type="ConstantConnection" LanguageConversion="False" Constant="Starttime_trend" />
+      <Connection ID="25208" Type="ConstantConnection" LanguageConversion="False" Constant="et" />
+      <Connection ID="25209" Type="ConstantConnection" LanguageConversion="False" Constant="Endtime_trend" />
+      <Connection ID="25517" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value8" />
+      </Connection>
+      <Connection ID="25518" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value9" />
+      </Connection>
+      <Connection ID="25519" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25520" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25830" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25831" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25832" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="25833" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="25834" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25835" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25836" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value3" />
+      </Connection>
+      <Connection ID="25837" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value4" />
+      </Connection>
+      <Connection ID="25838" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25839" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="25840" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25841" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="25842" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="26165" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="26166" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="26167" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value0" />
+      </Connection>
+      <Connection ID="26168" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value1" />
+      </Connection>
+      <Connection ID="26169" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.ts" />
+      </Connection>
+      <Connection ID="26170" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination_1.Values.value3" />
+      </Connection>
+      <Connection ID="26502" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="26503" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="26504" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+      <Connection ID="26506" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="26508" Type="ConstantConnection" LanguageConversion="false" Constant="http" />
+      <Connection ID="26509" Type="ConstantConnection" LanguageConversion="false" Constant="localhost" />
+      <Connection ID="26510" Type="ConstantConnection" LanguageConversion="false" Constant="dna/dnatracer" />
+      <Connection ID="26511" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="26512" Type="ConstantConnection" LanguageConversion="false" Constant="/_DNAuse/EventTrend" />
+      <Connection ID="26513" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagNameList2" />
+      </Connection>
+      <Connection ID="26514" Type="ConstantConnection" LanguageConversion="false" Constant="http" />
+      <Connection ID="26515" Type="ConstantConnection" LanguageConversion="false" Constant="localhost" />
+      <Connection ID="26516" Type="ConstantConnection" LanguageConversion="false" Constant="dna/dnatracer" />
+      <Connection ID="26517" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
+      <Connection ID="26518" Type="ConstantConnection" LanguageConversion="false" Constant="/_DNAuse/EventTrend" />
+      <Connection ID="26519" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
+      <Connection ID="26522" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="tagNameList2" />
+      </Connection>
+      <Connection ID="26868" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value12" />
+      </Connection>
+      <Connection ID="26869" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value11" />
+      </Connection>
+      <Connection ID="26870" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value14" />
+      </Connection>
+      <Connection ID="26871" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value13" />
+      </Connection>
+      <Connection ID="26872" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value14" />
+      </Connection>
+      <Connection ID="26873" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value11" />
+      </Connection>
+      <Connection ID="26874" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value12" />
+      </Connection>
+      <Connection ID="26875" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_sementtisiilot" />
+      <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
+      <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
+      <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />
+      <HyperLink ID="4" Protocol="25131" Host="25130" Path="25127" File="25129">
+        <UrlParameters Name="25132" Value="26875" Description="" />
+        <UrlParameters Name="25141" Value="25142" Description="" />
+        <UrlParameters Name="25144" Value="25147" Description="" />
+      </HyperLink>
+      <HyperLink ID="5" Protocol="25148" Host="25149" Path="25150" File="25151">
+        <UrlParameters Name="25152" Value="25153" Description="" />
+        <UrlParameters Name="25154" Value="25155" Description="" />
+        <UrlParameters Name="25156" Value="25157" Description="" />
+      </HyperLink>
+      <HyperLink ID="6" Protocol="25158" Host="25159" Path="25160" File="25161">
+        <UrlParameters Name="25162" Value="26876" Description="" />
+        <UrlParameters Name="25164" Value="25165" Description="" />
+        <UrlParameters Name="25166" Value="25167" Description="" />
+      </HyperLink>
+      <HyperLink ID="7" Protocol="25168" Host="25169" Path="25170" File="25171">
+        <UrlParameters Name="25172" Value="25173" Description="" />
+        <UrlParameters Name="25174" Value="25175" Description="" />
+        <UrlParameters Name="25176" Value="25177" Description="" />
+      </HyperLink>
+      <HyperLink ID="8" Protocol="25178" Host="25179" Path="25180" File="25181">
+        <UrlParameters Name="25182" Value="26877" Description="" />
+        <UrlParameters Name="25184" Value="25185" Description="" />
+        <UrlParameters Name="25186" Value="25187" Description="" />
+      </HyperLink>
+      <HyperLink ID="9" Protocol="25200" Host="25201" Path="25202" File="25203">
+        <UrlParameters Name="25204" Value="26878" Description="" />
+        <UrlParameters Name="25206" Value="25207" Description="" />
+        <UrlParameters Name="25208" Value="25209" Description="" />
+      </HyperLink>
+      <HyperLink ID="33" Protocol="26514" Host="26515" Path="26516" File="-1">
+        <UrlParameters Name="26517" Value="26518" Description="" />
+        <UrlParameters Name="26519" Value="26522" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

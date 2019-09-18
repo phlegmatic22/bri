@@ -1,0 +1,110 @@
+<eDNAproReports_Report>
+  <Report Name="Briketöinti menu_tuotantolaatu_testing3" ID="Briketöinti menu_tuotantolaatu_testing3" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-17T08:51:47" CreatedDate="2019-09-16T15:47:13" CreatedBy="INFOC2015\Administrator" Global="False" Template="False">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="Briketöinti menu_tuotantolaatu_testing3.rpx" ClassName="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
+        <DataSetParameter Name="periods" Ref="periods" Usage="HistoryPeriodList" />
+        <DataSetParameter Name="optionsList" Ref="optionsList" Usage="HistoryOptionList" />
+        <DataSetParameter Name="tagNameList" Ref="tagNameList" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="operationList" Ref="operationList" Usage="HistoryOperationList" />
+        <DataSetParameter Name="args1" Ref="$default/Query.BasicQueries.Extended.Combination.args1" Usage="Advanced" />
+        <DataSetParameter Name="args2" Ref="$default/Query.BasicQueries.Extended.Combination.args2" Usage="Advanced" />
+        <DataSetParameter Name="args3" Ref="$default/Query.BasicQueries.Extended.Combination.args3" Usage="Advanced" />
+        <DataSetParameter Name="args4" Ref="$default/Query.BasicQueries.Extended.Combination.args4" Usage="Advanced" />
+        <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="Advanced" />
+        <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="BRI_KONEELTA_U2:av Avg value (INFOC2015!BRI_KONEELTA_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="BRI_KONEELTA_U2:av Avg status (INFOC2015!BRI_KONEELTA_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="BRILKM_U2:av Avg value (INFOC2015!BRILKM_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="BRILKM_U2:av Avg status (INFOC2015!BRILKM_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="SEMENTTIOSUUS_U2:av Avg value (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="SEMENTTIOSUUS_U2:av Avg status (INFOC2015!SEMENTTIOSUUS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value3" ID="$default/Query.BasicQueries.Extended.Combination.Values.value3" DataType="System.Single" Caption="KAYNTIASTE_U2:av Avg value (INFOC2015!KAYNTIASTE_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status3" ID="$default/Query.BasicQueries.Extended.Combination.Values.status3" DataType="System.String" Caption="KAYNTIASTE_U2:av Avg status (INFOC2015!KAYNTIASTE_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value4" ID="$default/Query.BasicQueries.Extended.Combination.Values.value4" DataType="System.Single" Caption="HAIRIOAIKA_U2:av Avg value (INFOC2015!HAIRIOAIKA_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status4" ID="$default/Query.BasicQueries.Extended.Combination.Values.status4" DataType="System.String" Caption="HAIRIOAIKA_U2:av Avg status (INFOC2015!HAIRIOAIKA_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value5" ID="$default/Query.BasicQueries.Extended.Combination.Values.value5" DataType="System.Single" Caption="PANOSNUMERO_U2:av Param value (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status5" ID="$default/Query.BasicQueries.Extended.Combination.Values.status5" DataType="System.String" Caption="PANOSNUMERO_U2:av Param status (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-7:-8:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start time" Usage="RelativeStartTime" Overridable="True" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:-7:*:*:*" HeaderControl="" Editable="true" Mapping="Runtime" Description="End time" Usage="RelativeEndTime" Overridable="True" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="01:00:00&#xD;&#xA;01:00:00&#xD;&#xA;01:00:00&#xD;&#xA;01:00:00&#xD;&#xA;01:00:00&#xD;&#xA;00:10:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START&#xD;&#xA;TS_START&#xD;&#xA;TS_START&#xD;&#xA;TS_START&#xD;&#xA;TS_START&#xD;&#xA;ACTUAL" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="BRI_KONEELTA_U2:av&#xD;&#xA;BRILKM_U2:av&#xD;&#xA;SEMENTTIOSUUS_U2:av&#xD;&#xA;KAYNTIASTE_U2:av&#xD;&#xA;HAIRIOAIKA_U2:av&#xD;&#xA;PANOSNUMERO_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg&#xD;&#xA;Avg&#xD;&#xA;Avg&#xD;&#xA;Avg&#xD;&#xA;Avg&#xD;&#xA;Param" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+    </Parameters>
+    <Connections>
+      <Connection ID="0" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="ReportName" />
+      </Connection>
+      <Connection ID="1" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="startTime" />
+      </Connection>
+      <Connection ID="2" Type="ParameterConnection" LanguageConversion="false" Constant="">
+        <ParameterConnection ParameterName="endTime" />
+      </Connection>
+      <Connection ID="3" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintDate" />
+      </Connection>
+      <Connection ID="4" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
+        <SpecialFieldConnection SpecialFieldName="PrintTime" />
+      </Connection>
+      <Connection ID="15" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="16" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="17" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="18" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value0" />
+      </Connection>
+      <Connection ID="19" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value1" />
+      </Connection>
+      <Connection ID="20" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$DNAhistorian/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="33646" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
+      </Connection>
+      <Connection ID="33659" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value5" />
+      </Connection>
+      <Connection ID="33660" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+      <Connection ID="33661" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value2" />
+      </Connection>
+    </Connections>
+    <HyperLinks />
+    <UserRights>
+      <UserRole Name="IA_CONFIG" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+      <UserRole Name="IA_USER" Read="True" Write="True" Operate="True">
+        <Description />
+      </UserRole>
+    </UserRights>
+  </Report>
+</eDNAproReports_Report>
