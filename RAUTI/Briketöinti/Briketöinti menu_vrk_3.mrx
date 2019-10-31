@@ -1,11 +1,12 @@
 <eDNAproReports_Report>
   <Report Name="Briketöinti menu_vrk_3" ID="Briketöinti menu_vrk_3" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-17T12:41:21" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-11T12:38:52" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
     <Viewer ReportName="Briketöinti menu_vrk_3.rpx" ClassName="Layout" Layout="" />
     <Header ClassName="BaseTimeLine.ascx" />
+	<Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
     <DataSources>
       <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
         <Data />
@@ -60,20 +61,39 @@
           <DataField Name="status17" ID="$default/Query.BasicQueries.Extended.Combination.Values.status17" DataType="System.String" Caption="BRI_KONEELTA_U3:av Avg status (INFOC2015!BRI_KONEELTA_U3:av)" Description="" FriendlyName="" Expression="" />
         </DataTable>
       </DataSet>
+      <DataSet ID="$default/Histogram.Histogram1.GetHistogram" ProviderInfo="$default/Histogram.Histogram1" Method="GetHistogram" Description="" FriendlyName="GetHistogram" ProviderType="" Order="1" Enabled="true">
+        <Data />
+        <DataSetParameter Name="startTime" Ref="startTime" Usage="" />
+        <DataSetParameter Name="endTime" Ref="endTime" Usage="" />
+        <DataSetParameter Name="tag" Ref="tag" Usage="" />
+        <DataSetParameter Name="min" Ref="$default/Histogram.Histogram1.GetHistogram.min" Usage="" />
+        <DataSetParameter Name="max" Ref="$default/Histogram.Histogram1.GetHistogram.max" Usage="" />
+        <DataSetParameter Name="steps" Ref="$default/Histogram.Histogram1.GetHistogram.steps" Usage="" />
+        <DataSetParameter Name="timesteps" Ref="$default/Histogram.Histogram1.GetHistogram.timesteps" Usage="" />
+        <DataTable Name="Table" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="midpoint" ID="$default/Histogram.Histogram1.GetHistogram.Table.midpoint" DataType="System.Single" Caption="midpoint" Description="" FriendlyName="" Expression="" />
+          <DataField Name="count" ID="$default/Histogram.Histogram1.GetHistogram.Table.count" DataType="System.Single" Caption="count" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
     </DataSources>
     <Parameters>
-      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U3:av&#xD;&#xA;AVSUHDEVRK_U3:av&#xD;&#xA;BRI_ULOS_U3:av&#xD;&#xA;BRIKETIN_KORKEUS_U3:av&#xD;&#xA;BRILKM_U3:av&#xD;&#xA;HAIRIOAIKA_U3:av&#xD;&#xA;KAYNTIASTE_U3:av&#xD;&#xA;KOSTEUSMITTAUS_U3:av&#xD;&#xA;LISAVESI_U3:av&#xD;&#xA;MAT_KOSTEUS_U3:av&#xD;&#xA;PANOSNUMERO_U3:av&#xD;&#xA;PINTA1_PROS_U3:av&#xD;&#xA;PINTA1_TON_U3:av&#xD;&#xA;PINTA2_PROS_U3:av&#xD;&#xA;PINTA2_TON_U3:av&#xD;&#xA;RUMPULUJUUS_U3:av&#xD;&#xA;SEMENTTIOSUUS_U3:av&#xD;&#xA;BRI_KONEELTA_U3:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:-1:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="0" />
+      <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2" />
+      <Parameter Name="optionsList" Type="System.String[]" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="3" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U3:av&#xD;&#xA;AVSUHDEVRK_U3:av&#xD;&#xA;BRI_ULOS_U3:av&#xD;&#xA;BRIKETIN_KORKEUS_U3:av&#xD;&#xA;BRILKM_U3:av&#xD;&#xA;HAIRIOAIKA_U3:av&#xD;&#xA;KAYNTIASTE_U3:av&#xD;&#xA;KOSTEUSMITTAUS_U3:av&#xD;&#xA;LISAVESI_U3:av&#xD;&#xA;MAT_KOSTEUS_U3:av&#xD;&#xA;PANOSNUMERO_U3:av&#xD;&#xA;PINTA1_PROS_U3:av&#xD;&#xA;PINTA1_TON_U3:av&#xD;&#xA;PINTA2_PROS_U3:av&#xD;&#xA;PINTA2_TON_U3:av&#xD;&#xA;RUMPULUJUUS_U3:av&#xD;&#xA;SEMENTTIOSUUS_U3:av&#xD;&#xA;BRI_KONEELTA_U3:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="4" />
+      <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="5" />
+      <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="6" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args2" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args3" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args4" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args5" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="tag" Type="System.String" InitialValue="PANOSNUMERO_U3:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="tag" Usage="" Overridable="True" Group="" DisplayIndex="7" />
+      <Parameter Name="$default/Histogram.Histogram1.GetHistogram.min" Type="System.Single" InitialValue="0" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Histogram.Histogram1.GetHistogram.max" Type="System.Single" InitialValue="150" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Histogram.Histogram1.GetHistogram.steps" Type="System.Int32" InitialValue="10" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
+      <Parameter Name="$default/Histogram.Histogram1.GetHistogram.timesteps" Type="System.Int32" InitialValue="150" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="" Overridable="False" Group="" DisplayIndex="-1" />
     </Parameters>
     <Connections>
       <Connection ID="5" Type="DataFieldConnection" LanguageConversion="false" Constant="">
@@ -946,10 +966,6 @@
       <Connection ID="26874" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value12" />
       </Connection>
-      <Connection ID="26875" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_sementtisiilot" />
-      <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
-      <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
-      <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
       <Connection ID="27935" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
       </Connection>
@@ -1010,11 +1026,21 @@
       <Connection ID="30316" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value5" />
       </Connection>
+      <Connection ID="47331" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_sementtisiilot_3" />
+      <Connection ID="47332" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_tuotantolaatu_3" />
+      <Connection ID="47333" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_vrk_3" />
+      <Connection ID="47334" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_annosvaaka_3" />
+      <Connection ID="47707" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Histogram.Histogram1.GetHistogram.Table.midpoint" />
+      </Connection>
+      <Connection ID="47708" Type="DataFieldConnection" LanguageConversion="false" Constant="">
+        <DataFieldConnection DataFieldID="$default/Histogram.Histogram1.GetHistogram.Table.count" />
+      </Connection>
     </Connections>
     <HyperLinks>
       <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />
       <HyperLink ID="4" Protocol="25131" Host="25130" Path="25127" File="25129">
-        <UrlParameters Name="25132" Value="26875" Description="" />
+        <UrlParameters Name="25132" Value="47331" Description="" />
         <UrlParameters Name="25141" Value="25142" Description="" />
         <UrlParameters Name="25144" Value="25147" Description="" />
       </HyperLink>
@@ -1024,7 +1050,7 @@
         <UrlParameters Name="25156" Value="25157" Description="" />
       </HyperLink>
       <HyperLink ID="6" Protocol="25158" Host="25159" Path="25160" File="25161">
-        <UrlParameters Name="25162" Value="26876" Description="" />
+        <UrlParameters Name="25162" Value="47332" Description="" />
         <UrlParameters Name="25164" Value="25165" Description="" />
         <UrlParameters Name="25166" Value="25167" Description="" />
       </HyperLink>
@@ -1034,12 +1060,12 @@
         <UrlParameters Name="25176" Value="25177" Description="" />
       </HyperLink>
       <HyperLink ID="8" Protocol="25178" Host="25179" Path="25180" File="25181">
-        <UrlParameters Name="25182" Value="26877" Description="" />
+        <UrlParameters Name="25182" Value="47333" Description="" />
         <UrlParameters Name="25184" Value="25185" Description="" />
         <UrlParameters Name="25186" Value="25187" Description="" />
       </HyperLink>
       <HyperLink ID="9" Protocol="25200" Host="25201" Path="25202" File="25203">
-        <UrlParameters Name="25204" Value="26878" Description="" />
+        <UrlParameters Name="25204" Value="47334" Description="" />
         <UrlParameters Name="25206" Value="25207" Description="" />
         <UrlParameters Name="25208" Value="25209" Description="" />
       </HyperLink>

@@ -1,0 +1,33 @@
+<eDNAproReports_Report>
+  <Report Name="test" ID="test" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-21T15:20:56" CreatedDate="2019-10-21T14:00:42" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="test.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters />
+	<Connections>
+	<Connection ID="25131" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+	<Connection ID="25130" Type="ConstantConnection" LanguageConversion="false" Constant="" />
+	<Connection ID="25127" Type="ConstantConnection" LanguageConversion="false" Constant="\" />
+	<Connection ID="25129" Type="ConstantConnection" LanguageConversion="false" Constant="/DNA/DNAReport/Viewer.aspx" />
+    <Connection ID="25132" Type="ConstantConnection" LanguageConversion="false" Constant="Report" />
+    <Connection ID="25141" Type="ConstantConnection" LanguageConversion="false" Constant="st" />
+    <Connection ID="25142" Type="ConstantConnection" LanguageConversion="false" Constant="Starttime_trend" />
+    <Connection ID="25144" Type="ConstantConnection" LanguageConversion="false" Constant="et" />
+    <Connection ID="25147" Type="ConstantConnection" LanguageConversion="false" Constant="Endtime_trend" />
+	<Connection ID="47331" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_sementtisiilot_3" />
+	<Connections />
+	
+	<HyperLinks>
+	<HyperLink ID="4" Protocol="25131" Host="25130" Path="25127" File="25129">
+        <UrlParameters Name="25132" Value="47331" Description="" />
+        <UrlParameters Name="25141" Value="25142" Description="" />
+        <UrlParameters Name="25144" Value="25147" Description="" />
+      </HyperLink>
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

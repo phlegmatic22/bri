@@ -1,0 +1,41 @@
+<eDNAproReports_Report>
+  <Report Name="test3" ID="test3" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-22T08:43:30" CreatedDate="2019-10-22T08:42:06" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="test3.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources>
+      <DataSet ID="$default/Query.BasicQueries.Information.TagInformation_List" ProviderInfo="$default/Query.BasicQueries.Information" Method="TagInformation_List" Description="" FriendlyName="TagInformation_List" ProviderType="" Order="0" Enabled="true">
+        <Data />
+        <DataSetParameter Name="tagNames" Ref="tagNames" Usage="HistoryTagNameList" />
+        <DataSetParameter Name="options" Ref="options" Usage="HistoryOption" />
+        <DataTable Name="Tag" Description="" FriendlyName="" Filter="" OrderBy="">
+          <DataField Name="DataSource" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.DataSource" DataType="System.String" Caption="DataSource" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagName" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.TagName" DataType="System.String" Caption="TagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ShortTagName" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.ShortTagName" DataType="System.String" Caption="ShortTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="OriginalTagName" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.OriginalTagName" DataType="System.String" Caption="OriginalTagName" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Description" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Description" DataType="System.String" Caption="Description" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Department" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Department" DataType="System.String" Caption="Department" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessArea" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.ProcessArea" DataType="System.String" Caption="ProcessArea" Description="" FriendlyName="" Expression="" />
+          <DataField Name="ProcessHierarchy" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.ProcessHierarchy" DataType="System.String" Caption="ProcessHierarchy" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Unit" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Unit" DataType="System.String" Caption="Unit" Description="" FriendlyName="" Expression="" />
+          <DataField Name="TagType" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.TagType" DataType="System.String" Caption="TagType" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Min" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Min" DataType="System.Double" Caption="Min" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Max" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Max" DataType="System.Double" Caption="Max" Description="" FriendlyName="" Expression="" />
+          <DataField Name="Value" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.Value" DataType="System.Single" Caption="Value" Description="" FriendlyName="" Expression="" />
+          <DataField Name="InterpolationMode" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.InterpolationMode" DataType="System.String" Caption="InterpolationMode" Description="" FriendlyName="" Expression="" />
+          <DataField Name="MainTagName" ID="$default/Query.BasicQueries.Information.TagInformation_List.Tag.MainTagName" DataType="System.String" Caption="MainTagName" Description="" FriendlyName="" Expression="" />
+        </DataTable>
+      </DataSet>
+    </DataSources>
+    <Parameters>
+      <Parameter Name="options" Type="System.String" InitialValue="TS_START" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options" Usage="HistoryOption" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNames" Type="System.String[]" InitialValue="P" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag names" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+    </Parameters>
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

@@ -6,6 +6,7 @@
     </Info>
     <Viewer ReportName="Briketöinti menu_tuotantolaatu_testing3.rpx" ClassName="Layout" Layout="" />
     <Header ClassName="BaseTimeLine.ascx" />
+	<Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
     <DataSources>
       <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
         <Data />

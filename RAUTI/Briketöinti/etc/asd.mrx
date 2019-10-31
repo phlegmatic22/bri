@@ -1,0 +1,24 @@
+<eDNAproReports_Report>
+  <Report Name="asd" ID="asd" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-21T15:44:35" CreatedDate="2019-10-21T15:42:11" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="asd.rpx" ClassName="Layout" Layout="" />
+    <Header ClassName="BaseTimeLine.ascx" />
+    <DataSources />
+    <Parameters />
+    <Connections>
+      <Connection ID="0" Type="ConstantConnection" LanguageConversion="false" Constant="\" />
+      <Connection ID="1" Type="ConstantConnection" LanguageConversion="false" Constant="/DNA/DNAReport/Viewer.aspx" />
+      <Connection ID="2" Type="ConstantConnection" LanguageConversion="false" Constant="bla" />
+      <Connection ID="3" Type="ConstantConnection" LanguageConversion="false" Constant="123" />
+    </Connections>
+    <HyperLinks>
+      <HyperLink ID="1" Protocol="-1" Host="-1" Path="0" File="1">
+        <UrlParameters Name="2" Value="3" Description="" />
+      </HyperLink>
+    </HyperLinks>
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

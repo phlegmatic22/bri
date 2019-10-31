@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Height="34400" BackColor="16777215" />
+    <Section Type="PageHeader" Name="PageHeader1" Height="360" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail1" Height="360" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[static System.Drawing.Color serieColor1 = System.Drawing.Color.Red;
+static System.Drawing.Color serieColor2 = System.Drawing.Color.Blue;
+static System.Drawing.Color serieColor3 = System.Drawing.Color.Black;
+static System.Drawing.Color serieColor4 = System.Drawing.Color.Green;
+
+static System.Drawing.Color backColor = System.Drawing.Color.White;
+
+static int labelFontSize = 12;
+static int titleFontSize = 12;
+
+static int lineWidth = 2;
+const int graphCount = 4;
+static string[] graphTitles = new string[graphCount]{"Kuvaaja1","Kuvaaja2","Kuvaaja3","Kuvaaja4"};
+
+static string[] titles1 = new string[] {"Mittaus1","Mittaus2","Mittaus3","Mittaus4","Aika"};
+static string[] titles2 = new string[] {"Mittaus1","Mittaus2","Mittaus3","Aika"};
+static string[] titles3 = new string[] {"Mittaus1","Mittaus2","Mittaus3","Mittaus4","Aika"};
+static string[] titles4 = new string[] {"Mittaus1","Mittaus2","Mittaus3","Mittaus4","Aika"};
+
+static string[][] titlesList = new string[][]{titles1,titles2,titles3,titles4};
+
+static int[][] limitsAndIncrement1 = new int[][]{new int[]{500, 0, 25},new int[]{200, 0, 25},new int[]{250, 0, 25},new int[]{200, 0, 25}};
+static int[][] limitsAndIncrement2 = new int[][]{new int[]{500, 0, 25},new int[]{200, 0, 25},new int[]{250, 0, 25},new int[]{200, 0, 25}};
+static int[][] limitsAndIncrement3 = new int[][]{new int[]{500, 0, 25},new int[]{200, 0, 25},new int[]{250, 0, 25},new int[]{200, 0, 25}};
+static int[][] limitsAndIncrement4 = new int[][]{new int[]{500, 0, 25},new int[]{200, 0, 25},new int[]{250, 0, 25},new int[]{200, 0, 25}};
+
+
+static int[][][] limitsAndIncrementsList = new int[][][]{limitsAndIncrement4,limitsAndIncrement4,limitsAndIncrement4,limitsAndIncrement4};
+
+float spacer = 1.5f;
+float yStart = 2.0f;
+float graphHeight = 4.0f ;
+float xStart = 0.2f;
+float graphWidth = 12.0f;
+
+public void ActiveReport_ReportStart()
+{
+
+	setReportConfigs();
+
+	System.Data.DataSet ds = getHistoryData();
+
+
+	DataDynamics.ActiveReports.CustomControl cc1 = new  DataDynamics.ActiveReports.	CustomControl(new Steema.TeeChart.TChart().GetType());	
+	Steema.TeeChart.TChart chart1 = (Steema.TeeChart.TChart) cc1.Control; 
+	
+	DataDynamics.ActiveReports.CustomControl cc2 = new  DataDynamics.ActiveReports.	CustomControl(new Steema.TeeChart.TChart().GetType());	
+	Steema.TeeChart.TChart chart2 = (Steema.TeeChart.TChart) cc2.Control; 
+	
+	DataDynamics.ActiveReports.CustomControl cc3 = new  DataDynamics.ActiveReports.	CustomControl(new Steema.TeeChart.TChart().GetType());	
+	Steema.TeeChart.TChart chart3 = (Steema.TeeChart.TChart) cc3.Control; 
+	
+	DataDynamics.ActiveReports.CustomControl cc4 = new  DataDynamics.ActiveReports.	CustomControl(new Steema.TeeChart.TChart().GetType());	
+	Steema.TeeChart.TChart chart4 = (Steema.TeeChart.TChart) cc4.Control; 
+	
+
+	//cc1.Name = "CustomControl1";
+	//cc2.Name = "CustomControl2";
+	//cc3.Name = "CustomControl3";
+	//cc4.Name = "CustomControl4";
+	
+	//rpt.Sections["ReportHeader1"].Controls.Add(cc1);
+	//rpt.Sections["ReportHeader1"].Controls.Add(cc2);
+	//rpt.Sections["ReportHeader1"].Controls.Add(cc3);
+	//rpt.Sections["ReportHeader1"].Controls.Add(cc4);
+	
+	
+	CustomControl[] ccList = new CustomControl[4]{cc1,cc2,cc3,cc4};
+
+	
+	Steema.TeeChart.TChart[] chartList = new Steema.TeeChart.TChart[4]{chart1,chart2,chart3,chart4};
+	
+
+	
+	for (int i = 0; i <4; i++){
+	
+
+		CustomControl currControl = ccList[i];
+
+		Steema.TeeChart.TChart currChart = chartList[i];
+
+		currControl.Height = graphHeight;
+		currControl.Width = graphWidth;
+		currControl.Left = xStart;
+		currControl.Top = yStart + i * (graphHeight + spacer);
+		
+
+		currChart.Panel.MarginBottom = 5;
+		currChart.Panel.MarginLeft = 8;
+		currChart.Panel.MarginRight = 8;
+		currChart.Panel.MarginTop = 5;
+
+		currChart.Header.Visible = true;
+		currChart.Header.Text = graphTitles[i];
+
+		currChart.Header.Font.Size = 15;
+		currChart.Header.Font.Color = System.Drawing.Color.Black;
+		currChart.BackColor = backColor;
+		
+		currChart.Legend.Visible = false;
+		currChart.Aspect.View3D = false;	
+		currChart.Legend.Visible = false;
+		currChart.Legend.Alignment = Steema.TeeChart.LegendAlignments.Bottom;
+		currChart.Legend.Shadow.Visible = false;
+		currChart.Panel.Brush.Visible = true;
+		currChart.Panel.Bevel.Inner = Steema.TeeChart.Drawing.BevelStyles.None;
+		currChart.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
+
+		createCustomAxes(currChart);
+		formatLines(currChart, ds);
+		formatAxes(currChart, i);
+
+		hideUnusedAxes(currChart, titlesList[i].Length - 1);
+
+		rpt.Sections["ReportHeader1"].Controls.Add(currControl);
+
+
+
+	}
+
+	
+}
+
+public void formatAxes(Steema.TeeChart.TChart chart, int orderNr){
+	
+	chart.Axes.Bottom.Labels.DateTimeFormat = "hh:mm ddd";
+	
+	chart.Axes.Bottom.Title.Font.Size = titleFontSize;
+	chart.Axes.Left.Title.Font.Size = titleFontSize;
+	chart.Axes.Custom[0].Title.Font.Size = titleFontSize;
+	chart.Axes.Custom[1].Title.Font.Size = titleFontSize;
+	chart.Axes.Right.Title.Font.Size = titleFontSize;
+	
+	chart.Axes.Left.Labels.Font.Size = labelFontSize;
+	chart.Axes.Right.Labels.Font.Size = labelFontSize;
+	chart.Axes.Custom[0].Labels.Font.Size = labelFontSize;
+	chart.Axes.Custom[1].Labels.Font.Size = labelFontSize;
+	chart.Axes.Bottom.Labels.Font.Size = labelFontSize;
+	
+	chart.Axes.Custom[0].OtherSide = false;
+	chart.Axes.Custom[1].OtherSide = true;
+	
+	chart.Axes.Custom[0].RelativePosition = -8;
+	chart.Axes.Custom[1].RelativePosition = -8;
+	
+	chart.Axes.Left.Title.Text = titlesList[orderNr][0];
+
+	if(titlesList[orderNr].Length - 1 >= 2){
+		chart.Axes.Right.Title.Text = titlesList[orderNr][1];
+	}
+	if(titlesList[orderNr].Length - 1 >= 3){
+		chart.Axes.Custom[0].Title.Text = titlesList[orderNr][2];
+	}
+	if(titlesList[orderNr].Length - 1 == 4){
+		chart.Axes.Custom[1].Title.Text = titlesList[orderNr][3];
+	}
+	chart.Axes.Bottom.Title.Text = titlesList[orderNr][titlesList[orderNr].Length - 1];
+	
+	chart.Axes.Left.Labels.Font.Color = serieColor1;
+	chart.Axes.Right.Labels.Font.Color = serieColor2;
+	chart.Axes.Custom[0].Labels.Font.Color = serieColor3;
+	chart.Axes.Custom[1].Labels.Font.Color = serieColor4;
+	
+	chart.Axes.Left.Title.Font.Color = serieColor1;
+	chart.Axes.Right.Title.Font.Color = serieColor2;
+	chart.Axes.Custom[0].Title.Font.Color = serieColor3;
+	chart.Axes.Custom[1].Title.Font.Color = serieColor4;
+
+	
+	chart.Axes.Left.Title.Angle = 90;
+	chart.Axes.Right.Title.Angle = 270;
+	chart.Axes.Custom[0].Title.Angle = 90;
+	chart.Axes.Custom[1].Title.Angle = 270;
+	
+	chart.Axes.Left.Automatic = false;
+	chart.Axes.Left.AutomaticMaximum = false;
+	chart.Axes.Left.AutomaticMinimum = false;
+	chart.Axes.Right.Automatic = false;
+	chart.Axes.Right.AutomaticMaximum = false;
+	chart.Axes.Right.AutomaticMinimum = false;
+	chart.Axes.Custom[0].Automatic = false;
+	chart.Axes.Custom[0].AutomaticMaximum = false;
+	chart.Axes.Custom[0].AutomaticMinimum = false;
+	chart.Axes.Custom[1].Automatic = false;
+	chart.Axes.Custom[1].AutomaticMaximum = false;
+	chart.Axes.Custom[1].AutomaticMinimum = false;
+
+	chart.Axes.Left.Maximum = limitsAndIncrementsList[orderNr][0][0];
+	chart.Axes.Left.Minimum = limitsAndIncrementsList[orderNr][0][1];
+	chart.Axes.Left.Increment = limitsAndIncrementsList[orderNr][0][2];
+	
+	chart.Axes.Right.Maximum = limitsAndIncrementsList[orderNr][1][0];
+	chart.Axes.Right.Minimum = limitsAndIncrementsList[orderNr][1][1];
+	chart.Axes.Right.Increment = limitsAndIncrementsList[orderNr][1][2];
+	
+	chart.Axes.Custom[0].Maximum = limitsAndIncrementsList[orderNr][2][0];
+	chart.Axes.Custom[0].Minimum = limitsAndIncrementsList[orderNr][2][1];
+	chart.Axes.Custom[0].Increment = limitsAndIncrementsList[orderNr][2][2];
+	
+	chart.Axes.Custom[1].Maximum = limitsAndIncrementsList[orderNr][3][0];
+	chart.Axes.Custom[1].Minimum = limitsAndIncrementsList[orderNr][3][1];
+	chart.Axes.Custom[1].Increment = limitsAndIncrementsList[orderNr][3][2];
+	
+	chart.Series[1].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Right;
+	chart.Series[1].HorizAxis = Steema.TeeChart.Styles.HorizontalAxis.Bottom;
+	
+	chart.Series[2].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Custom;
+	chart.Series[2].HorizAxis = Steema.TeeChart.Styles.HorizontalAxis.Bottom;
+	
+	chart.Series[3].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Custom;
+	chart.Series[3].HorizAxis = Steema.TeeChart.Styles.HorizontalAxis.Bottom;
+
+}
+
+public void formatLines(Steema.TeeChart.TChart chart, System.Data.DataSet ds){
+	
+	Steema.TeeChart.Styles.Line line = new Steema.TeeChart.Styles.Line();
+	Steema.TeeChart.Styles.Line line2 = new Steema.TeeChart.Styles.Line();
+	Steema.TeeChart.Styles.Line line3 = new Steema.TeeChart.Styles.Line();
+	Steema.TeeChart.Styles.Line line4 = new Steema.TeeChart.Styles.Line();
+
+	line.DataSource = ds.Tables["Values"];
+	line2.DataSource = ds.Tables["Values"];	
+	line3.DataSource = ds.Tables["Values"];
+	line4.DataSource = ds.Tables["Values"];
+	
+	line.LinePen.Width = lineWidth;
+	line2.LinePen.Width = lineWidth;
+	line3.LinePen.Width = lineWidth;
+	line4.LinePen.Width = lineWidth;
+	
+	line.XValues.DataMember = "ts";
+	line.XValues.DateTime = true;
+	line.YValues.DataMember = "value0";
+	line.CheckDataSource();
+	line.Color = serieColor1;
+	
+	line2.XValues.DataMember = "ts";
+	line2.XValues.DateTime = true;
+	line2.YValues.DataMember = "value1";
+	line2.CheckDataSource();
+	line2.Color = serieColor2;
+	
+	line3.XValues.DataMember = "ts";
+	line3.XValues.DateTime = true;
+	line3.YValues.DataMember = "value2";
+	line3.CheckDataSource();
+	line3.Color = serieColor3;
+	
+	line4.XValues.DataMember = "ts";
+	line4.XValues.DateTime = true;
+	line4.YValues.DataMember = "value3";
+	line4.CheckDataSource();
+	line4.Color = serieColor4;
+	
+	line3.CustomVertAxis = chart.Axes.Custom[0];
+	line4.CustomVertAxis = chart.Axes.Custom[1];
+	
+	
+	chart.Series.Add(line);
+	chart.Series.Add(line2);
+	chart.Series.Add(line3);
+	chart.Series.Add(line4);
+
+}
+
+public System.Data.DataSet getHistoryData(){
+	
+	Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject dobj = 
+		(Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject) Metso.DNA.IA.DNAdata.RemoteUtils.CreateRemote("DNAdataObject");
+	
+	string startTimeSTR = g_Parameters[0];
+	string endTimeSTR = g_Parameters[1];
+	string dateFormat = "M/d/yyyy h:mm:ss tt";
+
+	DateTime startTime = DateTime.Parse(startTimeSTR);
+	DateTime endTime = DateTime.Parse(endTimeSTR);
+	
+
+	string[] period = new string[1];
+	period[0] = "1:00:00";
+	string[] optionsList = new string[1];
+	optionsList[0] = "TS_START";
+	string[] tagNameList = new string[4];
+	tagNameList[0] = "sim1m_1";
+	tagNameList[1] = "sim1m_2";
+	tagNameList[2] = "sim1m_5";
+	tagNameList[3] = "sim1m_6";
+	string[] operationList = new string[1];
+	operationList[0] = "avg";
+
+	
+	System.Data.DataSet data = (System.Data.DataSet) (dobj.InvokeMethod("Combination", "localhost" + "/Query.BasicQueries.Extended", null, startTime, endTime, period, optionsList, tagNameList, operationList, new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}));
+	
+	if(data.Tables.Count == 0)
+	{
+		throw new Exception("No data");
+	}
+	
+	return data;
+}
+public void createCustomAxes(Steema.TeeChart.TChart chart){
+	
+	Steema.TeeChart.Axis Custom0 = new Steema.TeeChart.Axis(chart.Chart);
+	Steema.TeeChart.Axis Custom1 = new Steema.TeeChart.Axis(chart.Chart);
+	
+	Custom0.AxisPen.Visible = true;
+	Custom0.Grid.Visible = false;
+	
+	Custom1.AxisPen.Visible = true;
+	Custom1.Grid.Visible = false;
+	
+	chart.Axes.Left.Grid.Visible = true;
+	chart.Axes.Right.Grid.Visible = false;
+	
+	chart.Axes.Custom.Add(Custom0);
+	chart.Axes.Custom.Add(Custom1);
+}
+
+public void setReportConfigs(){
+
+	// Custom printer settings: fixes broken charts that are in page break position
+	rpt.Document.Printer.PrinterName = "";
+	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+	// Config -> 35000 so graphs place evenly (one tall paper), might break printing somehow
+	rpt.Document.Printer.PaperSize = new System.Drawing.Printing.PaperSize("CustomSize", 1000, 35000);
+	rpt.PrintWidth = 14f;
+	
+	System.Data.DataSet ds = getHistoryData();
+	
+	rpt.DataSource = ds;
+	rpt.DataMember = "Values";
+	rpt.UserData = "";
+}
+
+public void hideUnusedAxes(Steema.TeeChart.TChart chart, int usedAxesCount){
+
+	if(usedAxesCount == 1){
+	
+		chart.Series[1].Visible = false;
+		chart.Axes.Right.Visible = false;
+		
+		chart.Series[2].Visible = false;
+		chart.Axes.Custom[0].Visible = false;
+		
+		chart.Series[3].Visible = false;
+		chart.Axes.Custom[1].Visible = false;
+	}
+	else if(usedAxesCount == 2){
+
+		chart.Series[2].Visible = false;
+		chart.Axes.Custom[0].Visible = false;
+		
+		chart.Series[3].Visible = false;
+		chart.Axes.Custom[1].Visible = false;
+	}
+	else if(usedAxesCount == 3){
+
+		chart.Series[3].Visible = false;
+		chart.Axes.Custom[1].Visible = false;
+	}
+	else if(usedAxesCount == 4){
+
+	}
+	else{
+		throw new Exception("Bad amount of lines " + usedAxesCount);
+	}
+}
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

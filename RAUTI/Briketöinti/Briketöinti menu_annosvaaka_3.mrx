@@ -1,11 +1,12 @@
 <eDNAproReports_Report>
   <Report Name="Briketöinti menu_annosvaaka_3" ID="Briketöinti menu_annosvaaka_3" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-17T12:44:02" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-11T12:39:28" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
     <Viewer ReportName="Briketöinti menu_annosvaaka_3.rpx" ClassName="Layout" Layout="" />
     <Header ClassName="BaseTimeLine.ascx" />
+	<Header ClassName="ControlPanels.IA.BaseReportTagConfigGrid.ascx" />
     <DataSources>
       <DataSet ID="$default/Query.BasicQueries.Extended.Combination" ProviderInfo="$default/Query.BasicQueries.Extended" Method="Combination" Description="" FriendlyName="Combination" ProviderType="" Order="0" Enabled="true">
         <Data />
@@ -916,10 +917,6 @@
       <Connection ID="26874" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value12" />
       </Connection>
-      <Connection ID="26875" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_sementtisiilot" />
-      <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
-      <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
-      <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
       <Connection ID="27935" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.ts" />
       </Connection>
@@ -989,11 +986,15 @@
       <Connection ID="31807" Type="DataFieldConnection" LanguageConversion="false" Constant="">
         <DataFieldConnection DataFieldID="$default/Query.BasicQueries.Extended.Combination.Values.value0" />
       </Connection>
+      <Connection ID="46955" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_sementtisiilot_3" />
+      <Connection ID="46956" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_tuotantolaatu_3" />
+      <Connection ID="46957" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_vrk_3" />
+      <Connection ID="46958" Type="ConstantConnection" LanguageConversion="false" Constant="/RAUTI/Briketöinti/Briketöinti menu_annosvaaka_3" />
     </Connections>
     <HyperLinks>
       <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />
       <HyperLink ID="4" Protocol="25131" Host="25130" Path="25127" File="25129">
-        <UrlParameters Name="25132" Value="26875" Description="" />
+        <UrlParameters Name="25132" Value="46955" Description="" />
         <UrlParameters Name="25141" Value="25142" Description="" />
         <UrlParameters Name="25144" Value="25147" Description="" />
       </HyperLink>
@@ -1003,7 +1004,7 @@
         <UrlParameters Name="25156" Value="25157" Description="" />
       </HyperLink>
       <HyperLink ID="6" Protocol="25158" Host="25159" Path="25160" File="25161">
-        <UrlParameters Name="25162" Value="26876" Description="" />
+        <UrlParameters Name="25162" Value="46956" Description="" />
         <UrlParameters Name="25164" Value="25165" Description="" />
         <UrlParameters Name="25166" Value="25167" Description="" />
       </HyperLink>
@@ -1013,12 +1014,12 @@
         <UrlParameters Name="25176" Value="25177" Description="" />
       </HyperLink>
       <HyperLink ID="8" Protocol="25178" Host="25179" Path="25180" File="25181">
-        <UrlParameters Name="25182" Value="26877" Description="" />
+        <UrlParameters Name="25182" Value="46957" Description="" />
         <UrlParameters Name="25184" Value="25185" Description="" />
         <UrlParameters Name="25186" Value="25187" Description="" />
       </HyperLink>
       <HyperLink ID="9" Protocol="25200" Host="25201" Path="25202" File="25203">
-        <UrlParameters Name="25204" Value="26878" Description="" />
+        <UrlParameters Name="25204" Value="46958" Description="" />
         <UrlParameters Name="25206" Value="25207" Description="" />
         <UrlParameters Name="25208" Value="25209" Description="" />
       </HyperLink>

@@ -1,6 +1,6 @@
 <eDNAproReports_Report>
   <Report Name="Briketöinti menu_annosvaaka" ID="Briketöinti menu_annosvaaka" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-17T12:42:17" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-09-18T12:42:41" CreatedDate="2012-06-12T12:13:37" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
@@ -22,12 +22,12 @@
         <DataSetParameter Name="args5" Ref="$default/Query.BasicQueries.Extended.Combination.args5" Usage="Advanced" />
         <DataTable Name="Values" Description="" FriendlyName="" Filter="" OrderBy="">
           <DataField Name="ts" ID="$default/Query.BasicQueries.Extended.Combination.Values.ts" DataType="System.DateTime" Caption="ts" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="AVSUHDEPANOS_U3:av Avg value (INFOC2015!AVSUHDEPANOS_U3:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="AVSUHDEPANOS_U3:av Avg status (INFOC2015!AVSUHDEPANOS_U3:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="AVSUHDEVRK_U3:av Avg value (INFOC2015!AVSUHDEVRK_U3:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="AVSUHDEVRK_U3:av Avg status (INFOC2015!AVSUHDEVRK_U3:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="PANOSNUMERO_U3:av Avg value (INFOC2015!PANOSNUMERO_U3:av)" Description="" FriendlyName="" Expression="" />
-          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="PANOSNUMERO_U3:av Avg status (INFOC2015!PANOSNUMERO_U3:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value0" ID="$default/Query.BasicQueries.Extended.Combination.Values.value0" DataType="System.Single" Caption="AVSUHDEPANOS_U2:av Avg value (INFOC2015!AVSUHDEPANOS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status0" ID="$default/Query.BasicQueries.Extended.Combination.Values.status0" DataType="System.String" Caption="AVSUHDEPANOS_U2:av Avg status (INFOC2015!AVSUHDEPANOS_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value1" ID="$default/Query.BasicQueries.Extended.Combination.Values.value1" DataType="System.Single" Caption="AVSUHDEVRK_U2:av Avg value (INFOC2015!AVSUHDEVRK_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status1" ID="$default/Query.BasicQueries.Extended.Combination.Values.status1" DataType="System.String" Caption="AVSUHDEVRK_U2:av Avg status (INFOC2015!AVSUHDEVRK_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="value2" ID="$default/Query.BasicQueries.Extended.Combination.Values.value2" DataType="System.Single" Caption="PANOSNUMERO_U2:av Avg value (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
+          <DataField Name="status2" ID="$default/Query.BasicQueries.Extended.Combination.Values.status2" DataType="System.String" Caption="PANOSNUMERO_U2:av Avg status (INFOC2015!PANOSNUMERO_U2:av)" Description="" FriendlyName="" Expression="" />
         </DataTable>
       </DataSet>
     </DataSources>
@@ -36,7 +36,7 @@
       <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="periods" Type="System.String[]" InitialValue="12:00:00" HeaderControl="" Editable="true" Mapping="Runtime" Description="Period list" Usage="HistoryPeriodList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="optionsList" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Options list" Usage="HistoryOptionList" Overridable="True" Group="" DisplayIndex="2147483647" />
-      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U3:av&#xD;&#xA;AVSUHDEVRK_U3:av&#xD;&#xA;PANOSNUMERO_U3:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="tagNameList" Type="System.String[]" InitialValue="AVSUHDEPANOS_U2:av&#xD;&#xA;AVSUHDEVRK_U2:av&#xD;&#xA;PANOSNUMERO_U2:av" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="HistoryTagNameList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="operationList" Type="System.String[]" InitialValue="Avg" HeaderControl="" Editable="true" Mapping="Runtime" Description="History operation list" Usage="HistoryOperationList" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="tagNameList2" Type="System.String[]" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Tag name list" Usage="" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="$default/Query.BasicQueries.Extended.Combination.args1" Type="System.String[]" HeaderControl="" Editable="false" Mapping="Fixed" Description="" Usage="Advanced" Overridable="False" Group="" DisplayIndex="-1" />

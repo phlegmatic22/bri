@@ -4,14 +4,12 @@
     <UserRights />
     <Info Title="" Owner="GUEST" Expiration="" Category="" Version="" ModifiedBy="GUEST" ModificationDate="2019-09-13T11:51:28" CreatedDate="2019-09-11T13:27:54" CreatedBy="INFOC2015\Administrator" Global="True" Template="False" SnapshotTime="">
       <Comment />
-      <Description>
-      </Description>
+      <Description />
     </Info>
     <Viewer ReportName="Laatu2.rpx" ClassName="" />
     <DataSources>
       <DataSet ID="$default/Metso.DNA.IA.DNAtrend.Combined.TrendData" ProviderInfo="$default/Metso.DNA.IA.DNAtrend.Combined" Method="TrendData" Description="" FriendlyName="TrendData" ProviderType="" Order="0" Enabled="true">
-        <Data>
-        </Data>
+        <Data />
         <DataSetParameter Name="startTime" Ref="startTime" Usage="StartTime" />
         <DataSetParameter Name="endTime" Ref="endTime" Usage="EndTime" />
         <DataSetParameter Name="tagNameList" Ref="tags" Usage="HistoryTagNameList" />
