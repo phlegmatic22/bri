@@ -1,6 +1,6 @@
 <eDNAproReports_Report>
   <Report Name="test6" ID="test6" Version="3.0.0.0" DynamicBaseType="">
-    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-10-30T13:09:25" CreatedDate="2019-10-23T10:00:34" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2019-11-12T12:54:08" CreatedDate="2019-10-23T10:00:34" CreatedBy="" Global="True" Template="False" SnapshotTime="">
       <Comment />
       <Description />
     </Info>
@@ -10,6 +10,10 @@
     <Parameters>
       <Parameter Name="startTime" Type="System.DateTime" InitialValue="*:*:-1:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="Start date/time" Usage="StartTime" Overridable="True" Group="" DisplayIndex="2147483647" />
       <Parameter Name="endTime" Type="System.DateTime" InitialValue="*:*:*:0:0:0" HeaderControl="" Editable="true" Mapping="Runtime" Description="End date/time" Usage="EndTime" Overridable="True" Group="" DisplayIndex="2147483647" />
+      <Parameter Name="Aikataso" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="17" />
+      <Parameter Name="Aika" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="17" />
+      <Parameter Name="Aika2" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="17" />
+      <Parameter Name="Pisteiden lukumäärä" Type="System.Int32" InitialValue="30" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="17" />
     </Parameters>
     <Connections>
       <Connection ID="1035" Type="ConstantConnection" LanguageConversion="false" Constant="localhost" />
@@ -99,7 +103,6 @@
       <Connection ID="26517" Type="ConstantConnection" LanguageConversion="false" Constant="report" />
       <Connection ID="26518" Type="ConstantConnection" LanguageConversion="false" Constant="/_DNAuse/EventTrend" />
       <Connection ID="26519" Type="ConstantConnection" LanguageConversion="false" Constant="tags" />
-      <Connection ID="26875" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_sementtisiilot" />
       <Connection ID="26876" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_tuotantolaatu" />
       <Connection ID="26877" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_vrk" />
       <Connection ID="26878" Type="ConstantConnection" LanguageConversion="false" Constant="\Test\Briketöinti menu_annosvaaka" />
@@ -113,13 +116,17 @@
       <Connection ID="22811" Type="SpecialFieldConnection" LanguageConversion="false" Constant="">
         <SpecialFieldConnection SpecialFieldName="PrintTime" />
       </Connection>
+      <Connection ID="47337" Type="ConstantConnection" LanguageConversion="false" Constant="\RAUTI\Briketöinti\etc\test6" />
+      <Connection ID="47338" Type="ConstantConnection" LanguageConversion="false" Constant="Aikataso" />
+      <Connection ID="47339" Type="ConstantConnection" LanguageConversion="false" Constant="2" />
     </Connections>
     <HyperLinks>
       <HyperLink ID="1" Protocol="1371" Host="1035" Path="1517" File="1516" />
       <HyperLink ID="4" Protocol="25131" Host="25130" Path="25127" File="25129">
-        <UrlParameters Name="25132" Value="26875" Description="" />
+        <UrlParameters Name="25132" Value="47337" Description="" />
         <UrlParameters Name="25141" Value="25142" Description="" />
         <UrlParameters Name="25144" Value="25147" Description="" />
+        <UrlParameters Name="47338" Value="47339" Description="" />
       </HyperLink>
       <HyperLink ID="5" Protocol="25148" Host="25149" Path="25150" File="25151">
         <UrlParameters Name="25152" Value="25153" Description="" />
